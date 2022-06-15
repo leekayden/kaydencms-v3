@@ -158,7 +158,7 @@ TABLE OF CONTENTS:
 .wp-core-ui .button.active,
 .wp-core-ui .button.active:hover {
 	background-color: #dcdcde;
-	color: #135e96;
+	color: #a62323
 	border-color: #0a4b78;
 	box-shadow: inset 0 2px 5px -3px #0a4b78;
 }
@@ -205,7 +205,7 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button-link:hover,
 .wp-core-ui .button-link:active {
-	color: #135e96;
+	color: #a62323
 }
 
 .wp-core-ui .button-link:focus {
@@ -249,8 +249,8 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary:hover,
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
-	background: #135e96;
-	border-color: #135e96;
+	background: #a62323
+	border-color: #a62323
 	color: #fff;
 }
 
@@ -265,8 +265,8 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary:active {
-	background: #135e96;
-	border-color: #135e96;
+	background: #a62323
+	border-color: #a62323
 	box-shadow: none;
 	color: #fff;
 }
@@ -321,7 +321,7 @@ TABLE OF CONTENTS:
 /* pressed state e.g. a selected setting */
 .wp-core-ui .button-group > .button.active {
 	background-color: #dcdcde;
-	color: #135e96;
+	color: #a62323
 	border-color: #0a4b78;
 	box-shadow: inset 0 2px 5px -3px #0a4b78;
 }

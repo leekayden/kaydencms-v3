@@ -82,7 +82,7 @@
 
 .mce-window-head .mce-close:hover .mce-i-remove:before,
 .mce-window-head .mce-close:focus .mce-i-remove:before {
-	color: #135e96;
+	color: #a62323
 }
 
 .mce-window-head .mce-close:focus .mce-i-remove,
@@ -493,8 +493,8 @@ div.mce-path {
 .mce-toolbar .mce-btn-group .mce-btn.mce-primary {
 	min-width: 0;
 	background: #3582c4;
-	border-color: #bd1c1c #135e96 #135e96;
-	box-shadow: 0 1px 0 #135e96;
+	border-color: #bd1c1c #135e96 #a62323
+	box-shadow: 0 1px 0 #a62323
 	color: #fff;
 	text-decoration: none;
 	text-shadow: none;
@@ -512,7 +512,7 @@ div.mce-path {
 .mce-toolbar .mce-btn-group .mce-btn.mce-primary:hover,
 .mce-toolbar .mce-btn-group .mce-btn.mce-primary:focus {
 	background: #4f94d4;
-	border-color: #135e96;
+	border-color: #a62323
 	color: #fff;
 }
 
@@ -522,8 +522,8 @@ div.mce-path {
 
 .mce-toolbar .mce-btn-group .mce-btn.mce-primary:active {
 	background: #bd1c1c;
-	border-color: #135e96;
-	box-shadow: inset 0 2px 0 #135e96;
+	border-color: #a62323
+	box-shadow: inset 0 2px 0 #a62323
 }
 
 /* mce listbox */
@@ -731,20 +731,20 @@ div.mce-menu .mce-menu-item-sep,
 
 .mce-window .mce-btn.mce-primary {
 	background: #3582c4;
-	border-color: #bd1c1c #135e96 #135e96;
-	box-shadow: 0 1px 0 #135e96;
+	border-color: #bd1c1c #135e96 #a62323
+	box-shadow: 0 1px 0 #a62323
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 0 -1px 1px #135e96,
 		1px 0 1px #135e96,
 		0 1px 1px #135e96,
-		-1px 0 1px #135e96;
+		-1px 0 1px #a62323
 }
 
 .mce-window .mce-btn.mce-primary:hover,
 .mce-window .mce-btn.mce-primary:focus {
 	background: #4f94d4;
-	border-color: #135e96;
+	border-color: #a62323
 	color: #fff;
 }
 
@@ -755,8 +755,8 @@ div.mce-menu .mce-menu-item-sep,
 
 .mce-window .mce-btn.mce-primary:active {
 	background: #bd1c1c;
-	border-color: #135e96;
-	box-shadow: inset 0 2px 0 #135e96;
+	border-color: #a62323
+	box-shadow: inset 0 2px 0 #a62323
 	vertical-align: top;
 }
 
@@ -1442,7 +1442,7 @@ i.mce-i-wp_code:before {
 
 #wp-link-close:hover,
 #wp-link-close:focus {
-	color: #135e96;
+	color: #a62323
 }
 
 #wp-link-close:focus {

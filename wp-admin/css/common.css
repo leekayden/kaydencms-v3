@@ -265,7 +265,7 @@ div {
 
 a:hover,
 a:active {
-	color: #135e96;
+	color: #a62323
 }
 
 a:focus,
@@ -1070,7 +1070,7 @@ th.action-links {
 .filter-links li > a:focus,
 .show-filters .filter-links a.current:hover,
 .show-filters .filter-links a.current:focus {
-	color: #135e96;
+	color: #a62323
 }
 
 .wp-filter .search-form {
@@ -1133,7 +1133,7 @@ th.action-links {
 .wp-filter .button.drawer-toggle:focus,
 .wp-filter .drawer-toggle:focus:before {
 	background-color: transparent;
-	color: #135e96;
+	color: #a62323
 }
 
 .wp-filter .button.drawer-toggle:hover,
@@ -3026,7 +3026,7 @@ div.action-links {
 
 .plugin-details-modal #TB_closeWindowButton:hover,
 .plugin-details-modal #TB_closeWindowButton:focus {
-	color: #135e96;
+	color: #a62323
 	outline: none;
 	box-shadow: none;
 }

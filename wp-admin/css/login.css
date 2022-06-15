@@ -27,7 +27,7 @@ a {
 
 a:hover,
 a:active {
-	color: #135e96;
+	color: #a62323
 }
 
 a:focus {
@@ -310,7 +310,7 @@ p {
 .login #nav a:hover,
 .login #backtoblog a:hover,
 .login h1 a:hover {
-	color: #135e96;
+	color: #a62323
 }
 
 .login #nav a:focus,
