@@ -177,7 +177,7 @@ body.js .theme-browser.search-loading {
 }
 
 .theme-browser .theme .more-details:focus {
-	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #2271b1;
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #bd1c1c;
 }
 
 .theme-browser .theme.focus {
@@ -329,14 +329,14 @@ body.js .theme-browser.search-loading {
 .theme-browser .theme.add-new-theme a:hover span:after,
 .theme-browser .theme.add-new-theme a:focus span:after {
 	background: #fff;
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .theme-browser .theme.add-new-theme a:hover:after,
 .theme-browser .theme.add-new-theme a:focus:after {
 	border-color: transparent;
 	color: #fff;
-	background: #2271b1;
+	background: #bd1c1c;
 	content: "";
 }
 
@@ -1010,7 +1010,7 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 
 /* Already installed theme */
 .theme-browser .theme .theme-installed {
-	background: #2271b1;
+	background: #bd1c1c;
 }
 
 .theme-browser .theme .notice-success p:before {
@@ -1570,7 +1570,7 @@ body.full-overlay-active {
 
 .wp-core-ui .wp-full-overlay .collapse-sidebar:hover,
 .wp-core-ui .wp-full-overlay .collapse-sidebar:focus {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .wp-full-overlay .collapse-sidebar-arrow,
@@ -1712,7 +1712,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:focus,
 .wp-full-overlay-footer .devices button.active:hover {
-	border-bottom-color: #2271b1;
+	border-bottom-color: #bd1c1c;
 }
 
 .wp-full-overlay-footer .devices button.active:before {
@@ -1721,7 +1721,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:hover:before,
 .wp-full-overlay-footer .devices button:focus:before {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .wp-full-overlay-footer .devices .preview-desktop:before {

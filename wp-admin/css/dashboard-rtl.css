@@ -220,7 +220,7 @@
 .welcome-panel .welcome-panel-close:focus,
 .welcome-panel .welcome-panel-close:hover::before,
 .welcome-panel .welcome-panel-close:focus::before {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 /* @deprecated 5.9.0 -- Button removed from panel. */

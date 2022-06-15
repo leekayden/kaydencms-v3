@@ -79,14 +79,14 @@
 .column-response a.post-com-count-approved:focus .comment-count-approved,
 .column-comments a.post-com-count-approved:hover .comment-count-approved,
 .column-comments a.post-com-count-approved:focus .comment-count-approved {
-	background: #2271b1;
+	background: #bd1c1c;
 }
 
 .column-response a.post-com-count-approved:hover:after,
 .column-response a.post-com-count-approved:focus:after,
 .column-comments a.post-com-count-approved:hover:after,
 .column-comments a.post-com-count-approved:focus:after {
-	border-top-color: #2271b1;
+	border-top-color: #bd1c1c;
 }
 
 /* @todo: consider to use a single rule for these counters and the admin menu counters. */
@@ -744,7 +744,7 @@ th.asc a:focus span.sorting-indicator {
 }
 
 .view-switch a.current:before {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .view-switch .view-list:before {
@@ -883,8 +883,8 @@ tr.inline-edit-row td {
 }
 
 .inline-edit-wrapper:focus {
-	border-color: #2271b1;
-	box-shadow: 0 0 0 1px #2271b1;
+	border-color: #bd1c1c;
+	box-shadow: 0 0 0 1px #bd1c1c;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }

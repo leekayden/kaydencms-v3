@@ -116,8 +116,8 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button,
 .wp-core-ui .button-secondary {
-	color: #2271b1;
-	border-color: #2271b1;
+	color: #bd1c1c;
+	border-color: #bd1c1c;
 	background: #f6f7f7;
 	vertical-align: top;
 }
@@ -197,7 +197,7 @@ TABLE OF CONTENTS:
 	cursor: pointer;
 	text-align: right;
 	/* Mimics the default link style in common.css */
-	color: #2271b1;
+	color: #bd1c1c;
 	text-decoration: underline;
 	transition-property: border, background, color;
 	transition-duration: .05s;
@@ -239,8 +239,8 @@ TABLE OF CONTENTS:
 ---------------------------------------------------------------------------- */
 
 .wp-core-ui .button-primary {
-	background: #2271b1;
-	border-color: #2271b1;
+	background: #bd1c1c;
+	border-color: #bd1c1c;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: none;
@@ -259,7 +259,7 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary:focus {
 	box-shadow:
 		0 0 0 1px #fff,
-		0 0 0 3px #2271b1;
+		0 0 0 3px #bd1c1c;
 }
 
 .wp-core-ui .button-primary.active,

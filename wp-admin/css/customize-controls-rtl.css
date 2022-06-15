@@ -81,7 +81,7 @@ body:not(.ready) #customize-save-button-wrapper .save {
 }
 
 #customize-save-button-wrapper .save:focus, #publish-settings:focus {
-	box-shadow: 0 1px 0 #2271b1, 0 0 2px 1px #72aee6; /* This is default box shadow for focus */
+	box-shadow: 0 1px 0 #bd1c1c, 0 0 2px 1px #72aee6; /* This is default box shadow for focus */
 }
 
 #customize-save-button-wrapper .save.has-next-sibling {
@@ -488,7 +488,7 @@ body.trashing #publish-settings {
 #customize-controls .customize-info.open .customize-help-toggle,
 #customize-controls .customize-info .customize-help-toggle:focus,
 #customize-controls .customize-info .customize-help-toggle:hover {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 #customize-controls .customize-info .customize-panel-description,
@@ -579,9 +579,9 @@ body.trashing #publish-settings {
 #customize-controls .control-section .accordion-section-title:hover,
 #customize-controls .control-section.open .accordion-section-title,
 #customize-controls .control-section .accordion-section-title:focus {
-	color: #2271b1;
+	color: #bd1c1c;
 	background: #f6f7f7;
-	border-right-color: #2271b1;
+	border-right-color: #bd1c1c;
 }
 
 #accordion-section-themes + .control-section {
@@ -603,7 +603,7 @@ body.trashing #publish-settings {
 #customize-outer-theme-controls .control-section .accordion-section-title:hover:after,
 #customize-outer-theme-controls .control-section.open .accordion-section-title:after,
 #customize-outer-theme-controls .control-section .accordion-section-title:focus:after {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 #customize-theme-controls .control-section.open {
@@ -868,8 +868,8 @@ h3.customize-section-title {
 .customize-controls-preview-toggle:focus,
 .customize-controls-preview-toggle:hover {
 	background: #fff;
-	color: #2271b1;
-	border-top-color: #2271b1;
+	color: #bd1c1c;
+	border-top-color: #bd1c1c;
 	box-shadow: none;
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
@@ -885,9 +885,9 @@ h3.customize-section-title {
 .customize-panel-back:focus,
 .customize-section-back:hover,
 .customize-section-back:focus {
-	color: #2271b1;
+	color: #bd1c1c;
 	background: #f6f7f7;
-	border-right-color: #2271b1;
+	border-right-color: #bd1c1c;
 	box-shadow: none;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -1950,8 +1950,8 @@ p.customize-section-description {
 
 .control-panel-themes .customize-themes-section-title:focus,
 .control-panel-themes .customize-themes-section-title:hover {
-	border-right-color: #2271b1;
-	color: #2271b1;
+	border-right-color: #bd1c1c;
+	color: #bd1c1c;
 	background: #f6f7f7;
 }
 
@@ -1979,12 +1979,12 @@ p.customize-section-description {
 	position: absolute;
 	top: 9px;
 	left: 15px;
-	background: #2271b1;
+	background: #bd1c1c;
 	color: #fff;
 }
 
 .control-panel-themes .customize-themes-section-title.selected {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 #customize-theme-controls .themes.accordion-section-content {
@@ -2251,9 +2251,9 @@ p.customize-section-description {
 
 	.wp-customizer .showing-themes .control-panel-themes .customize-themes-mobile-back:hover,
 	.wp-customizer .showing-themes .control-panel-themes .customize-themes-mobile-back:focus {
-		color: #2271b1;
+		color: #bd1c1c;
 		background: #f6f7f7;
-		border-right-color: #2271b1;
+		border-right-color: #bd1c1c;
 		box-shadow: none;
 		/* Only visible in Windows High Contrast mode */
 		outline: 2px solid transparent;
@@ -2356,13 +2356,13 @@ p.customize-section-description {
 .wp-customizer .theme-overlay .theme-header .left:focus,
 .wp-customizer .theme-overlay .theme-header .left:hover {
 	background: #fff;
-	border-bottom: 4px solid #2271b1;
-	color: #2271b1;
+	border-bottom: 4px solid #bd1c1c;
+	color: #bd1c1c;
 }
 
 .wp-customizer .theme-overlay .theme-header .close:focus:before,
 .wp-customizer .theme-overlay .theme-header .close:hover:before {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .wp-customizer .theme-overlay .theme-header button.disabled,

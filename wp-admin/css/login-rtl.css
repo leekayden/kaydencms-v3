@@ -16,7 +16,7 @@ body {
 }
 
 a {
-	color: #2271b1;
+	color: #bd1c1c;
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;

@@ -153,7 +153,7 @@
 	font-weight: 600;
 	padding: 15px 23px 14px;
 	background: #f0f0f1;
-	color: #2271b1;
+	color: #bd1c1c;
 	z-index: 100000;
 	line-height: normal;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -252,7 +252,7 @@ td {
 
 /* Any change to the default link style must be applied to button-link too. */
 a {
-	color: #2271b1;
+	color: #bd1c1c;
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;
@@ -619,13 +619,13 @@ code {
 	position: relative;
 	top: -3px;
 	text-decoration: none;
-	border: 1px solid #2271b1;
+	border: 1px solid #bd1c1c;
 	border-radius: 2px;
 	text-shadow: none;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: normal; /* IE8-IE11 need this for buttons */
-	color: #2271b1; /* use the standard color used for buttons */
+	color: #bd1c1c; /* use the standard color used for buttons */
 	background: #f6f7f7;
 	cursor: pointer;
 }
@@ -713,10 +713,10 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-highlight {
 	color: #fff;
-	background-color: #2271b1;
+	background-color: #bd1c1c;
 }
 .wp-ui-text-highlight {
-	color: #2271b1;
+	color: #bd1c1c;
 }
 
 .wp-ui-notification {
@@ -811,7 +811,7 @@ img.emoji {
 .tagchecklist .ntdelbutton .remove-tag-icon:before {
 	margin-left: 2px;
 	border-radius: 50%;
-	color: #2271b1;
+	color: #bd1c1c;
 	/* vertically center the icon cross browsers */
 	line-height: 1.28;
 }
@@ -1182,7 +1182,7 @@ th.action-links {
 
 .show-filters .wp-filter .drawer-toggle:hover,
 .show-filters .wp-filter .drawer-toggle:focus {
-	background: #2271b1;
+	background: #bd1c1c;
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
