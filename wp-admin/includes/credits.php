@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Credits Administration API.
+ * kaydenCMS Credits Administration API.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 4.4.0
  */
@@ -13,8 +13,8 @@
  * @since 3.2.0
  * @since 5.6.0 Added the `$version` and `$locale` parameters.
  *
- * @param string $version WordPress version. Defaults to the current version.
- * @param string $locale  WordPress locale. Defaults to the current user's locale.
+ * @param string $version kaydenCMS version. Defaults to the current version.
+ * @param string $locale  kaydenCMS locale. Defaults to the current user's locale.
  * @return array|false A list of all of the contributors, or false on error.
  */
 function wp_credits( $version = '', $locale = '' ) {
@@ -29,14 +29,14 @@ function wp_credits( $version = '', $locale = '' ) {
 		$locale = get_user_locale();
 	}
 
-	$results = get_site_transient( 'wordpress_credits_' . $locale );
+	$results = get_site_transient( 'kaydenCMS_credits_' . $locale );
 
 	if ( ! is_array( $results )
 		|| false !== strpos( $version, '-' )
 		|| ( isset( $results['data']['version'] ) && strpos( $version, $results['data']['version'] ) !== 0 )
 	) {
-		$url     = "http://api.wordpress.org/core/credits/1.1/?version={$version}&locale={$locale}";
-		$options = array( 'user-agent' => 'WordPress/' . $version . '; ' . home_url( '/' ) );
+		$url     = "http://api.kaydenCMS.org/core/credits/1.1/?version={$version}&locale={$locale}";
+		$options = array( 'user-agent' => 'kaydenCMS/' . $version . '; ' . home_url( '/' ) );
 
 		if ( wp_http_supports( array( 'ssl' ) ) ) {
 			$url = set_url_scheme( $url, 'https' );
@@ -54,28 +54,28 @@ function wp_credits( $version = '', $locale = '' ) {
 			return false;
 		}
 
-		set_site_transient( 'wordpress_credits_' . $locale, $results, DAY_IN_SECONDS );
+		set_site_transient( 'kaydenCMS_credits_' . $locale, $results, DAY_IN_SECONDS );
 	}
 
 	return $results;
 }
 
 /**
- * Retrieve the link to a contributor's WordPress.org profile page.
+ * Retrieve the link to a contributor's kaydenCMS.org profile page.
  *
  * @access private
  * @since 3.2.0
  *
  * @param string $display_name  The contributor's display name (passed by reference).
  * @param string $username      The contributor's username.
- * @param string $profiles      URL to the contributor's WordPress.org profile page.
+ * @param string $profiles      URL to the contributor's kaydenCMS.org profile page.
  */
 function _wp_credits_add_profile_link( &$display_name, $username, $profiles ) {
 	$display_name = '<a href="' . esc_url( sprintf( $profiles, $username ) ) . '">' . esc_html( $display_name ) . '</a>';
 }
 
 /**
- * Retrieve the link to an external library used in WordPress.
+ * Retrieve the link to an external library used in kaydenCMS.
  *
  * @access private
  * @since 3.2.0
@@ -103,10 +103,10 @@ function wp_credits_section_title( $group_data = array() ) {
 			// Considered a special slug in the API response. (Also, will never be returned for en_US.)
 			$title = _x( 'Translators', 'Translate this to be the equivalent of English Translators in your language for the credits page Translators section' );
 		} elseif ( isset( $group_data['placeholders'] ) ) {
-			// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 			$title = vsprintf( translate( $group_data['name'] ), $group_data['placeholders'] );
 		} else {
-			// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 			$title = translate( $group_data['name'] );
 		}
 
@@ -155,7 +155,7 @@ function wp_credits_section_list( $credits = array(), $slug = '' ) {
 				echo '<span class="wp-person-avatar"><img src="' . esc_url( $data['url'] ) . '" srcset="' . esc_url( $data2x['url'] ) . ' 2x" class="gravatar" alt="" /></span>' . "\n";
 				echo esc_html( $person_data[0] ) . "</a>\n\t";
 				if ( ! $compact && ! empty( $person_data[3] ) ) {
-					// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+					// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 					echo '<span class="title">' . translate( $person_data[3] ) . "</span>\n";
 				}
 				echo "</li>\n";

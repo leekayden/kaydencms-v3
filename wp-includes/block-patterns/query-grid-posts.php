@@ -2,7 +2,7 @@
 /**
  * Query: Grid.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 return array(

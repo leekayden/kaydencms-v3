@@ -43,7 +43,7 @@ __webpack_require__.d(__webpack_exports__, {
   "store": function() { return /* reexport */ store; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/preferences/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/preferences/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -52,7 +52,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "toggle": function() { return toggle; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/preferences/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/preferences/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -69,11 +69,11 @@ var external_wp_components_namespaceObject = window["wp"]["components"];
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/check.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -86,9 +86,9 @@ const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_
 
 ;// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -154,7 +154,7 @@ function preferences() {
   preferences
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/store/actions.js
 /**
  * Returns an action object used in signalling that a preference should be
  * toggled.
@@ -209,7 +209,7 @@ function setDefaults(scope, defaults) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/store/selectors.js
 /**
  * Returns a boolean indicating whether a prefer is active for a particular
  * scope.
@@ -227,7 +227,7 @@ function get(state, scope, name) {
   return value !== undefined ? value : (_state$defaults$scope = state.defaults[scope]) === null || _state$defaults$scope === void 0 ? void 0 : _state$defaults$scope[name];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -235,9 +235,9 @@ function get(state, scope, name) {
  */
 const STORE_NAME = 'core/preferences';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -255,7 +255,7 @@ const STORE_NAME = 'core/preferences';
 /**
  * Store definition for the interface namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -275,11 +275,11 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
   persist: ['preferences']
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preference-toggle-menu-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/components/preference-toggle-menu-item/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -333,10 +333,10 @@ function PreferenceToggleMenuItem(_ref) {
   }, label);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/preferences/build-module/index.js
 
 
 

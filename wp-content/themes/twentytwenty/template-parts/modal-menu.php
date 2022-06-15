@@ -2,7 +2,7 @@
 /**
  * Displays the menu icon and modal
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */

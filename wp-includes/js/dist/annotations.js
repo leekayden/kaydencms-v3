@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   "store": function() { return /* reexport */ store; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/annotations/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -52,7 +52,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   "__experimentalGetAnnotationsForRichText": function() { return __experimentalGetAnnotationsForRichText; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/annotations/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -66,7 +66,7 @@ __webpack_require__.d(actions_namespaceObject, {
 var external_wp_richText_namespaceObject = window["wp"]["richText"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -74,9 +74,9 @@ var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
  */
 const STORE_NAME = 'core/annotations';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/annotation.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/format/annotation.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -268,9 +268,9 @@ const annotation = {
 
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/format/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -288,9 +288,9 @@ const {
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/block/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/block/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -327,7 +327,7 @@ const addAnnotationClassName = OriginalComponent => {
 
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/store/reducer.js
 /**
  * External dependencies
  */
@@ -708,7 +708,7 @@ function isShallowEqual( a, b, fromIndex ) {
 	return callSelector;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/store/selectors.js
 /**
  * External dependencies
  */
@@ -881,7 +881,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/store/actions.js
 /**
  * External dependencies
  */
@@ -985,9 +985,9 @@ function __experimentalRemoveAnnotationsBySource(source) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1005,7 +1005,7 @@ function __experimentalRemoveAnnotationsBySource(source) {
 /**
  * Store definition for the annotations namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -1017,7 +1017,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/annotations/build-module/index.js
 /**
  * Internal dependencies
  */

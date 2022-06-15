@@ -2,7 +2,7 @@
 /**
  * Administration API: Core Ajax handlers
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 2.1.0
  */
@@ -2304,14 +2304,14 @@ function wp_ajax_save_widget() {
 	 *
 	 * @since 2.8.0
 	 */
-	do_action( 'load-widgets.php' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'load-widgets.php' ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/**
 	 * Fires early when editing the widgets displayed in sidebars.
 	 *
 	 * @since 2.8.0
 	 */
-	do_action( 'widgets.php' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'widgets.php' ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/** This action is documented in wp-admin/widgets.php */
 	do_action( 'sidebar_admin_setup' );
@@ -2414,9 +2414,9 @@ function wp_ajax_delete_inactive_widgets() {
 
 	unset( $_POST['removeinactivewidgets'], $_POST['action'] );
 	/** This action is documented in wp-admin/includes/ajax-actions.php */
-	do_action( 'load-widgets.php' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'load-widgets.php' ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	/** This action is documented in wp-admin/includes/ajax-actions.php */
-	do_action( 'widgets.php' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'widgets.php' ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	/** This action is documented in wp-admin/widgets.php */
 	do_action( 'sidebar_admin_setup' );
 
@@ -2504,7 +2504,7 @@ function wp_ajax_upload_attachment() {
 	/*
 	 * This function does not use wp_send_json_success() / wp_send_json_error()
 	 * as the html4 Plupload handler requires a text/html content-type for older IE.
-	 * See https://core.trac.wordpress.org/ticket/31037
+	 * See https://core.trac.kaydenCMS.org/ticket/31037
 	 */
 
 	if ( ! current_user_can( 'upload_files' ) ) {
@@ -2881,7 +2881,7 @@ function wp_ajax_wp_remove_post_lock() {
 }
 
 /**
- * Ajax handler for dismissing a WordPress pointer.
+ * Ajax handler for dismissing a kaydenCMS pointer.
  *
  * @since 3.1.0
  */
@@ -3345,10 +3345,10 @@ function wp_ajax_send_link_to_editor() {
 
 	$post = get_post( isset( $_POST['post_id'] ) ? $_POST['post_id'] : 0 );
 
-	// Ping WordPress for an embed.
+	// Ping kaydenCMS for an embed.
 	$check_embed = $wp_embed->run_shortcode( '[embed]' . $src . '[/embed]' );
 
-	// Fallback that WordPress creates when no oEmbed was found.
+	// Fallback that kaydenCMS creates when no oEmbed was found.
 	$fallback = $wp_embed->maybe_make_link( $src );
 
 	if ( $check_embed !== $fallback ) {
@@ -4069,7 +4069,7 @@ function wp_ajax_nopriv_generate_password() {
 }
 
 /**
- * Ajax handler for saving the user's WordPress.org username.
+ * Ajax handler for saving the user's kaydenCMS.org username.
  *
  * @since 4.4.0
  */
@@ -4096,7 +4096,7 @@ function wp_ajax_save_wporg_username() {
  *
  * @see Theme_Upgrader
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_install_theme() {
 	check_ajax_referer( 'updates' );
@@ -4222,7 +4222,7 @@ function wp_ajax_install_theme() {
  *
  * @see Theme_Upgrader
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_update_theme() {
 	check_ajax_referer( 'updates' );
@@ -4317,7 +4317,7 @@ function wp_ajax_update_theme() {
  *
  * @see delete_theme()
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_delete_theme() {
 	check_ajax_referer( 'updates' );
@@ -4391,7 +4391,7 @@ function wp_ajax_delete_theme() {
  *
  * @see Plugin_Upgrader
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_install_plugin() {
 	check_ajax_referer( 'updates' );
@@ -4500,7 +4500,7 @@ function wp_ajax_install_plugin() {
  *
  * @see Plugin_Upgrader
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_update_plugin() {
 	check_ajax_referer( 'updates' );
@@ -4608,7 +4608,7 @@ function wp_ajax_update_plugin() {
  *
  * @see delete_plugins()
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  */
 function wp_ajax_delete_plugin() {
 	check_ajax_referer( 'updates' );

@@ -2,11 +2,11 @@
 /**
  * Media Library administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'upload_files' ) ) {
@@ -72,8 +72,8 @@ if ( 'grid' === $mode ) {
 
 	get_current_screen()->set_help_sidebar(
 		'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-		'<p>' . __( '<a href="https://wordpress.org/support/article/media-library-screen/">Documentation on Media Library</a>' ) . '</p>' .
-		'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+		'<p>' . __( '<a href="https://kaydenCMS.org/support/article/media-library-screen/">Documentation on Media Library</a>' ) . '</p>' .
+		'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 	);
 
 	// Used in the HTML title tag.
@@ -204,7 +204,7 @@ if ( $doaction ) {
 			$screen = get_current_screen()->id;
 
 			/** This action is documented in wp-admin/edit.php */
-			$location = apply_filters( "handle_bulk_actions-{$screen}", $location, $doaction, $post_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+			$location = apply_filters( "handle_bulk_actions-{$screen}", $location, $doaction, $post_ids ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	}
 
 	wp_redirect( $location );
@@ -253,8 +253,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/media-library-screen/">Documentation on Media Library</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/media-library-screen/">Documentation on Media Library</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 get_current_screen()->set_screen_reader_content(

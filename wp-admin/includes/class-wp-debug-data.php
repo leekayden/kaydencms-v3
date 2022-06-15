@@ -1,8 +1,8 @@
 <?php
 /**
- * Class for providing debug data based on a users WordPress environment.
+ * Class for providing debug data based on a users kaydenCMS environment.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Site_Health
  * @since 5.2.0
  */
@@ -28,7 +28,7 @@ class WP_Debug_Data {
 	 * @since 5.5.0 Added pretty permalinks support information.
 	 *
 	 * @throws ImagickException
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @return array The debug data for the site.
 	 */
@@ -51,7 +51,7 @@ class WP_Debug_Data {
 		if ( is_array( $core_updates ) ) {
 			foreach ( $core_updates as $core => $update ) {
 				if ( 'upgrade' === $update->response ) {
-					/* translators: %s: Latest WordPress version number. */
+					/* translators: %s: Latest kaydenCMS version number. */
 					$core_update_needed = ' ' . sprintf( __( '(Latest version: %s)' ), $update->version );
 				} else {
 					$core_update_needed = '';
@@ -63,7 +63,7 @@ class WP_Debug_Data {
 		$info = array();
 
 		$info['wp-core'] = array(
-			'label'  => __( 'WordPress' ),
+			'label'  => __( 'kaydenCMS' ),
 			'fields' => array(
 				'version'                => array(
 					'label' => __( 'Version' ),
@@ -142,7 +142,7 @@ class WP_Debug_Data {
 			'show_count'  => true,
 			'description' => sprintf(
 				/* translators: %s: wp-content directory name. */
-				__( 'Drop-ins are single files, found in the %s directory, that replace or enhance WordPress features in ways that are not possible for traditional plugins.' ),
+				__( 'Drop-ins are single files, found in the %s directory, that replace or enhance kaydenCMS features in ways that are not possible for traditional plugins.' ),
 				'<code>' . str_replace( ABSPATH, '', WP_CONTENT_DIR ) . '</code>'
 			),
 			'fields'      => array(),
@@ -242,8 +242,8 @@ class WP_Debug_Data {
 		}
 
 		$info['wp-constants'] = array(
-			'label'       => __( 'WordPress Constants' ),
-			'description' => __( 'These settings alter where and how parts of WordPress are loaded.' ),
+			'label'       => __( 'kaydenCMS Constants' ),
+			'description' => __( 'These settings alter where and how parts of kaydenCMS are loaded.' ),
 			'fields'      => array(
 				'ABSPATH'             => array(
 					'label'   => 'ABSPATH',
@@ -342,10 +342,10 @@ class WP_Debug_Data {
 
 		$info['wp-filesystem'] = array(
 			'label'       => __( 'Filesystem Permissions' ),
-			'description' => __( 'Shows whether WordPress is able to write to the directories it needs access to.' ),
+			'description' => __( 'Shows whether kaydenCMS is able to write to the directories it needs access to.' ),
 			'fields'      => array(
-				'wordpress'  => array(
-					'label' => __( 'The main WordPress directory' ),
+				'kaydenCMS'  => array(
+					'label' => __( 'The main kaydenCMS directory' ),
 					'value' => ( $is_writable_abspath ? __( 'Writable' ) : __( 'Not writable' ) ),
 					'debug' => ( $is_writable_abspath ? 'writable' : 'not writable' ),
 				),
@@ -404,22 +404,22 @@ class WP_Debug_Data {
 			'value' => get_user_count(),
 		);
 
-		// WordPress features requiring processing.
-		$wp_dotorg = wp_remote_get( 'https://wordpress.org', array( 'timeout' => 10 ) );
+		// kaydenCMS features requiring processing.
+		$wp_dotorg = wp_remote_get( 'https://kaydenCMS.org', array( 'timeout' => 10 ) );
 
 		if ( ! is_wp_error( $wp_dotorg ) ) {
 			$info['wp-core']['fields']['dotorg_communication'] = array(
-				'label' => __( 'Communication with WordPress.org' ),
-				'value' => __( 'WordPress.org is reachable' ),
+				'label' => __( 'Communication with kaydenCMS.org' ),
+				'value' => __( 'kaydenCMS.org is reachable' ),
 				'debug' => 'true',
 			);
 		} else {
 			$info['wp-core']['fields']['dotorg_communication'] = array(
-				'label' => __( 'Communication with WordPress.org' ),
+				'label' => __( 'Communication with kaydenCMS.org' ),
 				'value' => sprintf(
-					/* translators: 1: The IP address WordPress.org resolves to. 2: The error returned by the lookup. */
-					__( 'Unable to reach WordPress.org at %1$s: %2$s' ),
-					gethostbyname( 'wordpress.org' ),
+					/* translators: 1: The IP address kaydenCMS.org resolves to. 2: The error returned by the lookup. */
+					__( 'Unable to reach kaydenCMS.org at %1$s: %2$s' ),
+					gethostbyname( 'kaydenCMS.org' ),
 					$wp_dotorg->get_error_message()
 				),
 				'debug' => $wp_dotorg->get_error_message(),
@@ -431,12 +431,12 @@ class WP_Debug_Data {
 			$loading = __( 'Loading&hellip;' );
 
 			$info['wp-paths-sizes']['fields'] = array(
-				'wordpress_path' => array(
-					'label' => __( 'WordPress directory location' ),
+				'kaydenCMS_path' => array(
+					'label' => __( 'kaydenCMS directory location' ),
 					'value' => untrailingslashit( ABSPATH ),
 				),
-				'wordpress_size' => array(
-					'label' => __( 'WordPress directory size' ),
+				'kaydenCMS_size' => array(
+					'label' => __( 'kaydenCMS directory size' ),
 					'value' => $loading,
 					'debug' => 'loading...',
 				),
@@ -821,8 +821,8 @@ class WP_Debug_Data {
 			// If the file exists, grab the content of it.
 			$htaccess_content = file_get_contents( ABSPATH . '.htaccess' );
 
-			// Filter away the core WordPress rules.
-			$filtered_htaccess_content = trim( preg_replace( '/\# BEGIN WordPress[\s\S]+?# END WordPress/si', '', $htaccess_content ) );
+			// Filter away the core kaydenCMS rules.
+			$filtered_htaccess_content = trim( preg_replace( '/\# BEGIN kaydenCMS[\s\S]+?# END kaydenCMS/si', '', $htaccess_content ) );
 			$filtered_htaccess_content = ! empty( $filtered_htaccess_content );
 
 			if ( $filtered_htaccess_content ) {
@@ -830,7 +830,7 @@ class WP_Debug_Data {
 				$htaccess_rules_string = sprintf( __( 'Custom rules have been added to your %s file.' ), '.htaccess' );
 			} else {
 				/* translators: %s: .htaccess */
-				$htaccess_rules_string = sprintf( __( 'Your %s file contains only core WordPress features.' ), '.htaccess' );
+				$htaccess_rules_string = sprintf( __( 'Your %s file contains only core kaydenCMS features.' ), '.htaccess' );
 			}
 
 			$info['wp-server']['fields']['htaccess_extra_rules'] = array(
@@ -857,7 +857,7 @@ class WP_Debug_Data {
 		if ( isset( $wpdb->use_mysqli ) && $wpdb->use_mysqli ) {
 			$client_version = $wpdb->dbh->client_info;
 		} else {
-			// phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysql_get_client_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
+			// phpcs:ignore kaydenCMS.DB.RestrictedFunctions.mysql_mysql_get_client_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
 			if ( preg_match( '|[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,2}|', mysql_get_client_info(), $matches ) ) {
 				$client_version = $matches[0];
 			} else {
@@ -1468,7 +1468,7 @@ class WP_Debug_Data {
 	 *
 	 * @since 5.9.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $mysql_var Name of the MySQL system variable.
 	 * @return string|null The variable value on success. Null if the variable does not exist.
@@ -1579,7 +1579,7 @@ class WP_Debug_Data {
 	}
 
 	/**
-	 * Fetch the sizes of the WordPress directories: `wordpress` (ABSPATH), `plugins`, `themes`, and `uploads`.
+	 * Fetch the sizes of the kaydenCMS directories: `kaydenCMS` (ABSPATH), `plugins`, `themes`, and `uploads`.
 	 * Intended to supplement the array returned by `WP_Debug_Data::debug_data()`.
 	 *
 	 * @since 5.2.0
@@ -1614,14 +1614,14 @@ class WP_Debug_Data {
 		// Go through the various installation directories and calculate their sizes.
 		// No trailing slashes.
 		$paths = array(
-			'wordpress_size' => untrailingslashit( ABSPATH ),
+			'kaydenCMS_size' => untrailingslashit( ABSPATH ),
 			'themes_size'    => get_theme_root(),
 			'plugins_size'   => WP_PLUGIN_DIR,
 			'uploads_size'   => $upload_dir['basedir'],
 		);
 
 		$exclude = $paths;
-		unset( $exclude['wordpress_size'] );
+		unset( $exclude['kaydenCMS_size'] );
 		$exclude = array_values( $exclude );
 
 		$size_total = 0;
@@ -1636,7 +1636,7 @@ class WP_Debug_Data {
 			);
 
 			if ( microtime( true ) - WP_START_TIMESTAMP < $max_execution_time ) {
-				if ( 'wordpress_size' === $name ) {
+				if ( 'kaydenCMS_size' === $name ) {
 					$dir_size = recurse_dirsize( $path, $exclude, $max_execution_time );
 				} else {
 					$dir_size = recurse_dirsize( $path, null, $max_execution_time );

@@ -2,11 +2,11 @@
 /**
  * Permalink Settings Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_options' ) ) {
@@ -57,14 +57,14 @@ get_current_screen()->add_help_tab(
 );
 
 $help_sidebar_content = '<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-						'<p>' . __( '<a href="https://wordpress.org/support/article/settings-permalinks-screen/">Documentation on Permalinks Settings</a>' ) . '</p>' .
-						'<p>' . __( '<a href="https://wordpress.org/support/article/using-permalinks/">Documentation on Using Permalinks</a>' ) . '</p>';
+						'<p>' . __( '<a href="https://kaydenCMS.org/support/article/settings-permalinks-screen/">Documentation on Permalinks Settings</a>' ) . '</p>' .
+						'<p>' . __( '<a href="https://kaydenCMS.org/support/article/using-permalinks/">Documentation on Using Permalinks</a>' ) . '</p>';
 
 if ( $is_nginx ) {
-	$help_sidebar_content .= '<p>' . __( '<a href="https://wordpress.org/support/article/nginx/">Documentation on Nginx configuration</a>.' ) . '</p>';
+	$help_sidebar_content .= '<p>' . __( '<a href="https://kaydenCMS.org/support/article/nginx/">Documentation on Nginx configuration</a>.' ) . '</p>';
 }
 
-$help_sidebar_content .= '<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>';
+$help_sidebar_content .= '<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>';
 
 get_current_screen()->set_help_sidebar( $help_sidebar_content );
 unset( $help_sidebar_content );
@@ -83,7 +83,7 @@ if ( ! got_url_rewrite() ) {
  * In a subdirectory configuration of multisite, the `/blog` prefix is used by
  * default on the main site to avoid collisions with other sites created on that
  * network. If the `permalink_structure` option has been changed to remove this
- * base prefix, WordPress core can no longer account for the possible collision.
+ * base prefix, kaydenCMS core can no longer account for the possible collision.
  */
 if ( is_multisite() && ! is_subdomain_install() && is_main_site() && 0 === strpos( $permalink_structure, '/blog/' ) ) {
 	$blog_prefix = '/blog';
@@ -155,7 +155,7 @@ if ( $iis7_permalinks ) {
 		$writable = true;
 	} else {
 		$writable       = false;
-		$existing_rules = array_filter( extract_from_markers( $home_path . '.htaccess', 'WordPress' ) );
+		$existing_rules = array_filter( extract_from_markers( $home_path . '.htaccess', 'kaydenCMS' ) );
 		$new_rules      = array_filter( explode( "\n", $wp_rewrite->mod_rewrite_rules() ) );
 
 		$htaccess_update_required = ( $new_rules !== $existing_rules );
@@ -215,8 +215,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 	<?php
 		printf(
 			/* translators: %s: Documentation URL. */
-			__( 'WordPress offers you the ability to create a custom URL structure for your permalinks and archives. Custom URL structures can improve the aesthetics, usability, and forward-compatibility of your links. A <a href="%s">number of tags are available</a>, and here are some examples to get you started.' ),
-			__( 'https://wordpress.org/support/article/using-permalinks/' )
+			__( 'kaydenCMS offers you the ability to create a custom URL structure for your permalinks and archives. Custom URL structures can improve the aesthetics, usability, and forward-compatibility of your links. A <a href="%s">number of tags are available</a>, and here are some examples to get you started.' ),
+			__( 'https://kaydenCMS.org/support/article/using-permalinks/' )
 		);
 		?>
 	</p>
@@ -370,7 +370,7 @@ printf( __( 'If you like, you may enter custom structures for your category and 
 					/* translators: 1: web.config, 2: Documentation URL, 3: Ctrl + A, 4: ⌘ + A, 5: Element code. */
 					__( '<strong>Error:</strong> Your %1$s file is not <a href="%2$s">writable</a>, so updating it automatically was not possible. This is the URL rewrite rule you should have in your %1$s file. Click in the field and press %3$s (or %4$s on Mac) to select all. Then insert this rule inside of the %5$s element in %1$s file.' ),
 					'<code>web.config</code>',
-					__( 'https://wordpress.org/support/article/changing-file-permissions/' ),
+					__( 'https://kaydenCMS.org/support/article/changing-file-permissions/' ),
 					'<kbd>Ctrl + A</kbd>',
 					'<kbd>⌘ + A</kbd>',
 					'<code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code>'
@@ -396,7 +396,7 @@ printf( __( 'If you like, you may enter custom structures for your category and 
 			printf(
 				/* translators: 1: Documentation URL, 2: web.config, 3: Ctrl + A, 4: ⌘ + A */
 				__( '<strong>Error:</strong> The root directory of your site is not <a href="%1$s">writable</a>, so creating a file automatically was not possible. This is the URL rewrite rule you should have in your %2$s file. Create a new file called %2$s in the root directory of your site. Click in the field and press %3$s (or %4$s on Mac) to select all. Then insert this code into the %2$s file.' ),
-				__( 'https://wordpress.org/support/article/changing-file-permissions/' ),
+				__( 'https://kaydenCMS.org/support/article/changing-file-permissions/' ),
 				'<code>web.config</code>',
 				'<kbd>Ctrl + A</kbd>',
 				'<kbd>⌘ + A</kbd>'
@@ -428,7 +428,7 @@ else :
 			/* translators: 1: .htaccess, 2: Documentation URL, 3: Ctrl + A, 4: ⌘ + A */
 			__( '<strong>Error:</strong> Your %1$s file is not <a href="%2$s">writable</a>, so updating it automatically was not possible. These are the mod_rewrite rules you should have in your %1$s file. Click in the field and press %3$s (or %4$s on Mac) to select all.' ),
 			'<code>.htaccess</code>',
-			__( 'https://wordpress.org/support/article/changing-file-permissions/' ),
+			__( 'https://kaydenCMS.org/support/article/changing-file-permissions/' ),
 			'<kbd>Ctrl + A</kbd>',
 			'<kbd>⌘ + A</kbd>'
 		);

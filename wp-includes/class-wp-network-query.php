@@ -2,7 +2,7 @@
 /**
  * Network API: WP_Network_Query class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since 4.6.0
  */
@@ -164,7 +164,7 @@ class WP_Network_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query for retrieving networks.
+	 * Sets up the kaydenCMS query for retrieving networks.
 	 *
 	 * @since 4.6.0
 	 *
@@ -202,7 +202,7 @@ class WP_Network_Query {
 		/**
 		 * Filters the network data before the query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default network queries.
+		 * Return a non-null value to bypass kaydenCMS' default network queries.
 		 *
 		 * The expected return type from this filter depends on the value passed
 		 * in the request query vars:
@@ -318,7 +318,7 @@ class WP_Network_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @return int|array A single count of network IDs if a count query. An array of network IDs if a full query.
 	 */
@@ -504,7 +504,7 @@ class WP_Network_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 */
 	private function set_found_networks() {
 		global $wpdb;
@@ -529,7 +529,7 @@ class WP_Network_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string   $search  Search string.
 	 * @param string[] $columns Array of columns to search.
@@ -553,7 +553,7 @@ class WP_Network_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.

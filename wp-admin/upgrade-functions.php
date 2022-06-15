@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress Upgrade Functions. Old file, must not be used. Include
+ * kaydenCMS Upgrade Functions. Old file, must not be used. Include
  * wp-admin/includes/upgrade.php instead.
  *
  * @deprecated 2.5.0
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 

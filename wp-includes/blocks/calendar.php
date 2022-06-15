@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/calendar` block.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 /**
@@ -33,9 +33,9 @@ function render_block_core_calendar( $attributes ) {
 			strpos( $permalink_structure, '%monthnum%' ) !== false &&
 			strpos( $permalink_structure, '%year%' ) !== false
 		) {
-			// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+			// phpcs:ignore kaydenCMS.WP.GlobalVariablesOverride.OverrideProhibited
 			$monthnum = $attributes['month'];
-			// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+			// phpcs:ignore kaydenCMS.WP.GlobalVariablesOverride.OverrideProhibited
 			$year = $attributes['year'];
 		}
 	}
@@ -47,9 +47,9 @@ function render_block_core_calendar( $attributes ) {
 		get_calendar( true, false )
 	);
 
-	// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+	// phpcs:ignore kaydenCMS.WP.GlobalVariablesOverride.OverrideProhibited
 	$monthnum = $previous_monthnum;
-	// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+	// phpcs:ignore kaydenCMS.WP.GlobalVariablesOverride.OverrideProhibited
 	$year = $previous_year;
 
 	return $output;
@@ -73,7 +73,7 @@ add_action( 'init', 'register_block_core_calendar' );
  * Returns whether or not there are any published posts.
  *
  * Used to hide the calendar block when there are no published posts.
- * This compensates for a known Core bug: https://core.trac.wordpress.org/ticket/12016
+ * This compensates for a known Core bug: https://core.trac.kaydenCMS.org/ticket/12016
  *
  * @return bool Has any published posts or not.
  */

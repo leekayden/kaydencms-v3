@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Installer
+ * kaydenCMS Installer
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -16,29 +16,29 @@ if ( false ) {
 	<title>Error: PHP is not running</title>
 </head>
 <body class="wp-core-ui">
-	<p id="logo"><a href="https://wordpress.org/">WordPress</a></p>
+	<p id="logo"><a href="https://kaydenCMS.org/">kaydenCMS</a></p>
 	<h1>Error: PHP is not running</h1>
-	<p>WordPress requires that your web server is running PHP. Your server does not have PHP installed, or PHP is turned off.</p>
+	<p>kaydenCMS requires that your web server is running PHP. Your server does not have PHP installed, or PHP is turned off.</p>
 </body>
 </html>
 	<?php
 }
 
 /**
- * We are installing WordPress.
+ * We are installing kaydenCMS.
  *
  * @since 1.5.1
  * @var bool
  */
 define( 'WP_INSTALLING', true );
 
-/** Load WordPress Bootstrap */
+/** Load kaydenCMS Bootstrap */
 require_once dirname( __DIR__ ) . '/wp-load.php';
 
-/** Load WordPress Administration Upgrade API */
+/** Load kaydenCMS Administration Upgrade API */
 require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
-/** Load WordPress Translation Install API */
+/** Load kaydenCMS Translation Install API */
 require_once ABSPATH . 'wp-admin/includes/translation-install.php';
 
 /** Load wpdb */
@@ -70,11 +70,11 @@ function display_header( $body_classes = '' ) {
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="robots" content="noindex,nofollow" />
-	<title><?php _e( 'WordPress &rsaquo; Installation' ); ?></title>
+	<title><?php _e( 'kaydenCMS &rsaquo; Installation' ); ?></title>
 	<?php wp_admin_css( 'install', true ); ?>
 </head>
 <body class="wp-core-ui<?php echo $body_classes; ?>">
-<p id="logo"><?php _e( 'WordPress' ); ?></p>
+<p id="logo"><?php _e( 'kaydenCMS' ); ?></p>
 
 	<?php
 } // End display_header().
@@ -84,7 +84,7 @@ function display_header( $body_classes = '' ) {
  *
  * @since 2.8.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string|null $error
  */
@@ -204,7 +204,7 @@ function display_setup_form( $error = null ) {
 			</td>
 		</tr>
 	</table>
-	<p class="step"><?php submit_button( __( 'Install WordPress' ), 'large', 'Submit', false, array( 'id' => 'submit' ) ); ?></p>
+	<p class="step"><?php submit_button( __( 'Install kaydenCMS' ), 'large', 'Submit', false, array( 'id' => 'submit' ) ); ?></p>
 	<input type="hidden" name="language" value="<?php echo isset( $_REQUEST['language'] ) ? esc_attr( $_REQUEST['language'] ) : ''; ?>" />
 </form>
 	<?php
@@ -215,14 +215,14 @@ if ( is_blog_installed() ) {
 	display_header();
 	die(
 		'<h1>' . __( 'Already Installed' ) . '</h1>' .
-		'<p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p>' .
+		'<p>' . __( 'You appear to have already installed kaydenCMS. To reinstall please clear your old database tables first.' ) . '</p>' .
 		'<p class="step"><a href="' . esc_url( wp_login_url() ) . '" class="button button-large">' . __( 'Log In' ) . '</a></p>' .
 		'</body></html>'
 	);
 }
 
 /**
- * @global string $wp_version             The WordPress version string.
+ * @global string $wp_version             The kaydenCMS version string.
  * @global string $required_php_version   The required PHP version string.
  * @global string $required_mysql_version The required MySQL version string.
  */
@@ -234,8 +234,8 @@ $php_compat    = version_compare( $php_version, $required_php_version, '>=' );
 $mysql_compat  = version_compare( $mysql_version, $required_mysql_version, '>=' ) || file_exists( WP_CONTENT_DIR . '/db.php' );
 
 $version_url = sprintf(
-	/* translators: %s: WordPress version. */
-	esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+	/* translators: %s: kaydenCMS version. */
+	esc_url( __( 'https://kaydenCMS.org/support/kaydenCMS-version/version-%s/' ) ),
 	sanitize_title( $wp_version )
 );
 
@@ -253,8 +253,8 @@ if ( $annotation ) {
 
 if ( ! $mysql_compat && ! $php_compat ) {
 	$compat = sprintf(
-		/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required PHP version number, 4: Minimum required MySQL version number, 5: Current PHP version number, 6: Current MySQL version number. */
-		__( 'You cannot install because <a href="%1$s">WordPress %2$s</a> requires PHP version %3$s or higher and MySQL version %4$s or higher. You are running PHP version %5$s and MySQL version %6$s.' ),
+		/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required PHP version number, 4: Minimum required MySQL version number, 5: Current PHP version number, 6: Current MySQL version number. */
+		__( 'You cannot install because <a href="%1$s">kaydenCMS %2$s</a> requires PHP version %3$s or higher and MySQL version %4$s or higher. You are running PHP version %5$s and MySQL version %6$s.' ),
 		$version_url,
 		$wp_version,
 		$required_php_version,
@@ -264,8 +264,8 @@ if ( ! $mysql_compat && ! $php_compat ) {
 	) . $php_update_message;
 } elseif ( ! $php_compat ) {
 	$compat = sprintf(
-		/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required PHP version number, 4: Current PHP version number. */
-		__( 'You cannot install because <a href="%1$s">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s.' ),
+		/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required PHP version number, 4: Current PHP version number. */
+		__( 'You cannot install because <a href="%1$s">kaydenCMS %2$s</a> requires PHP version %3$s or higher. You are running version %4$s.' ),
 		$version_url,
 		$wp_version,
 		$required_php_version,
@@ -273,8 +273,8 @@ if ( ! $mysql_compat && ! $php_compat ) {
 	) . $php_update_message;
 } elseif ( ! $mysql_compat ) {
 	$compat = sprintf(
-		/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required MySQL version number, 4: Current MySQL version number. */
-		__( 'You cannot install because <a href="%1$s">WordPress %2$s</a> requires MySQL version %3$s or higher. You are running version %4$s.' ),
+		/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required MySQL version number, 4: Current MySQL version number. */
+		__( 'You cannot install because <a href="%1$s">kaydenCMS %2$s</a> requires MySQL version %3$s or higher. You are running version %4$s.' ),
 		$version_url,
 		$wp_version,
 		$required_mysql_version,
@@ -306,7 +306,7 @@ if ( defined( 'DO_NOT_UPGRADE_GLOBAL_TABLES' ) ) {
 		'<h1>' . __( 'Configuration Error' ) . '</h1>' .
 		'<p>' . sprintf(
 			/* translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES */
-			__( 'The constant %s cannot be defined when installing WordPress.' ),
+			__( 'The constant %s cannot be defined when installing kaydenCMS.' ),
 			'<code>DO_NOT_UPGRADE_GLOBAL_TABLES</code>'
 		) . '</p></body></html>'
 	);
@@ -314,7 +314,7 @@ if ( defined( 'DO_NOT_UPGRADE_GLOBAL_TABLES' ) ) {
 
 /**
  * @global string    $wp_local_package Locale code of the package.
- * @global WP_Locale $wp_locale        WordPress date and time locale object.
+ * @global WP_Locale $wp_locale        kaydenCMS date and time locale object.
  */
 $language = '';
 if ( ! empty( $_REQUEST['language'] ) ) {
@@ -355,7 +355,7 @@ switch ( $step ) {
 		display_header();
 		?>
 <h1><?php _ex( 'Welcome', 'Howdy' ); ?></h1>
-<p><?php _e( 'Welcome to the famous five-minute WordPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ); ?></p>
+<p><?php _e( 'Welcome to the famous five-minute kaydenCMS installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ); ?></p>
 
 <h2><?php _e( 'Information needed' ); ?></h2>
 <p><?php _e( 'Please provide the following information. Do not worry, you can always change these settings later.' ); ?></p>
@@ -416,7 +416,7 @@ switch ( $step ) {
 
 <h1><?php _e( 'Success!' ); ?></h1>
 
-<p><?php _e( 'WordPress has been installed. Thank you, and enjoy!' ); ?></p>
+<p><?php _e( 'kaydenCMS has been installed. Thank you, and enjoy!' ); ?></p>
 
 <table class="form-table install-success">
 	<tr>

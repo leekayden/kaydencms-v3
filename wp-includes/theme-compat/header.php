@@ -1,6 +1,6 @@
 <?php
 /**
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Theme_Compat
  * @deprecated 3.0.0
  *

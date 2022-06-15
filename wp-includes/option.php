@@ -2,7 +2,7 @@
 /**
  * Option API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Option
  */
 
@@ -65,7 +65,7 @@
  *
  * @since 1.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $option  Name of the option to retrieve. Expected to not be SQL-escaped.
  * @param mixed  $default Optional. Default value to return if the option does not exist.
@@ -230,7 +230,7 @@ function get_option( $option, $default = false ) {
 }
 
 /**
- * Protects WordPress special option from being modified.
+ * Protects kaydenCMS special option from being modified.
  *
  * Will die if $option is in protected list. Protected options are 'alloptions'
  * and 'notoptions' options.
@@ -268,7 +268,7 @@ function form_option( $option ) {
  * @since 2.2.0
  * @since 5.3.1 The `$force_cache` parameter was added.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param bool $force_cache Optional. Whether to force an update of the local cache
  *                          from the persistent cache. Default false.
@@ -325,7 +325,7 @@ function wp_load_alloptions( $force_cache = false ) {
  *
  * @since 3.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int $network_id Optional site ID for which to query the options. Defaults to the current site.
  */
@@ -371,11 +371,11 @@ function wp_load_core_site_options( $network_id = null ) {
  * @since 1.0.0
  * @since 4.2.0 The `$autoload` parameter was added.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string      $option   Name of the option to update. Expected to not be SQL-escaped.
  * @param mixed       $value    Option value. Must be serializable if non-scalar. Expected to not be SQL-escaped.
- * @param string|bool $autoload Optional. Whether to load the option when WordPress starts up. For existing options,
+ * @param string|bool $autoload Optional. Whether to load the option when kaydenCMS starts up. For existing options,
  *                              `$autoload` can only be updated using `update_option()` if `$value` is also changed.
  *                              Accepts 'yes'|true to enable or 'no'|false to disable. For non-existent options,
  *                              the default value is 'yes'. Default null.
@@ -456,7 +456,7 @@ function update_option( $option, $value, $autoload = null ) {
 	 * data differs, the (maybe) serialized data is checked to avoid
 	 * unnecessary database calls for otherwise identical object instances.
 	 *
-	 * See https://core.trac.wordpress.org/ticket/38903
+	 * See https://core.trac.kaydenCMS.org/ticket/38903
 	 */
 	if ( $value === $old_value || maybe_serialize( $value ) === maybe_serialize( $old_value ) ) {
 		return false;
@@ -552,18 +552,18 @@ function update_option( $option, $value, $autoload = null ) {
  *
  * You can create options without values and then update the values later.
  * Existing options will not be updated and checks are performed to ensure that you
- * aren't adding a protected WordPress option. Care should be taken to not name
+ * aren't adding a protected kaydenCMS option. Care should be taken to not name
  * options the same as the ones which are protected.
  *
  * @since 1.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string      $option     Name of the option to add. Expected to not be SQL-escaped.
  * @param mixed       $value      Optional. Option value. Must be serializable if non-scalar.
  *                                Expected to not be SQL-escaped.
  * @param string      $deprecated Optional. Description. Not used anymore.
- * @param string|bool $autoload   Optional. Whether to load the option when WordPress starts up.
+ * @param string|bool $autoload   Optional. Whether to load the option when kaydenCMS starts up.
  *                                Default is enabled. Accepts 'no' to disable for legacy reasons.
  * @return bool True if the option was added, false otherwise.
  */
@@ -687,11 +687,11 @@ function add_option( $option, $value = '', $deprecated = '', $autoload = 'yes' )
 }
 
 /**
- * Removes option by name. Prevents removal of protected WordPress options.
+ * Removes option by name. Prevents removal of protected kaydenCMS options.
  *
  * @since 1.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $option Name of the option to delete. Expected to not be SQL-escaped.
  * @return bool True if the option was deleted, false otherwise.
@@ -1363,7 +1363,7 @@ function update_site_option( $option, $value ) {
  *
  * @see get_option()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $network_id ID of the network. Can be null to default to the current network ID.
  * @param string $option     Name of the option to retrieve. Expected to not be SQL-escaped.
@@ -1497,7 +1497,7 @@ function get_network_option( $network_id, $option, $default = false ) {
  *
  * @see add_option()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $network_id ID of the network. Can be null to default to the current network ID.
  * @param string $option     Name of the option to add. Expected to not be SQL-escaped.
@@ -1622,7 +1622,7 @@ function add_network_option( $network_id, $option, $value ) {
  *
  * @see delete_option()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $network_id ID of the network. Can be null to default to the current network ID.
  * @param string $option     Name of the option to delete. Expected to not be SQL-escaped.
@@ -1715,7 +1715,7 @@ function delete_network_option( $network_id, $option ) {
  *
  * @see update_option()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $network_id ID of the network. Can be null to default to the current network ID.
  * @param string $option     Name of the option. Expected to not be SQL-escaped.
@@ -1764,7 +1764,7 @@ function update_network_option( $network_id, $option, $value ) {
 	 * data differs, the (maybe) serialized data is checked to avoid
 	 * unnecessary database calls for otherwise identical object instances.
 	 *
-	 * See https://core.trac.wordpress.org/ticket/44956
+	 * See https://core.trac.kaydenCMS.org/ticket/44956
 	 */
 	if ( $value === $old_value || maybe_serialize( $value ) === maybe_serialize( $old_value ) ) {
 		return false;
@@ -2057,10 +2057,10 @@ function set_site_transient( $transient, $value, $expiration = 0 ) {
 }
 
 /**
- * Registers default settings available in WordPress.
+ * Registers default settings available in kaydenCMS.
  *
  * The settings registered here are primarily useful for the REST API, so this
- * does not encompass all settings available in WordPress.
+ * does not encompass all settings available in kaydenCMS.
  *
  * @since 4.7.0
  */
@@ -2173,7 +2173,7 @@ function register_initial_settings() {
 				'name' => 'language',
 			),
 			'type'         => 'string',
-			'description'  => __( 'WordPress locale code.' ),
+			'description'  => __( 'kaydenCMS locale code.' ),
 			'default'      => 'en_US',
 		)
 	);

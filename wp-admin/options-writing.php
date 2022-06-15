@@ -2,11 +2,11 @@
 /**
  * Writing settings administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_options' ) ) {
@@ -32,7 +32,7 @@ if ( apply_filters( 'enable_post_by_email_configuration', true ) ) {
 		array(
 			'id'      => 'options-postemail',
 			'title'   => __( 'Post Via Email' ),
-			'content' => '<p>' . __( 'Post via email settings allow you to send your WordPress installation an email with the content of your post. You must set up a secret email account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret.' ) . '</p>',
+			'content' => '<p>' . __( 'Post via email settings allow you to send your kaydenCMS installation an email with the content of your post. You must set up a secret email account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret.' ) . '</p>',
 		)
 	);
 }
@@ -43,15 +43,15 @@ if ( apply_filters( 'enable_update_services_configuration', true ) ) {
 		array(
 			'id'      => 'options-services',
 			'title'   => __( 'Update Services' ),
-			'content' => '<p>' . __( 'If desired, WordPress will automatically alert various services of your new posts.' ) . '</p>',
+			'content' => '<p>' . __( 'If desired, kaydenCMS will automatically alert various services of your new posts.' ) . '</p>',
 		)
 	);
 }
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/settings-writing-screen/">Documentation on Writing Settings</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/settings-writing-screen/">Documentation on Writing Settings</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 require_once ABSPATH . 'wp-admin/admin-header.php';
@@ -71,7 +71,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 <label for="use_smilies">
 <input name="use_smilies" type="checkbox" id="use_smilies" value="1" <?php checked( '1', get_option( 'use_smilies' ) ); ?> />
 	<?php _e( 'Convert emoticons like <code>:-)</code> and <code>:-P</code> to graphics on display' ); ?></label><br />
-<label for="use_balanceTags"><input name="use_balanceTags" type="checkbox" id="use_balanceTags" value="1" <?php checked( '1', get_option( 'use_balanceTags' ) ); ?> /> <?php _e( 'WordPress should correct invalidly nested XHTML automatically' ); ?></label>
+<label for="use_balanceTags"><input name="use_balanceTags" type="checkbox" id="use_balanceTags" value="1" <?php checked( '1', get_option( 'use_balanceTags' ) ); ?> /> <?php _e( 'kaydenCMS should correct invalidly nested XHTML automatically' ); ?></label>
 </fieldset></td>
 </tr>
 <?php endif; ?>
@@ -143,7 +143,7 @@ if ( apply_filters( 'enable_post_by_email_configuration', true ) ) {
 	<?php
 	printf(
 		/* translators: 1, 2, 3: Examples of random email addresses. */
-		__( 'To post to WordPress by email, you must set up a secret email account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: %1$s, %2$s, %3$s.' ),
+		__( 'To post to kaydenCMS by email, you must set up a secret email account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: %1$s, %2$s, %3$s.' ),
 		sprintf( '<kbd>%s</kbd>', wp_generate_password( 8, false ) ),
 		sprintf( '<kbd>%s</kbd>', wp_generate_password( 8, false ) ),
 		sprintf( '<kbd>%s</kbd>', wp_generate_password( 8, false ) )
@@ -207,8 +207,8 @@ if ( apply_filters( 'enable_update_services_configuration', true ) ) {
 		<?php
 		printf(
 			/* translators: %s: Documentation URL. */
-			__( 'When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href="%s">Update Services</a> on the Codex. Separate multiple service URLs with line breaks.' ),
-			__( 'https://wordpress.org/support/article/update-services/' )
+			__( 'When you publish a new post, kaydenCMS automatically notifies the following site update services. For more about this, see <a href="%s">Update Services</a> on the Codex. Separate multiple service URLs with line breaks.' ),
+			__( 'https://kaydenCMS.org/support/article/update-services/' )
 		);
 		?>
 	</label></p>
@@ -221,8 +221,8 @@ if ( apply_filters( 'enable_update_services_configuration', true ) ) {
 		<?php
 		printf(
 			/* translators: 1: Documentation URL, 2: URL to Reading Settings screen. */
-			__( 'WordPress is not notifying any <a href="%1$s">Update Services</a> because of your site&#8217;s <a href="%2$s">visibility settings</a>.' ),
-			__( 'https://wordpress.org/support/article/update-services/' ),
+			__( 'kaydenCMS is not notifying any <a href="%1$s">Update Services</a> because of your site&#8217;s <a href="%2$s">visibility settings</a>.' ),
+			__( 'https://kaydenCMS.org/support/article/update-services/' ),
 			'options-reading.php'
 		);
 		?>

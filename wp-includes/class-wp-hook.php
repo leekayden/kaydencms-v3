@@ -2,7 +2,7 @@
 /**
  * Plugin API: WP_Hook class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Plugin
  * @since 4.7.0
  */
@@ -376,7 +376,7 @@ final class WP_Hook implements Iterator, ArrayAccess {
 	}
 
 	/**
-	 * Normalizes filters set up before WordPress has initialized to WP_Hook objects.
+	 * Normalizes filters set up before kaydenCMS has initialized to WP_Hook objects.
 	 *
 	 * The `$filters` parameter should be an array keyed by hook name, with values
 	 * containing either:

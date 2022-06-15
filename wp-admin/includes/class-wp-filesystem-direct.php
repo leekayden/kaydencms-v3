@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Direct Filesystem.
+ * kaydenCMS Direct Filesystem.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for direct PHP file and folder manipulation.
+ * kaydenCMS Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
  *

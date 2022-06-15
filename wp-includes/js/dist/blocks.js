@@ -5465,7 +5465,7 @@ __webpack_require__.d(__webpack_exports__, {
   "withBlockContentContext": function() { return /* reexport */ withBlockContentContext; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/blocks/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -5490,7 +5490,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   "isMatchingSearchTerm": function() { return isMatchingSearchTerm; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/blocks/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -5518,13 +5518,13 @@ var external_wp_data_namespaceObject = window["wp"]["data"];
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/store/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6080,7 +6080,7 @@ function isShallowEqual( a, b, fromIndex ) {
 	return callSelector;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/store/selectors.js
 /**
  * External dependencies
  */
@@ -6417,7 +6417,7 @@ var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.0
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/constants.js
 const BLOCK_ICON_DEFAULT = 'block-default';
 /**
  * Array of valid keys in a block type settings deprecation object.
@@ -6552,7 +6552,7 @@ const __EXPERIMENTAL_PATHS_WITH_MERGE = {
   'typography.fontSizes': true
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/registration.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/registration.js
 /* eslint no-console: [ 'error', { allow: [ 'error', 'warn' ] } ] */
 
 /**
@@ -6560,7 +6560,7 @@ const __EXPERIMENTAL_PATHS_WITH_MERGE = {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6590,7 +6590,7 @@ const i18nBlockSchema = {
  *
  * @typedef {(string|WPElement|WPComponent)} WPIcon
  *
- * @see https://developer.wordpress.org/resource/dashicons/
+ * @see https://developer.kaydenCMS.org/resource/dashicons/
  */
 
 /**
@@ -6708,15 +6708,15 @@ function unstable__bootstrapServerSideBlockDefinitions(definitions) {
     // Don't overwrite if already set. It covers the case when metadata
     // was initialized from the server.
     if (serverSideBlockDefinitions[blockName]) {
-      // We still need to polyfill `apiVersion` for WordPress version
+      // We still need to polyfill `apiVersion` for kaydenCMS version
       // lower than 5.7. If it isn't present in the definition shared
       // from the server, we try to fallback to the definition passed.
-      // @see https://github.com/WordPress/gutenberg/pull/29279
+      // @see https://github.com/kaydenCMS/gutenberg/pull/29279
       if (serverSideBlockDefinitions[blockName].apiVersion === undefined && definitions[blockName].apiVersion) {
         serverSideBlockDefinitions[blockName].apiVersion = definitions[blockName].apiVersion;
       } // The `ancestor` prop is not included in the definitions shared
       // from the server yet, so it needs to be polyfilled as well.
-      // @see https://github.com/WordPress/gutenberg/pull/39894
+      // @see https://github.com/kaydenCMS/gutenberg/pull/39894
 
 
       if (serverSideBlockDefinitions[blockName].ancestor === undefined && definitions[blockName].ancestor) {
@@ -6826,7 +6826,7 @@ function registerBlockType(blockNameOrMetadata, settings) {
 
 function translateBlockSettingUsingI18nSchema(i18nSchema, settingValue, textdomain) {
   if ((0,external_lodash_namespaceObject.isString)(i18nSchema) && (0,external_lodash_namespaceObject.isString)(settingValue)) {
-    // eslint-disable-next-line @wordpress/i18n-no-variables, @wordpress/i18n-text-domain
+    // eslint-disable-next-line @kaydenCMS/i18n-no-variables, @kaydenCMS/i18n-text-domain
     return (0,external_wp_i18n_namespaceObject._x)(settingValue, i18nSchema, textdomain);
   }
 
@@ -7218,14 +7218,14 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/factory.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/factory.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7668,7 +7668,7 @@ const getBlockFromExample = (name, example) => {
   return createBlock(name, example.attributes, (0,external_lodash_namespaceObject.map)(example.innerBlocks, innerBlock => getBlockFromExample(innerBlock.name, innerBlock)));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/utils.js
 /**
  * External dependencies
  */
@@ -7677,7 +7677,7 @@ const getBlockFromExample = (name, example) => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7932,13 +7932,13 @@ function __experimentalGetBlockAttributesNamesByRole(name, role) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/store/actions.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8039,7 +8039,7 @@ const processBlockType = (blockType, _ref) => {
   settings.icon = normalizeIconObject(settings.icon);
 
   if (!isValidIcon(settings.icon.src)) {
-    error('The icon passed is invalid. ' + 'The icon should be a string, an element, a function, or an object following the specifications documented in https://developer.wordpress.org/block-editor/developers/block-api/block-registration/#icon-optional');
+    error('The icon passed is invalid. ' + 'The icon should be a string, an element, a function, or an object following the specifications documented in https://developer.kaydenCMS.org/block-editor/developers/block-api/block-registration/#icon-optional');
     return;
   }
 
@@ -8327,12 +8327,12 @@ function removeBlockCollection(namespace) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/store/constants.js
 const STORE_NAME = 'core/blocks';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -8346,7 +8346,7 @@ const STORE_NAME = 'core/blocks';
 /**
  * Store definition for the blocks namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -8365,7 +8365,7 @@ var external_wp_autop_namespaceObject = window["wp"]["autop"];
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/serialize-raw-block.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/serialize-raw-block.js
 /**
  * Internal dependencies
  */
@@ -8382,15 +8382,15 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
  * CAVEAT: This function is intended for re-serializing blocks as parsed by
  * valid parsers and skips any validation steps. This is NOT a generic
  * serialization function for in-memory blocks. For most purposes, see the
- * following functions available in the `@wordpress/blocks` package:
+ * following functions available in the `@kaydenCMS/blocks` package:
  *
  * @see serializeBlock
  * @see serialize
  *
  * For more on the format of block nodes as returned by valid parsers:
  *
- * @see `@wordpress/block-serialization-default-parser` package
- * @see `@wordpress/block-serialization-spec-parser` package
+ * @see `@kaydenCMS/block-serialization-default-parser` package
+ * @see `@kaydenCMS/block-serialization-spec-parser` package
  *
  * @param {WPRawBlock} rawBlock     A block node as returned by a valid parser.
  * @param {Options}    [options={}] Serialization options.
@@ -8415,7 +8415,7 @@ function serializeRawBlock(rawBlock) {
   return isCommentDelimited ? getCommentDelimitedContent(blockName, attrs, content) : content;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/serializer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/serializer.js
 
 
 /**
@@ -8423,7 +8423,7 @@ function serializeRawBlock(rawBlock) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8455,7 +8455,7 @@ function serializeRawBlock(rawBlock) {
 
 function getBlockDefaultClassName(blockName) {
   // Generated HTML classes for blocks follow the `wp-block-{name}` nomenclature.
-  // Blocks provided by WordPress drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
+  // Blocks provided by kaydenCMS drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
   const className = 'wp-block-' + blockName.replace(/\//, '-').replace(/^core-/, '');
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockDefaultClassName', className, blockName);
 }
@@ -8469,7 +8469,7 @@ function getBlockDefaultClassName(blockName) {
 
 function getBlockMenuDefaultClassName(blockName) {
   // Generated HTML classes for blocks follow the `editor-block-list-item-{name}` nomenclature.
-  // Blocks provided by WordPress drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
+  // Blocks provided by kaydenCMS drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
   const className = 'editor-block-list-item-' + blockName.replace(/\//, '-').replace(/^core-/, '');
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockMenuDefaultClassName', className, blockName);
 }
@@ -8643,7 +8643,7 @@ function serializeAttributes(attributes) {
   .replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026') // Bypass server stripslashes behavior which would unescape stringify's
   // escaping of quotation mark.
   //
-  // See: https://developer.wordpress.org/reference/functions/wp_kses_stripslashes/
+  // See: https://developer.kaydenCMS.org/reference/functions/wp_kses_stripslashes/
   .replace(/\\"/g, '\\u0022');
 }
 /**
@@ -9657,7 +9657,7 @@ var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/validation/logger.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/validation/logger.js
 /**
  * @typedef LoggerItem
  * @property {Function}   log  Which logger recorded the message
@@ -9739,14 +9739,14 @@ function createQueuedLogger() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/validation/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/validation/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10387,7 +10387,7 @@ function isValidBlockContent(blockTypeOrName, attributes, originalBlockContent) 
   return isValid;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/convert-legacy-block.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/convert-legacy-block.js
 /**
  * Convert legacy blocks to their canonical form. This function is used
  * both in the parser level for previous content and to convert such blocks
@@ -10409,12 +10409,12 @@ function convertLegacyBlockNameAndAttributes(name, attributes) {
 
   if ('core/text' === name || 'core/cover-text' === name) {
     name = 'core/paragraph';
-  } // Convert derivative blocks such as 'core/social-link-wordpress' to the
+  } // Convert derivative blocks such as 'core/social-link-kaydenCMS' to the
   // canonical form 'core/social-link'.
 
 
   if (name && name.indexOf('core/social-link-') === 0) {
-    // Capture `social-link-wordpress` into `{"service":"wordpress"}`
+    // Capture `social-link-kaydenCMS` into `{"service":"kaydenCMS"}`
     newAttributes.service = name.substring(17);
     name = 'core/social-link';
   } // Convert derivative blocks such as 'core-embed/instagram' to the
@@ -10431,19 +10431,19 @@ function convertLegacyBlockNameAndAttributes(name, attributes) {
     newAttributes.providerNameSlug = providerSlug in deprecated ? deprecated[providerSlug] : providerSlug; // This is needed as the `responsive` attribute was passed
     // in a different way before the refactoring to block variations.
 
-    if (!['amazon-kindle', 'wordpress'].includes(providerSlug)) {
+    if (!['amazon-kindle', 'kaydenCMS'].includes(providerSlug)) {
       newAttributes.responsive = true;
     }
 
     name = 'core/embed';
   } // Convert 'core/query-loop' blocks in existing content to 'core/post-template'.
-  // TODO: Remove this check when WordPress 5.9 is released.
+  // TODO: Remove this check when kaydenCMS 5.9 is released.
 
 
   if (name === 'core/query-loop') {
     name = 'core/post-template';
   } // Convert Post Comment blocks in existing content to Comment blocks.
-  // TODO: Remove these checks when WordPress 6.0 is released.
+  // TODO: Remove these checks when kaydenCMS 6.0 is released.
 
 
   if (name === 'core/post-comment-author') {
@@ -10643,7 +10643,7 @@ function query(selector, matchers) {
 // EXTERNAL MODULE: ./node_modules/memize/index.js
 var memize = __webpack_require__(9756);
 var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/matchers.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/matchers.js
 /**
  * External dependencies
  */
@@ -10687,7 +10687,7 @@ function matchers_html(selector, multilineTag) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/node.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/node.js
 /**
  * Internal dependencies
  */
@@ -10807,7 +10807,7 @@ function node_matcher(selector) {
  * Object of utility functions used in managing block attribute values of
  * source `node`.
  *
- * @see https://github.com/WordPress/gutenberg/pull/10439
+ * @see https://github.com/kaydenCMS/gutenberg/pull/10439
  *
  * @deprecated since 4.0. The `node` source should not be used, and can be
  *             replaced by the `html` source.
@@ -10822,13 +10822,13 @@ function node_matcher(selector) {
   matcher: node_matcher
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/children.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/children.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10844,7 +10844,7 @@ function node_matcher(selector) {
  */
 
 /**
- * Given block children, returns a serialize-capable WordPress element.
+ * Given block children, returns a serialize-capable kaydenCMS element.
  *
  * @param {WPBlockChildren} children Block children object to convert.
  *
@@ -10965,7 +10965,7 @@ function children_matcher(selector) {
  * Object of utility functions used in managing block attribute values of
  * source `children`.
  *
- * @see https://github.com/WordPress/gutenberg/pull/10439
+ * @see https://github.com/kaydenCMS/gutenberg/pull/10439
  *
  * @deprecated since 4.0. The `children` source should not be used, and can be
  *             replaced by the `html` source.
@@ -10981,7 +10981,7 @@ function children_matcher(selector) {
   matcher: children_matcher
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/get-block-attributes.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/get-block-attributes.js
 /**
  * External dependencies
  */
@@ -10989,7 +10989,7 @@ function children_matcher(selector) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11238,7 +11238,7 @@ function getBlockAttributes(blockTypeOrName, innerHTML) {
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockAttributes', blockAttributes, blockType, innerHTML, attributes);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/fix-custom-classname.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/fix-custom-classname.js
 /**
  * External dependencies
  */
@@ -11304,7 +11304,7 @@ function fixCustomClassname(blockAttributes, blockType, innerHTML) {
   return blockAttributes;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/apply-built-in-validation-fixes.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/apply-built-in-validation-fixes.js
 /**
  * Internal dependencies
  */
@@ -11328,7 +11328,7 @@ function applyBuiltInValidationFixes(block, blockType) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/apply-block-deprecated-versions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/apply-block-deprecated-versions.js
 /**
  * External dependencies
  */
@@ -11427,9 +11427,9 @@ function applyBlockDeprecatedVersions(block, rawBlock, blockType) {
   return block;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/parser/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11629,7 +11629,7 @@ function parseRawBlock(rawBlock, options) {
   } // Parse inner blocks recursively.
 
 
-  const parsedInnerBlocks = normalizedBlock.innerBlocks.map(innerBlock => parseRawBlock(innerBlock, options)) // See https://github.com/WordPress/gutenberg/pull/17164.
+  const parsedInnerBlocks = normalizedBlock.innerBlocks.map(innerBlock => parseRawBlock(innerBlock, options)) // See https://github.com/kaydenCMS/gutenberg/pull/17164.
   .filter(innerBlock => !!innerBlock); // Get the fully parsed block.
 
   const parsedBlock = createBlock(normalizedBlock.blockName, getBlockAttributes(blockType, normalizedBlock.innerHTML, normalizedBlock.attrs), parsedInnerBlocks);
@@ -11686,7 +11686,7 @@ function parseRawBlock(rawBlock, options) {
  * content within the blocks.
  *
  * @see
- * https://developer.wordpress.org/block-editor/packages/packages-block-serialization-default-parser/
+ * https://developer.kaydenCMS.org/block-editor/packages/packages-block-serialization-default-parser/
  *
  * @param {string}       content The post content.
  * @param {ParseOptions} options Extra options for handling block parsing.
@@ -11706,7 +11706,7 @@ function parser_parse(content, options) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/get-raw-transforms.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/get-raw-transforms.js
 /**
  * External dependencies
  */
@@ -11726,7 +11726,7 @@ function getRawTransforms() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/html-to-blocks.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/html-to-blocks.js
 /**
  * Internal dependencies
  */
@@ -11772,9 +11772,9 @@ function htmlToBlocks(html) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/normalise-blocks.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/normalise-blocks.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function normaliseBlocks(HTML) {
@@ -11836,9 +11836,9 @@ function normaliseBlocks(HTML) {
   return accu.innerHTML;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/special-comment-converter.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/special-comment-converter.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -11914,9 +11914,9 @@ function createNextpage(doc) {
   return node;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/list-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/list-reducer.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11980,7 +11980,7 @@ function listReducer(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/blockquote-normaliser.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/blockquote-normaliser.js
 /**
  * Internal dependencies
  */
@@ -11993,13 +11993,13 @@ function blockquoteNormaliser(node) {
   node.innerHTML = normaliseBlocks(node.innerHTML);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/figure-content-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/figure-content-reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12094,13 +12094,13 @@ function figureContentReducer(node, doc, schema) {
 
 ;// CONCATENATED MODULE: external ["wp","shortcode"]
 var external_wp_shortcode_namespaceObject = window["wp"]["shortcode"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/shortcode-converter.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/shortcode-converter.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12156,7 +12156,7 @@ function segmentHTMLToShortcodeBlock(HTML) {
     const attributes = (0,external_lodash_namespaceObject.mapValues)((0,external_lodash_namespaceObject.pickBy)(transformation.attributes, schema => schema.shortcode), // Passing all of `match` as second argument is intentionally broad
     // but shouldn't be too relied upon.
     //
-    // See: https://github.com/WordPress/gutenberg/pull/3610#discussion_r152546926
+    // See: https://github.com/kaydenCMS/gutenberg/pull/3610#discussion_r152546926
     schema => schema.shortcode(match.shortcode.attrs, match));
     const transformationBlockType = { ...registration_getBlockType(transformation.blockName),
       attributes: transformation.attributes
@@ -12173,13 +12173,13 @@ function segmentHTMLToShortcodeBlock(HTML) {
 
 /* harmony default export */ var shortcode_converter = (segmentHTMLToShortcodeBlock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/utils.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12349,13 +12349,13 @@ function getSibling(node, which) {
   return getSibling(parentNode, which);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12425,9 +12425,9 @@ function rawHandler(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/comment-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/comment-remover.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -12443,13 +12443,13 @@ function commentRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/is-inline-content.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/is-inline-content.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12492,13 +12492,13 @@ function isInlineContent(HTML, contextTag) {
   return !nodes.some(isDoubleBR) && deepCheck(nodes, contextTag);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/phrasing-content-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/phrasing-content-reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -12560,7 +12560,7 @@ function phrasingContentReducer(node, doc) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/head-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/head-remover.js
 function headRemover(node) {
   if (node.nodeName !== 'SCRIPT' && node.nodeName !== 'NOSCRIPT' && node.nodeName !== 'TEMPLATE' && node.nodeName !== 'STYLE') {
     return;
@@ -12569,7 +12569,7 @@ function headRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/ms-list-converter.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/ms-list-converter.js
 /**
  * Browser dependencies
  */
@@ -12652,9 +12652,9 @@ function msListConverter(node, doc) {
 
 ;// CONCATENATED MODULE: external ["wp","blob"]
 var external_wp_blob_namespaceObject = window["wp"]["blob"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/image-corrector.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/image-corrector.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -12712,7 +12712,7 @@ function imageCorrector(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/div-normaliser.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/div-normaliser.js
 /**
  * Internal dependencies
  */
@@ -12728,7 +12728,7 @@ function divNormaliser(node) {
 // EXTERNAL MODULE: ./node_modules/showdown/dist/showdown.js
 var showdown = __webpack_require__(7308);
 var showdown_default = /*#__PURE__*/__webpack_require__.n(showdown);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/markdown-converter.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/markdown-converter.js
 /**
  * External dependencies
  */
@@ -12770,7 +12770,7 @@ function markdownConverter(text) {
   return converter.makeHtml(slackMarkdownVariantCorrector(text));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/iframe-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/iframe-remover.js
 /**
  * Removes iframes.
  *
@@ -12785,9 +12785,9 @@ function iframeRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/google-docs-uid-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/google-docs-uid-remover.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function googleDocsUIdRemover(node) {
@@ -12798,7 +12798,7 @@ function googleDocsUIdRemover(node) {
   (0,external_wp_dom_namespaceObject.unwrap)(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/html-formatting-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/html-formatting-remover.js
 /**
  * Internal dependencies
  */
@@ -12870,7 +12870,7 @@ function htmlFormattingRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/br-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/br-remover.js
 /**
  * Internal dependencies
  */
@@ -12893,7 +12893,7 @@ function brRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/empty-paragraph-remover.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/empty-paragraph-remover.js
 /**
  * Removes empty paragraph elements.
  *
@@ -12911,13 +12911,13 @@ function emptyParagraphRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/paste-handler.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/raw-handling/paste-handler.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -13022,8 +13022,8 @@ function pasteHandler(_ref) {
   // Not normalizing the content will only affect older browsers and won't
   // entirely break the app.
   // See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
-  // See: https://core.trac.wordpress.org/ticket/30130
-  // See: https://github.com/WordPress/gutenberg/pull/6983#pullrequestreview-125151075
+  // See: https://core.trac.kaydenCMS.org/ticket/30130
+  // See: https://github.com/kaydenCMS/gutenberg/pull/6983#pullrequestreview-125151075
 
 
   if (String.prototype.normalize) {
@@ -13102,9 +13102,9 @@ function pasteHandler(_ref) {
   return blocks;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/categories.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/categories.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -13144,13 +13144,13 @@ function categories_updateCategory(slug, category) {
   (0,external_wp_data_namespaceObject.dispatch)(store).updateCategory(slug, category);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/templates.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/templates.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -13261,7 +13261,7 @@ function synchronizeBlocksWithTemplate() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/api/index.js
 // The blocktype is the most important concept within the block API. It defines
 // all aspects of the block configuration and its interfaces, including `edit`
 // and `save`. The transforms specification allows converting one blocktype to
@@ -13373,12 +13373,12 @@ function _extends() {
 }
 ;// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/block-content-provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/block-content-provider/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -13447,7 +13447,7 @@ const withBlockContentContext = (0,external_wp_compose_namespaceObject.createHig
 }, 'withBlockContentContext');
 /* harmony default export */ var block_content_provider = ((/* unused pure expression or super */ null && (BlockContentProvider)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/blocks/build-module/index.js
 // A "block" is the abstract term used to describe units of markup that,
 // when composed together, form the content or layout of a page.
 // The API for blocks is exposed via `wp.blocks`.

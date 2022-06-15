@@ -283,12 +283,12 @@ function _extends() {
 }
 ;// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/components/plugin-context/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -315,9 +315,9 @@ const withPluginContext = mapContextToProps => (0,external_wp_compose_namespaceO
   return props => (0,external_wp_element_namespaceObject.createElement)(Consumer, null, context => (0,external_wp_element_namespaceObject.createElement)(OriginalComponent, _extends({}, props, mapContextToProps(context, props))));
 }, 'withPluginContext');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-error-boundary/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/components/plugin-error-boundary/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 class PluginErrorBoundary extends external_wp_element_namespaceObject.Component {
@@ -357,11 +357,11 @@ class PluginErrorBoundary extends external_wp_element_namespaceObject.Component 
 
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plugins.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/plugins.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const plugins = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -372,11 +372,11 @@ const plugins = (0,external_wp_element_namespaceObject.createElement)(external_w
 }));
 /* harmony default export */ var library_plugins = (plugins);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/api/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/api/index.js
 /* eslint no-console: [ 'error', { allow: [ 'error' ] } ] */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -457,9 +457,9 @@ const api_plugins = {};
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
- * import { registerPlugin } from '@wordpress/plugins';
- * import { more } from '@wordpress/icons';
+ * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@kaydenCMS/edit-post';
+ * import { registerPlugin } from '@kaydenCMS/plugins';
+ * import { more } from '@kaydenCMS/icons';
  *
  * const Component = () => (
  * 	<>
@@ -554,7 +554,7 @@ function registerPlugin(name, settings) {
  * @example
  * ```js
  * // Using ESNext syntax
- * import { unregisterPlugin } from '@wordpress/plugins';
+ * import { unregisterPlugin } from '@kaydenCMS/plugins';
  *
  * unregisterPlugin( 'plugin-name' );
  * ```
@@ -598,7 +598,7 @@ function getPlugins(scope) {
   return Object.values(api_plugins).filter(plugin => plugin.scope === scope);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-area/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/components/plugin-area/index.js
 
 
 /**
@@ -607,7 +607,7 @@ function getPlugins(scope) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -641,7 +641,7 @@ function getPlugins(scope) {
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginArea } from '@wordpress/plugins';
+ * import { PluginArea } from '@kaydenCMS/plugins';
  *
  * const Layout = () => (
  * 	<div>
@@ -721,11 +721,11 @@ class PluginArea extends external_wp_element_namespaceObject.Component {
 
 /* harmony default export */ var plugin_area = (PluginArea);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/components/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/plugins/build-module/index.js
 
 
 

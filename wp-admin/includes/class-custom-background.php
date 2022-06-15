@@ -2,7 +2,7 @@
 /**
  * The custom background script.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -96,8 +96,8 @@ class Custom_Background {
 
 		get_current_screen()->set_help_sidebar(
 			'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-			'<p>' . __( '<a href="https://codex.wordpress.org/Appearance_Background_Screen">Documentation on Custom Background</a>' ) . '</p>' .
-			'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+			'<p>' . __( '<a href="https://codex.kaydenCMS.org/Appearance_Background_Screen">Documentation on Custom Background</a>' ) . '</p>' .
+			'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 		);
 
 		wp_enqueue_media();

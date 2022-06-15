@@ -1,10 +1,10 @@
 <?php
 /**
- * Header file for the Twenty Twenty WordPress default theme.
+ * Header file for the Twenty Twenty kaydenCMS default theme.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @link https://developer.kaydenCMS.org/themes/basics/template-files/#template-partials
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */

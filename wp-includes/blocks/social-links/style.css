@@ -19,7 +19,7 @@
  */
 /**
  * Grid System.
- * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ * https://make.kaydenCMS.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-kaydenCMS/
  */
 /**
  * Dimensions.
@@ -296,7 +296,7 @@
   background-color: #4680c2;
   color: #fff;
 }
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-wordpress {
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-kaydenCMS {
   background-color: #3499cd;
   color: #fff;
 }
@@ -428,7 +428,7 @@
 .wp-block-social-links.is-style-logos-only .wp-social-link-vk {
   color: #4680c2;
 }
-.wp-block-social-links.is-style-logos-only .wp-social-link-wordpress {
+.wp-block-social-links.is-style-logos-only .wp-social-link-kaydenCMS {
   color: #3499cd;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-yelp {

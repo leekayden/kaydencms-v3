@@ -150,7 +150,7 @@ __webpack_require__.d(__webpack_exports__, {
   "registerWidgetGroupBlock": function() { return /* binding */ registerWidgetGroupBlock; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/index.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/index.js
 var legacy_widget_namespaceObject = {};
 __webpack_require__.r(legacy_widget_namespaceObject);
 __webpack_require__.d(legacy_widget_namespaceObject, {
@@ -159,7 +159,7 @@ __webpack_require__.d(legacy_widget_namespaceObject, {
   "settings": function() { return settings; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/index.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/widgets/build-module/blocks/widget-group/index.js
 var widget_group_namespaceObject = {};
 __webpack_require__.r(widget_group_namespaceObject);
 __webpack_require__.d(widget_group_namespaceObject, {
@@ -174,11 +174,11 @@ var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/widget.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/widget.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const widget = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -196,11 +196,11 @@ var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 ;// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/brush.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/brush.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const brush = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -217,11 +217,11 @@ var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external ["wp","coreData"]
 var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/widget-type-selector.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/widget-type-selector.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -276,7 +276,7 @@ function WidgetTypeSelector(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/inspector-card.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/inspector-card.js
 
 function InspectorCard(_ref) {
   let {
@@ -299,13 +299,13 @@ var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
 var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/control.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -744,7 +744,7 @@ function serializeForm(form) {
   return new window.URLSearchParams(Array.from(new window.FormData(form))).toString();
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/form.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/form.js
 
 
 /**
@@ -752,7 +752,7 @@ function serializeForm(form) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -853,7 +853,7 @@ function Form(_ref) {
   }, title));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/preview.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/preview.js
 
 
 /**
@@ -861,7 +861,7 @@ function Form(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -964,11 +964,11 @@ function Preview(_ref) {
   }))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/no-preview.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/no-preview.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function NoPreview(_ref) {
@@ -980,11 +980,11 @@ function NoPreview(_ref) {
   }, name && (0,external_wp_element_namespaceObject.createElement)("h3", null, name), (0,external_wp_element_namespaceObject.createElement)("p", null, (0,external_wp_i18n_namespaceObject.__)('No preview available.')));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/convert-to-blocks-button.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/convert-to-blocks-button.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1016,7 +1016,7 @@ function ConvertToBlocksButton(_ref) {
   }, (0,external_wp_i18n_namespaceObject.__)('Convert to blocks'));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/edit/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/edit/index.js
 
 
 /**
@@ -1024,7 +1024,7 @@ function ConvertToBlocksButton(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1169,9 +1169,9 @@ function NotEmpty(_ref3) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/transforms.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/transforms.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const legacyWidgetTransforms = [{
@@ -1401,9 +1401,9 @@ const transforms = {
 };
 /* harmony default export */ var legacy_widget_transforms = (transforms);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/legacy-widget/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1450,11 +1450,11 @@ const settings = {
   transforms: legacy_widget_transforms
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/group.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/group.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const group = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1465,11 +1465,11 @@ const group = (0,external_wp_element_namespaceObject.createElement)(external_wp_
 }));
 /* harmony default export */ var library_group = (group);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/edit.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/widget-group/edit.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1524,11 +1524,11 @@ function PreviewContent(_ref2) {
   }), (0,external_wp_element_namespaceObject.createElement)(external_wp_blockEditor_namespaceObject.InnerBlocks, null));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/save.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/widget-group/save.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function save(_ref) {
@@ -1544,11 +1544,11 @@ function save(_ref) {
   }, (0,external_wp_element_namespaceObject.createElement)(external_wp_blockEditor_namespaceObject.InnerBlocks.Content, null)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/widget-group/deprecated.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const v1 = {
@@ -1578,9 +1578,9 @@ const v1 = {
 };
 /* harmony default export */ var deprecated = ([v1]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/blocks/widget-group/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1659,11 +1659,11 @@ const widget_group_settings = {
   deprecated: deprecated
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/move-to.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/move-to.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const moveTo = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1674,11 +1674,11 @@ const moveTo = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var move_to = (moveTo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/components/move-to-widget-area/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/components/move-to-widget-area/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1714,10 +1714,10 @@ function MoveToWidgetArea(_ref) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/utils.js
 // @ts-check
 
 /**
@@ -1750,9 +1750,9 @@ function addWidgetIdToBlock(block, widgetId) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/register-legacy-widget-variations.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/register-legacy-widget-variations.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1783,9 +1783,9 @@ function registerLegacyWidgetVariations(settings) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/widgets/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1802,7 +1802,7 @@ function registerLegacyWidgetVariations(settings) {
  * Note that for the block to be useful, any scripts required by a widget must
  * be loaded into the page.
  *
- * @see https://developer.wordpress.org/block-editor/how-to-guides/widgets/legacy-widget-block/
+ * @see https://developer.kaydenCMS.org/block-editor/how-to-guides/widgets/legacy-widget-block/
  */
 
 function registerLegacyWidgetBlock() {

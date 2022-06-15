@@ -2,18 +2,18 @@
 /**
  * Defines constants and global variables that can be overridden, generally in wp-config.php.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 /**
- * Defines initial WordPress constants.
+ * Defines initial kaydenCMS constants.
  *
  * @see wp_debug_mode()
  *
  * @since 3.0.0
  *
  * @global int    $blog_id    The current site ID.
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  */
 function wp_initial_constants() {
 	global $blog_id, $wp_version;
@@ -150,7 +150,7 @@ function wp_initial_constants() {
 }
 
 /**
- * Defines plugin directory WordPress constants.
+ * Defines plugin directory kaydenCMS constants.
  *
  * Defines must-use plugin directory constants, which may be overridden in the sunrise.php drop-in.
  *
@@ -219,7 +219,7 @@ function wp_plugin_directory_constants() {
 }
 
 /**
- * Defines cookie-related WordPress constants.
+ * Defines cookie-related kaydenCMS constants.
  *
  * Defines constants after multisite is loaded.
  *
@@ -244,42 +244,42 @@ function wp_cookie_constants() {
 	 * @since 2.0.0
 	 */
 	if ( ! defined( 'USER_COOKIE' ) ) {
-		define( 'USER_COOKIE', 'wordpressuser_' . COOKIEHASH );
+		define( 'USER_COOKIE', 'kaydenCMSuser_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.0.0
 	 */
 	if ( ! defined( 'PASS_COOKIE' ) ) {
-		define( 'PASS_COOKIE', 'wordpresspass_' . COOKIEHASH );
+		define( 'PASS_COOKIE', 'kaydenCMSpass_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.5.0
 	 */
 	if ( ! defined( 'AUTH_COOKIE' ) ) {
-		define( 'AUTH_COOKIE', 'wordpress_' . COOKIEHASH );
+		define( 'AUTH_COOKIE', 'kaydenCMS_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.6.0
 	 */
 	if ( ! defined( 'SECURE_AUTH_COOKIE' ) ) {
-		define( 'SECURE_AUTH_COOKIE', 'wordpress_sec_' . COOKIEHASH );
+		define( 'SECURE_AUTH_COOKIE', 'kaydenCMS_sec_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.6.0
 	 */
 	if ( ! defined( 'LOGGED_IN_COOKIE' ) ) {
-		define( 'LOGGED_IN_COOKIE', 'wordpress_logged_in_' . COOKIEHASH );
+		define( 'LOGGED_IN_COOKIE', 'kaydenCMS_logged_in_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.3.0
 	 */
 	if ( ! defined( 'TEST_COOKIE' ) ) {
-		define( 'TEST_COOKIE', 'wordpress_test_cookie' );
+		define( 'TEST_COOKIE', 'kaydenCMS_test_cookie' );
 	}
 
 	/**
@@ -321,12 +321,12 @@ function wp_cookie_constants() {
 		/**
 		 * @since 5.2.0
 		 */
-		define( 'RECOVERY_MODE_COOKIE', 'wordpress_rec_' . COOKIEHASH );
+		define( 'RECOVERY_MODE_COOKIE', 'kaydenCMS_rec_' . COOKIEHASH );
 	}
 }
 
 /**
- * Defines SSL-related WordPress constants.
+ * Defines SSL-related kaydenCMS constants.
  *
  * @since 3.0.0
  */
@@ -353,7 +353,7 @@ function wp_ssl_constants() {
 }
 
 /**
- * Defines functionality-related WordPress constants.
+ * Defines functionality-related kaydenCMS constants.
  *
  * @since 3.0.0
  */
@@ -385,7 +385,7 @@ function wp_functionality_constants() {
 }
 
 /**
- * Defines templating-related WordPress constants.
+ * Defines templating-related kaydenCMS constants.
  *
  * @since 3.0.0
  */

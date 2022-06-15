@@ -2,7 +2,7 @@
 /**
  * Border block support flag.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 5.8.0
  */
 

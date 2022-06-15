@@ -2,9 +2,9 @@
 /**
  * The template for displaying search results pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * @link https://developer.kaydenCMS.org/themes/basics/template-hierarchy/#search-result
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */

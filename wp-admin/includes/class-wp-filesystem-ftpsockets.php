@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress FTP Sockets Filesystem.
+ * kaydenCMS FTP Sockets Filesystem.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP Sockets.
+ * kaydenCMS Filesystem Class for implementing FTP Sockets.
  *
  * @since 2.5.0
  *

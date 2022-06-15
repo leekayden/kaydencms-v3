@@ -67,9 +67,9 @@ var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data-controls/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/data-controls/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -81,7 +81,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
  *
  * @example
  * ```js
- * import { apiFetch } from '@wordpress/data-controls';
+ * import { apiFetch } from '@kaydenCMS/data-controls';
  *
  * // Action generator using apiFetch
  * export function* myAction() {
@@ -102,43 +102,43 @@ function apiFetch(request) {
 }
 /**
  * Control for resolving a selector in a registered data store.
- * Alias for the `resolveSelect` built-in control in the `@wordpress/data` package.
+ * Alias for the `resolveSelect` built-in control in the `@kaydenCMS/data` package.
  *
- * @param {Array} args Arguments passed without change to the `@wordpress/data` control.
+ * @param {Array} args Arguments passed without change to the `@kaydenCMS/data` control.
  */
 
 function build_module_select() {
-  external_wp_deprecated_default()('`select` control in `@wordpress/data-controls`', {
+  external_wp_deprecated_default()('`select` control in `@kaydenCMS/data-controls`', {
     since: '5.7',
-    alternative: 'built-in `resolveSelect` control in `@wordpress/data`'
+    alternative: 'built-in `resolveSelect` control in `@kaydenCMS/data`'
   });
   return external_wp_data_namespaceObject.controls.resolveSelect(...arguments);
 }
 /**
  * Control for calling a selector in a registered data store.
- * Alias for the `select` built-in control in the `@wordpress/data` package.
+ * Alias for the `select` built-in control in the `@kaydenCMS/data` package.
  *
- * @param {Array} args Arguments passed without change to the `@wordpress/data` control.
+ * @param {Array} args Arguments passed without change to the `@kaydenCMS/data` control.
  */
 
 function syncSelect() {
-  external_wp_deprecated_default()('`syncSelect` control in `@wordpress/data-controls`', {
+  external_wp_deprecated_default()('`syncSelect` control in `@kaydenCMS/data-controls`', {
     since: '5.7',
-    alternative: 'built-in `select` control in `@wordpress/data`'
+    alternative: 'built-in `select` control in `@kaydenCMS/data`'
   });
   return external_wp_data_namespaceObject.controls.select(...arguments);
 }
 /**
  * Control for dispatching an action in a registered data store.
- * Alias for the `dispatch` control in the `@wordpress/data` package.
+ * Alias for the `dispatch` control in the `@kaydenCMS/data` package.
  *
- * @param {Array} args Arguments passed without change to the `@wordpress/data` control.
+ * @param {Array} args Arguments passed without change to the `@kaydenCMS/data` control.
  */
 
 function dispatch() {
-  external_wp_deprecated_default()('`dispatch` control in `@wordpress/data-controls`', {
+  external_wp_deprecated_default()('`dispatch` control in `@kaydenCMS/data-controls`', {
     since: '5.7',
-    alternative: 'built-in `dispatch` control in `@wordpress/data`'
+    alternative: 'built-in `dispatch` control in `@kaydenCMS/data`'
   });
   return external_wp_data_namespaceObject.controls.dispatch(...arguments);
 }
@@ -149,7 +149,7 @@ function dispatch() {
  *
  * @example
  * ```js
- * import { __unstableAwaitPromise } from '@wordpress/data-controls';
+ * import { __unstableAwaitPromise } from '@kaydenCMS/data-controls';
  *
  * // Action generator using apiFetch
  * export function* myAction() {
@@ -174,9 +174,9 @@ const __unstableAwaitPromise = function (promise) {
  *
  * @example
  * ```js
- * // WordPress dependencies
- * import { controls } from '@wordpress/data-controls';
- * import { registerStore } from '@wordpress/data';
+ * // kaydenCMS dependencies
+ * import { controls } from '@kaydenCMS/data-controls';
+ * import { registerStore } from '@kaydenCMS/data';
  *
  * // Internal dependencies
  * import reducer from './reducer';

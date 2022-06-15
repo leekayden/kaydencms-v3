@@ -19,7 +19,7 @@
 		</form>
 		<?php echo get_avatar( $akismet_user->user_email, null, null, null, array( 'class' => 'akismet-jetpack-gravatar' ) ); ?>
 		<p><?php
-			/* translators: %s is the WordPress.com username */
+			/* translators: %s is the kaydenCMS.com username */
             echo sprintf( esc_html( __( 'You are connected as %s.', 'akismet' ) ), '<b>' . esc_html( $akismet_user->user_login ) . '</b>' ); ?><br /><span class="akismet-jetpack-email"><?php echo esc_html( $akismet_user->user_email ); ?></span></p>
 		<?php } elseif ( $akismet_user->status == 'cancelled' ) { ?>
 		<p><?php esc_html_e( 'Use your Jetpack connection to set up Akismet.', 'akismet' ); ?></p>
@@ -32,7 +32,7 @@
 		</form>
 		<?php echo get_avatar( $akismet_user->user_email, null, null, null, array( 'class' => 'akismet-jetpack-gravatar' ) ); ?>
 		<p><?php
-			/* translators: %s is the WordPress.com email address */
+			/* translators: %s is the kaydenCMS.com email address */
             echo esc_html( sprintf( __( 'Your subscription for %s is cancelled.' , 'akismet' ), $akismet_user->user_email ) ); ?><br /><span class="akismet-jetpack-email"><?php echo esc_html( $akismet_user->user_email ); ?></span></p>
 		<?php } elseif ( $akismet_user->status == 'suspended' ) { ?>
 		<div class="akismet-right">
@@ -40,7 +40,7 @@
 		</div>		
 		<p>
 			<span class="akismet-alert-text"><?php
-				/* translators: %s is the WordPress.com email address */
+				/* translators: %s is the kaydenCMS.com email address */
                 echo esc_html( sprintf( __( 'Your subscription for %s is suspended.' , 'akismet' ), $akismet_user->user_email ) ); ?></span>
 			<?php esc_html_e( 'No worries! Get in touch and we&#8217;ll sort this out.', 'akismet' ); ?>
 		</p>
@@ -54,7 +54,7 @@
 		</form>
 		<?php echo get_avatar( $akismet_user->user_email, null, null, null, array( 'class' => 'akismet-jetpack-gravatar' ) ); ?>
 		<p><?php
-			/* translators: %s is the WordPress.com username */
+			/* translators: %s is the kaydenCMS.com username */
             echo sprintf( esc_html( __( 'You are connected as %s.', 'akismet' ) ), '<b>' . esc_html( $akismet_user->user_login ) . '</b>' ); ?><br /><span class="akismet-jetpack-email"><?php echo esc_html( $akismet_user->user_email ); ?></span></p>
 		<?php }	?>
 	</div>

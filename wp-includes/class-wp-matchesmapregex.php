@@ -2,7 +2,7 @@
 /**
  * WP_MatchesMapRegex helper class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 4.7.0
  */
 

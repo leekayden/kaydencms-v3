@@ -2,7 +2,7 @@
 /**
  * API for easily embedding rich media such as videos and images into content.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Embed
  * @since 2.9.0
  */
@@ -212,7 +212,7 @@ class WP_Embed {
 		$this->last_attr = $attr;
 
 		// KSES converts & into &amp; and we need to undo this.
-		// See https://core.trac.wordpress.org/ticket/11311
+		// See https://core.trac.kaydenCMS.org/ticket/11311
 		$url = str_replace( '&amp;', '&', $url );
 
 		// Look for known internal handlers.

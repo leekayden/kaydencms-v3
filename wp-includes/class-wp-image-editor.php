@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base kaydenCMS Image Editor
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Image_Editor
  */
 

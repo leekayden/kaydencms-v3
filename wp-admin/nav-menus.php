@@ -1,15 +1,15 @@
 <?php
 /**
- * WordPress Administration for Navigation Menus
+ * kaydenCMS Administration for Navigation Menus
  * Interface functions
  *
  * @version 2.0.0
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // Load all the nav menu interface functions.
@@ -667,8 +667,8 @@ endif;
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/appearance-menus-screen/">Documentation on Menus</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/appearance-menus-screen/">Documentation on Menus</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 // Get the admin header.

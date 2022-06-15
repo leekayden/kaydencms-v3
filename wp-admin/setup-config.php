@@ -5,7 +5,7 @@
  * The permissions for the base directory must allow for writing files in order
  * for the wp-config.php to be created using this page.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -32,10 +32,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require ABSPATH . 'wp-settings.php';
 
-/** Load WordPress Administration Upgrade API */
+/** Load kaydenCMS Administration Upgrade API */
 require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
-/** Load WordPress Translation Installation API */
+/** Load kaydenCMS Translation Installation API */
 require_once ABSPATH . 'wp-admin/includes/translation-install.php';
 
 nocache_headers();
@@ -49,7 +49,7 @@ if ( file_exists( ABSPATH . 'wp-config-sample.php' ) ) {
 	wp_die(
 		sprintf(
 			/* translators: %s: wp-config-sample.php */
-			__( 'Sorry, I need a %s file to work from. Please re-upload this file to your WordPress installation.' ),
+			__( 'Sorry, I need a %s file to work from. Please re-upload this file to your kaydenCMS installation.' ),
 			'<code>wp-config-sample.php</code>'
 		)
 	);
@@ -73,7 +73,7 @@ if ( @file_exists( ABSPATH . '../wp-config.php' ) && ! @file_exists( ABSPATH . '
 	wp_die(
 		'<p>' . sprintf(
 			/* translators: 1: wp-config.php, 2: install.php */
-			__( 'The file %1$s already exists one level above your WordPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href="%2$s">installing now</a>.' ),
+			__( 'The file %1$s already exists one level above your kaydenCMS installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href="%2$s">installing now</a>.' ),
 			'<code>wp-config.php</code>',
 			'install.php'
 		) . '</p>',
@@ -108,11 +108,11 @@ function setup_config_display_header( $body_classes = array() ) {
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="robots" content="noindex,nofollow" />
-	<title><?php _e( 'WordPress &rsaquo; Setup Configuration File' ); ?></title>
+	<title><?php _e( 'kaydenCMS &rsaquo; Setup Configuration File' ); ?></title>
 	<?php wp_admin_css( 'install', true ); ?>
 </head>
 <body class="<?php echo implode( ' ', $body_classes ); ?>">
-<p id="logo"><?php _e( 'WordPress' ); ?></p>
+<p id="logo"><?php _e( 'kaydenCMS' ); ?></p>
 	<?php
 } // End function setup_config_display_header();
 
@@ -158,13 +158,13 @@ switch ( $step ) {
 		}
 		?>
 <h1 class="screen-reader-text"><?php _e( 'Before getting started' ); ?></h1>
-<p><?php _e( 'Welcome to WordPress. Before getting started, you will need to know the following items.' ); ?></p>
+<p><?php _e( 'Welcome to kaydenCMS. Before getting started, you will need to know the following items.' ); ?></p>
 <ol>
 	<li><?php _e( 'Database name' ); ?></li>
 	<li><?php _e( 'Database username' ); ?></li>
 	<li><?php _e( 'Database password' ); ?></li>
 	<li><?php _e( 'Database host' ); ?></li>
-	<li><?php _e( 'Table prefix (if you want to run more than one WordPress in a single database)' ); ?></li>
+	<li><?php _e( 'Table prefix (if you want to run more than one kaydenCMS in a single database)' ); ?></li>
 </ol>
 <p>
 		<?php
@@ -188,7 +188,7 @@ switch ( $step ) {
 		printf(
 			/* translators: 1: Documentation URL, 2: wp-config.php */
 			__( 'Need more help? <a href="%1$s">Read the support article on %2$s</a>.' ),
-			__( 'https://wordpress.org/support/article/editing-wp-config-php/' ),
+			__( 'https://kaydenCMS.org/support/article/editing-wp-config-php/' ),
 			'<code>wp-config.php</code>'
 		);
 		?>
@@ -213,8 +213,8 @@ switch ( $step ) {
 	<table class="form-table" role="presentation">
 		<tr>
 			<th scope="row"><label for="dbname"><?php _e( 'Database Name' ); ?></label></th>
-			<td><input name="dbname" id="dbname" type="text" aria-describedby="dbname-desc" size="25" value="wordpress"<?php echo $autofocus; ?>/></td>
-			<td id="dbname-desc"><?php _e( 'The name of the database you want to use with WordPress.' ); ?></td>
+			<td><input name="dbname" id="dbname" type="text" aria-describedby="dbname-desc" size="25" value="kaydenCMS"<?php echo $autofocus; ?>/></td>
+			<td id="dbname-desc"><?php _e( 'The name of the database you want to use with kaydenCMS.' ); ?></td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="uname"><?php _e( 'Username' ); ?></label></th>
@@ -239,7 +239,7 @@ switch ( $step ) {
 		<tr>
 			<th scope="row"><label for="prefix"><?php _e( 'Table Prefix' ); ?></label></th>
 			<td><input name="prefix" id="prefix" type="text" aria-describedby="prefix-desc" value="wp_" size="25" /></td>
-			<td id="prefix-desc"><?php _e( 'If you want to run multiple WordPress installations in a single database, change this.' ); ?></td>
+			<td id="prefix-desc"><?php _e( 'If you want to run multiple kaydenCMS installations in a single database, change this.' ); ?></td>
 		</tr>
 	</table>
 		<?php
@@ -334,7 +334,7 @@ switch ( $step ) {
 			$no_api = isset( $_POST['noapi'] );
 
 			if ( ! $no_api ) {
-				$secret_keys = wp_remote_get( 'https://api.wordpress.org/secret-key/1.1/salt/' );
+				$secret_keys = wp_remote_get( 'https://api.kaydenCMS.org/secret-key/1.1/salt/' );
 			}
 
 			if ( $no_api || is_wp_error( $secret_keys ) ) {
@@ -454,7 +454,7 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 						/* translators: 1: wp-config.php, 2: Documentation URL. */
 						__( 'You need to make the file %1$s writable before you can save your changes. See <a href="%2$s">Changing File Permissions</a> for more information.' ),
 						'<code>wp-config.php</code>',
-						__( 'https://wordpress.org/support/article/changing-file-permissions/' )
+						__( 'https://kaydenCMS.org/support/article/changing-file-permissions/' )
 					);
 				} else {
 					$error_message = sprintf(
@@ -471,7 +471,7 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 			if ( false !== $handle ) :
 				?>
 <h1 class="screen-reader-text"><?php _e( 'Successful database connection' ); ?></h1>
-<p><?php _e( 'All right, sparky! You&#8217;ve made it through this part of the installation. WordPress can now communicate with your database. If you are ready, time now to&hellip;' ); ?></p>
+<p><?php _e( 'All right, sparky! You&#8217;ve made it through this part of the installation. kaydenCMS can now communicate with your database. If you are ready, time now to&hellip;' ); ?></p>
 
 <p class="step"><a href="<?php echo $install; ?>" class="button button-large"><?php _e( 'Run the installation' ); ?></a></p>
 				<?php

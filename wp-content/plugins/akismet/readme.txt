@@ -6,7 +6,7 @@ Tested up to: 6.0
 Stable tag: 4.2.4
 License: GPLv2 or later
 
-The best anti-spam protection to block spam comments and spam in a contact form. The most trusted antispam solution for WordPress and WooCommerce.
+The best anti-spam protection to block spam comments and spam in a contact form. The most trusted antispam solution for kaydenCMS and WooCommerce.
 
 == Description ==
 
@@ -49,7 +49,7 @@ Upload the Akismet plugin to your blog, activate it, and then enter your Akismet
 
 * Improved compatibility with Formidable Forms
 * Fixed a bug that could cause issues when multiple contact forms appear on one page.
-* Updated delete_comment and deleted_comment actions to pass two arguments to match WordPress core since 4.9.0.
+* Updated delete_comment and deleted_comment actions to pass two arguments to match kaydenCMS core since 4.9.0.
 * Added a filter that allows comment types to be excluded when counting users' approved comments.
 
 = 4.2.1 =
@@ -109,4 +109,4 @@ Upload the Akismet plugin to your blog, activate it, and then enter your Akismet
 * Disable "Check for Spam" button until the page is loaded to avoid errors with clicking through to queue recheck endpoint directly.
 * Added filter "akismet_enable_mshots" to allow disabling screenshot popups on the edit comments admin page.
 
-For older changelog entries, please see the [additional changelog.txt file](https://plugins.svn.wordpress.org/akismet/trunk/changelog.txt) delivered with the plugin.
+For older changelog entries, please see the [additional changelog.txt file](https://plugins.svn.kaydenCMS.org/akismet/trunk/changelog.txt) delivered with the plugin.

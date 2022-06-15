@@ -44,14 +44,14 @@ __webpack_require__.d(__webpack_exports__, {
   "withViewportMatch": function() { return /* reexport */ with_viewport_match; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/viewport/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
   "setIsMatching": function() { return setIsMatching; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/viewport/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -62,7 +62,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/store/reducer.js
 /**
  * Reducer returning the viewport state, as keys of breakpoint queries with
  * boolean value representing whether query is matched.
@@ -86,7 +86,7 @@ function reducer() {
 
 /* harmony default export */ var store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/store/actions.js
 /**
  * Returns an action object used in signalling that viewport queries have been
  * updated. Values are specified as an object of breakpoint query keys where
@@ -103,7 +103,7 @@ function setIsMatching(values) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/store/selectors.js
 /**
  * Returns true if the viewport matches the given query, or false otherwise.
  *
@@ -129,9 +129,9 @@ function isViewportMatch(state, query) {
   return !!state[query];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -145,7 +145,7 @@ const STORE_NAME = 'core/viewport';
 /**
  * Store definition for the viewport namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -157,13 +157,13 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/listener.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/listener.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -233,7 +233,7 @@ function _extends() {
 }
 ;// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/with-viewport-match.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/with-viewport-match.js
 
 
 
@@ -242,7 +242,7 @@ var external_wp_element_namespaceObject = window["wp"]["element"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -296,9 +296,9 @@ const withViewportMatch = queries => {
 
 /* harmony default export */ var with_viewport_match = (withViewportMatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/if-viewport-matches.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/if-viewport-matches.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -333,7 +333,7 @@ const ifViewportMatches = query => (0,external_wp_compose_namespaceObject.create
 
 /* harmony default export */ var if_viewport_matches = (ifViewportMatches);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/viewport/build-module/index.js
 /**
  * Internal dependencies
  */

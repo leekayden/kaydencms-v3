@@ -2,11 +2,11 @@
 /**
  * Comment Management Screen
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** Load WordPress Bootstrap */
+/** Load kaydenCMS Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 $parent_file  = 'edit-comments.php';
@@ -68,8 +68,8 @@ switch ( $action ) {
 
 		get_current_screen()->set_help_sidebar(
 			'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-			'<p>' . __( '<a href="https://wordpress.org/support/article/comments-screen/">Documentation on Comments</a>' ) . '</p>' .
-			'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+			'<p>' . __( '<a href="https://kaydenCMS.org/support/article/comments-screen/">Documentation on Comments</a>' ) . '</p>' .
+			'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 		);
 
 		wp_enqueue_script( 'comment' );

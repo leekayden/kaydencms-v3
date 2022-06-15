@@ -2,20 +2,20 @@
 	"name": "twentytwentyone",
 	"version": "1.6.0",
 	"description": "Default WP Theme",
-	"author": "The WordPress Contributors",
+	"author": "The kaydenCMS Contributors",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
-		"WordPress",
+		"kaydenCMS",
 		"Theme"
 	],
 	"bugs": {
-		"url": "https://core.trac.wordpress.org/"
+		"url": "https://core.trac.kaydenCMS.org/"
 	},
-	"homepage": "https://wordpress.org/themes/twentytwentyone/",
+	"homepage": "https://kaydenCMS.org/themes/twentytwentyone/",
 	"devDependencies": {
-		"@wordpress/browserslist-config": "^4.1.2",
-		"@wordpress/eslint-plugin": "^9.3.0",
-		"@wordpress/stylelint-config": "^19.1.0",
+		"@kaydenCMS/browserslist-config": "^4.1.2",
+		"@kaydenCMS/eslint-plugin": "^9.3.0",
+		"@kaydenCMS/stylelint-config": "^19.1.0",
 		"autoprefixer": "^10.4.5",
 		"chokidar-cli": "^3.0.0",
 		"eslint": "^8.14.0",
@@ -49,7 +49,7 @@
 		"map": false
 	},
 	"browserslist": [
-		"extends @wordpress/browserslist-config"
+		"extends @kaydenCMS/browserslist-config"
 	],
 	"scripts": {
 		"start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",

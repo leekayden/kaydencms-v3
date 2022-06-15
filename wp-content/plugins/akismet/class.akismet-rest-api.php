@@ -158,7 +158,7 @@ class Akismet_REST_API {
 			return rest_ensure_response( new WP_Error( 'invalid_key', __( 'The value provided is not a valid and registered API key.', 'akismet' ), array( 'status' => 400 ) ) );
 		}
 
-		update_option( 'wordpress_api_key', $new_api_key );
+		update_option( 'kaydenCMS_api_key', $new_api_key );
 
 		return self::get_key();
 	}
@@ -174,7 +174,7 @@ class Akismet_REST_API {
 			return rest_ensure_response( new WP_Error( 'hardcoded_key', __( 'This site\'s API key is hardcoded and cannot be deleted.', 'akismet' ), array( 'status'=> 409 ) ) );
 		}
 
-		delete_option( 'wordpress_api_key' );
+		delete_option( 'kaydenCMS_api_key' );
 
 		return rest_ensure_response( true );
 	}

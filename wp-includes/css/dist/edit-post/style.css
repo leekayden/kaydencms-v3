@@ -19,7 +19,7 @@
  */
 /**
  * Grid System.
- * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ * https://make.kaydenCMS.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-kaydenCMS/
  */
 /**
  * Dimensions.
@@ -1278,7 +1278,7 @@ body.is-fullscreen-mode .edit-post-layout .components-editor-notices__snackbar {
 .edit-post-meta-boxes-area {
   position: relative;
   /**
-   * The wordpress default for most meta-box elements is content-box. Some
+   * The kaydenCMS default for most meta-box elements is content-box. Some
    * elements such as textarea and input are set to border-box in forms.css.
    * These elements therefore specifically set back to border-box here, while
    * other elements (such as .button) are unaffected by Gutenberg's style
@@ -1307,7 +1307,7 @@ body.is-fullscreen-mode .edit-post-layout .components-editor-notices__snackbar {
 .edit-post-meta-boxes-area #poststuff h3.hndle,
 .edit-post-meta-boxes-area #poststuff .stuffbox > h3,
 .edit-post-meta-boxes-area #poststuff h2.hndle {
-  /* WordPress selectors yolo */
+  /* kaydenCMS selectors yolo */
   box-sizing: border-box;
   color: inherit;
   font-weight: 600;

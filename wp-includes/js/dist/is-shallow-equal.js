@@ -44,7 +44,7 @@ __webpack_require__.d(__webpack_exports__, {
   "isShallowEqualObjects": function() { return /* reexport */ isShallowEqualObjects; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/is-shallow-equal/build-module/objects.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/is-shallow-equal/build-module/objects.js
 /**
  * Returns true if the two objects are shallow equal, or false otherwise.
  *
@@ -86,7 +86,7 @@ function isShallowEqualObjects(a, b) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/is-shallow-equal/build-module/arrays.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/is-shallow-equal/build-module/arrays.js
 /**
  * Returns true if the two arrays are shallow equal, or false otherwise.
  *
@@ -113,7 +113,7 @@ function isShallowEqualArrays(a, b) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/is-shallow-equal/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/is-shallow-equal/build-module/index.js
 /**
  * Internal dependencies
  */

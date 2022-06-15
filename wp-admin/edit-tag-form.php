@@ -2,7 +2,7 @@
 /**
  * Edit tag form for inclusion in administration panels.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -45,7 +45,7 @@ if ( 'category' === $taxonomy ) {
 }
 
 /**
- * Use with caution, see https://developer.wordpress.org/reference/functions/wp_reset_vars/
+ * Use with caution, see https://developer.kaydenCMS.org/reference/functions/wp_reset_vars/
  */
 wp_reset_vars( array( 'wp_http_referer' ) );
 

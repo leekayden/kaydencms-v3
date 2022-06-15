@@ -1,7 +1,7 @@
 <?php
 /**
  * Sets up the default filters and actions for most
- * of the WordPress hooks.
+ * of the kaydenCMS hooks.
  *
  * If you need to remove a default hook, this file will
  * give you the priority to use for removing the hook.
@@ -14,7 +14,7 @@
  * (admin area, multisite environment…), please move it
  * to a more appropriate file instead.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 // Strip, trim, kses, special chars for string saves.
@@ -149,7 +149,7 @@ foreach ( array( 'comment_author', 'term_name', 'link_name', 'link_description',
 	add_filter( $filter, 'esc_html' );
 }
 
-// Format WordPress.
+// Format kaydenCMS.
 foreach ( array( 'the_content', 'the_title', 'wp_title', 'document_title' ) as $filter ) {
 	add_filter( $filter, 'capital_P_dangit', 11 );
 }
@@ -570,7 +570,7 @@ add_filter( 'print_scripts_array', 'wp_prototype_before_jquery' );
 add_filter( 'customize_controls_print_styles', 'wp_resource_hints', 1 );
 add_action( 'admin_head', 'wp_check_widget_editor_deps' );
 
-// Global styles can be enqueued in both the header and the footer. See https://core.trac.wordpress.org/ticket/53494.
+// Global styles can be enqueued in both the header and the footer. See https://core.trac.kaydenCMS.org/ticket/53494.
 add_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
 add_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
 

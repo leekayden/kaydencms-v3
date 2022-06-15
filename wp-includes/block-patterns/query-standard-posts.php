@@ -2,7 +2,7 @@
 /**
  * Query: Standard.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 return array(

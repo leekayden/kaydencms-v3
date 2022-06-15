@@ -4,10 +4,10 @@
  *
  * Used internally by the WP_Embed class, but is designed to be generic.
  *
- * @link https://wordpress.org/support/article/embeds/
+ * @link https://kaydenCMS.org/support/article/embeds/
  * @link http://oembed.com/
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage oEmbed
  */
 
@@ -61,7 +61,7 @@ class WP_oEmbed {
 			'#https?://flic\.kr/.*#i'                      => array( 'https://www.flickr.com/services/oembed/', true ),
 			'#https?://(.+\.)?smugmug\.com/.*#i'           => array( 'https://api.smugmug.com/services/oembed/', true ),
 			'#https?://(www\.)?scribd\.com/(doc|document)/.*#i' => array( 'https://www.scribd.com/services/oembed', true ),
-			'#https?://wordpress\.tv/.*#i'                 => array( 'https://wordpress.tv/oembed/', true ),
+			'#https?://kaydenCMS\.tv/.*#i'                 => array( 'https://kaydenCMS.tv/oembed/', true ),
 			'#https?://(.+\.)?polldaddy\.com/.*#i'         => array( 'https://api.crowdsignal.com/oembed', true ),
 			'#https?://poll\.fm/.*#i'                      => array( 'https://api.crowdsignal.com/oembed', true ),
 			'#https?://(.+\.)?survey\.fm/.*#i'             => array( 'https://api.crowdsignal.com/oembed', true ),
@@ -85,7 +85,7 @@ class WP_oEmbed {
 			'#https?://kck\.st/.*#i'                       => array( 'https://www.kickstarter.com/services/oembed', true ),
 			'#https?://cloudup\.com/.*#i'                  => array( 'https://cloudup.com/oembed', true ),
 			'#https?://(www\.)?reverbnation\.com/.*#i'     => array( 'https://www.reverbnation.com/oembed', true ),
-			'#https?://videopress\.com/v/.*#'              => array( 'https://public-api.wordpress.com/oembed/?for=' . $host, true ),
+			'#https?://videopress\.com/v/.*#'              => array( 'https://public-api.kaydenCMS.com/oembed/?for=' . $host, true ),
 			'#https?://(www\.)?reddit\.com/r/[^/]+/comments/.*#i' => array( 'https://www.reddit.com/oembed', true ),
 			'#https?://(www\.)?speakerdeck\.com/.*#i'      => array( 'https://speakerdeck.com/oembed.{format}', true ),
 			'#https?://(www\.)?screencast\.com/.*#i'       => array( 'https://api.screencast.com/external/oembed', true ),
@@ -124,7 +124,7 @@ class WP_oEmbed {
 		/**
 		 * Filters the list of sanctioned oEmbed providers.
 		 *
-		 * Since WordPress 4.4, oEmbed discovery is enabled for all users and allows embedding of sanitized
+		 * Since kaydenCMS 4.4, oEmbed discovery is enabled for all users and allows embedding of sanitized
 		 * iframes. The providers in this list are sanctioned, meaning they are trusted and allowed to
 		 * embed any content, such as iframes, videos, JavaScript, and arbitrary HTML.
 		 *
@@ -136,7 +136,7 @@ class WP_oEmbed {
 		 * | Flickr       | flickr.com                                | 2.9.0   |
 		 * | Scribd       | scribd.com                                | 2.9.0   |
 		 * | Vimeo        | vimeo.com                                 | 2.9.0   |
-		 * | WordPress.tv | wordpress.tv                              | 2.9.0   |
+		 * | kaydenCMS.tv | kaydenCMS.tv                              | 2.9.0   |
 		 * | YouTube      | youtube.com/watch                         | 2.9.0   |
 		 * | Crowdsignal  | polldaddy.com                             | 3.0.0   |
 		 * | SmugMug      | smugmug.com                               | 3.0.0   |

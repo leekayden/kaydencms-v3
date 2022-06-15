@@ -2,11 +2,11 @@
 /**
  * Update Core administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 wp_enqueue_style( 'plugin-install' );
@@ -29,7 +29,7 @@ if ( ! current_user_can( 'update_core' ) && ! current_user_can( 'update_themes' 
  * @since 2.7.0
  *
  * @global string $wp_local_package Locale code of the package.
- * @global wpdb   $wpdb             WordPress database abstraction object.
+ * @global wpdb   $wpdb             kaydenCMS database abstraction object.
  *
  * @param object $update
  */
@@ -67,10 +67,10 @@ function list_core_update( $update ) {
 	if ( preg_match( '/-\w+-\d+/', $update->current ) ) {
 		// Retrieve the major version number.
 		preg_match( '/^\d+.\d+/', $update->current, $update_major );
-		/* translators: %s: WordPress version. */
+		/* translators: %s: kaydenCMS version. */
 		$submit = sprintf( __( 'Update to latest %s nightly' ), $update_major[0] );
 	} else {
-		/* translators: %s: WordPress version. */
+		/* translators: %s: kaydenCMS version. */
 		$submit = sprintf( __( 'Update to version %s' ), $version_string );
 	}
 
@@ -78,7 +78,7 @@ function list_core_update( $update ) {
 		$message = __( 'You can update to the latest nightly build manually:' );
 	} else {
 		if ( $current ) {
-			/* translators: %s: WordPress version. */
+			/* translators: %s: kaydenCMS version. */
 			$submit      = sprintf( __( 'Re-install version %s' ), $version_string );
 			$form_action = 'update-core.php?action=do-core-reinstall';
 		} else {
@@ -90,8 +90,8 @@ function list_core_update( $update ) {
 			}
 
 			$version_url = sprintf(
-				/* translators: %s: WordPress version. */
-				esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+				/* translators: %s: kaydenCMS version. */
+				esc_url( __( 'https://kaydenCMS.org/support/kaydenCMS-version/version-%s/' ) ),
 				sanitize_title( $update->current )
 			);
 
@@ -109,8 +109,8 @@ function list_core_update( $update ) {
 
 			if ( ! $mysql_compat && ! $php_compat ) {
 				$message = sprintf(
-					/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required PHP version number, 4: Minimum required MySQL version number, 5: Current PHP version number, 6: Current MySQL version number. */
-					__( 'You cannot update because <a href="%1$s">WordPress %2$s</a> requires PHP version %3$s or higher and MySQL version %4$s or higher. You are running PHP version %5$s and MySQL version %6$s.' ),
+					/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required PHP version number, 4: Minimum required MySQL version number, 5: Current PHP version number, 6: Current MySQL version number. */
+					__( 'You cannot update because <a href="%1$s">kaydenCMS %2$s</a> requires PHP version %3$s or higher and MySQL version %4$s or higher. You are running PHP version %5$s and MySQL version %6$s.' ),
 					$version_url,
 					$update->current,
 					$update->php_version,
@@ -120,8 +120,8 @@ function list_core_update( $update ) {
 				) . $php_update_message;
 			} elseif ( ! $php_compat ) {
 				$message = sprintf(
-					/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required PHP version number, 4: Current PHP version number. */
-					__( 'You cannot update because <a href="%1$s">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s.' ),
+					/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required PHP version number, 4: Current PHP version number. */
+					__( 'You cannot update because <a href="%1$s">kaydenCMS %2$s</a> requires PHP version %3$s or higher. You are running version %4$s.' ),
 					$version_url,
 					$update->current,
 					$update->php_version,
@@ -129,8 +129,8 @@ function list_core_update( $update ) {
 				) . $php_update_message;
 			} elseif ( ! $mysql_compat ) {
 				$message = sprintf(
-					/* translators: 1: URL to WordPress release notes, 2: WordPress version number, 3: Minimum required MySQL version number, 4: Current MySQL version number. */
-					__( 'You cannot update because <a href="%1$s">WordPress %2$s</a> requires MySQL version %3$s or higher. You are running version %4$s.' ),
+					/* translators: 1: URL to kaydenCMS release notes, 2: kaydenCMS version number, 3: Minimum required MySQL version number, 4: Current MySQL version number. */
+					__( 'You cannot update because <a href="%1$s">kaydenCMS %2$s</a> requires MySQL version %3$s or higher. You are running version %4$s.' ),
 					$version_url,
 					$update->current,
 					$update->mysql_version,
@@ -138,8 +138,8 @@ function list_core_update( $update ) {
 				);
 			} else {
 				$message = sprintf(
-					/* translators: 1: Installed WordPress version number, 2: URL to WordPress release notes, 3: New WordPress version number, including locale if necessary. */
-					__( 'You can update from WordPress %1$s to <a href="%2$s">WordPress %3$s</a> manually:' ),
+					/* translators: 1: Installed kaydenCMS version number, 2: URL to kaydenCMS release notes, 3: New kaydenCMS version number, including locale if necessary. */
+					__( 'You can update from kaydenCMS %1$s to <a href="%2$s">kaydenCMS %3$s</a> manually:' ),
 					$wp_version,
 					$version_url,
 					$version_string
@@ -184,8 +184,8 @@ function list_core_update( $update ) {
 	} elseif ( 'en_US' === $update->locale && 'en_US' !== get_locale() && ( ! $update->packages->partial && $wp_version == $update->partial_version ) ) {
 		// Partial builds don't need language-specific warnings.
 		echo '<p class="hint">' . sprintf(
-			/* translators: %s: WordPress version. */
-			__( 'You are about to install WordPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released.' ),
+			/* translators: %s: kaydenCMS version. */
+			__( 'You are about to install kaydenCMS %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released.' ),
 			'development' !== $update->response ? $update->current : ''
 		) . '</p>';
 	}
@@ -239,7 +239,7 @@ function dismissed_updates() {
 }
 
 /**
- * Display upgrade WordPress for downloading latest or upgrading automatically form.
+ * Display upgrade kaydenCMS for downloading latest or upgrading automatically form.
  *
  * @since 2.7.0
  *
@@ -258,21 +258,21 @@ function core_upgrade_preamble() {
 
 	if ( isset( $updates[0]->version ) && version_compare( $updates[0]->version, $wp_version, '>' ) ) {
 		echo '<h2 class="response">';
-		_e( 'An updated version of WordPress is available.' );
+		_e( 'An updated version of kaydenCMS is available.' );
 		echo '</h2>';
 
 		echo '<div class="notice notice-warning inline"><p>';
 		printf(
-			/* translators: 1: Documentation on WordPress backups, 2: Documentation on updating WordPress. */
-			__( '<strong>Important:</strong> Before updating, please <a href="%1$s">back up your database and files</a>. For help with updates, visit the <a href="%2$s">Updating WordPress</a> documentation page.' ),
-			__( 'https://wordpress.org/support/article/wordpress-backups/' ),
-			__( 'https://wordpress.org/support/article/updating-wordpress/' )
+			/* translators: 1: Documentation on kaydenCMS backups, 2: Documentation on updating kaydenCMS. */
+			__( '<strong>Important:</strong> Before updating, please <a href="%1$s">back up your database and files</a>. For help with updates, visit the <a href="%2$s">Updating kaydenCMS</a> documentation page.' ),
+			__( 'https://kaydenCMS.org/support/article/kaydenCMS-backups/' ),
+			__( 'https://kaydenCMS.org/support/article/updating-kaydenCMS/' )
 		);
 		echo '</p></div>';
 	} elseif ( $is_development_version ) {
-		echo '<h2 class="response">' . __( 'You are using a development version of WordPress.' ) . '</h2>';
+		echo '<h2 class="response">' . __( 'You are using a development version of kaydenCMS.' ) . '</h2>';
 	} else {
-		echo '<h2 class="response">' . __( 'You have the latest version of WordPress.' ) . '</h2>';
+		echo '<h2 class="response">' . __( 'You have the latest version of kaydenCMS.' ) . '</h2>';
 	}
 
 	echo '<ul class="core-updates">';
@@ -289,8 +289,8 @@ function core_upgrade_preamble() {
 	} elseif ( ! $updates ) {
 		list( $normalized_version ) = explode( '-', $wp_version );
 		echo '<p>' . sprintf(
-			/* translators: 1: URL to About screen, 2: WordPress version. */
-			__( '<a href="%1$s">Learn more about WordPress %2$s</a>.' ),
+			/* translators: 1: URL to About screen, 2: kaydenCMS version. */
+			__( '<a href="%1$s">Learn more about kaydenCMS %2$s</a>.' ),
 			esc_url( self_admin_url( 'about.php' ) ),
 			$normalized_version
 		) . '</p>';
@@ -300,17 +300,17 @@ function core_upgrade_preamble() {
 }
 
 /**
- * Display WordPress auto-updates settings.
+ * Display kaydenCMS auto-updates settings.
  *
  * @since 5.6.0
  */
 function core_auto_updates_settings() {
 	if ( isset( $_GET['core-major-auto-updates-saved'] ) ) {
 		if ( 'enabled' === $_GET['core-major-auto-updates-saved'] ) {
-			$notice_text = __( 'Automatic updates for all WordPress versions have been enabled. Thank you!' );
+			$notice_text = __( 'Automatic updates for all kaydenCMS versions have been enabled. Thank you!' );
 			echo '<div class="notice notice-success is-dismissible"><p>' . $notice_text . '</p></div>';
 		} elseif ( 'disabled' === $_GET['core-major-auto-updates-saved'] ) {
-			$notice_text = __( 'WordPress will only receive automatic security and maintenance releases from now on.' );
+			$notice_text = __( 'kaydenCMS will only receive automatic security and maintenance releases from now on.' );
 			echo '<div class="notice notice-success is-dismissible"><p>' . $notice_text . '</p></div>';
 		}
 	}
@@ -399,7 +399,7 @@ function core_auto_updates_settings() {
 		if ( $updater->is_vcs_checkout( ABSPATH ) ) {
 			_e( 'This site appears to be under version control. Automatic updates are disabled.' );
 		} elseif ( $upgrade_major ) {
-			_e( 'This site is automatically kept up to date with each new version of WordPress.' );
+			_e( 'This site is automatically kept up to date with each new version of kaydenCMS.' );
 
 			if ( $can_set_update_option ) {
 				echo '<br>';
@@ -410,18 +410,18 @@ function core_auto_updates_settings() {
 				);
 			}
 		} elseif ( $upgrade_minor ) {
-			_e( 'This site is automatically kept up to date with maintenance and security releases of WordPress only.' );
+			_e( 'This site is automatically kept up to date with maintenance and security releases of kaydenCMS only.' );
 
 			if ( $can_set_update_option ) {
 				echo '<br>';
 				printf(
 					'<a href="%s" class="core-auto-update-settings-link core-auto-update-settings-link-enable">%s</a>',
 					wp_nonce_url( add_query_arg( 'value', 'enable', $action_url ), 'core-major-auto-updates-nonce' ),
-					__( 'Enable automatic updates for all new versions of WordPress.' )
+					__( 'Enable automatic updates for all new versions of kaydenCMS.' )
 				);
 			}
 		} else {
-			_e( 'This site will not receive automatic updates for new versions of WordPress.' );
+			_e( 'This site will not receive automatic updates for new versions of kaydenCMS.' );
 		}
 		?>
 	</p>
@@ -512,22 +512,22 @@ function list_plugin_updates() {
 			}
 		}
 
-		// Get plugin compat for running version of WordPress.
+		// Get plugin compat for running version of kaydenCMS.
 		if ( isset( $plugin_data->update->tested ) && version_compare( $plugin_data->update->tested, $cur_wp_version, '>=' ) ) {
-			/* translators: %s: WordPress version. */
-			$compat = '<br />' . sprintf( __( 'Compatibility with WordPress %s: 100%% (according to its author)' ), $cur_wp_version );
+			/* translators: %s: kaydenCMS version. */
+			$compat = '<br />' . sprintf( __( 'Compatibility with kaydenCMS %s: 100%% (according to its author)' ), $cur_wp_version );
 		} else {
-			/* translators: %s: WordPress version. */
-			$compat = '<br />' . sprintf( __( 'Compatibility with WordPress %s: Unknown' ), $cur_wp_version );
+			/* translators: %s: kaydenCMS version. */
+			$compat = '<br />' . sprintf( __( 'Compatibility with kaydenCMS %s: Unknown' ), $cur_wp_version );
 		}
-		// Get plugin compat for updated version of WordPress.
+		// Get plugin compat for updated version of kaydenCMS.
 		if ( $core_update_version ) {
 			if ( isset( $plugin_data->update->tested ) && version_compare( $plugin_data->update->tested, $core_update_version, '>=' ) ) {
-				/* translators: %s: WordPress version. */
-				$compat .= '<br />' . sprintf( __( 'Compatibility with WordPress %s: 100%% (according to its author)' ), $core_update_version );
+				/* translators: %s: kaydenCMS version. */
+				$compat .= '<br />' . sprintf( __( 'Compatibility with kaydenCMS %s: 100%% (according to its author)' ), $core_update_version );
 			} else {
-				/* translators: %s: WordPress version. */
-				$compat .= '<br />' . sprintf( __( 'Compatibility with WordPress %s: Unknown' ), $core_update_version );
+				/* translators: %s: kaydenCMS version. */
+				$compat .= '<br />' . sprintf( __( 'Compatibility with kaydenCMS %s: Unknown' ), $core_update_version );
 			}
 		}
 
@@ -648,7 +648,7 @@ function list_theme_updates() {
 	printf(
 		/* translators: %s: Link to documentation on child themes. */
 		__( '<strong>Please Note:</strong> Any customizations you have made to theme files will be lost. Please consider using <a href="%s">child themes</a> for modifications.' ),
-		__( 'https://developer.wordpress.org/themes/advanced-topics/child-themes/' )
+		__( 'https://developer.kaydenCMS.org/themes/advanced-topics/child-themes/' )
 	);
 	?>
 </p>
@@ -681,11 +681,11 @@ function list_theme_updates() {
 		$compat = '';
 
 		if ( ! $compatible_wp && ! $compatible_php ) {
-			$compat .= '<br>' . __( 'This update does not work with your versions of WordPress and PHP.' ) . '&nbsp;';
+			$compat .= '<br>' . __( 'This update does not work with your versions of kaydenCMS and PHP.' ) . '&nbsp;';
 			if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
 				$compat .= sprintf(
-					/* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-					__( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
+					/* translators: 1: URL to kaydenCMS Updates screen, 2: URL to Update PHP page. */
+					__( '<a href="%1$s">Please update kaydenCMS</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
 					self_admin_url( 'update-core.php' ),
 					esc_url( wp_get_update_php_url() )
 				);
@@ -697,8 +697,8 @@ function list_theme_updates() {
 				}
 			} elseif ( current_user_can( 'update_core' ) ) {
 				$compat .= sprintf(
-					/* translators: %s: URL to WordPress Updates screen. */
-					__( '<a href="%s">Please update WordPress</a>.' ),
+					/* translators: %s: URL to kaydenCMS Updates screen. */
+					__( '<a href="%s">Please update kaydenCMS</a>.' ),
 					self_admin_url( 'update-core.php' )
 				);
 			} elseif ( current_user_can( 'update_php' ) ) {
@@ -715,11 +715,11 @@ function list_theme_updates() {
 				}
 			}
 		} elseif ( ! $compatible_wp ) {
-			$compat .= '<br>' . __( 'This update does not work with your version of WordPress.' ) . '&nbsp;';
+			$compat .= '<br>' . __( 'This update does not work with your version of kaydenCMS.' ) . '&nbsp;';
 			if ( current_user_can( 'update_core' ) ) {
 				$compat .= sprintf(
-					/* translators: %s: URL to WordPress Updates screen. */
-					__( '<a href="%s">Please update WordPress</a>.' ),
+					/* translators: %s: URL to kaydenCMS Updates screen. */
+					__( '<a href="%s">Please update kaydenCMS</a>.' ),
 					self_admin_url( 'update-core.php' )
 				);
 			}
@@ -817,11 +817,11 @@ function list_translation_updates() {
 }
 
 /**
- * Upgrade WordPress core display.
+ * Upgrade kaydenCMS core display.
  *
  * @since 2.7.0
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  *
  * @param bool $reinstall
  */
@@ -850,7 +850,7 @@ function do_core_upgrade( $reinstall = false ) {
 
 	?>
 	<div class="wrap">
-	<h1><?php _e( 'Update WordPress' ); ?></h1>
+	<h1><?php _e( 'Update kaydenCMS' ); ?></h1>
 	<?php
 
 	$credentials = request_filesystem_credentials( $url, '', false, ABSPATH, array( 'version', 'locale' ), $allow_relaxed_file_ownership );
@@ -897,19 +897,19 @@ function do_core_upgrade( $reinstall = false ) {
 		return;
 	}
 
-	show_message( __( 'WordPress updated successfully.' ) );
+	show_message( __( 'kaydenCMS updated successfully.' ) );
 	show_message(
 		'<span class="hide-if-no-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href="%2$s">here</a>.' ),
+			/* translators: 1: kaydenCMS version, 2: URL to About screen. */
+			__( 'Welcome to kaydenCMS %1$s. You will be redirected to the About kaydenCMS screen. If not, click <a href="%2$s">here</a>.' ),
 			$result,
 			esc_url( self_admin_url( 'about.php?updated' ) )
 		) . '</span>'
 	);
 	show_message(
 		'<span class="hide-if-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. <a href="%2$s">Learn more</a>.' ),
+			/* translators: 1: kaydenCMS version, 2: URL to About screen. */
+			__( 'Welcome to kaydenCMS %1$s. <a href="%2$s">Learn more</a>.' ),
 			$result,
 			esc_url( self_admin_url( 'about.php?updated' ) )
 		) . '</span>'
@@ -965,10 +965,10 @@ if ( ( 'do-theme-upgrade' === $action || ( 'do-plugin-upgrade' === $action && ! 
 	$action        = 'upgrade-core';
 }
 
-$title       = __( 'WordPress Updates' );
+$title       = __( 'kaydenCMS Updates' );
 $parent_file = 'index.php';
 
-$updates_overview  = '<p>' . __( 'On this screen, you can update to the latest version of WordPress, as well as update your themes, plugins, and translations from the WordPress.org repositories.' ) . '</p>';
+$updates_overview  = '<p>' . __( 'On this screen, you can update to the latest version of kaydenCMS, as well as update your themes, plugins, and translations from the kaydenCMS.org repositories.' ) . '</p>';
 $updates_overview .= '<p>' . __( 'If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu.' ) . ' ' . __( 'Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers.' ) . '</p>';
 
 get_current_screen()->add_help_tab(
@@ -979,11 +979,11 @@ get_current_screen()->add_help_tab(
 	)
 );
 
-$updates_howto  = '<p>' . __( '<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update now&#8221; button</strong> when you are notified that a new version is available.' ) . ' ' . __( 'In most cases, WordPress will automatically apply maintenance and security updates in the background for you.' ) . '</p>';
+$updates_howto  = '<p>' . __( '<strong>kaydenCMS</strong> &mdash; Updating your kaydenCMS installation is a simple one-click procedure: just <strong>click on the &#8220;Update now&#8221; button</strong> when you are notified that a new version is available.' ) . ' ' . __( 'In most cases, kaydenCMS will automatically apply maintenance and security updates in the background for you.' ) . '</p>';
 $updates_howto .= '<p>' . __( '<strong>Themes and Plugins</strong> &mdash; To update individual themes or plugins from this screen, use the checkboxes to make your selection, then <strong>click on the appropriate &#8220;Update&#8221; button</strong>. To update all of your themes or plugins at once, you can check the box at the top of the section to select all before clicking the update button.' ) . '</p>';
 
 if ( 'en_US' !== get_locale() ) {
-	$updates_howto .= '<p>' . __( '<strong>Translations</strong> &mdash; The files translating WordPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button.' ) . '</p>';
+	$updates_howto .= '<p>' . __( '<strong>Translations</strong> &mdash; The files translating kaydenCMS into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button.' ) . '</p>';
 }
 
 get_current_screen()->add_help_tab(
@@ -997,8 +997,8 @@ get_current_screen()->add_help_tab(
 $help_sidebar_autoupdates = '';
 
 if ( ( current_user_can( 'update_themes' ) && wp_is_auto_update_enabled_for_type( 'theme' ) ) || ( current_user_can( 'update_plugins' ) && wp_is_auto_update_enabled_for_type( 'plugin' ) ) ) {
-	$help_tab_autoupdates  = '<p>' . __( 'Auto-updates can be enabled or disabled for WordPress major versions and for each individual theme or plugin. Themes or plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system.' ) . '</p>';
-	$help_tab_autoupdates .= '<p>' . __( 'Please note: Third-party themes and plugins, or custom code, may override WordPress scheduling.' ) . '</p>';
+	$help_tab_autoupdates  = '<p>' . __( 'Auto-updates can be enabled or disabled for kaydenCMS major versions and for each individual theme or plugin. Themes or plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system.' ) . '</p>';
+	$help_tab_autoupdates .= '<p>' . __( 'Please note: Third-party themes and plugins, or custom code, may override kaydenCMS scheduling.' ) . '</p>';
 
 	get_current_screen()->add_help_tab(
 		array(
@@ -1008,14 +1008,14 @@ if ( ( current_user_can( 'update_themes' ) && wp_is_auto_update_enabled_for_type
 		)
 	);
 
-	$help_sidebar_autoupdates = '<p>' . __( '<a href="https://wordpress.org/support/article/plugins-themes-auto-updates/">Learn more: Auto-updates documentation</a>' ) . '</p>';
+	$help_sidebar_autoupdates = '<p>' . __( '<a href="https://kaydenCMS.org/support/article/plugins-themes-auto-updates/">Learn more: Auto-updates documentation</a>' ) . '</p>';
 }
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/dashboard-updates-screen/">Documentation on Updating WordPress</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/dashboard-updates-screen/">Documentation on Updating kaydenCMS</a>' ) . '</p>' .
 	$help_sidebar_autoupdates .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 if ( 'upgrade-core' === $action ) {
@@ -1026,7 +1026,7 @@ if ( 'upgrade-core' === $action ) {
 	require_once ABSPATH . 'wp-admin/admin-header.php';
 	?>
 	<div class="wrap">
-	<h1><?php _e( 'WordPress Updates' ); ?></h1>
+	<h1><?php _e( 'kaydenCMS Updates' ); ?></h1>
 	<p><?php _e( 'Here you can find information about updates, set auto-updates and see what plugins or themes need updating.' ); ?></p>
 
 	<?php
@@ -1048,7 +1048,7 @@ if ( 'upgrade-core' === $action ) {
 	}
 
 	echo '<h2 class="wp-current-version">';
-	/* translators: Current version of WordPress. */
+	/* translators: Current version of kaydenCMS. */
 	printf( __( 'Current version: %s' ), get_bloginfo( 'version' ) );
 	echo '</h2>';
 
@@ -1261,7 +1261,7 @@ if ( 'upgrade-core' === $action ) {
 	exit;
 } else {
 	/**
-	 * Fires for each custom update action on the WordPress Updates screen.
+	 * Fires for each custom update action on the kaydenCMS Updates screen.
 	 *
 	 * The dynamic portion of the hook name, `$action`, refers to the
 	 * passed update action. The hook fires in lieu of all available
@@ -1269,5 +1269,5 @@ if ( 'upgrade-core' === $action ) {
 	 *
 	 * @since 3.2.0
 	 */
-	do_action( "update-core-custom_{$action}" );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "update-core-custom_{$action}" );  // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 }

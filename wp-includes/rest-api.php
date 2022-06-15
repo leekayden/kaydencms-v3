@@ -2,7 +2,7 @@
 /**
  * REST API functions.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage REST_API
  * @since 4.4.0
  */
@@ -111,7 +111,7 @@ function register_rest_route( $namespace, $route, $args = array(), $override = f
 }
 
 /**
- * Registers a new field on an existing WordPress object type.
+ * Registers a new field on an existing kaydenCMS object type.
  *
  * @since 4.7.0
  *
@@ -158,7 +158,7 @@ function register_rest_field( $object_type, $attribute, $args = array() ) {
  * @since 4.4.0
  *
  * @see rest_api_register_rewrites()
- * @global WP $wp Current WordPress environment instance.
+ * @global WP $wp Current kaydenCMS environment instance.
  */
 function rest_api_init() {
 	rest_api_register_rewrites();
@@ -173,7 +173,7 @@ function rest_api_init() {
  * @since 4.4.0
  *
  * @see add_rewrite_rule()
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite kaydenCMS rewrite component.
  */
 function rest_api_register_rewrites() {
 	global $wp_rewrite;
@@ -368,7 +368,7 @@ function create_initial_rest_routes() {
  *
  * @since 4.4.0
  *
- * @global WP $wp Current WordPress environment instance.
+ * @global WP $wp Current kaydenCMS environment instance.
  */
 function rest_api_loaded() {
 	if ( empty( $GLOBALS['wp']->query_vars['rest_route'] ) ) {
@@ -423,7 +423,7 @@ function rest_get_url_prefix() {
  * @since 4.4.0
  *
  * @todo Check if this is even necessary
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite kaydenCMS rewrite component.
  *
  * @param int|null $blog_id Optional. Blog ID. Default of null returns URL for current blog.
  * @param string   $path    Optional. REST route. Default '/'.
@@ -635,10 +635,10 @@ function rest_handle_deprecated_function( $function, $replacement, $version ) {
 		return;
 	}
 	if ( ! empty( $replacement ) ) {
-		/* translators: 1: Function name, 2: WordPress version number, 3: New function name. */
+		/* translators: 1: Function name, 2: kaydenCMS version number, 3: New function name. */
 		$string = sprintf( __( '%1$s (since %2$s; use %3$s instead)' ), $function, $version, $replacement );
 	} else {
-		/* translators: 1: Function name, 2: WordPress version number. */
+		/* translators: 1: Function name, 2: kaydenCMS version number. */
 		$string = sprintf( __( '%1$s (since %2$s; no alternative available)' ), $function, $version );
 	}
 
@@ -659,10 +659,10 @@ function rest_handle_deprecated_argument( $function, $message, $version ) {
 		return;
 	}
 	if ( $message ) {
-		/* translators: 1: Function name, 2: WordPress version number, 3: Error message. */
+		/* translators: 1: Function name, 2: kaydenCMS version number, 3: Error message. */
 		$string = sprintf( __( '%1$s (since %2$s; %3$s)' ), $function, $version, $message );
 	} else {
-		/* translators: 1: Function name, 2: WordPress version number. */
+		/* translators: 1: Function name, 2: kaydenCMS version number. */
 		$string = sprintf( __( '%1$s (since %2$s; no alternative available)' ), $function, $version );
 	}
 
@@ -676,7 +676,7 @@ function rest_handle_deprecated_argument( $function, $message, $version ) {
  *
  * @param string      $function The function that was called.
  * @param string      $message  A message explaining what has been done incorrectly.
- * @param string|null $version  The version of WordPress where the message was added.
+ * @param string|null $version  The version of kaydenCMS where the message was added.
  */
 function rest_handle_doing_it_wrong( $function, $message, $version ) {
 	if ( ! WP_DEBUG || headers_sent() ) {
@@ -684,7 +684,7 @@ function rest_handle_doing_it_wrong( $function, $message, $version ) {
 	}
 
 	if ( $version ) {
-		/* translators: Developer debugging message. 1: PHP function name, 2: WordPress version number, 3: Explanatory message. */
+		/* translators: Developer debugging message. 1: PHP function name, 2: kaydenCMS version number, 3: Explanatory message. */
 		$string = __( '%1$s (since %2$s; %3$s)' );
 		$string = sprintf( $string, $function, $version, $message );
 	} else {
@@ -1005,7 +1005,7 @@ function rest_output_link_header() {
 /**
  * Checks for errors when using cookie-based authentication.
  *
- * WordPress' built-in cookie authentication is always active
+ * kaydenCMS' built-in cookie authentication is always active
  * for logged in users. However, the API has to check nonces
  * for each request to ensure users are not vulnerable to CSRF.
  *

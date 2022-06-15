@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress Feed API
+ * kaydenCMS Feed API
  *
  * Many of the functions used in here belong in The Loop, or The Loop for the
  * Feeds.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Feed
  * @since 2.1.0
  */
@@ -567,7 +567,7 @@ function atom_enclosure() {
  *
  * Tell whether the type is text, HTML, or XHTML, per RFC 4287 section 3.1.
  *
- * In the case of WordPress, text is defined as containing no markup,
+ * In the case of kaydenCMS, text is defined as containing no markup,
  * XHTML is defined as "well formed", and HTML as tag soup (i.e., the rest).
  *
  * Container div tags are added to XHTML values, per section 3.1.1.3.
@@ -689,7 +689,7 @@ function self_link() {
  * If viewing a comment feed, the time of the most recently modified
  * comment will be returned.
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query kaydenCMS Query object.
  *
  * @since 5.2.0
  *

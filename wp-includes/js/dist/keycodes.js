@@ -71,7 +71,7 @@ __webpack_require__.d(__webpack_exports__, {
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-module/platform.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keycodes/build-module/platform.js
 /**
  * External dependencies
  */
@@ -101,7 +101,7 @@ function isAppleOS() {
   return platform.indexOf('Mac') !== -1 || (0,external_lodash_namespaceObject.includes)(['iPad', 'iPhone'], platform);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keycodes/build-module/index.js
 /**
  * Note: The order of the modifier keys in many of the [foo]Shortcut()
  * functions in this file are intentional and should not be changed. They're
@@ -118,7 +118,7 @@ function isAppleOS() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 

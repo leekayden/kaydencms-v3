@@ -3,12 +3,12 @@
  * Confirms that the activation key that is sent in an email after a user signs
  * up for a new site matches the key for that user and then displays confirmation.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 define( 'WP_INSTALLING', true );
 
-/** Sets up the WordPress Environment. */
+/** Sets up the kaydenCMS Environment. */
 require __DIR__ . '/wp-load.php';
 
 require __DIR__ . '/wp-blog-header.php';

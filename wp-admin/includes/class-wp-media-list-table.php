@@ -2,7 +2,7 @@
 /**
  * List Table API: WP_Media_List_Table class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 3.1.0
  */
@@ -62,7 +62,7 @@ class WP_Media_List_Table extends WP_List_Table {
 
 	/**
 	 * @global string   $mode                  List table view mode.
-	 * @global WP_Query $wp_query              WordPress Query object.
+	 * @global WP_Query $wp_query              kaydenCMS Query object.
 	 * @global array    $post_mime_types
 	 * @global array    $avail_post_mime_types
 	 */

@@ -7,7 +7,7 @@ window.wp = window.wp || {};
 
 (function ($) {
 	/**
-	 * Create the WordPress Backbone namespace.
+	 * Create the kaydenCMS Backbone namespace.
 	 *
 	 * @namespace wp.Backbone
 	 */

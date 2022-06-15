@@ -2,7 +2,7 @@
 /**
  * Upgrade API: File_Upload_Upgrader class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Upgrader
  * @since 4.6.0
  */

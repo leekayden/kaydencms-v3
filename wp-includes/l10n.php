@@ -2,7 +2,7 @@
 /**
  * Core Translation API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage i18n
  * @since 1.2.0
  */
@@ -71,7 +71,7 @@ function get_locale() {
 	}
 
 	/**
-	 * Filters the locale ID of the WordPress installation.
+	 * Filters the locale ID of the kaydenCMS installation.
 	 *
 	 * @since 1.5.0
 	 *
@@ -820,7 +820,7 @@ function unload_textdomain( $domain ) {
 /**
  * Load default translated strings based on locale.
  *
- * Loads the .mo file in WP_LANG_DIR constant path from WordPress root.
+ * Loads the .mo file in WP_LANG_DIR constant path from kaydenCMS root.
  * The translated (.mo) file is named based on the locale.
  *
  * @see load_textdomain()
@@ -1645,12 +1645,12 @@ function wp_dropdown_languages( $args = array() ) {
  * Determines whether the current locale is right-to-left (RTL).
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 3.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @return bool Whether locale is RTL.
  */
@@ -1667,7 +1667,7 @@ function is_rtl() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher kaydenCMS locale switcher object.
  *
  * @param string $locale The locale.
  * @return bool True on success, false on failure.
@@ -1684,7 +1684,7 @@ function switch_to_locale( $locale ) {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher kaydenCMS locale switcher object.
  *
  * @return string|false Locale on success, false on error.
  */
@@ -1700,7 +1700,7 @@ function restore_previous_locale() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher kaydenCMS locale switcher object.
  *
  * @return string|false Locale on success, false on error.
  */
@@ -1716,7 +1716,7 @@ function restore_current_locale() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher kaydenCMS locale switcher object.
  *
  * @return bool True if the locale has been switched, false otherwise.
  */
@@ -1776,7 +1776,7 @@ function translate_settings_using_i18n_schema( $i18n_schema, $settings, $textdom
  *
  * @since 6.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @return string Locale-specific list item separator.
  */

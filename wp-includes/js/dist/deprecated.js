@@ -33,9 +33,9 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/deprecated/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/deprecated/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -60,7 +60,7 @@ const logged = Object.create(null);
  *
  * @example
  * ```js
- * import deprecated from '@wordpress/deprecated';
+ * import deprecated from '@kaydenCMS/deprecated';
  *
  * deprecated( 'Eating meat', {
  * 	since: '2019.01.01'

@@ -882,7 +882,7 @@ function wp_kses_allowed_html( $context = '' ) {
 /**
  * You add any KSES hooks here.
  *
- * There is currently only one KSES WordPress hook, {@see 'pre_kses'}, and it is called here.
+ * There is currently only one KSES kaydenCMS hook, {@see 'pre_kses'}, and it is called here.
  * All parameters are passed to the hooks and expected to receive a string.
  *
  * @since 1.0.0
@@ -1223,7 +1223,7 @@ function wp_kses_attr_check( &$name, &$value, &$whole, $vless, $element, $allowe
 		 * https://www.w3.org/TR/html40/struct/objects.html#adef-data).
 		 *
 		 * Note: the attribute name should only contain `A-Za-z0-9_-` chars,
-		 * double hyphens `--` are not accepted by WordPress.
+		 * double hyphens `--` are not accepted by kaydenCMS.
 		 */
 		if ( strpos( $name_low, 'data-' ) === 0 && ! empty( $allowed_attr['data-*'] )
 			&& preg_match( '/^data(?:-[a-z0-9_]+)+$/', $name_low, $match )
@@ -2171,7 +2171,7 @@ function kses_init_filters() {
  * Removes all KSES input form content filters.
  *
  * A quick procedural method to removing all of the filters that KSES uses for
- * content in WordPress Loop.
+ * content in kaydenCMS Loop.
  *
  * Does not remove the `kses_init()` function from {@see 'init'} hook (priority is
  * default). Also does not remove `kses_init()` function from {@see 'set_current_user'}

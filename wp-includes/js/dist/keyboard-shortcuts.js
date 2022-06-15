@@ -45,7 +45,7 @@ __webpack_require__.d(__webpack_exports__, {
   "useShortcut": function() { return /* reexport */ useShortcut; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -53,7 +53,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "unregisterShortcut": function() { return unregisterShortcut; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -70,7 +70,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/reducer.js
 /**
  * External dependencies
  */
@@ -108,8 +108,8 @@ function reducer() {
 
 /* harmony default export */ var store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/actions.js
-/** @typedef {import('@wordpress/keycodes').WPKeycodeModifier} WPKeycodeModifier */
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/actions.js
+/** @typedef {import('@kaydenCMS/keycodes').WPKeycodeModifier} WPKeycodeModifier */
 
 /**
  * Keyboard key combination.
@@ -449,20 +449,20 @@ function isShallowEqual( a, b, fromIndex ) {
 
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/selectors.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
 /** @typedef {import('./actions').WPShortcutKeyCombination} WPShortcutKeyCombination */
 
-/** @typedef {import('@wordpress/keycodes').WPKeycodeHandlerByModifier} WPKeycodeHandlerByModifier */
+/** @typedef {import('@kaydenCMS/keycodes').WPKeycodeHandlerByModifier} WPKeycodeHandlerByModifier */
 
 /**
  * Shared reference to an empty array for cases where it is important to avoid
@@ -589,9 +589,9 @@ const getCategoryShortcuts = rememo((state, categoryName) => {
   });
 }, state => [state]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -605,7 +605,7 @@ const STORE_NAME = 'core/keyboard-shortcuts';
 /**
  * Store definition for the keyboard shortcuts namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -619,9 +619,9 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 
 ;// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut-event-match.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/hooks/use-shortcut-event-match.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -664,16 +664,16 @@ function useShortcutEventMatch() {
   return isMatch;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const context = (0,external_wp_element_namespaceObject.createContext)();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/hooks/use-shortcut.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -735,12 +735,12 @@ function _extends() {
 
   return _extends.apply(this, arguments);
 }
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/components/shortcut-provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/components/shortcut-provider.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -756,7 +756,7 @@ const {
  *
  * @param {Object} props Props to pass to `div`.
  *
- * @return {import('@wordpress/element').WPElement} Component.
+ * @return {import('@kaydenCMS/element').WPElement} Component.
  */
 
 function ShortcutProvider(props) {
@@ -780,7 +780,7 @@ function ShortcutProvider(props) {
   /* eslint-enable jsx-a11y/no-static-element-interactions */
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/keyboard-shortcuts/build-module/index.js
 
 
 

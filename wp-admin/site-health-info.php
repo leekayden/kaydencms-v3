@@ -2,7 +2,7 @@
 /**
  * Tools Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -40,7 +40,7 @@ $health_check_site_status = WP_Site_Health::get_instance();
 	<p>
 		<?php
 			/* translators: %s: URL to Site Health Status page. */
-			printf( __( 'This page can show you every detail about the configuration of your WordPress website. For any improvements that could be made, see the <a href="%s">Site Health Status</a> page.' ), esc_url( admin_url( 'site-health.php' ) ) );
+			printf( __( 'This page can show you every detail about the configuration of your kaydenCMS website. For any improvements that could be made, see the <a href="%s">Site Health Status</a> page.' ), esc_url( admin_url( 'site-health.php' ) ) );
 		?>
 	</p>
 	<p>
@@ -60,7 +60,7 @@ $health_check_site_status = WP_Site_Health::get_instance();
 
 		<?php
 
-		$sizes_fields = array( 'uploads_size', 'themes_size', 'plugins_size', 'wordpress_size', 'database_size', 'total_size' );
+		$sizes_fields = array( 'uploads_size', 'themes_size', 'plugins_size', 'kaydenCMS_size', 'database_size', 'total_size' );
 
 		foreach ( $info as $section => $details ) {
 			if ( ! isset( $details['fields'] ) || empty( $details['fields'] ) ) {

@@ -2,11 +2,11 @@
 /**
  * Add Link Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_links' ) ) {

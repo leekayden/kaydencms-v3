@@ -78,7 +78,7 @@
 									</th>
 									<td width="5%"/>
 									<td align="left">
-										<span class="api-key"><input id="key" name="key" type="text" size="15" value="<?php echo esc_attr( get_option('wordpress_api_key') ); ?>" class="<?php echo esc_attr( 'regular-text code ' . $akismet_user->status ); ?>"></span>
+										<span class="api-key"><input id="key" name="key" type="text" size="15" value="<?php echo esc_attr( get_option('kaydenCMS_api_key') ); ?>" class="<?php echo esc_attr( 'regular-text code ' . $akismet_user->status ); ?>"></span>
 									</td>
 								</tr>
 								<?php } ?>

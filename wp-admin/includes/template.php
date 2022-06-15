@@ -1,10 +1,10 @@
 <?php
 /**
- * Template WordPress Administration API.
+ * Template kaydenCMS Administration API.
  *
  * A Big Mess. Also some neat functions that are nicely written.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -664,7 +664,7 @@ function _list_meta_row( $entry, &$count ) {
  *
  * @since 1.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param WP_Post $post Optional. The post being edited.
  */
@@ -781,7 +781,7 @@ function meta_form( $post = null ) {
  * @since 0.71
  * @since 4.4.0 Converted to use get_comment() instead of the global `$comment`.
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param int|bool $edit      Accepts 1|true for editing the date, 0|false for adding the date.
  * @param int|bool $for_post  Accepts 1|true for applying the date to a post, 0|false for a comment.
@@ -896,7 +896,7 @@ function page_template_dropdown( $default_template = '', $post_type = 'page' ) {
  * @since 1.5.0
  * @since 4.4.0 `$post` argument was added.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int         $default_page Optional. The default page ID to be pre-selected. Default 0.
  * @param int         $parent       Optional. The parent page ID. Default 0.
@@ -1155,7 +1155,7 @@ function do_block_editor_incompatible_meta_box( $data_object, $box ) {
 	if ( empty( $plugins['classic-editor/classic-editor.php'] ) ) {
 		if ( current_user_can( 'install_plugins' ) ) {
 			$install_url = wp_nonce_url(
-				self_admin_url( 'plugin-install.php?tab=favorites&user=wordpressdotorg&save=0' ),
+				self_admin_url( 'plugin-install.php?tab=favorites&user=kaydenCMSdotorg&save=0' ),
 				'save_wporg_username_' . get_current_user_id()
 			);
 
@@ -2017,7 +2017,7 @@ function _admin_search_query() {
  *
  * @global string    $hook_suffix
  * @global string    $admin_body_class
- * @global WP_Locale $wp_locale        WordPress date and time locale object.
+ * @global WP_Locale $wp_locale        kaydenCMS date and time locale object.
  *
  * @param string $title      Optional. Title of the Iframe page. Default empty.
  * @param bool   $deprecated Not used.
@@ -2032,7 +2032,7 @@ function iframe_header( $title = '', $deprecated = false ) {
 	header( 'Content-Type: ' . get_option( 'html_type' ) . '; charset=' . get_option( 'blog_charset' ) );
 	_wp_admin_html_begin();
 	?>
-<title><?php bloginfo( 'name' ); ?> &rsaquo; <?php echo $title; ?> &#8212; <?php _e( 'WordPress' ); ?></title>
+<title><?php bloginfo( 'name' ); ?> &rsaquo; <?php echo $title; ?> &#8212; <?php _e( 'kaydenCMS' ); ?></title>
 	<?php
 	wp_enqueue_style( 'colors' );
 	?>
@@ -2052,19 +2052,19 @@ var ajaxurl = '<?php echo esc_js( admin_url( 'admin-ajax.php', 'relative' ) ); ?
 	do_action( 'admin_enqueue_scripts', $hook_suffix );
 
 	/** This action is documented in wp-admin/admin-header.php */
-	do_action( "admin_print_styles-{$hook_suffix}" );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "admin_print_styles-{$hook_suffix}" );  // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_print_styles' );
 
 	/** This action is documented in wp-admin/admin-header.php */
-	do_action( "admin_print_scripts-{$hook_suffix}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "admin_print_scripts-{$hook_suffix}" ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_print_scripts' );
 
 	/** This action is documented in wp-admin/admin-header.php */
-	do_action( "admin_head-{$hook_suffix}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "admin_head-{$hook_suffix}" ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_head' );
@@ -2121,7 +2121,7 @@ function iframe_footer() {
 	do_action( 'admin_footer', $hook_suffix );
 
 	/** This action is documented in wp-admin/admin-footer.php */
-	do_action( "admin_print_footer_scripts-{$hook_suffix}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "admin_print_footer_scripts-{$hook_suffix}" ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 	/** This action is documented in wp-admin/admin-footer.php */
 	do_action( 'admin_print_footer_scripts' );

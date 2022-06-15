@@ -506,7 +506,7 @@ var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
 // EXTERNAL MODULE: ./node_modules/sprintf-js/src/sprintf.js
 var sprintf = __webpack_require__(124);
 var sprintf_default = /*#__PURE__*/__webpack_require__.n(sprintf);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/sprintf.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/i18n/build-module/sprintf.js
 /**
  * External dependencies
  */
@@ -1054,7 +1054,7 @@ Tannin.prototype.dcnpgettext = function( domain, context, singular, plural, n ) 
 	return index === 0 ? singular : plural;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/create-i18n.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/i18n/build-module/create-i18n.js
 /**
  * External dependencies
  */
@@ -1143,7 +1143,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  *
  * Retrieve the translation of text.
  *
- * @see https://developer.wordpress.org/reference/functions/__/
+ * @see https://developer.kaydenCMS.org/reference/functions/__/
  */
 
 /**
@@ -1151,7 +1151,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  *
  * Retrieve translated string with gettext context.
  *
- * @see https://developer.wordpress.org/reference/functions/_x/
+ * @see https://developer.kaydenCMS.org/reference/functions/_x/
  */
 
 /**
@@ -1160,7 +1160,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * Translates and retrieves the singular or plural form based on the supplied
  * number.
  *
- * @see https://developer.wordpress.org/reference/functions/_n/
+ * @see https://developer.kaydenCMS.org/reference/functions/_n/
  */
 
 /**
@@ -1169,7 +1169,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * Translates and retrieves the singular or plural form based on the supplied
  * number, with gettext context.
  *
- * @see https://developer.wordpress.org/reference/functions/_nx/
+ * @see https://developer.kaydenCMS.org/reference/functions/_nx/
  */
 
 /**
@@ -1189,7 +1189,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * Check if there is a translation for a given string in singular form.
  */
 
-/** @typedef {import('@wordpress/hooks').Hooks} Hooks */
+/** @typedef {import('@kaydenCMS/hooks').Hooks} Hooks */
 
 /**
  * An i18n instance
@@ -1552,13 +1552,13 @@ const createI18n = (initialData, initialDomain, hooks) => {
 
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/default-i18n.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/i18n/build-module/default-i18n.js
 /**
  * Internal dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1570,7 +1570,7 @@ const i18n = createI18n(undefined, undefined, external_wp_hooks_namespaceObject.
 /* harmony default export */ var default_i18n = (i18n);
 /*
  * Comments in this file are duplicated from ./i18n due to
- * https://github.com/WordPress/gutenberg/pull/20318#issuecomment-590837722
+ * https://github.com/kaydenCMS/gutenberg/pull/20318#issuecomment-590837722
  */
 
 /**
@@ -1622,7 +1622,7 @@ const subscribe = i18n.subscribe.bind(i18n);
 /**
  * Retrieve the translation of text.
  *
- * @see https://developer.wordpress.org/reference/functions/__/
+ * @see https://developer.kaydenCMS.org/reference/functions/__/
  *
  * @param {string} text     Text to translate.
  * @param {string} [domain] Domain to retrieve the translated text.
@@ -1634,7 +1634,7 @@ const __ = i18n.__.bind(i18n);
 /**
  * Retrieve translated string with gettext context.
  *
- * @see https://developer.wordpress.org/reference/functions/_x/
+ * @see https://developer.kaydenCMS.org/reference/functions/_x/
  *
  * @param {string} text     Text to translate.
  * @param {string} context  Context information for the translators.
@@ -1648,7 +1648,7 @@ const _x = i18n._x.bind(i18n);
  * Translates and retrieves the singular or plural form based on the supplied
  * number.
  *
- * @see https://developer.wordpress.org/reference/functions/_n/
+ * @see https://developer.kaydenCMS.org/reference/functions/_n/
  *
  * @param {string} single   The text to be used if the number is singular.
  * @param {string} plural   The text to be used if the number is plural.
@@ -1664,7 +1664,7 @@ const _n = i18n._n.bind(i18n);
  * Translates and retrieves the singular or plural form based on the supplied
  * number, with gettext context.
  *
- * @see https://developer.wordpress.org/reference/functions/_nx/
+ * @see https://developer.kaydenCMS.org/reference/functions/_nx/
  *
  * @param {string} single   The text to be used if the number is singular.
  * @param {string} plural   The text to be used if the number is plural.
@@ -1700,7 +1700,7 @@ const isRTL = i18n.isRTL.bind(i18n);
 
 const hasTranslation = i18n.hasTranslation.bind(i18n);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/i18n/build-module/index.js
 
 
 

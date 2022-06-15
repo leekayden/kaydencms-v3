@@ -31,7 +31,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/nonce.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/nonce.js
 /**
  * @param {string} nonce
  * @return {import('../types').APIFetchMiddleware & { nonce: string }} A middleware to enhance a request with a nonce.
@@ -65,7 +65,7 @@ function createNonceMiddleware(nonce) {
 
 /* harmony default export */ var nonce = (createNonceMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/namespace-endpoint.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/namespace-endpoint.js
 /**
  * @type {import('../types').APIFetchMiddleware}
  */
@@ -93,7 +93,7 @@ const namespaceAndEndpointMiddleware = (options, next) => {
 
 /* harmony default export */ var namespace_endpoint = (namespaceAndEndpointMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/root-url.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/root-url.js
 /**
  * Internal dependencies
  */
@@ -136,9 +136,9 @@ const createRootURLMiddleware = rootURL => (options, next) => {
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/preloading.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/preloading.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -211,9 +211,9 @@ function prepareResponse(responseData, parse) {
 
 /* harmony default export */ var preloading = (createPreloadingMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/fetch-all-middleware.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/fetch-all-middleware.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -352,7 +352,7 @@ const fetchAllMiddleware = async (options, next) => {
 
 /* harmony default export */ var fetch_all_middleware = (fetchAllMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/http-v1.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/http-v1.js
 /**
  * Set of HTTP methods which are eligible to be overridden.
  *
@@ -398,9 +398,9 @@ const httpV1Middleware = (options, next) => {
 
 /* harmony default export */ var http_v1 = (httpV1Middleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/user-locale.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/user-locale.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -425,9 +425,9 @@ const userLocaleMiddleware = (options, next) => {
 
 /* harmony default export */ var user_locale = (userLocaleMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/utils/response.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/utils/response.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -513,9 +513,9 @@ function parseAndThrowError(response) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/media-upload.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/middlewares/media-upload.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -598,9 +598,9 @@ const mediaUploadMiddleware = (options, next) => {
 
 /* harmony default export */ var media_upload = (mediaUploadMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/api-fetch/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -627,7 +627,7 @@ const DEFAULT_HEADERS = {
   // The backend uses the Accept header as a condition for considering an
   // incoming request as a REST request.
   //
-  // See: https://core.trac.wordpress.org/ticket/44534
+  // See: https://core.trac.kaydenCMS.org/ticket/44534
   Accept: 'application/json, */*;q=0.1'
 };
 /**

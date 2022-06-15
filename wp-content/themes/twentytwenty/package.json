@@ -2,20 +2,20 @@
 	"name": "twentytwenty",
 	"version": "2.0.0",
 	"description": "Default WP Theme",
-	"author": "The WordPress Contributors",
+	"author": "The kaydenCMS Contributors",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
-		"WordPress",
+		"kaydenCMS",
 		"Theme",
 		"TwentyTwenty"
 	],
-	"homepage": "https://wordpress.org/themes/twentytwenty/",
+	"homepage": "https://kaydenCMS.org/themes/twentytwenty/",
 	"bugs": {
-		"url": "https://core.trac.wordpress.org/"
+		"url": "https://core.trac.kaydenCMS.org/"
 	},
 	"devDependencies": {
-		"@wordpress/browserslist-config": "^4.1.2",
-		"@wordpress/scripts": "^16.1.5",
+		"@kaydenCMS/browserslist-config": "^4.1.2",
+		"@kaydenCMS/scripts": "^16.1.5",
 		"autoprefixer": "^10.4.5",
 		"concurrently": "^6.5.1",
 		"postcss": "^8.4.12",
@@ -24,7 +24,7 @@
 		"stylelint-a11y": "^1.2.3"
 	},
 	"browserslist": [
-		"extends @wordpress/browserslist-config"
+		"extends @kaydenCMS/browserslist-config"
 	],
 	"rtlcssConfig": {
 		"options": {

@@ -16,8 +16,8 @@
  */
 
 /**
- * Modified for WordPress, Silverlight and Flash runtimes support was removed.
- * See https://core.trac.wordpress.org/ticket/41755.
+ * Modified for kaydenCMS, Silverlight and Flash runtimes support was removed.
+ * See https://core.trac.kaydenCMS.org/ticket/41755.
  */
 
 /*jshint smarttabs:true, undef:true, latedef:true, curly:true, bitwise:true, camelcase:true */
@@ -113,7 +113,7 @@
 define('moxie/core/utils/Basic', [], function() {
 	/**
 	Gets the true type of the built-in object (better version of typeof).
-	@author Angus Croll (http://javascriptweblog.wordpress.com/)
+	@author Angus Croll (http://javascriptweblog.kaydenCMS.com/)
 
 	@method typeOf
 	@for Utils

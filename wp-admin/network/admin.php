@@ -1,15 +1,15 @@
 <?php
 /**
- * WordPress Network Administration Bootstrap
+ * kaydenCMS Network Administration Bootstrap
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since 3.1.0
  */
 
 define( 'WP_NETWORK_ADMIN', true );
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once dirname( __DIR__ ) . '/admin.php';
 
 // Do not remove this check. It is required by individual network admin pages.

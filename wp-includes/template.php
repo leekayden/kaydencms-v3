@@ -2,7 +2,7 @@
 /**
  * Template loading functions.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Template
  */
 
@@ -282,7 +282,7 @@ function get_category_template() {
  *
  * An example of this is:
  *
- * 1. tag-wordpress.php
+ * 1. tag-kaydenCMS.php
  * 2. tag-3.php
  * 3. tag.php
  *
@@ -720,9 +720,9 @@ function locate_template( $template_names, $load = false, $require_once = true, 
 }
 
 /**
- * Require the template file with WordPress environment.
+ * Require the template file with kaydenCMS environment.
  *
- * The globals are set up for the template file to ensure that the WordPress
+ * The globals are set up for the template file to ensure that the kaydenCMS
  * environment is available from within the function. The query variables are
  * also available.
  *
@@ -732,11 +732,11 @@ function locate_template( $template_names, $load = false, $require_once = true, 
  * @global array      $posts
  * @global WP_Post    $post          Global post object.
  * @global bool       $wp_did_header
- * @global WP_Query   $wp_query      WordPress Query object.
- * @global WP_Rewrite $wp_rewrite    WordPress rewrite component.
- * @global wpdb       $wpdb          WordPress database abstraction object.
+ * @global WP_Query   $wp_query      kaydenCMS Query object.
+ * @global WP_Rewrite $wp_rewrite    kaydenCMS rewrite component.
+ * @global wpdb       $wpdb          kaydenCMS database abstraction object.
  * @global string     $wp_version
- * @global WP         $wp            Current WordPress environment instance.
+ * @global WP         $wp            Current kaydenCMS environment instance.
  * @global int        $id
  * @global WP_Comment $comment       Global comment object.
  * @global int        $user_ID
@@ -758,7 +758,7 @@ function load_template( $_template_file, $require_once = true, $args = array() )
 		 * Passing the EXTR_SKIP flag is the safest option, ensuring globals and
 		 * function variables cannot be overwritten.
 		 */
-		// phpcs:ignore WordPress.PHP.DontExtract.extract_extract
+		// phpcs:ignore kaydenCMS.PHP.DontExtract.extract_extract
 		extract( $wp_query->query_vars, EXTR_SKIP );
 	}
 

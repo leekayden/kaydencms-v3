@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Section classes
+ * kaydenCMS Customize Section classes
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Customize
  * @since 3.4.0
  */

@@ -2,7 +2,7 @@
 /**
  * oEmbed API: Top-level oEmbed functionality
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage oEmbed
  * @since 4.4.0
  */
@@ -514,7 +514,7 @@ function get_post_embed_html( $width, $height, $post = null ) {
 	// `wp_filter_oembed_result()`. Because of the regex pattern starts with `|(<blockquote>.*?</blockquote>)?.*|`
 	// wherein the <blockquote> is marked as being optional, if it is not at the beginning of the string then the group
 	// will fail to match and everything will be matched by `.*` and not included in the group. This regex issue goes
-	// back to WordPress 4.4, so in order to not break older installs this script must come at the end.
+	// back to kaydenCMS 4.4, so in order to not break older installs this script must come at the end.
 	$output .= wp_get_inline_script_tag(
 		file_get_contents( ABSPATH . WPINC . '/js/wp-embed' . wp_scripts_get_suffix() . '.js' )
 	);
@@ -1156,18 +1156,18 @@ function print_embed_sharing_dialog() {
 		<div class="wp-embed-share-dialog-content">
 			<div class="wp-embed-share-dialog-text">
 				<ul class="wp-embed-share-tabs" role="tablist">
-					<li class="wp-embed-share-tab-button wp-embed-share-tab-button-wordpress" role="presentation">
-						<button type="button" role="tab" aria-controls="wp-embed-share-tab-wordpress" aria-selected="true" tabindex="0"><?php esc_html_e( 'WordPress Embed' ); ?></button>
+					<li class="wp-embed-share-tab-button wp-embed-share-tab-button-kaydenCMS" role="presentation">
+						<button type="button" role="tab" aria-controls="wp-embed-share-tab-kaydenCMS" aria-selected="true" tabindex="0"><?php esc_html_e( 'kaydenCMS Embed' ); ?></button>
 					</li>
 					<li class="wp-embed-share-tab-button wp-embed-share-tab-button-html" role="presentation">
 						<button type="button" role="tab" aria-controls="wp-embed-share-tab-html" aria-selected="false" tabindex="-1"><?php esc_html_e( 'HTML Embed' ); ?></button>
 					</li>
 				</ul>
-				<div id="wp-embed-share-tab-wordpress" class="wp-embed-share-tab" role="tabpanel" aria-hidden="false">
-					<input type="text" value="<?php the_permalink(); ?>" class="wp-embed-share-input" aria-describedby="wp-embed-share-description-wordpress" tabindex="0" readonly/>
+				<div id="wp-embed-share-tab-kaydenCMS" class="wp-embed-share-tab" role="tabpanel" aria-hidden="false">
+					<input type="text" value="<?php the_permalink(); ?>" class="wp-embed-share-input" aria-describedby="wp-embed-share-description-kaydenCMS" tabindex="0" readonly/>
 
-					<p class="wp-embed-share-description" id="wp-embed-share-description-wordpress">
-						<?php _e( 'Copy and paste this URL into your WordPress site to embed' ); ?>
+					<p class="wp-embed-share-description" id="wp-embed-share-description-kaydenCMS">
+						<?php _e( 'Copy and paste this URL into your kaydenCMS site to embed' ); ?>
 					</p>
 				</div>
 				<div id="wp-embed-share-tab-html" class="wp-embed-share-tab" role="tabpanel" aria-hidden="true">

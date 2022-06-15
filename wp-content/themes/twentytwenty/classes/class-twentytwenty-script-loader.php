@@ -6,7 +6,7 @@
  *
  * Based on a solution in WP Rig.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
@@ -22,11 +22,11 @@ if ( ! class_exists( 'TwentyTwenty_Script_Loader' ) ) {
 		/**
 		 * Adds async/defer attributes to enqueued / registered scripts.
 		 *
-		 * If #12009 lands in WordPress, this function can no-op since it would be handled in core.
+		 * If #12009 lands in kaydenCMS, this function can no-op since it would be handled in core.
 		 *
 		 * @since Twenty Twenty 1.0
 		 *
-		 * @link https://core.trac.wordpress.org/ticket/12009
+		 * @link https://core.trac.kaydenCMS.org/ticket/12009
 		 *
 		 * @param string $tag    The script tag.
 		 * @param string $handle The script handle.

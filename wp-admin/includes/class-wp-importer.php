@@ -9,9 +9,9 @@ class WP_Importer {
 	public function __construct() {}
 
 	/**
-	 * Returns array with imported permalinks from WordPress database
+	 * Returns array with imported permalinks from kaydenCMS database
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $importer_name
 	 * @param string $blog_id
@@ -46,9 +46,9 @@ class WP_Importer {
 	}
 
 	/**
-	 * Return count of imported permalinks from WordPress database
+	 * Return count of imported permalinks from kaydenCMS database
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $importer_name
 	 * @param string $blog_id
@@ -73,9 +73,9 @@ class WP_Importer {
 	}
 
 	/**
-	 * Set array with imported comments from WordPress database
+	 * Set array with imported comments from kaydenCMS database
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $blog_id
 	 * @return array
@@ -252,7 +252,7 @@ class WP_Importer {
 	 *
 	 * @since 3.0.0
 	 *
-	 * @global wpdb  $wpdb       WordPress database abstraction object.
+	 * @global wpdb  $wpdb       kaydenCMS database abstraction object.
 	 * @global int[] $wp_actions
 	 */
 	public function stop_the_insanity() {

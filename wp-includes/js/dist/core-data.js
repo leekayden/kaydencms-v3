@@ -572,7 +572,7 @@ __webpack_require__.d(__webpack_exports__, {
   "useEntityProp": function() { return /* reexport */ useEntityProp; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/core-data/build-module/actions.js
 var build_module_actions_namespaceObject = {};
 __webpack_require__.r(build_module_actions_namespaceObject);
 __webpack_require__.d(build_module_actions_namespaceObject, {
@@ -600,7 +600,7 @@ __webpack_require__.d(build_module_actions_namespaceObject, {
   "undo": function() { return undo; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/core-data/build-module/selectors.js
 var build_module_selectors_namespaceObject = {};
 __webpack_require__.r(build_module_selectors_namespaceObject);
 __webpack_require__.d(build_module_selectors_namespaceObject, {
@@ -650,7 +650,7 @@ __webpack_require__.d(build_module_selectors_namespaceObject, {
   "isSavingEntityRecord": function() { return isSavingEntityRecord; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/core-data/build-module/resolvers.js
 var resolvers_namespaceObject = {};
 __webpack_require__.r(resolvers_namespaceObject);
 __webpack_require__.d(resolvers_namespaceObject, {
@@ -682,7 +682,7 @@ var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/if-matching-action.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/if-matching-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -704,7 +704,7 @@ const ifMatchingAction = isMatch => reducer => (state, action) => {
 
 /* harmony default export */ var if_matching_action = (ifMatchingAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/replace-action.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/replace-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -721,7 +721,7 @@ const replaceAction = replacer => reducer => (state, action) => {
 
 /* harmony default export */ var replace_action = (replaceAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/conservative-map-item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/conservative-map-item.js
 /**
  * External dependencies
  */
@@ -771,7 +771,7 @@ function conservativeMapItem(item, nextItem) {
   return result;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/on-sub-key.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/on-sub-key.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -903,7 +903,7 @@ var external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/queried-data/actions.js
 /**
  * External dependencies
  */
@@ -964,13 +964,13 @@ function receiveQueriedItems(items) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/default-processor.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/batch/default-processor.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1044,7 +1044,7 @@ async function defaultProcessor(requests) {
   return results;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/create-batch.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/batch/create-batch.js
 /**
  * External dependencies
  */
@@ -1056,7 +1056,7 @@ async function defaultProcessor(requests) {
 
 /**
  * Creates a batch, which can be used to combine multiple API requests into one
- * API request using the WordPress batch processing API (/v1/batch).
+ * API request using the kaydenCMS batch processing API (/v1/batch).
  *
  * ```
  * const batch = createBatch();
@@ -1247,7 +1247,7 @@ class ObservableSet {
 
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/name.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/name.js
 /**
  * The reducer key used by core data in store registration.
  * This is defined in a separate file to avoid cycle-dependency
@@ -1256,14 +1256,14 @@ class ObservableSet {
  */
 const STORE_NAME = 'core';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/actions.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2003,13 +2003,13 @@ function receiveAutosaves(postId, autosaves) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entities.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/entities.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2342,7 +2342,7 @@ const getOrLoadEntitiesConfig = kind => async _ref => {
   return configs;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/get-normalized-comma-separable.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/get-normalized-comma-separable.js
 /**
  * Given a value which can be specified as one or the other of a comma-separated
  * string or an array, returns a value normalized to an array of strings, or
@@ -2364,7 +2364,7 @@ function getNormalizedCommaSeparable(value) {
 
 /* harmony default export */ var get_normalized_comma_separable = (getNormalizedCommaSeparable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/with-weak-map-cache.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/with-weak-map-cache.js
 /**
  * External dependencies
  */
@@ -2402,9 +2402,9 @@ function withWeakMapCache(fn) {
 
 /* harmony default export */ var with_weak_map_cache = (withWeakMapCache);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/get-query-parts.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/queried-data/get-query-parts.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -2514,13 +2514,13 @@ function getQueryParts(query) {
 }
 /* harmony default export */ var get_query_parts = (with_weak_map_cache(getQueryParts));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/queried-data/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2756,13 +2756,13 @@ const queries = function () {
   queries
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3681,7 +3681,7 @@ function isShallowEqual( a, b, fromIndex ) {
 // EXTERNAL MODULE: ./node_modules/equivalent-key-map/equivalent-key-map.js
 var equivalent_key_map = __webpack_require__(2167);
 var equivalent_key_map_default = /*#__PURE__*/__webpack_require__.n(equivalent_key_map);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/queried-data/selectors.js
 /**
  * External dependencies
  */
@@ -3813,7 +3813,7 @@ const getQueriedItems = rememo(function (state) {
   return items;
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/is-raw-attribute.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/is-raw-attribute.js
 /**
  * Checks whether the attribute is a "raw" attribute or not.
  *
@@ -3826,14 +3826,14 @@ function isRawAttribute(entity, attribute) {
   return (entity.rawAttributes || []).includes(attribute);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/selectors.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3915,7 +3915,7 @@ const getUserQueryResults = rememo((state, queryID) => {
 /**
  * Returns the loaded entities for the given kind.
  *
- * @deprecated since WordPress 6.0. Use getEntitiesConfig instead
+ * @deprecated since kaydenCMS 6.0. Use getEntitiesConfig instead
  * @param {Object} state Data state.
  * @param {string} kind  Entity kind.
  *
@@ -3946,7 +3946,7 @@ function getEntitiesConfig(state, kind) {
 /**
  * Returns the entity config given its kind and name.
  *
- * @deprecated since WordPress 6.0. Use getEntityConfig instead
+ * @deprecated since kaydenCMS 6.0. Use getEntityConfig instead
  * @param {Object} state Data state.
  * @param {string} kind  Entity kind.
  * @param {string} name  Entity name.
@@ -4469,7 +4469,7 @@ function getEmbedPreview(state, url) {
 /**
  * Determines if the returned preview is an oEmbed link fallback.
  *
- * WordPress can be configured to return a simple link to a URL if it is not embeddable.
+ * kaydenCMS can be configured to return a simple link to a URL if it is not embeddable.
  * We need to be able to determine if a URL is embeddable or not, based on what we
  * get back from the oEmbed preview API.
  *
@@ -4496,7 +4496,7 @@ function isPreviewEmbedFallback(state, url) {
  * Calling this may trigger an OPTIONS request to the REST API via the
  * `canUser()` resolver.
  *
- * https://developer.wordpress.org/rest-api/reference/
+ * https://developer.kaydenCMS.org/rest-api/reference/
  *
  * @param {Object}  state    Data state.
  * @param {string}  action   Action to check. One of: 'create', 'read', 'update', 'delete'.
@@ -4517,7 +4517,7 @@ function canUser(state, action, resource, id) {
  * Calling this may trigger an OPTIONS request to the REST API via the
  * `canUser()` resolver.
  *
- * https://developer.wordpress.org/rest-api/reference/
+ * https://developer.kaydenCMS.org/rest-api/reference/
  *
  * @param {Object} state    Data state.
  * @param {string} kind     Entity kind.
@@ -4685,7 +4685,7 @@ function getBlockPatternCategories(state) {
   return state.blockPatternCategories;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/forward-resolver.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/utils/forward-resolver.js
 /**
  * Higher-order function which forward the resolution to another resolver with the same arguments.
  *
@@ -4708,13 +4708,13 @@ const forwardResolver = resolverName => function () {
 
 /* harmony default export */ var forward_resolver = (forwardResolver);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/resolvers.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4801,7 +4801,7 @@ const resolvers_getEntityRecord = function (kind, name) {
       // additional query modifications in the condition below, since those
       // modifications are relevant to how the data is tracked in state, and not
       // for how the request is made to the REST API.
-      // eslint-disable-next-line @wordpress/no-unused-vars-before-return
+      // eslint-disable-next-line @kaydenCMS/no-unused-vars-before-return
 
 
       const path = (0,external_wp_url_namespaceObject.addQueryArgs)(entityConfig.baseURL + (key ? '/' + key : ''), { ...entityConfig.baseURLParams,
@@ -4904,7 +4904,7 @@ const resolvers_getEntityRecords = function (kind, name) {
 
       dispatch.receiveEntityRecords(kind, name, records, query); // When requesting all fields, the list of results can be used to
       // resolve the `getEntityRecord` selector in addition to `getEntityRecords`.
-      // See https://github.com/WordPress/gutenberg/pull/26575
+      // See https://github.com/kaydenCMS/gutenberg/pull/26575
 
       if (!((_query = query) !== null && _query !== void 0 && _query._fields) && !query.context) {
         const key = entityConfig.key || DEFAULT_ENTITY_KEY;
@@ -5212,7 +5212,7 @@ const resolvers_getBlockPatternCategories = () => async _ref17 => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/locks/utils.js
 function deepCopyLocksTreePath(tree, path) {
   const newTree = { ...tree
   };
@@ -5286,7 +5286,7 @@ function hasConflictingLock(_ref, locks) {
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/locks/reducer.js
 /**
  * Internal dependencies
  */
@@ -5360,7 +5360,7 @@ function locks() {
   return state;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/locks/selectors.js
 /**
  * Internal dependencies
  */
@@ -5403,7 +5403,7 @@ function isLockAvailable(state, store, path, _ref) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/engine.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/locks/engine.js
 /**
  * Internal dependencies
  */
@@ -5470,7 +5470,7 @@ function createLocks() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/locks/actions.js
 /**
  * Internal dependencies
  */
@@ -5499,11 +5499,11 @@ function createLocksActions() {
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","blocks"]
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entity-provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/entity-provider.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5513,7 +5513,7 @@ var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
  */
 
 
-/** @typedef {import('@wordpress/blocks').WPBlock} WPBlock */
+/** @typedef {import('@kaydenCMS/blocks').WPBlock} WPBlock */
 
 const EMPTY_ARRAY = [];
 /**
@@ -5732,7 +5732,7 @@ function useEntityBlockEditor(kind, name) {
 // EXTERNAL MODULE: ./node_modules/memize/index.js
 var memize = __webpack_require__(9756);
 var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/memoize.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/hooks/memoize.js
 /**
  * External dependencies
  */
@@ -5740,7 +5740,7 @@ var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
 
 /* harmony default export */ var memoize = ((memize_default()));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/hooks/constants.js
 /* eslint-disable-next-line no-shadow */
 let Status;
 
@@ -5751,9 +5751,9 @@ let Status;
   Status["Success"] = "SUCCESS";
 })(Status || (Status = {}));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-query-select.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/hooks/use-query-select.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -5773,8 +5773,8 @@ const META_SELECTORS = ['getIsResolving', 'hasStartedResolution', 'hasFinishedRe
  *
  * @example
  * ```js
- * import { useQuerySelect } from '@wordpress/data';
- * import { store as coreDataStore } from '@wordpress/core-data';
+ * import { useQuerySelect } from '@kaydenCMS/data';
+ * import { store as coreDataStore } from '@kaydenCMS/core-data';
  *
  * function PageTitleDisplay( { id } ) {
  *   const { data: page, isResolving } = useQuerySelect( ( query ) => {
@@ -5868,7 +5868,7 @@ const enrichSelectors = memoize(selectors => {
   return resolvers;
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-record.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/hooks/use-entity-record.js
 /**
  * Internal dependencies
  */
@@ -5885,7 +5885,7 @@ const enrichSelectors = memoize(selectors => {
  * @param  [options.enabled=true] Whether to run the query or short-circuit and return null. Defaults to true.
  * @example
  * ```js
- * import { useEntityRecord } from '@wordpress/core-data';
+ * import { useEntityRecord } from '@kaydenCMS/core-data';
  *
  * function PageTitleDisplay( { id } ) {
  *   const { record, isResolving } = useEntityRecord( 'postType', 'page', id );
@@ -5928,9 +5928,9 @@ function __experimentalUseEntityRecord(kind, name, recordId) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-records.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/hooks/use-entity-records.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -5949,7 +5949,7 @@ function __experimentalUseEntityRecord(kind, name, recordId) {
  * @param  options   Hook options.
  * @example
  * ```js
- * import { useEntityRecord } from '@wordpress/core-data';
+ * import { useEntityRecord } from '@kaydenCMS/core-data';
  *
  * function PageTitlesList() {
  *   const { records, isResolving } = useEntityRecords( 'postType', 'page' );
@@ -6008,9 +6008,9 @@ function __experimentalUseEntityRecords(kind, name) {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6075,7 +6075,7 @@ var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
  *
  * @example
  * ```js
- * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@wordpress/core-data';
+ * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@kaydenCMS/core-data';
  *
  * //...
  *
@@ -6222,9 +6222,9 @@ const fetchLinkSuggestions = async function (search) {
 
 /* harmony default export */ var _experimental_fetch_link_suggestions = (fetchLinkSuggestions);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-url-data.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/fetch/__experimental-fetch-url-data.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6250,7 +6250,7 @@ const CACHE = new Map();
  * @param {Object?} options any options to pass to the underlying fetch.
  * @example
  * ```js
- * import { __experimentalFetchUrlData as fetchUrlData } from '@wordpress/core-data';
+ * import { __experimentalFetchUrlData as fetchUrlData } from '@kaydenCMS/core-data';
  *
  * //...
  *
@@ -6297,13 +6297,13 @@ const fetchUrlData = async function (url) {
 
 /* harmony default export */ var _experimental_fetch_url_data = (fetchUrlData);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/fetch/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/core-data/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -6384,7 +6384,7 @@ const storeConfig = () => ({
 /**
  * Store definition for the code data namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */

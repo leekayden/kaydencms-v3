@@ -4,7 +4,7 @@
 
 /* global getUserSetting, tinymce, QTags */
 
-// WordPress, TinyMCE, and Media
+// kaydenCMS, TinyMCE, and Media
 // -----------------------------
 (function($, _){
 	/**

@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress Ajax Process Execution
+ * kaydenCMS Ajax Process Execution
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  *
- * @link https://codex.wordpress.org/AJAX_in_Plugins
+ * @link https://codex.kaydenCMS.org/AJAX_in_Plugins
  */
 
 /**
@@ -18,7 +18,7 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 	define( 'WP_ADMIN', true );
 }
 
-/** Load WordPress Bootstrap */
+/** Load kaydenCMS Bootstrap */
 require_once dirname( __DIR__ ) . '/wp-load.php';
 
 /** Allow for cross-domain requests (from the front end). */
@@ -32,10 +32,10 @@ if ( empty( $_REQUEST['action'] ) || ! is_scalar( $_REQUEST['action'] ) ) {
 	wp_die( '0', 400 );
 }
 
-/** Load WordPress Administration APIs */
+/** Load kaydenCMS Administration APIs */
 require_once ABSPATH . 'wp-admin/includes/admin.php';
 
-/** Load Ajax Handlers for WordPress Core */
+/** Load Ajax Handlers for kaydenCMS Core */
 require_once ABSPATH . 'wp-admin/includes/ajax-actions.php';
 
 send_nosniff_header();

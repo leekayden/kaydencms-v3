@@ -2,7 +2,7 @@
 /**
  * Deprecated. No longer needed.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @deprecated 3.1.0
  */
 

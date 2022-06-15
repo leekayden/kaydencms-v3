@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Post_Search_Handler class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage REST_API
  * @since 5.0.0
  */
@@ -166,7 +166,7 @@ class WP_REST_Post_Search_Handler extends WP_REST_Search_Handler {
 	/**
 	 * Overwrites the default protected title format.
 	 *
-	 * By default, WordPress will show password protected posts with a title of
+	 * By default, kaydenCMS will show password protected posts with a title of
 	 * "Protected: %s". As the REST API communicates the protected status of a post
 	 * in a machine readable format, we remove the "Protected: " prefix.
 	 *

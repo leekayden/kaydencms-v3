@@ -19,7 +19,7 @@
  */
 /**
  * Grid System.
- * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ * https://make.kaydenCMS.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-kaydenCMS/
  */
 /**
  * Dimensions.
@@ -93,8 +93,8 @@
    * for the overlay.
    *
    * See:
-   *   - Issue with background color specificity: https://github.com/WordPress/gutenberg/issues/26545
-   *   - Issue with alternative fix: https://github.com/WordPress/gutenberg/issues/26545
+   *   - Issue with background color specificity: https://github.com/kaydenCMS/gutenberg/issues/26545
+   *   - Issue with alternative fix: https://github.com/kaydenCMS/gutenberg/issues/26545
    */
 }
 .wp-block-cover-image.has-parallax,

@@ -2,7 +2,7 @@
 /**
  * Utilities used to fetch and create templates and template parts.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 5.8.0
  */
 
@@ -616,7 +616,7 @@ function get_block_templates( $query = array(), $template_type = 'wp_template' )
 	/**
 	 * Filters the block templates array before the query takes place.
 	 *
-	 * Return a non-null value to bypass the WordPress queries.
+	 * Return a non-null value to bypass the kaydenCMS queries.
 	 *
 	 * @since 5.9.0
 	 *
@@ -751,7 +751,7 @@ function get_block_template( $id, $template_type = 'wp_template' ) {
 	/**
 	 *Filters the block template object before the query takes place.
 	 *
-	 * Return a non-null value to bypass the WordPress queries.
+	 * Return a non-null value to bypass the kaydenCMS queries.
 	 *
 	 * @since 5.9.0
 	 *
@@ -823,7 +823,7 @@ function get_block_file_template( $id, $template_type = 'wp_template' ) {
 	/**
 	 * Filters the block templates array before the query takes place.
 	 *
-	 * Return a non-null value to bypass the WordPress queries.
+	 * Return a non-null value to bypass the kaydenCMS queries.
 	 *
 	 * @since 5.9.0
 	 *

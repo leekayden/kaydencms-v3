@@ -2,7 +2,7 @@
 /**
  * Update/Install Plugin/Theme network administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since 3.1.0
  */
@@ -11,7 +11,7 @@ if ( isset( $_GET['action'] ) && in_array( $_GET['action'], array( 'update-selec
 	define( 'IFRAME_REQUEST', true );
 }
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 require ABSPATH . 'wp-admin/update.php';

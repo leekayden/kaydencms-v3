@@ -2,13 +2,13 @@
 /**
  * HTTP API: Requests hook bridge class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage HTTP
  * @since 4.7.0
  */
 
 /**
- * Bridge to connect Requests internal hooks to WordPress actions.
+ * Bridge to connect Requests internal hooks to kaydenCMS actions.
  *
  * @since 4.7.0
  *
@@ -23,7 +23,7 @@ class WP_HTTP_Requests_Hooks extends Requests_Hooks {
 	protected $url;
 
 	/**
-	 * WordPress WP_HTTP request data.
+	 * kaydenCMS WP_HTTP request data.
 	 *
 	 * @var array Request data in WP_Http format.
 	 */
@@ -41,7 +41,7 @@ class WP_HTTP_Requests_Hooks extends Requests_Hooks {
 	}
 
 	/**
-	 * Dispatch a Requests hook to a native WordPress action.
+	 * Dispatch a Requests hook to a native kaydenCMS action.
 	 *
 	 * @param string $hook       Hook name.
 	 * @param array  $parameters Parameters to pass to callbacks.
@@ -59,11 +59,11 @@ class WP_HTTP_Requests_Hooks extends Requests_Hooks {
 		}
 
 		/**
-		 * Transforms a native Request hook to a WordPress action.
+		 * Transforms a native Request hook to a kaydenCMS action.
 		 *
-		 * This action maps Requests internal hook to a native WordPress action.
+		 * This action maps Requests internal hook to a native kaydenCMS action.
 		 *
-		 * @see https://github.com/WordPress/Requests/blob/master/docs/hooks.md
+		 * @see https://github.com/kaydenCMS/Requests/blob/master/docs/hooks.md
 		 *
 		 * @since 4.7.0
 		 *
@@ -71,7 +71,7 @@ class WP_HTTP_Requests_Hooks extends Requests_Hooks {
 		 * @param array $request Request data in WP_Http format.
 		 * @param string $url URL to request.
 		 */
-		do_action_ref_array( "requests-{$hook}", $parameters, $this->request, $this->url ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+		do_action_ref_array( "requests-{$hook}", $parameters, $this->request, $this->url ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 		return $result;
 	}

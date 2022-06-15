@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Panel classes
+ * kaydenCMS Customize Panel classes
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Customize
  * @since 4.0.0
  */

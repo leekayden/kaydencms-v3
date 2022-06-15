@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Importer API.
+ * kaydenCMS Administration Importer API.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -39,7 +39,7 @@ function _usort_by_first_member( $a, $b ) {
 }
 
 /**
- * Register importer for WordPress.
+ * Register importer for kaydenCMS.
  *
  * @since 2.0.0
  *
@@ -129,7 +129,7 @@ function wp_import_handle_upload() {
 }
 
 /**
- * Returns a list from WordPress.org of popular importer plugins.
+ * Returns a list from kaydenCMS.org of popular importer plugins.
  *
  * @since 3.5.0
  *
@@ -149,9 +149,9 @@ function wp_get_popular_importers() {
 				'locale'  => $locale,
 				'version' => $wp_version,
 			),
-			'http://api.wordpress.org/core/importers/1.1/'
+			'http://api.kaydenCMS.org/core/importers/1.1/'
 		);
-		$options = array( 'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ) );
+		$options = array( 'user-agent' => 'kaydenCMS/' . $wp_version . '; ' . home_url( '/' ) );
 
 		if ( wp_http_supports( array( 'ssl' ) ) ) {
 			$url = set_url_scheme( $url, 'https' );
@@ -174,10 +174,10 @@ function wp_get_popular_importers() {
 		}
 
 		foreach ( $popular_importers['importers'] as &$importer ) {
-			// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 			$importer['description'] = translate( $importer['description'] );
-			if ( 'WordPress' !== $importer['name'] ) {
-				// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			if ( 'kaydenCMS' !== $importer['name'] ) {
+				// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 				$importer['name'] = translate( $importer['name'] );
 			}
 		}
@@ -222,11 +222,11 @@ function wp_get_popular_importers() {
 			'plugin-slug' => 'tumblr-importer',
 			'importer-id' => 'tumblr',
 		),
-		'wordpress'   => array(
-			'name'        => 'WordPress',
-			'description' => __( 'Import posts, pages, comments, custom fields, categories, and tags from a WordPress export file.' ),
-			'plugin-slug' => 'wordpress-importer',
-			'importer-id' => 'wordpress',
+		'kaydenCMS'   => array(
+			'name'        => 'kaydenCMS',
+			'description' => __( 'Import posts, pages, comments, custom fields, categories, and tags from a kaydenCMS export file.' ),
+			'plugin-slug' => 'kaydenCMS-importer',
+			'importer-id' => 'kaydenCMS',
 		),
 	);
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Taxonomy Administration API.
+ * kaydenCMS Taxonomy Administration API.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 

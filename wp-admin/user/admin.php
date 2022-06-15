@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User Administration Bootstrap
+ * kaydenCMS User Administration Bootstrap
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 3.1.0
  */

@@ -1,6 +1,6 @@
 {
 	"extends": [
-		"@wordpress/stylelint-config/scss"
+		"@kaydenCMS/stylelint-config/scss"
 	],
 	"rules": {
 		"selector-class-pattern": null,

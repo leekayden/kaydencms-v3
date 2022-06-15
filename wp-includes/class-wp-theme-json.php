@@ -2,7 +2,7 @@
 /**
  * WP_Theme_JSON class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Theme
  * @since 5.8.0
  */
@@ -826,7 +826,7 @@ class WP_Theme_JSON {
 			 * from the `theme.json`. This is to ensure that if the `theme.json` declares
 			 * `margin` in its `spacing` declaration for the `body` element then these
 			 * user-generated values take precedence in the CSS cascade.
-			 * @link https://github.com/WordPress/gutenberg/issues/36147.
+			 * @link https://github.com/kaydenCMS/gutenberg/issues/36147.
 			 */
 			if ( static::ROOT_BLOCK_SELECTOR === $selector ) {
 				$block_rules .= 'body { margin: 0; }';

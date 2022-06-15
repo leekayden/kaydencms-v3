@@ -2,7 +2,7 @@
 /**
  * Upgrade API: WP_Automatic_Updater class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Upgrader
  * @since 4.6.0
  */
@@ -127,7 +127,7 @@ class WP_Automatic_Updater {
 	 *
 	 * @since 3.7.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $type    The type of update being checked: 'core', 'theme',
 	 *                        'plugin', 'translation'.
@@ -193,8 +193,8 @@ class WP_Automatic_Updater {
 		 *  - `auto_update_theme`
 		 *  - `auto_update_translation`
 		 *
-		 * Since WordPress 3.7, minor and development versions of core, and translations have
-		 * been auto-updated by default. New installs on WordPress 5.6 or higher will also
+		 * Since kaydenCMS 3.7, minor and development versions of core, and translations have
+		 * been auto-updated by default. New installs on kaydenCMS 5.6 or higher will also
 		 * auto-update major versions by default. Starting in 5.6, older sites can opt-in to
 		 * major version auto-updates, and auto-updates for plugins and themes.
 		 *
@@ -271,11 +271,11 @@ class WP_Automatic_Updater {
 		 * Filters whether to notify the site administrator of a new core update.
 		 *
 		 * By default, administrators are notified when the update offer received
-		 * from WordPress.org sets a particular flag. This allows some discretion
+		 * from kaydenCMS.org sets a particular flag. This allows some discretion
 		 * in if and when to notify.
 		 *
 		 * This filter is only evaluated once per release. If the same email address
-		 * was already notified of the same new version, WordPress won't repeatedly
+		 * was already notified of the same new version, kaydenCMS won't repeatedly
 		 * email the administrator.
 		 *
 		 * This filter is also used on about.php to check if a plugin has disabled
@@ -347,10 +347,10 @@ class WP_Automatic_Updater {
 		$upgrader_item = $item;
 		switch ( $type ) {
 			case 'core':
-				/* translators: %s: WordPress version. */
-				$skin->feedback( __( 'Updating to WordPress %s' ), $item->version );
-				/* translators: %s: WordPress version. */
-				$item_name = sprintf( __( 'WordPress %s' ), $item->version );
+				/* translators: %s: kaydenCMS version. */
+				$skin->feedback( __( 'Updating to kaydenCMS %s' ), $item->version );
+				/* translators: %s: kaydenCMS version. */
+				$item_name = sprintf( __( 'kaydenCMS %s' ), $item->version );
 				break;
 			case 'theme':
 				$upgrader_item = $item->theme;
@@ -378,9 +378,9 @@ class WP_Automatic_Updater {
 				break;
 			case 'translation':
 				$language_item_name = $upgrader->get_name_for_update( $item );
-				/* translators: %s: Project name (plugin, theme, or WordPress). */
+				/* translators: %s: Project name (plugin, theme, or kaydenCMS). */
 				$item_name = sprintf( __( 'Translations for %s' ), $language_item_name );
-				/* translators: 1: Project name (plugin, theme, or WordPress), 2: Language. */
+				/* translators: 1: Project name (plugin, theme, or kaydenCMS), 2: Language. */
 				$skin->feedback( sprintf( __( 'Updating translations for %1$s (%2$s)&#8230;' ), $language_item_name, $item->language ) );
 				break;
 		}
@@ -424,7 +424,7 @@ class WP_Automatic_Updater {
 				$upgrade_result->add( 'installation_failed', __( 'Installation failed.' ) );
 				$skin->error( $upgrade_result );
 			} else {
-				$skin->feedback( __( 'WordPress updated successfully.' ) );
+				$skin->feedback( __( 'kaydenCMS updated successfully.' ) );
 			}
 		}
 
@@ -622,7 +622,7 @@ class WP_Automatic_Updater {
 		 *
 		 * For certain 'transient' failures, like download_failed, we should allow retries.
 		 * In fact, let's schedule a special update for an hour from now. (It's possible
-		 * the issue could actually be on WordPress.org's side.) If that one fails, then email.
+		 * the issue could actually be on kaydenCMS.org's side.) If that one fails, then email.
 		 */
 		$send               = true;
 		$transient_failures = array( 'incompatible_archive', 'download_failed', 'insane_distro', 'locked' );
@@ -711,14 +711,14 @@ class WP_Automatic_Updater {
 
 		switch ( $type ) {
 			case 'success': // We updated.
-				/* translators: Site updated notification email subject. 1: Site title, 2: WordPress version. */
-				$subject = __( '[%1$s] Your site has updated to WordPress %2$s' );
+				/* translators: Site updated notification email subject. 1: Site title, 2: kaydenCMS version. */
+				$subject = __( '[%1$s] Your site has updated to kaydenCMS %2$s' );
 				break;
 
 			case 'fail':   // We tried to update but couldn't.
 			case 'manual': // We can't update (and made no attempt).
-				/* translators: Update available notification email subject. 1: Site title, 2: WordPress version. */
-				$subject = __( '[%1$s] WordPress %2$s is available. Please update!' );
+				/* translators: Update available notification email subject. 1: Site title, 2: kaydenCMS version. */
+				$subject = __( '[%1$s] kaydenCMS %2$s is available. Please update!' );
 				break;
 
 			case 'critical': // We tried to update, started to copy files, then things went wrong.
@@ -739,8 +739,8 @@ class WP_Automatic_Updater {
 		switch ( $type ) {
 			case 'success':
 				$body .= sprintf(
-					/* translators: 1: Home URL, 2: WordPress version. */
-					__( 'Howdy! Your site at %1$s has been updated automatically to WordPress %2$s.' ),
+					/* translators: 1: Home URL, 2: kaydenCMS version. */
+					__( 'Howdy! Your site at %1$s has been updated automatically to kaydenCMS %2$s.' ),
 					home_url(),
 					$core_update->current
 				);
@@ -751,13 +751,13 @@ class WP_Automatic_Updater {
 
 				// Can only reference the About screen if their update was successful.
 				list( $about_version ) = explode( '-', $core_update->current, 2 );
-				/* translators: %s: WordPress version. */
-				$body .= sprintf( __( 'For more on version %s, see the About WordPress screen:' ), $about_version );
+				/* translators: %s: kaydenCMS version. */
+				$body .= sprintf( __( 'For more on version %s, see the About kaydenCMS screen:' ), $about_version );
 				$body .= "\n" . admin_url( 'about.php' );
 
 				if ( $newer_version_available ) {
-					/* translators: %s: WordPress latest version. */
-					$body .= "\n\n" . sprintf( __( 'WordPress %s is also now available.' ), $next_user_core_update->current ) . ' ';
+					/* translators: %s: kaydenCMS latest version. */
+					$body .= "\n\n" . sprintf( __( 'kaydenCMS %s is also now available.' ), $next_user_core_update->current ) . ' ';
 					$body .= __( 'Updating is easy and only takes a few moments:' );
 					$body .= "\n" . network_admin_url( 'update-core.php' );
 				}
@@ -767,8 +767,8 @@ class WP_Automatic_Updater {
 			case 'fail':
 			case 'manual':
 				$body .= sprintf(
-					/* translators: 1: Home URL, 2: WordPress version. */
-					__( 'Please update your site at %1$s to WordPress %2$s.' ),
+					/* translators: 1: Home URL, 2: kaydenCMS version. */
+					__( 'Please update your site at %1$s to kaydenCMS %2$s.' ),
 					home_url(),
 					$next_user_core_update->current
 				);
@@ -788,15 +788,15 @@ class WP_Automatic_Updater {
 			case 'critical':
 				if ( $newer_version_available ) {
 					$body .= sprintf(
-						/* translators: 1: Home URL, 2: WordPress version. */
-						__( 'Your site at %1$s experienced a critical failure while trying to update WordPress to version %2$s.' ),
+						/* translators: 1: Home URL, 2: kaydenCMS version. */
+						__( 'Your site at %1$s experienced a critical failure while trying to update kaydenCMS to version %2$s.' ),
 						home_url(),
 						$core_update->current
 					);
 				} else {
 					$body .= sprintf(
-						/* translators: 1: Home URL, 2: WordPress latest version. */
-						__( 'Your site at %1$s experienced a critical failure while trying to update to the latest version of WordPress, %2$s.' ),
+						/* translators: 1: Home URL, 2: kaydenCMS latest version. */
+						__( 'Your site at %1$s experienced a critical failure while trying to update to the latest version of kaydenCMS, %2$s.' ),
 						home_url(),
 						$core_update->current
 					);
@@ -814,13 +814,13 @@ class WP_Automatic_Updater {
 			// Support offer if available.
 			$body .= "\n\n" . sprintf(
 				/* translators: %s: Support email address. */
-				__( 'The WordPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working.' ),
+				__( 'The kaydenCMS team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working.' ),
 				$core_update->support_email
 			);
 		} else {
 			// Add a note about the support forums.
-			$body .= "\n\n" . __( 'If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.' );
-			$body .= "\n" . __( 'https://wordpress.org/support/forums/' );
+			$body .= "\n\n" . __( 'If you experience any issues or need support, the volunteers in the kaydenCMS.org support forums may be able to help.' );
+			$body .= "\n" . __( 'https://kaydenCMS.org/support/forums/' );
 		}
 
 		// Updates are important!
@@ -838,11 +838,11 @@ class WP_Automatic_Updater {
 			$body .= "\n" . network_admin_url();
 		}
 
-		$body .= "\n\n" . __( 'The WordPress Team' ) . "\n";
+		$body .= "\n\n" . __( 'The kaydenCMS Team' ) . "\n";
 
 		if ( 'critical' === $type && is_wp_error( $result ) ) {
 			$body .= "\n***\n\n";
-			/* translators: %s: WordPress version. */
+			/* translators: %s: kaydenCMS version. */
 			$body .= sprintf( __( 'Your site was running version %s.' ), get_bloginfo( 'version' ) );
 			$body .= ' ' . __( 'Some data that describes the error your site encountered has been put together.' );
 			$body .= ' ' . __( 'Your hosting company, support forum volunteers, or a friendly developer may be able to use this information to help you:' );
@@ -1232,9 +1232,9 @@ class WP_Automatic_Updater {
 		}
 
 		// Add a note about the support forums.
-		$body[] = __( 'If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.' );
-		$body[] = __( 'https://wordpress.org/support/forums/' );
-		$body[] = "\n" . __( 'The WordPress Team' );
+		$body[] = __( 'If you experience any issues or need support, the volunteers in the kaydenCMS.org support forums may be able to help.' );
+		$body[] = __( 'https://kaydenCMS.org/support/forums/' );
+		$body[] = "\n" . __( 'The kaydenCMS Team' );
 
 		if ( '' !== get_option( 'blogname' ) ) {
 			$site_title = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
@@ -1291,18 +1291,18 @@ class WP_Automatic_Updater {
 		$failures = 0;
 
 		/* translators: %s: Network home URL. */
-		$body[] = sprintf( __( 'WordPress site: %s' ), network_home_url( '/' ) );
+		$body[] = sprintf( __( 'kaydenCMS site: %s' ), network_home_url( '/' ) );
 
 		// Core.
 		if ( isset( $this->update_results['core'] ) ) {
 			$result = $this->update_results['core'][0];
 
 			if ( $result->result && ! is_wp_error( $result->result ) ) {
-				/* translators: %s: WordPress version. */
-				$body[] = sprintf( __( 'SUCCESS: WordPress was successfully updated to %s' ), $result->name );
+				/* translators: %s: kaydenCMS version. */
+				$body[] = sprintf( __( 'SUCCESS: kaydenCMS was successfully updated to %s' ), $result->name );
 			} else {
-				/* translators: %s: WordPress version. */
-				$body[] = sprintf( __( 'FAILED: WordPress failed to update to %s' ), $result->name );
+				/* translators: %s: kaydenCMS version. */
+				$body[] = sprintf( __( 'FAILED: kaydenCMS failed to update to %s' ), $result->name );
 				$failures++;
 			}
 
@@ -1365,13 +1365,13 @@ class WP_Automatic_Updater {
 					"BETA TESTING?
 =============
 
-This debugging email is sent when you are using a development version of WordPress.
+This debugging email is sent when you are using a development version of kaydenCMS.
 
-If you think these failures might be due to a bug in WordPress, could you report it?
- * Open a thread in the support forums: https://wordpress.org/support/forum/alphabeta
- * Or, if you're comfortable writing a bug report: https://core.trac.wordpress.org/
+If you think these failures might be due to a bug in kaydenCMS, could you report it?
+ * Open a thread in the support forums: https://kaydenCMS.org/support/forum/alphabeta
+ * Or, if you're comfortable writing a bug report: https://core.trac.kaydenCMS.org/
 
-Thanks! -- The WordPress Team"
+Thanks! -- The kaydenCMS Team"
 				)
 			);
 			$body[] = '';

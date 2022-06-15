@@ -26,7 +26,7 @@ class Akismet {
 	}
 
 	/**
-	 * Initializes WordPress hooks
+	 * Initializes kaydenCMS hooks
 	 */
 	private static function init_hooks() {
 		self::$initiated = true;
@@ -72,14 +72,14 @@ class Akismet {
 		add_filter( 'fluentform_form_element_start', array( 'Akismet', 'output_custom_form_fields' ) );
 		add_filter( 'fluentform_akismet_fields', array( 'Akismet', 'prepare_custom_form_values' ), 10, 2 );
 
-		add_action( 'update_option_wordpress_api_key', array( 'Akismet', 'updated_option' ), 10, 2 );
-		add_action( 'add_option_wordpress_api_key', array( 'Akismet', 'added_option' ), 10, 2 );
+		add_action( 'update_option_kaydenCMS_api_key', array( 'Akismet', 'updated_option' ), 10, 2 );
+		add_action( 'add_option_kaydenCMS_api_key', array( 'Akismet', 'added_option' ), 10, 2 );
 
 		add_action( 'comment_form_after',  array( 'Akismet',  'display_comment_form_privacy_notice' ) );
 	}
 
 	public static function get_api_key() {
-		return apply_filters( 'akismet_get_api_key', defined('WPCOM_API_KEY') ? constant('WPCOM_API_KEY') : get_option('wordpress_api_key') );
+		return apply_filters( 'akismet_get_api_key', defined('WPCOM_API_KEY') ? constant('WPCOM_API_KEY') : get_option('kaydenCMS_api_key') );
 	}
 
 	public static function check_key_status( $key, $ip = null ) {
@@ -116,7 +116,7 @@ class Akismet {
 	 * @return array The updated whitelist
 	 */
 	public static function add_to_jetpack_options_whitelist( $options ) {
-		$options[] = 'wordpress_api_key';
+		$options[] = 'kaydenCMS_api_key';
 		return $options;
 	}
 
@@ -143,11 +143,11 @@ class Akismet {
 	/**
 	 * Treat the creation of an API key the same as updating the API key to a new value.
 	 *
-	 * @param mixed  $option_name   Will always be "wordpress_api_key", until something else hooks in here.
+	 * @param mixed  $option_name   Will always be "kaydenCMS_api_key", until something else hooks in here.
 	 * @param mixed  $value         The option value.
 	 */
 	public static function added_option( $option_name, $value ) {
-		if ( 'wordpress_api_key' === $option_name ) {
+		if ( 'kaydenCMS_api_key' === $option_name ) {
 			return self::updated_option( '', $value );
 		}
 	}
@@ -356,7 +356,7 @@ class Akismet {
 					update_comment_meta( $comment->comment_ID, 'akismet_result', 'false' );
 					self::update_comment_history( $comment->comment_ID, '', 'check-ham' );
 					// Status could be spam or trash, depending on the WP version and whether this change applies:
-					// https://core.trac.wordpress.org/changeset/34726
+					// https://core.trac.kaydenCMS.org/changeset/34726
 					if ( $comment->comment_approved == 'spam' || $comment->comment_approved == 'trash' ) {
 						if ( function_exists( 'wp_check_comment_disallowed_list' ) ) {
 							if ( wp_check_comment_disallowed_list( $comment->comment_author, $comment->comment_author_email, $comment->comment_author_url, $comment->comment_content, $comment->comment_author_IP, $comment->comment_agent ) ) {
@@ -730,7 +730,7 @@ class Akismet {
 		
 		// Assumption alert:
 		// We want to submit comments to Akismet only when a moderator explicitly spams or approves it - not if the status
-		// is changed automatically by another plugin.  Unfortunately WordPress doesn't provide an unambiguous way to
+		// is changed automatically by another plugin.  Unfortunately kaydenCMS doesn't provide an unambiguous way to
 		// determine why the transition_comment_status action was triggered.  And there are several different ways by which
 		// to spam and unspam comments: bulk actions, ajax, links in moderation emails, the dashboard, and perhaps others.
 		// We'll assume that this is an explicit user action if certain POST/GET variables exist.
@@ -752,11 +752,11 @@ class Akismet {
 			 || ( isset( $_GET['action'] ) && in_array( $_GET['action'], array( 'spam', 'unspam', 'spamcomment', 'unspamcomment', ) ) )
 			 // action=editedcomment: Editing a comment via wp-admin (and possibly changing its status).
 			 || ( isset( $_POST['action'] ) && in_array( $_POST['action'], array( 'editedcomment' ) ) )
-			 // for=jetpack: Moderation via the WordPress app, Calypso, anything powered by the Jetpack connection.
+			 // for=jetpack: Moderation via the kaydenCMS app, Calypso, anything powered by the Jetpack connection.
 			 || ( isset( $_GET['for'] ) && ( 'jetpack' == $_GET['for'] ) && ( ! defined( 'IS_WPCOM' ) || ! IS_WPCOM ) ) 
-			 // Certain WordPress.com API requests
+			 // Certain kaydenCMS.com API requests
 			 || ( defined( 'REST_API_REQUEST' ) && REST_API_REQUEST )
-			 // WordPress.org REST API requests
+			 // kaydenCMS.org REST API requests
 			 || ( defined( 'REST_REQUEST' ) && REST_REQUEST )
 		 ) {
 			if ( $new_status == 'spam' && ( $old_status == 'approved' || $old_status == 'unapproved' || !$old_status ) ) {
@@ -1211,7 +1211,7 @@ class Akismet {
 	 */
 	public static function http_post( $request, $path, $ip=null ) {
 
-		$akismet_ua = sprintf( 'WordPress/%s | Akismet/%s', $GLOBALS['wp_version'], constant( 'AKISMET_VERSION' ) );
+		$akismet_ua = sprintf( 'kaydenCMS/%s | Akismet/%s', $GLOBALS['wp_version'], constant( 'AKISMET_VERSION' ) );
 		$akismet_ua = apply_filters( 'akismet_ua', $akismet_ua );
 
 		$content_length = strlen( $request );
@@ -1383,7 +1383,7 @@ class Akismet {
 	}
 
 	public static function output_custom_form_fields( $post_id ) {
-		// phpcs:ignore WordPress.Security.EscapeOutput
+		// phpcs:ignore kaydenCMS.Security.EscapeOutput
 		echo self::get_akismet_form_fields();
 	}
 
@@ -1409,7 +1409,7 @@ class Akismet {
 	 */
 	public static function prepare_custom_form_values( $form, $data = null ) {
 		if ( is_null( $data ) ) {
-			// phpcs:ignore WordPress.Security.NonceVerification.Missing
+			// phpcs:ignore kaydenCMS.Security.NonceVerification.Missing
 			$data = $_POST;
 		}
 
@@ -1493,7 +1493,7 @@ p {
 		if ( version_compare( $GLOBALS['wp_version'], AKISMET__MINIMUM_WP_VERSION, '<' ) ) {
 			load_plugin_textdomain( 'akismet' );
 			
-			$message = '<strong>'.sprintf(esc_html__( 'Akismet %s requires WordPress %s or higher.' , 'akismet'), AKISMET_VERSION, AKISMET__MINIMUM_WP_VERSION ).'</strong> '.sprintf(__('Please <a href="%1$s">upgrade WordPress</a> to a current version, or <a href="%2$s">downgrade to version 2.4 of the Akismet plugin</a>.', 'akismet'), 'https://codex.wordpress.org/Upgrading_WordPress', 'https://wordpress.org/extend/plugins/akismet/download/');
+			$message = '<strong>'.sprintf(esc_html__( 'Akismet %s requires kaydenCMS %s or higher.' , 'akismet'), AKISMET_VERSION, AKISMET__MINIMUM_WP_VERSION ).'</strong> '.sprintf(__('Please <a href="%1$s">upgrade kaydenCMS</a> to a current version, or <a href="%2$s">downgrade to version 2.4 of the Akismet plugin</a>.', 'akismet'), 'https://codex.kaydenCMS.org/Upgrading_kaydenCMS', 'https://kaydenCMS.org/extend/plugins/akismet/download/');
 
 			Akismet::bail_on_activation( $message );
 		} elseif ( ! empty( $_SERVER['SCRIPT_NAME'] ) && false !== strpos( $_SERVER['SCRIPT_NAME'], '/wp-admin/plugins.php' ) ) {
@@ -1553,7 +1553,7 @@ p {
 			return;
 
 		// A lot of this code is tightly coupled with the IXR class because the xmlrpc_call action doesn't pass along any information besides the method name.
-		// This ticket should hopefully fix that: https://core.trac.wordpress.org/ticket/52524
+		// This ticket should hopefully fix that: https://core.trac.kaydenCMS.org/ticket/52524
 		// Until that happens, when it's a system.multicall, pre_check_pingback will be called once for every internal pingback call.
 		// Keep track of how many times this function has been called so we know which call to reference in the XML.
 		static $call_count = 0;

@@ -55,7 +55,7 @@ __webpack_require__.d(__webpack_exports__, {
   "store": function() { return /* reexport */ store; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/nux/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -65,7 +65,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "triggerGuide": function() { return triggerGuide; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/nux/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -79,9 +79,9 @@ var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -163,7 +163,7 @@ const preferences = (0,external_wp_data_namespaceObject.combineReducers)({
   preferences
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/store/actions.js
 /**
  * Returns an action object that, when dispatched, presents a guide that takes
  * the user through a series of tips step by step.
@@ -495,7 +495,7 @@ function isShallowEqual( a, b, fromIndex ) {
 
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/store/selectors.js
 /**
  * External dependencies
  */
@@ -575,9 +575,9 @@ function selectors_areTipsEnabled(state) {
   return state.preferences.areTipsEnabled;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -591,7 +591,7 @@ const STORE_NAME = 'core/nux';
 /**
  * Store definition for the nux namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -621,11 +621,11 @@ var external_wp_components_namespaceObject = window["wp"]["components"];
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/close.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const close_close = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -636,11 +636,11 @@ const close_close = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/components/dot-tip/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/components/dot-tip/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -739,9 +739,9 @@ function DotTip(_ref) {
   };
 }))(DotTip));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/nux/build-module/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 

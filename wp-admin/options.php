@@ -11,11 +11,11 @@
  * that use the Settings API. In this case it saves the new option values
  * and returns the user to their page of origin.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // Used in the HTML title tag.
@@ -304,7 +304,7 @@ if ( 'update' === $action ) { // We are saving settings sent from a settings pag
 					'2.7.0',
 					sprintf(
 						/* translators: %s: The option/setting. */
-						__( 'The %s setting is unregistered. Unregistered settings are deprecated. See https://developer.wordpress.org/plugins/settings/settings-api/' ),
+						__( 'The %s setting is unregistered. Unregistered settings are deprecated. See https://developer.kaydenCMS.org/plugins/settings/settings-api/' ),
 						'<code>' . esc_html( $option ) . '</code>'
 					)
 				);

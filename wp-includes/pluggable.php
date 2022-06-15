@@ -3,7 +3,7 @@
  * These functions can be replaced via plugins. If plugins do not redefine these
  * functions, then these will be used instead.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 if ( ! function_exists( 'wp_set_current_user' ) ) :
@@ -12,7 +12,7 @@ if ( ! function_exists( 'wp_set_current_user' ) ) :
 	 *
 	 * Set $id to null and specify a name if you do not know a user's ID.
 	 *
-	 * Some WordPress functionality is based on the current user and not based on
+	 * Some kaydenCMS functionality is based on the current user and not based on
 	 * the signed in user. Therefore, it opens the ability to edit and perform
 	 * actions on users who aren't signed in.
 	 *
@@ -125,7 +125,7 @@ if ( ! function_exists( 'cache_users' ) ) :
 	 *
 	 * @since 3.0.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param int[] $user_ids User ID numbers list
 	 */
@@ -366,20 +366,20 @@ if ( ! function_exists( 'wp_mail' ) ) :
 
 		// If we don't have a name from the input headers.
 		if ( ! isset( $from_name ) ) {
-			$from_name = 'WordPress';
+			$from_name = 'kaydenCMS';
 		}
 
 		/*
-		 * If we don't have an email from the input headers, default to wordpress@$sitename
+		 * If we don't have an email from the input headers, default to kaydenCMS@$sitename
 		 * Some hosts will block outgoing mail from this address if it doesn't exist,
 		 * but there's no easy alternative. Defaulting to admin_email might appear to be
 		 * another option, but some hosts may refuse to relay mail from an unknown domain.
-		 * See https://core.trac.wordpress.org/ticket/5007.
+		 * See https://core.trac.kaydenCMS.org/ticket/5007.
 		 */
 		if ( ! isset( $from_email ) ) {
 			// Get the site domain and get rid of www.
 			$sitename   = wp_parse_url( network_home_url(), PHP_URL_HOST );
-			$from_email = 'wordpress@';
+			$from_email = 'kaydenCMS@';
 
 			if ( null !== $sitename ) {
 				if ( 'www.' === substr( $sitename, 0, 4 ) ) {
@@ -1142,7 +1142,7 @@ if ( ! function_exists( 'is_user_logged_in' ) ) :
 	 * Determines whether the current visitor is a logged in user.
 	 *
 	 * For more information on this and similar theme functions, check out
-	 * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+	 * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
 	 * Conditional Tags} article in the Theme Developer Handbook.
 	 *
 	 * @since 2.0.0
@@ -1365,10 +1365,10 @@ if ( ! function_exists( 'wp_redirect' ) ) :
 	 *
 	 * @param string $location      The path or URL to redirect to.
 	 * @param int    $status        Optional. HTTP response status code to use. Default '302' (Moved Temporarily).
-	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'WordPress'.
+	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'kaydenCMS'.
 	 * @return bool False if the redirect was cancelled, true otherwise.
 	 */
-	function wp_redirect( $location, $status = 302, $x_redirect_by = 'WordPress' ) {
+	function wp_redirect( $location, $status = 302, $x_redirect_by = 'kaydenCMS' ) {
 		global $is_IIS;
 
 		/**
@@ -1508,10 +1508,10 @@ if ( ! function_exists( 'wp_safe_redirect' ) ) :
 	 *
 	 * @param string $location      The path or URL to redirect to.
 	 * @param int    $status        Optional. HTTP response status code to use. Default '302' (Moved Temporarily).
-	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'WordPress'.
+	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'kaydenCMS'.
 	 * @return bool False if the redirect was cancelled, true otherwise.
 	 */
-	function wp_safe_redirect( $location, $status = 302, $x_redirect_by = 'WordPress' ) {
+	function wp_safe_redirect( $location, $status = 302, $x_redirect_by = 'kaydenCMS' ) {
 
 		// Need to look at the URL the way it will end up in wp_redirect().
 		$location = wp_sanitize_redirect( $location );
@@ -1779,7 +1779,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 			$notify_message .= sprintf( __( 'Spam it: %s' ), admin_url( "comment.php?action=spam&c={$comment->comment_ID}#wpbody-content" ) ) . "\r\n";
 		}
 
-		$wp_email = 'wordpress@' . preg_replace( '#^www\.#', '', wp_parse_url( network_home_url(), PHP_URL_HOST ) );
+		$wp_email = 'kaydenCMS@' . preg_replace( '#^www\.#', '', wp_parse_url( network_home_url(), PHP_URL_HOST ) );
 
 		if ( '' === $comment->comment_author ) {
 			$from = "From: \"$blogname\" <$wp_email>";
@@ -1848,7 +1848,7 @@ if ( ! function_exists( 'wp_notify_moderator' ) ) :
 	 *
 	 * @since 1.0.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * Uses the {@see 'notify_moderator'} filter to determine whether the site moderator
 	 * should be notified, overriding the site setting.
@@ -2345,7 +2345,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 	 * The secret keys in wp-config.php should be updated to strong, random keys to maximize
 	 * security. Below is an example of how the secret key constants are defined.
 	 * Do not paste this example directly into wp-config.php. Instead, have a
-	 * {@link https://api.wordpress.org/secret-key/1.1/salt/ secret key created} just
+	 * {@link https://api.kaydenCMS.org/secret-key/1.1/salt/ secret key created} just
 	 * for you.
 	 *
 	 *     define('AUTH_KEY',         ' Xakm<o xQy rw4EMsLKM-?!T+,PFF})H4lzcW57AF0U@N@< >M%G4Yt>f`z]MON');
@@ -2362,7 +2362,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 	 *
 	 * @since 2.5.0
 	 *
-	 * @link https://api.wordpress.org/secret-key/1.1/salt/ Create secrets for wp-config.php
+	 * @link https://api.kaydenCMS.org/secret-key/1.1/salt/ Create secrets for wp-config.php
 	 *
 	 * @param string $scheme Authentication scheme (auth, secure_auth, logged_in, nonce)
 	 * @return string Salt value
@@ -2371,7 +2371,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 		static $cached_salts = array();
 		if ( isset( $cached_salts[ $scheme ] ) ) {
 			/**
-			 * Filters the WordPress salt.
+			 * Filters the kaydenCMS salt.
 			 *
 			 * @since 2.5.0
 			 *
@@ -2682,7 +2682,7 @@ if ( ! function_exists( 'wp_set_password' ) ) :
 	 *
 	 * @since 2.5.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $password The plaintext new user password
 	 * @param int    $user_id  User ID

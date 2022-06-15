@@ -79,7 +79,7 @@ __webpack_require__.d(__webpack_exports__, {
   "useAnchorRef": function() { return /* reexport */ useAnchorRef; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/rich-text/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/rich-text/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -89,7 +89,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   "getFormatTypes": function() { return getFormatTypes; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/rich-text/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/rich-text/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -101,13 +101,13 @@ __webpack_require__.d(actions_namespaceObject, {
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/store/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -416,7 +416,7 @@ function isShallowEqual( a, b, fromIndex ) {
 	return callSelector;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/store/selectors.js
 /**
  * External dependencies
  */
@@ -485,7 +485,7 @@ function getFormatTypeForClassName(state, elementClassName) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/store/actions.js
 /**
  * External dependencies
  */
@@ -520,9 +520,9 @@ function removeFormatTypes(names) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -536,7 +536,7 @@ const STORE_NAME = 'core/rich-text';
 /**
  * Store definition for the rich-text namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -548,7 +548,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-format-equal.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/is-format-equal.js
 /** @typedef {import('./create').RichTextFormat} RichTextFormat */
 
 /**
@@ -606,7 +606,7 @@ function isFormatEqual(format1, format2) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/normalise-formats.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/normalise-formats.js
 /**
  * Internal dependencies
  */
@@ -644,7 +644,7 @@ function normaliseFormats(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/apply-format.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/apply-format.js
 /**
  * External dependencies
  */
@@ -746,7 +746,7 @@ function applyFormat(value, format) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/create-element.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/create-element.js
 /**
  * Parse the given HTML into a body element.
  *
@@ -776,7 +776,7 @@ function createElement(_ref, html) {
   return createElement.body;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/special-characters.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/special-characters.js
 /**
  * Line separator character, used for multiline text.
  */
@@ -793,9 +793,9 @@ const OBJECT_REPLACEMENT_CHARACTER = '\ufffc';
 
 const ZWNBSP = '\ufeff';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/create.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/create.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1393,7 +1393,7 @@ function getAttributes(_ref4) {
   return accumulator;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/concat.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/concat.js
 /**
  * Internal dependencies
  */
@@ -1434,7 +1434,7 @@ function concat() {
   return normaliseFormats(values.reduce(mergePair, create()));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-formats.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-active-formats.js
 /** @typedef {import('./create').RichTextValue} RichTextValue */
 
 /** @typedef {import('./create').RichTextFormatList} RichTextFormatList */
@@ -1482,7 +1482,7 @@ function getActiveFormats(_ref) {
   return formats[start] || EMPTY_ACTIVE_FORMATS;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-format.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-active-format.js
 /**
  * External dependencies
  */
@@ -1515,7 +1515,7 @@ function getActiveFormat(value, formatType) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-object.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-active-object.js
 /**
  * Internal dependencies
  */
@@ -1547,7 +1547,7 @@ function getActiveObject(_ref) {
   return replacements[start];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-text-content.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-text-content.js
 /**
  * Internal dependencies
  */
@@ -1570,7 +1570,7 @@ function getTextContent(_ref) {
   return text.replace(new RegExp(OBJECT_REPLACEMENT_CHARACTER, 'g'), '').replace(new RegExp(LINE_SEPARATOR, 'g'), '\n');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-line-index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-line-index.js
 /**
  * Internal dependencies
  */
@@ -1604,7 +1604,7 @@ function getLineIndex(_ref) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-list-root-selected.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/is-list-root-selected.js
 /**
  * Internal dependencies
  */
@@ -1630,7 +1630,7 @@ function isListRootSelected(value) {
   return !replacement || replacement.length < 1;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-active-list-type.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/is-active-list-type.js
 /**
  * Internal dependencies
  */
@@ -1664,7 +1664,7 @@ function isActiveListType(value, type, rootType) {
   return lastFormat.type === type;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-collapsed.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/is-collapsed.js
 /** @typedef {import('./create').RichTextValue} RichTextValue */
 
 /**
@@ -1691,7 +1691,7 @@ function isCollapsed(_ref) {
   return start === end;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-empty.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/is-empty.js
 /**
  * Internal dependencies
  */
@@ -1748,7 +1748,7 @@ function isEmptyLine(_ref2) {
   return text.slice(start - 1, end + 1) === `${LINE_SEPARATOR}${LINE_SEPARATOR}`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/join.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/join.js
 /**
  * Internal dependencies
  */
@@ -1790,9 +1790,9 @@ function join(values) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/register-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/register-format-type.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1895,7 +1895,7 @@ function registerFormatType(name, settings) {
   return settings;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/remove-format.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/remove-format.js
 /**
  * External dependencies
  */
@@ -1979,7 +1979,7 @@ function filterFormats(formats, index, formatType) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/insert.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/insert.js
 /**
  * Internal dependencies
  */
@@ -2026,7 +2026,7 @@ function insert(value, valueToInsert) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/remove.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/remove.js
 /**
  * Internal dependencies
  */
@@ -2049,7 +2049,7 @@ function remove(value, startIndex, endIndex) {
   return insert(value, create(), startIndex, endIndex);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/replace.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/replace.js
 /**
  * Internal dependencies
  */
@@ -2126,7 +2126,7 @@ function replace_replace(_ref, pattern, replacement) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/insert-line-separator.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/insert-line-separator.js
 /**
  * Internal dependencies
  */
@@ -2166,7 +2166,7 @@ function insertLineSeparator(value) {
   return insert(value, valueToInsert, startIndex, endIndex);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/remove-line-separator.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/remove-line-separator.js
 /**
  * Internal dependencies
  */
@@ -2228,7 +2228,7 @@ function removeLineSeparator(value) {
   return newValue;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/insert-object.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/insert-object.js
 /**
  * Internal dependencies
  */
@@ -2260,7 +2260,7 @@ function insertObject(value, formatToInsert, startIndex, endIndex) {
   return insert(value, valueToInsert, startIndex, endIndex);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/slice.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/slice.js
 /** @typedef {import('./create').RichTextValue} RichTextValue */
 
 /**
@@ -2295,7 +2295,7 @@ function slice(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/split.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/split.js
 /**
  * Internal dependencies
  */
@@ -2385,9 +2385,9 @@ function splitAtSelection(_ref2) {
   replace_replace(before, /\u2028+$/, ''), replace_replace(after, /^\u2028+/, '')];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-format-type.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -2409,7 +2409,7 @@ function get_format_type_getFormatType(name) {
   return (0,external_wp_data_namespaceObject.select)(store).getFormatType(name);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-tree.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/to-tree.js
 /**
  * Internal dependencies
  */
@@ -2745,7 +2745,7 @@ function toTree(_ref2) {
   return tree;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-dom.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/to-dom.js
 /**
  * Internal dependencies
  */
@@ -3087,9 +3087,9 @@ function applySelection(_ref6, current) {
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 var external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-html-string.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/to-html-string.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3232,9 +3232,9 @@ function createChildrenHTML() {
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/toggle-format.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/toggle-format.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3278,9 +3278,9 @@ function toggleFormat(value, format) {
   return applyFormat(value, format);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/unregister-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/unregister-format-type.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3312,7 +3312,7 @@ function unregisterFormatType(name) {
   return oldFormat;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/can-indent-list-items.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/can-indent-list-items.js
 /**
  * Internal dependencies
  */
@@ -3345,7 +3345,7 @@ function canIndentListItems(value) {
   return formatsAtLineIndex.length <= formatsAtPreviousLineIndex.length;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/can-outdent-list-items.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/can-outdent-list-items.js
 /**
  * Internal dependencies
  */
@@ -3369,7 +3369,7 @@ function canOutdentListItems(value) {
   return replacements[startingLineIndex] !== undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/indent-list-items.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/indent-list-items.js
 /**
  * Internal dependencies
  */
@@ -3460,7 +3460,7 @@ function indentListItems(value, rootFormat) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-parent-line-index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-parent-line-index.js
 /**
  * Internal dependencies
  */
@@ -3499,7 +3499,7 @@ function getParentLineIndex(_ref, lineIndex) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-last-child-index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/get-last-child-index.js
 /**
  * Internal dependencies
  */
@@ -3544,7 +3544,7 @@ function getLastChildIndex(_ref, lineIndex) {
   return childIndex;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/outdent-list-items.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/outdent-list-items.js
 /**
  * Internal dependencies
  */
@@ -3603,7 +3603,7 @@ function outdentListItems(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/change-list-type.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/change-list-type.js
 /**
  * Internal dependencies
  */
@@ -3673,9 +3673,9 @@ function changeListType(value, newFormat) {
 
 ;// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-anchor-ref.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-anchor-ref.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3683,7 +3683,7 @@ var external_wp_element_namespaceObject = window["wp"]["element"];
  */
 
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@kaydenCMS/element').RefObject} RefObject */
 
 /** @typedef {import('../register-format-type').RichTextFormatType} RichTextFormatType */
 
@@ -3749,9 +3749,9 @@ function useAnchorRef(_ref) {
 
 ;// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-default-style.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-default-style.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3790,9 +3790,9 @@ function useDefaultStyle() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-boundary-style.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-boundary-style.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /*
@@ -3849,9 +3849,9 @@ function useBoundaryStyle(_ref) {
   return ref;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-copy-handler.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-copy-handler.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3901,9 +3901,9 @@ function useCopyHandler(props) {
 
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-format-boundaries.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-format-boundaries.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4014,9 +4014,9 @@ function useFormatBoundaries(props) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-select-object.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-select-object.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function useSelectObject() {
@@ -4050,9 +4050,9 @@ function useSelectObject() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-indent-list-item-on-space.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-indent-list-item-on-space.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4116,7 +4116,7 @@ function useIndentListItemOnSpace(props) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/update-formats.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/update-formats.js
 /**
  * Internal dependencies
  */
@@ -4175,9 +4175,9 @@ function updateFormats(_ref) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-input-and-selection.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-input-and-selection.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4482,9 +4482,9 @@ function useInputAndSelection(props) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-delete.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-delete.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4555,9 +4555,9 @@ function useDelete(props) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-space.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/use-space.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4591,7 +4591,7 @@ function useSpace() {
         return;
       } // Disregard character composition that involves the Space key.
       //
-      // @see https://github.com/WordPress/gutenberg/issues/35086
+      // @see https://github.com/kaydenCMS/gutenberg/issues/35086
       //
       // For example, to input a standalone diacritic (like ´ or `) using a
       // keyboard with dead keys, one must first press the dead key and then
@@ -4627,9 +4627,9 @@ function useSpace() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4884,7 +4884,7 @@ function useRichText(_ref) {
 }
 function __experimentalRichText() {}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/format-edit.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/component/format-edit.js
 
 
 /**
@@ -4928,7 +4928,7 @@ function FormatEdit(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/rich-text/build-module/index.js
 
 
 

@@ -2,11 +2,11 @@
 /**
  * New Post Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 /**

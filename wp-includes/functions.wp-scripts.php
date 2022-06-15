@@ -4,7 +4,7 @@
  *
  * @since 2.6.0
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Dependencies
  */
 
@@ -159,12 +159,12 @@ function wp_add_inline_script( $handle, $data, $position = 'after' ) {
  * @since 4.3.0 A return value was added.
  *
  * @param string           $handle    Name of the script. Should be unique.
- * @param string|bool      $src       Full URL of the script, or path of the script relative to the WordPress root directory.
+ * @param string|bool      $src       Full URL of the script, or path of the script relative to the kaydenCMS root directory.
  *                                    If source is set to false, script is an alias of other scripts it depends on.
  * @param string[]         $deps      Optional. An array of registered script handles this script depends on. Default empty array.
  * @param string|bool|null $ver       Optional. String specifying script version number, if it has one, which is added to the URL
  *                                    as a query string for cache busting purposes. If version is set to false, a version
- *                                    number is automatically added equal to current installed WordPress version.
+ *                                    number is automatically added equal to current installed kaydenCMS version.
  *                                    If set to null, no version is added.
  * @param bool             $in_footer Optional. Whether to enqueue the script before `</body>` instead of in the `<head>`.
  *                                    Default 'false'.
@@ -197,7 +197,7 @@ function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_f
  *     }
  *
  * @see WP_Scripts::localize()
- * @link https://core.trac.wordpress.org/ticket/11520
+ * @link https://core.trac.kaydenCMS.org/ticket/11520
  * @global WP_Scripts $wp_scripts The WP_Scripts object for printing scripts.
  *
  * @since 2.2.0
@@ -333,12 +333,12 @@ function wp_deregister_script( $handle ) {
  * @since 2.1.0
  *
  * @param string           $handle    Name of the script. Should be unique.
- * @param string           $src       Full URL of the script, or path of the script relative to the WordPress root directory.
+ * @param string           $src       Full URL of the script, or path of the script relative to the kaydenCMS root directory.
  *                                    Default empty.
  * @param string[]         $deps      Optional. An array of registered script handles this script depends on. Default empty array.
  * @param string|bool|null $ver       Optional. String specifying script version number, if it has one, which is added to the URL
  *                                    as a query string for cache busting purposes. If version is set to false, a version
- *                                    number is automatically added equal to current installed WordPress version.
+ *                                    number is automatically added equal to current installed kaydenCMS version.
  *                                    If set to null, no version is added.
  * @param bool             $in_footer Optional. Whether to enqueue the script before `</body>` instead of in the `<head>`.
  *                                    Default 'false'.
@@ -382,7 +382,7 @@ function wp_dequeue_script( $handle ) {
  * Determines whether a script has been added to the queue.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 2.8.0

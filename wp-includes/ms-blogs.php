@@ -3,7 +3,7 @@
 /**
  * Site/blog functions that work with the blogs table and related data.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since MU (3.0.0)
  */
@@ -117,7 +117,7 @@ function get_id_from_blogname( $slug ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int|string|array $fields  Optional. A blog ID, a blog slug, or an array of fields to query against.
  *                                  If not specified the current blog ID is used.
@@ -293,7 +293,7 @@ function refresh_blog_details( $blog_id = 0 ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int   $blog_id Blog ID.
  * @param array $details Array of details keyed by blogs table field names.
@@ -390,7 +390,7 @@ function get_blog_option( $id, $option, $default = false ) {
  *
  * You can create options without values and then update the values later.
  * Existing options will not be updated and checks are performed to ensure that you
- * aren't adding a protected WordPress option. Care should be taken to not name
+ * aren't adding a protected kaydenCMS option. Care should be taken to not name
  * options the same as the ones which are protected.
  *
  * @since MU (3.0.0)
@@ -419,7 +419,7 @@ function add_blog_option( $id, $option, $value ) {
 }
 
 /**
- * Removes option by name for a given blog ID. Prevents removal of protected WordPress options.
+ * Removes option by name for a given blog ID. Prevents removal of protected kaydenCMS options.
  *
  * @since MU (3.0.0)
  *
@@ -486,7 +486,7 @@ function update_blog_option( $id, $option, $value, $deprecated = null ) {
  * @see restore_current_blog()
  * @since MU (3.0.0)
  *
- * @global wpdb            $wpdb               WordPress database abstraction object.
+ * @global wpdb            $wpdb               kaydenCMS database abstraction object.
  * @global int             $blog_id
  * @global array           $_wp_switched_stack
  * @global bool            $switched
@@ -573,7 +573,7 @@ function switch_to_blog( $new_blog_id, $deprecated = null ) {
  * @see switch_to_blog()
  * @since MU (3.0.0)
  *
- * @global wpdb            $wpdb               WordPress database abstraction object.
+ * @global wpdb            $wpdb               kaydenCMS database abstraction object.
  * @global array           $_wp_switched_stack
  * @global int             $blog_id
  * @global bool            $switched
@@ -705,7 +705,7 @@ function update_archived( $id, $archived ) {
  * @since MU (3.0.0)
  * @since 5.1.0 Use wp_update_site() internally.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $blog_id    Blog ID.
  * @param string $pref       Field name.
@@ -745,7 +745,7 @@ function update_blog_status( $blog_id, $pref, $value, $deprecated = null ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param int    $id   Blog ID.
  * @param string $pref Field name.
@@ -767,7 +767,7 @@ function get_blog_status( $id, $pref ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param mixed $deprecated Not used.
  * @param int   $start      Optional. Number of blogs to offset the query. Used to build LIMIT clause.

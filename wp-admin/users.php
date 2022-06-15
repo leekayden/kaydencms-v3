@@ -2,12 +2,12 @@
 /**
  * User administration panel
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 1.0.0
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'list_users' ) ) {
@@ -73,9 +73,9 @@ unset( $help );
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/users-screen/">Documentation on Managing Users</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/roles-and-capabilities/">Descriptions of Roles and Capabilities</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/users-screen/">Documentation on Managing Users</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/roles-and-capabilities/">Descriptions of Roles and Capabilities</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 get_current_screen()->set_screen_reader_content(
@@ -508,7 +508,7 @@ switch ( $wp_list_table->current_action() ) {
 			$userids  = $_REQUEST['users'];
 
 			/** This action is documented in wp-admin/edit.php */
-			$sendback = apply_filters( "handle_bulk_actions-{$screen}", $sendback, $wp_list_table->current_action(), $userids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+			$sendback = apply_filters( "handle_bulk_actions-{$screen}", $sendback, $wp_list_table->current_action(), $userids ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 
 			wp_safe_redirect( $sendback );
 			exit;

@@ -2,7 +2,7 @@
 /**
  * APIs to interact with global settings & styles.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 /**
@@ -117,7 +117,7 @@ function wp_get_global_stylesheet( $types = array() ) {
 	 * we add them for all origins (default, theme, user).
 	 * This is so themes without a theme.json still work as before 5.9:
 	 * they can override the default presets.
-	 * See https://core.trac.wordpress.org/ticket/54782
+	 * See https://core.trac.kaydenCMS.org/ticket/54782
 	 */
 	$styles_variables = '';
 	if ( in_array( 'variables', $types, true ) ) {

@@ -2,7 +2,7 @@
 /**
  * Upgrade API: Core_Upgrader class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Upgrader
  * @since 4.6.0
  */
@@ -10,7 +10,7 @@
 /**
  * Core class used for updating core.
  *
- * It allows for WordPress to upgrade itself in combination with
+ * It allows for kaydenCMS to upgrade itself in combination with
  * the wp-admin/includes/update-core.php file.
  *
  * @since 2.8.0
@@ -26,7 +26,7 @@ class Core_Upgrader extends WP_Upgrader {
 	 * @since 2.8.0
 	 */
 	public function upgrade_strings() {
-		$this->strings['up_to_date'] = __( 'WordPress is at the latest version.' );
+		$this->strings['up_to_date'] = __( 'kaydenCMS is at the latest version.' );
 		$this->strings['locked']     = __( 'Another update is currently in progress.' );
 		$this->strings['no_package'] = __( 'Update package not available.' );
 		/* translators: %s: Package URL. */
@@ -35,20 +35,20 @@ class Core_Upgrader extends WP_Upgrader {
 		$this->strings['copy_failed']           = __( 'Could not copy files.' );
 		$this->strings['copy_failed_space']     = __( 'Could not copy files. You may have run out of disk space.' );
 		$this->strings['start_rollback']        = __( 'Attempting to roll back to previous version.' );
-		$this->strings['rollback_was_required'] = __( 'Due to an error during updating, WordPress has rolled back to your previous version.' );
+		$this->strings['rollback_was_required'] = __( 'Due to an error during updating, kaydenCMS has rolled back to your previous version.' );
 	}
 
 	/**
-	 * Upgrade WordPress core.
+	 * Upgrade kaydenCMS core.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @global WP_Filesystem_Base $wp_filesystem                WordPress filesystem subclass.
+	 * @global WP_Filesystem_Base $wp_filesystem                kaydenCMS filesystem subclass.
 	 * @global callable           $_wp_filesystem_direct_method
 	 *
-	 * @param object $current Response object for whether WordPress is current.
+	 * @param object $current Response object for whether kaydenCMS is current.
 	 * @param array  $args {
-	 *     Optional. Arguments for upgrading WordPress core. Default empty array.
+	 *     Optional. Arguments for upgrading kaydenCMS core. Default empty array.
 	 *
 	 *     @type bool $pre_check_md5    Whether to check the file checksums before
 	 *                                  attempting the upgrade. Default true.
@@ -57,7 +57,7 @@ class Core_Upgrader extends WP_Upgrader {
 	 *     @type bool $do_rollback      Whether to perform this "upgrade" as a rollback.
 	 *                                  Default false.
 	 * }
-	 * @return string|false|WP_Error New WordPress version on success, false or WP_Error on failure.
+	 * @return string|false|WP_Error New kaydenCMS version on success, false or WP_Error on failure.
 	 */
 	public function upgrade( $current, $args = array() ) {
 		global $wp_filesystem;
@@ -130,7 +130,7 @@ class Core_Upgrader extends WP_Upgrader {
 			/** This filter is documented in wp-admin/includes/update-core.php */
 			apply_filters( 'update_feedback', $download->get_error_message() );
 
-			// Report this failure back to WordPress.org for debugging purposes.
+			// Report this failure back to kaydenCMS.org for debugging purposes.
 			wp_version_check(
 				array(
 					'signature_failure_code' => $download->get_error_code(),
@@ -154,7 +154,7 @@ class Core_Upgrader extends WP_Upgrader {
 		}
 
 		// Copy update-core.php from the new version into place.
-		if ( ! $wp_filesystem->copy( $working_dir . '/wordpress/wp-admin/includes/update-core.php', $wp_dir . 'wp-admin/includes/update-core.php', true ) ) {
+		if ( ! $wp_filesystem->copy( $working_dir . '/kaydenCMS/wp-admin/includes/update-core.php', $wp_dir . 'wp-admin/includes/update-core.php', true ) ) {
 			$wp_filesystem->delete( $working_dir, true );
 			WP_Upgrader::release_lock( 'core_updater' );
 			return new WP_Error( 'copy_failed_for_update_core_file', __( 'The update cannot be installed because some files could not be copied. This is usually due to inconsistent file permissions.' ), 'wp-admin/includes/update-core.php' );
@@ -263,7 +263,7 @@ class Core_Upgrader extends WP_Upgrader {
 	}
 
 	/**
-	 * Determines if this WordPress Core version should update to an offered version or not.
+	 * Determines if this kaydenCMS Core version should update to an offered version or not.
 	 *
 	 * @since 3.7.0
 	 *
@@ -389,7 +389,7 @@ class Core_Upgrader extends WP_Upgrader {
 	 *
 	 * @since 3.7.0
 	 *
-	 * @global string $wp_version       The WordPress version string.
+	 * @global string $wp_version       The kaydenCMS version string.
 	 * @global string $wp_local_package Locale code of the package.
 	 *
 	 * @return bool True if the checksums match, otherwise false.

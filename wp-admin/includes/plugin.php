@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Plugin Administration API
+ * kaydenCMS Plugin Administration API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -30,7 +30,7 @@
  *     Network: Optional. Specify "Network: true" to require that a plugin is activated
  *          across all sites in an installation. This will prevent a plugin from being
  *          activated on a single site when Multisite is enabled.
- *     Requires at least: Optional. Specify the minimum required WordPress version.
+ *     Requires at least: Optional. Specify the minimum required kaydenCMS version.
  *     Requires PHP: Optional. Specify the minimum required PHP version.
  *     * / # Remove the space to close comment.
  *
@@ -62,7 +62,7 @@
  *     @type string $TextDomain  Plugin textdomain.
  *     @type string $DomainPath  Plugin's relative directory path to .mo files.
  *     @type bool   $Network     Whether the plugin can only be activated network-wide.
- *     @type string $RequiresWP  Minimum required version of WordPress.
+ *     @type string $RequiresWP  Minimum required version of kaydenCMS.
  *     @type string $RequiresPHP Minimum required version of PHP.
  *     @type string $UpdateURI   ID of the plugin for update purposes, should be a URI.
  *     @type string $Title       Title of the plugin and link to the plugin's site (if set).
@@ -156,7 +156,7 @@ function _get_plugin_data_markup_translate( $plugin_file, $plugin_data, $markup 
 		if ( $textdomain ) {
 			foreach ( array( 'Name', 'PluginURI', 'Description', 'Author', 'AuthorURI', 'Version' ) as $field ) {
 				if ( ! empty( $plugin_data[ $field ] ) ) {
-					// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText,WordPress.WP.I18n.NonSingularStringLiteralDomain
+					// phpcs:ignore kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText,kaydenCMS.WP.I18n.NonSingularStringLiteralDomain
 					$plugin_data[ $field ] = translate( $plugin_data[ $field ], $textdomain );
 				}
 			}
@@ -254,7 +254,7 @@ function get_plugin_files( $plugin ) {
 /**
  * Checks the plugins directory and retrieve all plugin files with plugin data.
  *
- * WordPress only supports plugin files in the base plugins directory
+ * kaydenCMS only supports plugin files in the base plugins directory
  * (wp-content/plugins) and in one directory above the plugins directory
  * (wp-content/plugins/my-plugin). The file it looks for has the plugin data
  * and must be found in those two locations. It is recommended to keep your
@@ -354,7 +354,7 @@ function get_plugins( $plugin_folder = '' ) {
 /**
  * Checks the mu-plugins directory and retrieve all mu-plugin files with any plugin data.
  *
- * WordPress only includes mu-plugin files in the base mu-plugins directory (wp-content/mu-plugins).
+ * kaydenCMS only includes mu-plugin files in the base mu-plugins directory (wp-content/mu-plugins).
  *
  * @since 3.0.0
  * @return array[] Array of arrays of mu-plugin data, keyed by plugin file name. See `get_plugin_data()`.
@@ -476,7 +476,7 @@ function get_dropins() {
 }
 
 /**
- * Returns drop-ins that WordPress uses.
+ * Returns drop-ins that kaydenCMS uses.
  *
  * Includes Multisite drop-ins only when is_multisite()
  *
@@ -516,7 +516,7 @@ function _get_dropins() {
  * return false for those plugins.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 2.5.0
@@ -534,7 +534,7 @@ function is_plugin_active( $plugin ) {
  * Reverse of is_plugin_active(). Used as a callback.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 3.1.0
@@ -557,7 +557,7 @@ function is_plugin_inactive( $plugin ) {
  * return false for those plugins.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 3.0.0
@@ -617,7 +617,7 @@ function is_network_only_plugin( $plugin ) {
  * ensure that the success redirection will update the error redirection.
  *
  * @since 2.5.0
- * @since 5.2.0 Test for WordPress version and PHP version compatibility.
+ * @since 5.2.0 Test for kaydenCMS version and PHP version compatibility.
  *
  * @param string $plugin       Path to the plugin file relative to the plugins directory.
  * @param string $redirect     Optional. URL to redirect to.
@@ -882,7 +882,7 @@ function activate_plugins( $plugins, $redirect = '', $network_wide = false, $sil
  *
  * @since 2.6.0
  *
- * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem kaydenCMS filesystem subclass.
  *
  * @param string[] $plugins    List of plugin paths to delete, relative to the plugins directory.
  * @param string   $deprecated Not used.
@@ -943,7 +943,7 @@ function delete_plugins( $plugins, $deprecated = '' ) {
 	// Get the base plugin folder.
 	$plugins_dir = $wp_filesystem->wp_plugins_dir();
 	if ( empty( $plugins_dir ) ) {
-		return new WP_Error( 'fs_no_plugins_dir', __( 'Unable to locate WordPress plugin directory.' ) );
+		return new WP_Error( 'fs_no_plugins_dir', __( 'Unable to locate kaydenCMS plugin directory.' ) );
 	}
 
 	$plugins_dir = trailingslashit( $plugins_dir );
@@ -1107,7 +1107,7 @@ function validate_plugin( $plugin ) {
 }
 
 /**
- * Validates the plugin requirements for WordPress version and PHP version.
+ * Validates the plugin requirements for kaydenCMS version and PHP version.
  *
  * Uses the information from `Requires at least` and `Requires PHP` headers
  * defined in the plugin's main PHP file.
@@ -1147,8 +1147,8 @@ function validate_plugin_requirements( $plugin ) {
 		return new WP_Error(
 			'plugin_wp_php_incompatible',
 			'<p>' . sprintf(
-				/* translators: 1: Current WordPress version, 2: Current PHP version, 3: Plugin name, 4: Required WordPress version, 5: Required PHP version. */
-				_x( '<strong>Error:</strong> Current versions of WordPress (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires WordPress %4$s and PHP %5$s.', 'plugin' ),
+				/* translators: 1: Current kaydenCMS version, 2: Current PHP version, 3: Plugin name, 4: Required kaydenCMS version, 5: Required PHP version. */
+				_x( '<strong>Error:</strong> Current versions of kaydenCMS (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires kaydenCMS %4$s and PHP %5$s.', 'plugin' ),
 				get_bloginfo( 'version' ),
 				phpversion(),
 				$plugin_headers['Name'],
@@ -1171,8 +1171,8 @@ function validate_plugin_requirements( $plugin ) {
 		return new WP_Error(
 			'plugin_wp_incompatible',
 			'<p>' . sprintf(
-				/* translators: 1: Current WordPress version, 2: Plugin name, 3: Required WordPress version. */
-				_x( '<strong>Error:</strong> Current WordPress version (%1$s) does not meet minimum requirements for %2$s. The plugin requires WordPress %3$s.', 'plugin' ),
+				/* translators: 1: Current kaydenCMS version, 2: Plugin name, 3: Required kaydenCMS version. */
+				_x( '<strong>Error:</strong> Current kaydenCMS version (%1$s) does not meet minimum requirements for %2$s. The plugin requires kaydenCMS %3$s.', 'plugin' ),
 				get_bloginfo( 'version' ),
 				$plugin_headers['Name'],
 				$requirements['requires']
@@ -1385,7 +1385,7 @@ function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $call
  * @global array $_parent_pages
  *
  * @param string    $parent_slug The slug name for the parent menu (or the file name of a standard
- *                               WordPress admin page).
+ *                               kaydenCMS admin page).
  * @param string    $page_title  The text to be displayed in the title tags of the page when the menu
  *                               is selected.
  * @param string    $menu_title  The text to be used for the menu.
@@ -1876,7 +1876,7 @@ function menu_page_url( $menu_slug, $display = true ) {
  * @global array  $_wp_submenu_nopriv
  *
  * @param string $parent_page Optional. The slug name for the parent menu (or the file name
- *                            of a standard WordPress admin page). Default empty string.
+ *                            of a standard kaydenCMS admin page). Default empty string.
  * @return string The parent file of the current admin page.
  */
 function get_admin_page_parent( $parent_page = '' ) {
@@ -2044,7 +2044,7 @@ function get_admin_page_title() {
  *
  * @param string $plugin_page The slug name of the plugin page.
  * @param string $parent_page The slug name for the parent menu (or the file name of a standard
- *                            WordPress admin page).
+ *                            kaydenCMS admin page).
  * @return string|null Hook attached to the plugin page, null otherwise.
  */
 function get_plugin_page_hook( $plugin_page, $parent_page ) {
@@ -2065,7 +2065,7 @@ function get_plugin_page_hook( $plugin_page, $parent_page ) {
  *
  * @param string $plugin_page The slug name of the plugin page.
  * @param string $parent_page The slug name for the parent menu (or the file name of a standard
- *                            WordPress admin page).
+ *                            kaydenCMS admin page).
  * @return string Hook name for the plugin page.
  */
 function get_plugin_page_hookname( $plugin_page, $parent_page ) {
@@ -2324,7 +2324,7 @@ function plugin_sandbox_scrape( $plugin ) {
  * the suggested policy content. For example modular plugins such as WooCommerse or Jetpack
  * can add or remove suggested content depending on the modules/extensions that are enabled.
  * For more information see the Plugin Handbook:
- * https://developer.wordpress.org/plugins/privacy/suggesting-text-for-the-site-privacy-policy/.
+ * https://developer.kaydenCMS.org/plugins/privacy/suggesting-text-for-the-site-privacy-policy/.
  *
  * The HTML contents of the `$policy_text` supports use of a specialized `.privacy-policy-tutorial`
  * CSS class which can be used to provide supplemental information. Any content contained within
@@ -2376,7 +2376,7 @@ function wp_add_privacy_policy_content( $plugin_name, $policy_text ) {
  * loading.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 5.2.0
@@ -2505,13 +2505,13 @@ function paused_plugins_notice() {
  * Renders an admin notice when a plugin was deactivated during an update.
  *
  * Displays an admin notice in case a plugin has been deactivated during an
- * upgrade due to incompatibility with the current version of WordPress.
+ * upgrade due to incompatibility with the current version of kaydenCMS.
  *
  * @since 5.8.0
  * @access private
  *
  * @global string $pagenow    The filename of the current screen.
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  */
 function deactivated_plugins_notice() {
 	if ( 'plugins.php' === $GLOBALS['pagenow'] ) {
@@ -2549,7 +2549,7 @@ function deactivated_plugins_notice() {
 		if ( ! empty( $plugin['version_compatible'] ) && ! empty( $plugin['version_deactivated'] ) ) {
 			$explanation = sprintf(
 				/* translators: 1: Name of deactivated plugin, 2: Plugin version deactivated, 3: Current WP version, 4: Compatible plugin version. */
-				__( '%1$s %2$s was deactivated due to incompatibility with WordPress %3$s, please upgrade to %1$s %4$s or later.' ),
+				__( '%1$s %2$s was deactivated due to incompatibility with kaydenCMS %3$s, please upgrade to %1$s %4$s or later.' ),
 				$plugin['plugin_name'],
 				$plugin['version_deactivated'],
 				$GLOBALS['wp_version'],
@@ -2558,7 +2558,7 @@ function deactivated_plugins_notice() {
 		} else {
 			$explanation = sprintf(
 				/* translators: 1: Name of deactivated plugin, 2: Plugin version deactivated, 3: Current WP version. */
-				__( '%1$s %2$s was deactivated due to incompatibility with WordPress %3$s.' ),
+				__( '%1$s %2$s was deactivated due to incompatibility with kaydenCMS %3$s.' ),
 				$plugin['plugin_name'],
 				! empty( $plugin['version_deactivated'] ) ? $plugin['version_deactivated'] : '',
 				$GLOBALS['wp_version'],
@@ -2570,7 +2570,7 @@ function deactivated_plugins_notice() {
 			'<div class="notice notice-warning"><p><strong>%s</strong><br>%s</p><p><a href="%s">%s</a></p></div>',
 			sprintf(
 				/* translators: %s: Name of deactivated plugin. */
-				__( '%s plugin deactivated during WordPress upgrade.' ),
+				__( '%s plugin deactivated during kaydenCMS upgrade.' ),
 				$plugin['plugin_name']
 			),
 			$explanation,

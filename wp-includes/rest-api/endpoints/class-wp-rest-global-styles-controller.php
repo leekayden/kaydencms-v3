@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Global_Styles_Controller class
  *
- * @package    WordPress
+ * @package    kaydenCMS
  * @subpackage REST_API
  * @since 5.9.0
  */
@@ -447,7 +447,7 @@ class WP_REST_Global_Styles_Controller extends WP_REST_Controller {
 	/**
 	 * Overwrites the default protected title format.
 	 *
-	 * By default, WordPress will show password protected posts with a title of
+	 * By default, kaydenCMS will show password protected posts with a title of
 	 * "Protected: %s", as the REST API communicates the protected status of a post
 	 * in a machine readable format, we remove the "Protected: " prefix.
 	 *

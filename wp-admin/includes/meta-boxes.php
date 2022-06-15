@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Meta Boxes API.
+ * kaydenCMS Administration Meta Boxes API.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -706,7 +706,7 @@ function post_excerpt_meta_box( $post ) {
 	printf(
 		/* translators: %s: Documentation URL. */
 		__( 'Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="%s">Learn more about manual excerpts</a>.' ),
-		__( 'https://wordpress.org/support/article/excerpt/' )
+		__( 'https://kaydenCMS.org/support/article/excerpt/' )
 	);
 	?>
 </p>
@@ -743,8 +743,8 @@ function post_trackback_meta_box( $post ) {
 	<?php
 	printf(
 		/* translators: %s: Documentation URL. */
-		__( 'Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites, they&#8217;ll be notified automatically using <a href="%s">pingbacks</a>, no other action necessary.' ),
-		__( 'https://wordpress.org/support/article/introduction-to-blogging/#comments' )
+		__( 'Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other kaydenCMS sites, they&#8217;ll be notified automatically using <a href="%s">pingbacks</a>, no other action necessary.' ),
+		__( 'https://kaydenCMS.org/support/article/introduction-to-blogging/#comments' )
 	);
 	?>
 </p>
@@ -781,7 +781,7 @@ function post_custom_meta_box( $post ) {
 	printf(
 		/* translators: %s: Documentation URL. */
 		__( 'Custom fields can be used to add extra metadata to a post that you can <a href="%s">use in your theme</a>.' ),
-		__( 'https://wordpress.org/support/article/custom-fields/' )
+		__( 'https://kaydenCMS.org/support/article/custom-fields/' )
 	);
 	?>
 </p>
@@ -805,7 +805,7 @@ function post_comment_status_meta_box( $post ) {
 		printf(
 			/* translators: %s: Documentation URL. */
 			__( 'Allow <a href="%s">trackbacks and pingbacks</a> on this page' ),
-			__( 'https://wordpress.org/support/article/introduction-to-blogging/#managing-comments' )
+			__( 'https://kaydenCMS.org/support/article/introduction-to-blogging/#managing-comments' )
 		);
 		?>
 	</label>
@@ -817,7 +817,7 @@ function post_comment_status_meta_box( $post ) {
 	 *
 	 * @param WP_Post $post WP_Post object for the current post.
 	 */
-	do_action( 'post_comment_status_meta_box-options', $post ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'post_comment_status_meta_box-options', $post ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	?>
 </p>
 	<?php

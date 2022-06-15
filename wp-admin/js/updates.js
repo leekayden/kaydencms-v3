@@ -1,5 +1,5 @@
 /**
- * Functions for ajaxified updates, deletions and installs inside the WordPress admin.
+ * Functions for ajaxified updates, deletions and installs inside the kaydenCMS admin.
  *
  * @version 4.2.0
  * @output wp-admin/js/updates.js
@@ -270,7 +270,7 @@
 	};
 
 	/**
-	 * Handles Ajax requests to WordPress.
+	 * Handles Ajax requests to kaydenCMS.
 	 *
 	 * @since 4.6.0
 	 *
@@ -659,7 +659,7 @@
 	 * @since 4.6.0
 	 *
 	 * @param {Object}                args         Arguments.
-	 * @param {string}                args.slug    Plugin identifier in the WordPress.org Plugin repository.
+	 * @param {string}                args.slug    Plugin identifier in the kaydenCMS.org Plugin repository.
 	 * @param {installPluginSuccess=} args.success Optional. Success callback. Default: wp.updates.installPluginSuccess
 	 * @param {installPluginError=}   args.error   Optional. Error callback. Default: wp.updates.installPluginError
 	 * @return {$.promise} A jQuery promise that represents the request,

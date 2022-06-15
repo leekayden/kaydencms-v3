@@ -31,7 +31,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/token-list/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/token-list/build-module/index.js
 /**
  * External dependencies
  */

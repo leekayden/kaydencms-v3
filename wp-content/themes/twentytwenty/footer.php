@@ -4,9 +4,9 @@
  *
  * Contains the opening of the #site-footer div and all content after.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @link https://developer.kaydenCMS.org/themes/basics/template-files/#template-partials
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
@@ -34,11 +34,11 @@
 						}
 						?>
 
-						<p class="powered-by-wordpress">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentytwenty' ) ); ?>">
-								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
+						<p class="powered-by-kaydenCMS">
+							<a href="<?php echo esc_url( __( 'https://kaydenCMS.org/', 'twentytwenty' ) ); ?>">
+								<?php _e( 'Powered by kaydenCMS', 'twentytwenty' ); ?>
 							</a>
-						</p><!-- .powered-by-wordpress -->
+						</p><!-- .powered-by-kaydenCMS -->
 
 					</div><!-- .footer-credits -->
 

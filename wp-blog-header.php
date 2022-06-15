@@ -1,18 +1,18 @@
 <?php
 /**
- * Loads the WordPress environment and template.
+ * Loads the kaydenCMS environment and template.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 if ( ! isset( $wp_did_header ) ) {
 
 	$wp_did_header = true;
 
-	// Load the WordPress library.
+	// Load the kaydenCMS library.
 	require_once __DIR__ . '/wp-load.php';
 
-	// Set up the WordPress query.
+	// Set up the kaydenCMS query.
 	wp();
 
 	// Load the theme template.

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Revisions API
+ * kaydenCMS Administration Revisions API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 3.6.0
  */

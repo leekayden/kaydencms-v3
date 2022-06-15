@@ -2128,7 +2128,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/utils/create-higher-order-component/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/utils/create-higher-order-component/index.js
 /**
  * External dependencies
  */
@@ -2154,7 +2154,7 @@ function createHigherOrderComponent(mapComponent, modifierName) {
 
 /* harmony default export */ var create_higher_order_component = (createHigherOrderComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/compose.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/compose.js
 /**
  * External dependencies
  */
@@ -2172,7 +2172,7 @@ function createHigherOrderComponent(mapComponent, modifierName) {
 
 ;// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/if-condition/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/if-condition/index.js
 
 
 /**
@@ -2210,11 +2210,11 @@ const ifCondition = predicate => create_higher_order_component(WrappedComponent 
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/pure/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/pure/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2275,7 +2275,7 @@ function _extends() {
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-global-events/listener.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/with-global-events/listener.js
 /**
  * External dependencies
  */
@@ -2333,7 +2333,7 @@ class Listener {
 
 /* harmony default export */ var listener = (Listener);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-global-events/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/with-global-events/index.js
 
 
 
@@ -2342,7 +2342,7 @@ class Listener {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2451,14 +2451,14 @@ function withGlobalEvents(eventTypesToHandlers) {
   }, 'withGlobalEvents');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-instance-id/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-instance-id/index.js
 // Disable reason: Object and object are distinctly different types in TypeScript and we mean the lowercase object in thise case
 // but eslint wants to force us to use `Object`. See https://stackoverflow.com/questions/49464634/difference-between-object-and-object-in-typescript
 
 /* eslint-disable jsdoc/check-types */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -2498,7 +2498,7 @@ function useInstanceId(object, prefix) {
 }
 /* eslint-enable jsdoc/check-types */
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-instance-id/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/with-instance-id/index.js
 
 
 
@@ -2523,7 +2523,7 @@ const withInstanceId = create_higher_order_component(WrappedComponent => {
 }, 'withInstanceId');
 /* harmony default export */ var with_instance_id = (withInstanceId);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-safe-timeout/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/with-safe-timeout/index.js
 
 
 /**
@@ -2532,7 +2532,7 @@ const withInstanceId = create_higher_order_component(WrappedComponent => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -2592,12 +2592,12 @@ const withSafeTimeout = create_higher_order_component(OriginalComponent => {
 }, 'withSafeTimeout');
 /* harmony default export */ var with_safe_timeout = (withSafeTimeout);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-state/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/higher-order/with-state/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2647,13 +2647,13 @@ function withState() {
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
 ;// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-ref-effect/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-ref-effect/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -2687,9 +2687,9 @@ function useRefEffect(callback, dependencies) {
   }, dependencies);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-constrained-tabbing/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-constrained-tabbing/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2706,7 +2706,7 @@ function useRefEffect(callback, dependencies) {
  *
  * @example
  * ```js
- * import { useConstrainedTabbing } from '@wordpress/compose';
+ * import { useConstrainedTabbing } from '@kaydenCMS/compose';
  *
  * const ConstrainedTabbingExample = () => {
  *     const constrainedTabbingRef = useConstrainedTabbing()
@@ -2777,13 +2777,13 @@ function useConstrainedTabbing() {
 // EXTERNAL MODULE: ./node_modules/clipboard/dist/clipboard.js
 var dist_clipboard = __webpack_require__(8294);
 var clipboard_default = /*#__PURE__*/__webpack_require__.n(dist_clipboard);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-copy-on-click/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-copy-on-click/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2860,13 +2860,13 @@ function useCopyOnClick(ref, text) {
   return hasCopied;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-copy-to-clipboard/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-copy-to-clipboard/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2933,9 +2933,9 @@ function useCopyToClipboard(text, onSuccess) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focus-on-mount/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-focus-on-mount/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2947,7 +2947,7 @@ function useCopyToClipboard(text, onSuccess) {
  *
  * @example
  * ```js
- * import { useFocusOnMount } from '@wordpress/compose';
+ * import { useFocusOnMount } from '@kaydenCMS/compose';
  *
  * const WithFocusOnMount = () => {
  *     const ref = useFocusOnMount()
@@ -2994,9 +2994,9 @@ function useFocusOnMount() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focus-return/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-focus-return/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3010,7 +3010,7 @@ function useFocusOnMount() {
  *
  * @example
  * ```js
- * import { useFocusReturn } from '@wordpress/compose';
+ * import { useFocusReturn } from '@kaydenCMS/compose';
  *
  * const WithFocusReturn = () => {
  *     const ref = useFocusReturn()
@@ -3071,13 +3071,13 @@ function useFocusReturn(onFocusReturn) {
 
 /* harmony default export */ var use_focus_return = (useFocusReturn);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focus-outside/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-focus-outside/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3265,9 +3265,9 @@ function useFocusOutside(onFocusOutside) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-merge-refs/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-merge-refs/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /* eslint-disable jsdoc/valid-types */
@@ -3394,9 +3394,9 @@ function useMergeRefs(refs) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-dialog/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-dialog/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3477,13 +3477,13 @@ function useDialog(options) {
 
 /* harmony default export */ var use_dialog = (useDialog);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-disabled/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-disabled/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3508,7 +3508,7 @@ const DISABLED_ELIGIBLE_NODE_NAMES = ['BUTTON', 'FIELDSET', 'INPUT', 'OPTGROUP',
  *
  * @example
  * ```js
- * import { __experimentalUseDisabled as useDisabled } from '@wordpress/compose';
+ * import { __experimentalUseDisabled as useDisabled } from '@kaydenCMS/compose';
  * const DisabledExample = () => {
  * 	const disabledRef = useDisabled();
  *	return (
@@ -3582,9 +3582,9 @@ function useDisabled() {
   return node;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-isomorphic-layout-effect/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-isomorphic-layout-effect/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3596,9 +3596,9 @@ function useDisabled() {
 const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? external_wp_element_namespaceObject.useLayoutEffect : external_wp_element_namespaceObject.useEffect;
 /* harmony default export */ var use_isomorphic_layout_effect = (useIsomorphicLayoutEffect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-dragging/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-dragging/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3676,7 +3676,7 @@ var mousetrap_mousetrap = __webpack_require__(7973);
 var mousetrap_default = /*#__PURE__*/__webpack_require__.n(mousetrap_mousetrap);
 // EXTERNAL MODULE: ./node_modules/mousetrap/plugins/global-bind/mousetrap-global-bind.js
 var mousetrap_global_bind = __webpack_require__(5538);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-keyboard-shortcut/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-keyboard-shortcut/index.js
 /**
  * External dependencies
  */
@@ -3684,7 +3684,7 @@ var mousetrap_global_bind = __webpack_require__(5538);
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3785,9 +3785,9 @@ shortcuts, callback) {
 
 /* harmony default export */ var use_keyboard_shortcut = (useKeyboardShortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-media-query/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-media-query/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3816,9 +3816,9 @@ function useMediaQuery(query) {
   return !!query && match;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-previous/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-previous/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3841,7 +3841,7 @@ function usePrevious(value) {
   return ref.current;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-reduced-motion/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-reduced-motion/index.js
 /**
  * Internal dependencies
  */
@@ -3856,9 +3856,9 @@ const useReducedMotion = () => useMediaQuery('(prefers-reduced-motion: reduce)')
 
 /* harmony default export */ var use_reduced_motion = (useReducedMotion);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-viewport-match/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-viewport-match/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3948,7 +3948,7 @@ useViewportMatch.__experimentalWidthProvider = ViewportMatchWidthContext.Provide
 // EXTERNAL MODULE: ./node_modules/react-resize-aware/dist/index.js
 var dist = __webpack_require__(235);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-resize-observer/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-resize-observer/index.js
 /**
  * External dependencies
  */
@@ -3983,9 +3983,9 @@ var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 ;// CONCATENATED MODULE: external ["wp","priorityQueue"]
 var external_wp_priorityQueue_namespaceObject = window["wp"]["priorityQueue"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-async-list/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-async-list/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4061,7 +4061,7 @@ function useAsyncList(list) {
 
 /* harmony default export */ var use_async_list = (useAsyncList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-warn-on-change/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-warn-on-change/index.js
 /**
  * Internal dependencies
  */
@@ -4159,14 +4159,14 @@ var useCallback = (/* unused pure expression or super */ null && (useCallbackOne
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-debounce/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-debounce/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4195,14 +4195,14 @@ function useDebounce(fn, wait, options) {
   return debounced;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-throttle/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-throttle/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4228,9 +4228,9 @@ function useThrottle(fn, wait, options) {
   return throttled;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-drop-zone/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-drop-zone/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -4473,7 +4473,7 @@ function useDropZone(_ref) {
   }, [isDisabled]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focusable-iframe/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-focusable-iframe/index.js
 /**
  * Internal dependencies
  */
@@ -4514,13 +4514,13 @@ function useFocusableIframe() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-fixed-window-list/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/hooks/use-fixed-window-list/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4679,7 +4679,7 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
   return [fixedListWindow, setFixedListWindow];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/compose/build-module/index.js
 // Utils.
  // Compose helper (aliased flowRight from Lodash)
 

@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress FTP Filesystem.
+ * kaydenCMS FTP Filesystem.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP.
+ * kaydenCMS Filesystem Class for implementing FTP.
  *
  * @since 2.5.0
  *

@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/gallery` block.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 /**
@@ -81,7 +81,7 @@ function block_core_gallery_render( $attributes, $content ) {
 
 	// Ideally styles should be loaded in the head, but blocks may be parsed
 	// after that, so loading in the footer for now.
-	// See https://core.trac.wordpress.org/ticket/53494.
+	// See https://core.trac.kaydenCMS.org/ticket/53494.
 	add_action(
 		'wp_footer',
 		function () use ( $style ) {

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Setting classes
+ * kaydenCMS Customize Setting classes
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -15,7 +15,7 @@
  * @since 3.4.0
  *
  * @see WP_Customize_Manager
- * @link https://developer.wordpress.org/themes/customize-api
+ * @link https://developer.kaydenCMS.org/themes/customize-api
  */
 class WP_Customize_Setting {
 	/**

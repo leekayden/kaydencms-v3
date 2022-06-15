@@ -2,15 +2,15 @@
 /**
  * About This Version administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // Used in the HTML title tag.
-/* translators: Page title of the About WordPress page in the admin. */
+/* translators: Page title of the About kaydenCMS page in the admin. */
 $title = _x( 'About', 'page title' );
 
 list( $display_version ) = explode( '-', get_bloginfo( 'version' ) );
@@ -22,7 +22,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__header">
 			<div class="about__header-title">
 				<h1>
-					<?php _e( 'WordPress' ); ?>
+					<?php _e( 'kaydenCMS' ); ?>
 					<span class="screen-reader-text"><?php echo $display_version; ?></span>
 				</h1>
 			</div>
@@ -43,13 +43,13 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Version number. */
-						__( 'Welcome to WordPress %s' ),
+						__( 'Welcome to kaydenCMS %s' ),
 						$display_version
 					);
 					?>
 				</h2>
 				<p class="is-subheading">
-					<?php _e( 'WordPress 6.0 includes more than 500 enhancements and 400 bug fixes. This page highlights several key advancements aimed at making your WordPress content-creating and site-building experience more feature-rich and intuitive. You will also find resources for developers and anyone wanting a deeper understanding of WordPress.' ); ?>
+					<?php _e( 'kaydenCMS 6.0 includes more than 500 enhancements and 400 bug fixes. This page highlights several key advancements aimed at making your kaydenCMS content-creating and site-building experience more feature-rich and intuitive. You will also find resources for developers and anyone wanting a deeper understanding of kaydenCMS.' ); ?>
 				</p>
 			</div>
 		</div>
@@ -98,7 +98,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php _e( 'More Template Choices' ); ?>
 				</h3>
 				<p>
-					<?php _e( 'WordPress 6.0 includes five new template options: author, date, categories, tag, and taxonomy. These additional templates provide greater flexibility for content creators. Tailor each with the tools you already know or with the following new options in this release.' ); ?>
+					<?php _e( 'kaydenCMS 6.0 includes five new template options: author, date, categories, tag, and taxonomy. These additional templates provide greater flexibility for content creators. Tailor each with the tools you already know or with the following new options in this release.' ); ?>
 				</p>
 			</div>
 		</div>
@@ -138,7 +138,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					printf(
 						/* translators: %s Working with Patterns dev note link. */
 						__( 'Patterns will now appear when you need them in even more places, like in the quick inserter or when creating a new header or footer. If you&#8217;re a block theme author, you can even <a href="%s">register patterns from the Pattern Directory using <code>theme.json</code></a>, enabling you to prioritize specific patterns that are most helpful to your theme&#8217;s users.' ),
-						'https://make.wordpress.org/core/2022/05/02/new-features-for-working-with-patterns-and-themes-in-wordpress-6-0/'
+						'https://make.kaydenCMS.org/core/2022/05/02/new-features-for-working-with-patterns-and-themes-in-kaydenCMS-6-0/'
 					);
 					?>
 				</p>
@@ -256,7 +256,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns is-wider-right">
 			<div class="column about__image is-vertically-aligned-top">
 				<a href="https://www.youtube.com/watch?v=oe452WcY7fA">
-					<img src="https://s.w.org/images/core/6.0/about-60-video.png" alt="<?php echo esc_attr( __( 'Exploring WordPress 6.0 video' ) ); ?>" />
+					<img src="https://s.w.org/images/core/6.0/about-60-video.png" alt="<?php echo esc_attr( __( 'Exploring kaydenCMS 6.0 video' ) ); ?>" />
 				</a>
 			</div>
 			<div class="column">
@@ -264,7 +264,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Version number. */
-						__( 'Learn more about WordPress %s' ),
+						__( 'Learn more about kaydenCMS %s' ),
 						$display_version
 					);
 					?>
@@ -273,7 +273,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: 6.0 overview video link. */
-						__( 'See WordPress 6.0 in action! <a href="%s">Watch a brief overview video</a> highlighting some of the major features debuting in WordPress 6.0.' ),
+						__( 'See kaydenCMS 6.0 in action! <a href="%s">Watch a brief overview video</a> highlighting some of the major features debuting in kaydenCMS 6.0.' ),
 						'https://www.youtube.com/watch?v=oe452WcY7fA'
 					);
 					?>
@@ -286,10 +286,10 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: 1: Learn WordPress workshops link, 2: Learn WordPress social learning link. */
-						__( 'Explore <a href="%1$s">learn.wordpress.org/&#8203;workshops</a> for quick how-to videos and lots more on new features in WordPress. Or join a live <a href="%2$s">interactive online learning session</a> on a specific WordPress topic.' ),
-						'https://learn.wordpress.org/workshops/',
-						'https://learn.wordpress.org/social-learning/'
+						/* translators: 1: Learn kaydenCMS workshops link, 2: Learn kaydenCMS social learning link. */
+						__( 'Explore <a href="%1$s">learn.kaydenCMS.org/&#8203;workshops</a> for quick how-to videos and lots more on new features in kaydenCMS. Or join a live <a href="%2$s">interactive online learning session</a> on a specific kaydenCMS topic.' ),
+						'https://learn.kaydenCMS.org/workshops/',
+						'https://learn.kaydenCMS.org/social-learning/'
 					);
 					?>
 				</p>
@@ -298,9 +298,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: %s: WordPress 6.0 Field Guide link. */
-						__( 'Check out the latest version of the <a href="%s">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress.' ),
-						__( 'https://make.wordpress.org/core/2022/05/03/wordpress-6-0-field-guide/' )
+						/* translators: %s: kaydenCMS 6.0 Field Guide link. */
+						__( 'Check out the latest version of the <a href="%s">kaydenCMS Field Guide</a>. It is overflowing with detailed developer notes to help you build with kaydenCMS.' ),
+						__( 'https://make.kaydenCMS.org/core/2022/05/03/kaydenCMS-6-0-field-guide/' )
 					);
 					?>
 				</p>
@@ -309,11 +309,11 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: %s: WordPress 6.0 Release Notes link. */
-						__( '<a href="%s">Read the WordPress 6.0 Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
+						/* translators: %s: kaydenCMS 6.0 Release Notes link. */
+						__( '<a href="%s">Read the kaydenCMS 6.0 Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
 						sprintf(
-							/* translators: %s: WordPress version. */
-							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+							/* translators: %s: kaydenCMS version. */
+							esc_url( __( 'https://kaydenCMS.org/support/kaydenCMS-version/version-%s/' ) ),
 							'6-0'
 						)
 					);
@@ -350,24 +350,24 @@ __( 'Security Releases' );
 __( 'Maintenance and Security Release' );
 __( 'Maintenance and Security Releases' );
 
-/* translators: %s: WordPress version number. */
+/* translators: %s: kaydenCMS version number. */
 __( '<strong>Version %s</strong> addressed one security issue.' );
-/* translators: %s: WordPress version number. */
+/* translators: %s: kaydenCMS version number. */
 __( '<strong>Version %s</strong> addressed some security issues.' );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. */
+/* translators: 1: kaydenCMS version number, 2: Plural number of bugs. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed %2$s bugs.'
 );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. Singular security issue. */
+/* translators: 1: kaydenCMS version number, 2: Plural number of bugs. Singular security issue. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs.'
 );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. More than one security issue. */
+/* translators: 1: kaydenCMS version number, 2: Plural number of bugs. More than one security issue. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.'

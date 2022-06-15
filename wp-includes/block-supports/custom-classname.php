@@ -2,7 +2,7 @@
 /**
  * Custom classname block support flag.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 5.6.0
  */
 

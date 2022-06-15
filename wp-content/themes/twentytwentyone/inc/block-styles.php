@@ -2,9 +2,9 @@
 /**
  * Block Styles
  *
- * @link https://developer.wordpress.org/reference/functions/register_block_style/
+ * @link https://developer.kaydenCMS.org/reference/functions/register_block_style/
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */

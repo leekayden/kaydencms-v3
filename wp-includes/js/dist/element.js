@@ -77,7 +77,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external "React"
 var external_React_namespaceObject = window["React"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/create-interpolate-element.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/create-interpolate-element.js
 /**
  * Internal dependencies
  */
@@ -413,7 +413,7 @@ function closeOuterElement(endOffset) {
 
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/react.js
 /**
  * External dependencies
  */
@@ -454,7 +454,7 @@ var external_lodash_namespaceObject = window["lodash"];
 
 
 /**
- * A base class to create WordPress Components (Refs, state and lifecycle hooks)
+ * A base class to create kaydenCMS Components (Refs, state and lifecycle hooks)
  */
 
 
@@ -643,7 +643,7 @@ function switchChildrenNodeName(children, nodeName) {
 
 ;// CONCATENATED MODULE: external "ReactDOM"
 var external_ReactDOM_namespaceObject = window["ReactDOM"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react-platform.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/react-platform.js
 /**
  * External dependencies
  */
@@ -682,7 +682,7 @@ var external_ReactDOM_namespaceObject = window["ReactDOM"];
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/utils.js
 /**
  * External dependencies
  */
@@ -706,7 +706,7 @@ const isEmptyElement = element => {
   return !element;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/platform.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/platform.js
 /**
  * Parts of this source were derived and modified from react-native-web,
  * released under the MIT license.
@@ -731,7 +731,7 @@ const Platform = {
  * Here is an example of how to use the select method:
  * @example
  * ```js
- * import { Platform } from '@wordpress/element';
+ * import { Platform } from '@kaydenCMS/element';
  *
  * const placeholderLabel = Platform.select( {
  *   native: __( 'Add media' ),
@@ -744,7 +744,7 @@ const Platform = {
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 var external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/raw-html.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/raw-html.js
 /**
  * Internal dependencies
  */
@@ -787,7 +787,7 @@ function RawHTML(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/serialize.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/serialize.js
 /**
  * Parts of this source were derived and modified from fast-react-render,
  * released under the MIT license.
@@ -820,7 +820,7 @@ function RawHTML(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1330,7 +1330,7 @@ function renderStyle(style) {
 }
 /* harmony default export */ var serialize = (renderElement);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/element/build-module/index.js
 
 
 

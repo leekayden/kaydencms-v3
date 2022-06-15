@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   "store": function() { return /* reexport */ store; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/notices/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/notices/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -54,7 +54,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "removeNotice": function() { return removeNotice; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/notices/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/notices/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -65,7 +65,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/utils/on-sub-key.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/utils/on-sub-key.js
 /**
  * Higher-order reducer creator which creates a combined reducer object, keyed
  * by a property on the action object.
@@ -99,7 +99,7 @@ const onSubKey = actionProperty => reducer => function () {
 };
 /* harmony default export */ var on_sub_key = (onSubKey);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/reducer.js
 /**
  * External dependencies
  */
@@ -140,7 +140,7 @@ const notices = on_sub_key('context')(function () {
 });
 /* harmony default export */ var reducer = (notices);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/constants.js
 /**
  * Default context to use for notice grouping when not otherwise specified. Its
  * specific value doesn't hold much meaning, but it must be reasonably unique
@@ -157,7 +157,7 @@ const DEFAULT_CONTEXT = 'global';
 
 const DEFAULT_STATUS = 'info';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/actions.js
 /**
  * External dependencies
  */
@@ -326,7 +326,7 @@ function removeNotice(id) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/selectors.js
 /**
  * Internal dependencies
  */
@@ -385,9 +385,9 @@ function getNotices(state) {
   return state[context] || DEFAULT_NOTICES;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -400,7 +400,7 @@ function getNotices(state) {
 /**
  * Store definition for the notices namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -412,7 +412,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)('core/notice
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/notices/build-module/index.js
 
 
 (window.wp = window.wp || {}).notices = __webpack_exports__;

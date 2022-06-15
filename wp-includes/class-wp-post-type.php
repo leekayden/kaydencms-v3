@@ -2,7 +2,7 @@
 /**
  * Post API: WP_Post_Type class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Post
  * @since 4.6.0
  */
@@ -278,7 +278,7 @@ final class WP_Post_Type {
 	 *
 	 * Default empty array.
 	 *
-	 * @link https://developer.wordpress.org/block-editor/developers/block-api/block-templates/
+	 * @link https://developer.kaydenCMS.org/block-editor/developers/block-api/block-templates/
 	 *
 	 * @since 5.0.0
 	 * @var array $template
@@ -295,7 +295,7 @@ final class WP_Post_Type {
 	 *
 	 * Default false.
 	 *
-	 * @link https://developer.wordpress.org/block-editor/developers/block-api/block-templates/
+	 * @link https://developer.kaydenCMS.org/block-editor/developers/block-api/block-templates/
 	 *
 	 * @since 5.0.0
 	 * @var string|false $template_lock
@@ -627,8 +627,8 @@ final class WP_Post_Type {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
-	 * @global WP         $wp         Current WordPress environment instance.
+	 * @global WP_Rewrite $wp_rewrite kaydenCMS rewrite component.
+	 * @global WP         $wp         Current kaydenCMS environment instance.
 	 */
 	public function add_rewrite_rules() {
 		global $wp_rewrite, $wp;
@@ -718,8 +718,8 @@ final class WP_Post_Type {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global WP_Rewrite $wp_rewrite          WordPress rewrite component.
-	 * @global WP         $wp                  Current WordPress environment instance.
+	 * @global WP_Rewrite $wp_rewrite          kaydenCMS rewrite component.
+	 * @global WP         $wp                  Current kaydenCMS environment instance.
 	 * @global array      $post_type_meta_caps Used to remove meta capabilities.
 	 */
 	public function remove_rewrite_rules() {

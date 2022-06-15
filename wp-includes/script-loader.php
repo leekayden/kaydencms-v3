@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress scripts and styles default loader.
+ * kaydenCMS scripts and styles default loader.
  *
  * Several constants are used to manage the loading, concatenating and compression of scripts and CSS:
  * define('SCRIPT_DEBUG', true); loads the development (non-minified) versions of all scripts and CSS, and disables compression and concatenation,
@@ -13,25 +13,25 @@
  * to temporarily override the above settings. Also a compression test is run once and the result is saved
  * as option 'can_compress_scripts' (0/1). The test will run again if that option is deleted.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
-/** WordPress Dependency Class */
+/** kaydenCMS Dependency Class */
 require ABSPATH . WPINC . '/class-wp-dependency.php';
 
-/** WordPress Dependencies Class */
+/** kaydenCMS Dependencies Class */
 require ABSPATH . WPINC . '/class.wp-dependencies.php';
 
-/** WordPress Scripts Class */
+/** kaydenCMS Scripts Class */
 require ABSPATH . WPINC . '/class.wp-scripts.php';
 
-/** WordPress Scripts Functions */
+/** kaydenCMS Scripts Functions */
 require ABSPATH . WPINC . '/functions.wp-scripts.php';
 
-/** WordPress Styles Class */
+/** kaydenCMS Styles Class */
 require ABSPATH . WPINC . '/class.wp-styles.php';
 
-/** WordPress Styles Functions */
+/** kaydenCMS Styles Functions */
 require ABSPATH . WPINC . '/functions.wp-styles.php';
 
 /**
@@ -70,14 +70,14 @@ function wp_register_tinymce_scripts( $scripts, $force_uncompressed = false ) {
 }
 
 /**
- * Registers all the WordPress vendor scripts that are in the standardized
+ * Registers all the kaydenCMS vendor scripts that are in the standardized
  * `js/dist/vendor/` location.
  *
  * For the order of `$scripts->add` see `wp_default_scripts`.
  *
  * @since 5.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param WP_Scripts $scripts WP_Scripts object.
  */
@@ -215,9 +215,9 @@ function wp_get_script_polyfill( $scripts, $tests ) {
 }
 
 /**
- * Registers development scripts that integrate with `@wordpress/scripts`.
+ * Registers development scripts that integrate with `@kaydenCMS/scripts`.
  *
- * @see https://github.com/WordPress/gutenberg/tree/trunk/packages/scripts#start
+ * @see https://github.com/kaydenCMS/gutenberg/tree/trunk/packages/scripts#start
  *
  * @since 6.0.0
  *
@@ -254,7 +254,7 @@ function wp_register_development_scripts( $scripts ) {
 }
 
 /**
- * Registers all the WordPress packages scripts that are in the standardized
+ * Registers all the kaydenCMS packages scripts that are in the standardized
  * `js/dist/` location.
  *
  * For the order of `$scripts->add` see `wp_default_scripts`.
@@ -306,7 +306,7 @@ function wp_default_packages_scripts( $scripts ) {
 		 * Manually set the text direction localization after wp-i18n is printed.
 		 * This ensures that wp.i18n.isRTL() returns true in RTL languages.
 		 * We cannot use $scripts->set_translations( 'wp-i18n' ) to do this
-		 * because WordPress prints a script's translations *before* the script,
+		 * because kaydenCMS prints a script's translations *before* the script,
 		 * which means, in the case of wp-i18n, that wp.i18n.setLocaleData()
 		 * is called before wp.i18n is defined.
 		 */
@@ -319,11 +319,11 @@ function wp_default_packages_scripts( $scripts ) {
 }
 
 /**
- * Adds inline scripts required for the WordPress JavaScript packages.
+ * Adds inline scripts required for the kaydenCMS JavaScript packages.
  *
  * @since 5.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param WP_Scripts $scripts WP_Scripts object.
  */
@@ -437,7 +437,7 @@ function wp_default_packages_inline_scripts( $scripts ) {
 	 * wp-editor module is exposed as window.wp.editor.
 	 * Problem: there is quite some code expecting window.wp.oldEditor object available under window.wp.editor.
 	 * Solution: fuse the two objects together to maintain backward compatibility.
-	 * For more context, see https://github.com/WordPress/gutenberg/issues/33203.
+	 * For more context, see https://github.com/kaydenCMS/gutenberg/issues/33203.
 	 */
 	$scripts->add_inline_script(
 		'wp-editor',
@@ -472,7 +472,7 @@ function wp_tinymce_inline_scripts() {
 		'tabfocus',
 		'textcolor',
 		'fullscreen',
-		'wordpress',
+		'kaydenCMS',
 		'wpautoresize',
 		'wpeditimage',
 		'wpemoji',
@@ -591,7 +591,7 @@ function wp_tinymce_inline_scripts() {
 }
 
 /**
- * Registers all the WordPress packages scripts.
+ * Registers all the kaydenCMS packages scripts.
  *
  * @since 5.0.0
  *
@@ -647,7 +647,7 @@ function wp_scripts_get_suffix( $type = '' ) {
 }
 
 /**
- * Registers all WordPress scripts.
+ * Registers all kaydenCMS scripts.
  *
  * Localizes some of them.
  * args order: `$scripts->add( 'handle', 'url', 'dependencies', 'query-string', 1 );`
@@ -780,7 +780,7 @@ function wp_default_scripts( $scripts ) {
 
 	$scripts->add( 'wp-lists', "/wp-includes/js/wp-lists$suffix.js", array( 'wp-ajax-response', 'jquery-color' ), false, 1 );
 
-	// WordPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
+	// kaydenCMS no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
 	$scripts->add( 'prototype', 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js', array(), '1.7.1' );
 	$scripts->add( 'scriptaculous-root', 'https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js', array( 'prototype' ), '1.9.0' );
 	$scripts->add( 'scriptaculous-builder', 'https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/builder.js', array( 'scriptaculous-root' ), '1.9.0' );
@@ -1264,7 +1264,7 @@ function wp_default_scripts( $scripts ) {
 			'blockThemeNotification'  => sprintf(
 				/* translators: 1: Link to Site Editor documentation on HelpHub, 2: HTML button. */
 				__( 'Hurray! Your theme supports Full Site Editing with blocks. <a href="%1$s">Tell me more</a>. %2$s' ),
-				__( 'https://wordpress.org/support/article/site-editor/' ),
+				__( 'https://kaydenCMS.org/support/article/site-editor/' ),
 				sprintf(
 					'<button type="button" data-action="%1$s" class="button switch-to-editor">%2$s</button>',
 					esc_url( admin_url( 'site-editor.php' ) ),
@@ -1413,7 +1413,7 @@ function wp_default_scripts( $scripts ) {
 
 		/*
 		 * Navigation Menus: Adding underscore as a dependency to utilize _.debounce
-		 * see https://core.trac.wordpress.org/ticket/42321
+		 * see https://core.trac.kaydenCMS.org/ticket/42321
 		 */
 		$scripts->add( 'nav-menu', "/wp-admin/js/nav-menu$suffix.js", array( 'jquery-ui-sortable', 'jquery-ui-draggable', 'jquery-ui-droppable', 'wp-lists', 'postbox', 'json2', 'underscore' ) );
 		$scripts->set_translations( 'nav-menu' );
@@ -1812,7 +1812,7 @@ function wp_just_in_time_script_localization() {
  *
  * @link https://api.jqueryui.com/datepicker/#options
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  */
 function wp_localize_jquery_ui_datepicker() {
 	global $wp_locale;
@@ -2366,7 +2366,7 @@ function wp_enqueue_global_styles() {
 	 * Global styles should be printed in the head when loading all styles combined.
 	 * The footer should only be used to print global styles for classic themes with separate core assets enabled.
 	 *
-	 * See https://core.trac.wordpress.org/ticket/53494.
+	 * See https://core.trac.kaydenCMS.org/ticket/53494.
 	 */
 	if (
 		( $is_block_theme && doing_action( 'wp_footer' ) ) ||
@@ -2421,7 +2421,7 @@ function wp_global_styles_render_svg_filters() {
  *
  * @since 5.6.0
  *
- * @global WP_Screen $current_screen WordPress current screen object.
+ * @global WP_Screen $current_screen kaydenCMS current screen object.
  *
  * @return bool Whether scripts and styles should be enqueued.
  */
@@ -2487,7 +2487,7 @@ function wp_should_load_separate_core_block_assets() {
  *
  * @since 5.0.0
  *
- * @global WP_Screen $current_screen WordPress current screen object.
+ * @global WP_Screen $current_screen kaydenCMS current screen object.
  */
 function wp_enqueue_registered_block_scripts_and_styles() {
 	global $current_screen;
@@ -2835,15 +2835,15 @@ function wp_maybe_inline_styles() {
 }
 
 /**
- * Makes URLs relative to the WordPress installation.
+ * Makes URLs relative to the kaydenCMS installation.
  *
  * @since 5.9.0
  * @access private
  *
- * @param string $css            The CSS to make URLs relative to the WordPress installation.
+ * @param string $css            The CSS to make URLs relative to the kaydenCMS installation.
  * @param string $stylesheet_url The URL to the stylesheet.
  *
- * @return string The CSS with URLs made relative to the WordPress installation.
+ * @return string The CSS with URLs made relative to the kaydenCMS installation.
  */
 function _wp_normalize_relative_css_links( $css, $stylesheet_url ) {
 	$has_src_results = preg_match_all( '#url\s*\(\s*[\'"]?\s*([^\'"\)]+)#', $css, $src_results );
@@ -2905,7 +2905,7 @@ function wp_enqueue_global_styles_css_custom_properties() {
  * because the wp_head action happens before
  * the render_block.
  *
- * @link https://core.trac.wordpress.org/ticket/53494.
+ * @link https://core.trac.kaydenCMS.org/ticket/53494.
  *
  * @param string $style String containing the CSS styles to be added.
  */
@@ -3050,7 +3050,7 @@ function wp_enqueue_block_style( $block_name, $args ) {
  *       the Webfonts API is introduced in Core.
  *    b. To make `fontFace` declarations in `theme.json` work.
  *
- * @link  https://github.com/WordPress/gutenberg/issues/40472
+ * @link  https://github.com/kaydenCMS/gutenberg/issues/40472
  *
  * @since 6.0.0
  * @access private

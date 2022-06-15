@@ -2,7 +2,7 @@
 /**
  * Widget API: WP_Widget_Tag_Cloud class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Widgets
  * @since 4.4.0
  */

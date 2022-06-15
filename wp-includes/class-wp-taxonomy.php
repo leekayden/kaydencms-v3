@@ -2,7 +2,7 @@
 /**
  * Taxonomy API: WP_Taxonomy class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Taxonomy
  * @since 4.7.0
  */
@@ -277,7 +277,7 @@ final class WP_Taxonomy {
 	 *
 	 * @since 4.7.0
 	 *
-	 * @global WP $wp Current WordPress environment instance.
+	 * @global WP $wp Current kaydenCMS environment instance.
 	 *
 	 * @param string       $taxonomy    Taxonomy key, must not exceed 32 characters.
 	 * @param array|string $object_type Name of the object type for the taxonomy object.
@@ -492,7 +492,7 @@ final class WP_Taxonomy {
 	 *
 	 * @since 4.7.0
 	 *
-	 * @global WP $wp Current WordPress environment instance.
+	 * @global WP $wp Current kaydenCMS environment instance.
 	 */
 	public function add_rewrite_rules() {
 		/* @var WP $wp */
@@ -520,7 +520,7 @@ final class WP_Taxonomy {
 	 *
 	 * @since 4.7.0
 	 *
-	 * @global WP $wp Current WordPress environment instance.
+	 * @global WP $wp Current kaydenCMS environment instance.
 	 */
 	public function remove_rewrite_rules() {
 		/* @var WP $wp */

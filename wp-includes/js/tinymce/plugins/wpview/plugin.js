@@ -1,5 +1,5 @@
 /**
- * WordPress View plugin.
+ * kaydenCMS View plugin.
  */
 ( function( tinymce ) {
 	tinymce.PluginManager.add( 'wpview', function( editor ) {

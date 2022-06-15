@@ -37,7 +37,7 @@ var __webpack_exports__ = {};
  * An in-line type `() => void` would be preferable, but the generated
  * documentation is `null` in that case.
  *
- * @see https://github.com/WordPress/gutenberg/issues/18045
+ * @see https://github.com/kaydenCMS/gutenberg/issues/18045
  */
 
 /**
@@ -47,7 +47,7 @@ var __webpack_exports__ = {};
  *
  * @example
  * ```js
- * import domReady from '@wordpress/dom-ready';
+ * import domReady from '@kaydenCMS/dom-ready';
  *
  * domReady( function() {
  * 	//do something after DOM loads.

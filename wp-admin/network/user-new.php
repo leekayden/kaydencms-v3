@@ -2,12 +2,12 @@
 /**
  * Add New User network administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'create_users' ) ) {
@@ -26,8 +26,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://codex.wordpress.org/Network_Admin_Users_Screen">Documentation on Network Users</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/forum/multisite/">Support Forums</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://codex.kaydenCMS.org/Network_Admin_Users_Screen">Documentation on Network Users</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/forum/multisite/">Support Forums</a>' ) . '</p>'
 );
 
 if ( isset( $_REQUEST['action'] ) && 'add-user' === $_REQUEST['action'] ) {

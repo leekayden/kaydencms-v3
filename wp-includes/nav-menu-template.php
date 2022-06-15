@@ -2,7 +2,7 @@
 /**
  * Nav Menu API: Template functions
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Nav_Menus
  * @since 3.0.0
  */
@@ -306,8 +306,8 @@ function wp_nav_menu( $args = array() ) {
  * @access private
  * @since 3.0.0
  *
- * @global WP_Query   $wp_query   WordPress Query object.
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Query   $wp_query   kaydenCMS Query object.
+ * @global WP_Rewrite $wp_rewrite kaydenCMS rewrite component.
  *
  * @param array $menu_items The current menu item objects to which to add the class property information.
  */

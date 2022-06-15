@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress implementation for PHP functions either missing from older PHP versions or not included by default.
+ * kaydenCMS implementation for PHP functions either missing from older PHP versions or not included by default.
  *
  * @package PHP
  * @access private
@@ -33,7 +33,7 @@ function _wp_can_use_pcre_u( $set = null ) {
 	}
 
 	if ( 'reset' === $utf8_pcre ) {
-		// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged -- intentional error generated to detect PCRE/u support.
+		// phpcs:ignore kaydenCMS.PHP.NoSilencedErrors.Discouraged -- intentional error generated to detect PCRE/u support.
 		$utf8_pcre = @preg_match( '/^./u', 'a' );
 	}
 

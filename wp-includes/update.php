@@ -2,25 +2,25 @@
 /**
  * A simple set of functions to check our version 1.0 update service.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 2.3.0
  */
 
 /**
- * Check WordPress version against the newest version.
+ * Check kaydenCMS version against the newest version.
  *
- * The WordPress version, PHP version, and locale is sent.
+ * The kaydenCMS version, PHP version, and locale is sent.
  *
- * Checks against the WordPress server at api.wordpress.org. Will only check
- * if WordPress isn't installing.
+ * Checks against the kaydenCMS server at api.kaydenCMS.org. Will only check
+ * if kaydenCMS isn't installing.
  *
  * @since 2.3.0
  *
- * @global string $wp_version       Used to check against the newest WordPress version.
- * @global wpdb   $wpdb             WordPress database abstraction object.
+ * @global string $wp_version       Used to check against the newest kaydenCMS version.
+ * @global wpdb   $wpdb             kaydenCMS database abstraction object.
  * @global string $wp_local_package Locale code of the package.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the kaydenCMS.org API.
  * @param bool  $force_check Whether to bypass the transient cache and force a fresh update check. Defaults to false, true if $extra_stats is set.
  */
 function wp_version_check( $extra_stats = array(), $force_check = false ) {
@@ -61,7 +61,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 	}
 
 	/**
-	 * Filters the locale requested for WordPress core translations.
+	 * Filters the locale requested for kaydenCMS core translations.
 	 *
 	 * @since 2.8.0
 	 *
@@ -112,15 +112,15 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 	 * @param array $query {
 	 *     Version check query arguments.
 	 *
-	 *     @type string $version            WordPress version number.
+	 *     @type string $version            kaydenCMS version number.
 	 *     @type string $php                PHP version number.
 	 *     @type string $locale             The locale to retrieve updates for.
 	 *     @type string $mysql              MySQL version number.
 	 *     @type string $local_package      The value of the $wp_local_package global, when set.
-	 *     @type int    $blogs              Number of sites on this WordPress installation.
-	 *     @type int    $users              Number of users on this WordPress installation.
-	 *     @type int    $multisite_enabled  Whether this WordPress installation uses Multisite.
-	 *     @type int    $initial_db_version Database version of WordPress at time of installation.
+	 *     @type int    $blogs              Number of sites on this kaydenCMS installation.
+	 *     @type int    $users              Number of users on this kaydenCMS installation.
+	 *     @type int    $multisite_enabled  Whether this kaydenCMS installation uses Multisite.
+	 *     @type int    $initial_db_version Database version of kaydenCMS at time of installation.
 	 * }
 	 */
 	$query = apply_filters( 'core_version_check_query_args', $query );
@@ -140,7 +140,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 		$query['channel'] = WP_AUTO_UPDATE_CORE;
 	}
 
-	$url      = 'http://api.wordpress.org/core/version-check/1.7/?' . http_build_query( $query, '', '&' );
+	$url      = 'http://api.kaydenCMS.org/core/version-check/1.7/?' . http_build_query( $query, '', '&' );
 	$http_url = $url;
 	$ssl      = wp_http_supports( array( 'ssl' ) );
 
@@ -152,7 +152,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 
 	$options = array(
 		'timeout'    => $doing_cron ? 30 : 3,
-		'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+		'user-agent' => 'kaydenCMS/' . $wp_version . '; ' . home_url( '/' ),
 		'headers'    => array(
 			'wp_install' => $wp_install,
 			'wp_blog'    => home_url( '/' ),
@@ -166,9 +166,9 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with kaydenCMS.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://kaydenCMS.org/support/forums/' )
+			) . ' ' . __( '(kaydenCMS could not establish a secure connection to kaydenCMS.org. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$response = wp_remote_post( $http_url, $options );
@@ -255,20 +255,20 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 }
 
 /**
- * Checks for available updates to plugins based on the latest versions hosted on WordPress.org.
+ * Checks for available updates to plugins based on the latest versions hosted on kaydenCMS.org.
  *
  * Despite its name this function does not actually perform any updates, it only checks for available updates.
  *
  * A list of all plugins installed is sent to WP, along with the site locale.
  *
- * Checks against the WordPress server at api.wordpress.org. Will only check
- * if WordPress isn't installing.
+ * Checks against the kaydenCMS server at api.kaydenCMS.org. Will only check
+ * if kaydenCMS isn't installing.
  *
  * @since 2.3.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the kaydenCMS.org API.
  */
 function wp_update_plugins( $extra_stats = array() ) {
 	if ( wp_installing() ) {
@@ -383,14 +383,14 @@ function wp_update_plugins( $extra_stats = array() ) {
 			'locale'       => wp_json_encode( $locales ),
 			'all'          => wp_json_encode( true ),
 		),
-		'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+		'user-agent' => 'kaydenCMS/' . $wp_version . '; ' . home_url( '/' ),
 	);
 
 	if ( $extra_stats ) {
 		$options['body']['update_stats'] = wp_json_encode( $extra_stats );
 	}
 
-	$url      = 'http://api.wordpress.org/plugins/update-check/1.1/';
+	$url      = 'http://api.kaydenCMS.org/plugins/update-check/1.1/';
 	$http_url = $url;
 	$ssl      = wp_http_supports( array( 'ssl' ) );
 
@@ -404,9 +404,9 @@ function wp_update_plugins( $extra_stats = array() ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with kaydenCMS.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://kaydenCMS.org/support/forums/' )
+			) . ' ' . __( '(kaydenCMS could not establish a secure connection to kaydenCMS.org. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$raw_response = wp_remote_post( $http_url, $options );
@@ -449,7 +449,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 		 *     @type string $version      The version of the plugin.
 		 *     @type string $url          The URL for details of the plugin.
 		 *     @type string $package      Optional. The update ZIP for the plugin.
-		 *     @type string $tested       Optional. The version of WordPress the plugin is tested against.
+		 *     @type string $tested       Optional. The version of kaydenCMS the plugin is tested against.
 		 *     @type string $requires_php Optional. The version of PHP which the plugin requires.
 		 *     @type bool   $autoupdate   Optional. Whether the plugin should automatically update.
 		 *     @type array  $icons        Optional. Array of plugin icons.
@@ -488,7 +488,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 		$update->id     = $plugin_data['UpdateURI'];
 		$update->plugin = $plugin_file;
 
-		// WordPress needs the version field specified as 'new_version'.
+		// kaydenCMS needs the version field specified as 'new_version'.
 		if ( ! isset( $update->new_version ) ) {
 			$update->new_version = $update->version;
 		}
@@ -529,20 +529,20 @@ function wp_update_plugins( $extra_stats = array() ) {
 }
 
 /**
- * Checks for available updates to themes based on the latest versions hosted on WordPress.org.
+ * Checks for available updates to themes based on the latest versions hosted on kaydenCMS.org.
  *
  * Despite its name this function does not actually perform any updates, it only checks for available updates.
  *
  * A list of all themes installed is sent to WP, along with the site locale.
  *
- * Checks against the WordPress server at api.wordpress.org. Will only check
- * if WordPress isn't installing.
+ * Checks against the kaydenCMS server at api.kaydenCMS.org. Will only check
+ * if kaydenCMS isn't installing.
  *
  * @since 2.7.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the kaydenCMS.org API.
  */
 function wp_update_themes( $extra_stats = array() ) {
 	if ( wp_installing() ) {
@@ -663,14 +663,14 @@ function wp_update_themes( $extra_stats = array() ) {
 			'translations' => wp_json_encode( $translations ),
 			'locale'       => wp_json_encode( $locales ),
 		),
-		'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+		'user-agent' => 'kaydenCMS/' . $wp_version . '; ' . home_url( '/' ),
 	);
 
 	if ( $extra_stats ) {
 		$options['body']['update_stats'] = wp_json_encode( $extra_stats );
 	}
 
-	$url      = 'http://api.wordpress.org/themes/update-check/1.1/';
+	$url      = 'http://api.kaydenCMS.org/themes/update-check/1.1/';
 	$http_url = $url;
 	$ssl      = wp_http_supports( array( 'ssl' ) );
 
@@ -684,9 +684,9 @@ function wp_update_themes( $extra_stats = array() ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with kaydenCMS.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://kaydenCMS.org/support/forums/' )
+			) . ' ' . __( '(kaydenCMS could not establish a secure connection to kaydenCMS.org. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$raw_response = wp_remote_post( $http_url, $options );
@@ -712,9 +712,9 @@ function wp_update_themes( $extra_stats = array() ) {
 }
 
 /**
- * Performs WordPress automatic background updates.
+ * Performs kaydenCMS automatic background updates.
  *
- * Updates WordPress core plus any plugins and themes that have automatic updates enabled.
+ * Updates kaydenCMS core plus any plugins and themes that have automatic updates enabled.
  *
  * @since 3.7.0
  */
@@ -767,7 +767,7 @@ function wp_get_update_data() {
 	$counts = array(
 		'plugins'      => 0,
 		'themes'       => 0,
-		'wordpress'    => 0,
+		'kaydenCMS'    => 0,
 		'translations' => 0,
 	);
 
@@ -794,13 +794,13 @@ function wp_get_update_data() {
 	$core = current_user_can( 'update_core' );
 
 	if ( $core && function_exists( 'get_core_updates' ) ) {
-		$update_wordpress = get_core_updates( array( 'dismissed' => false ) );
+		$update_kaydenCMS = get_core_updates( array( 'dismissed' => false ) );
 
-		if ( ! empty( $update_wordpress )
-			&& ! in_array( $update_wordpress[0]->response, array( 'development', 'latest' ), true )
+		if ( ! empty( $update_kaydenCMS )
+			&& ! in_array( $update_kaydenCMS[0]->response, array( 'development', 'latest' ), true )
 			&& current_user_can( 'update_core' )
 		) {
-			$counts['wordpress'] = 1;
+			$counts['kaydenCMS'] = 1;
 		}
 	}
 
@@ -808,12 +808,12 @@ function wp_get_update_data() {
 		$counts['translations'] = 1;
 	}
 
-	$counts['total'] = $counts['plugins'] + $counts['themes'] + $counts['wordpress'] + $counts['translations'];
+	$counts['total'] = $counts['plugins'] + $counts['themes'] + $counts['kaydenCMS'] + $counts['translations'];
 	$titles          = array();
 
-	if ( $counts['wordpress'] ) {
-		/* translators: %d: Number of available WordPress updates. */
-		$titles['wordpress'] = sprintf( __( '%d WordPress Update' ), $counts['wordpress'] );
+	if ( $counts['kaydenCMS'] ) {
+		/* translators: %d: Number of available kaydenCMS updates. */
+		$titles['kaydenCMS'] = sprintf( __( '%d kaydenCMS Update' ), $counts['kaydenCMS'] );
 	}
 
 	if ( $counts['plugins'] ) {
@@ -837,14 +837,14 @@ function wp_get_update_data() {
 		'title'  => $update_title,
 	);
 	/**
-	 * Filters the returned array of update data for plugins, themes, and WordPress core.
+	 * Filters the returned array of update data for plugins, themes, and kaydenCMS core.
 	 *
 	 * @since 3.5.0
 	 *
 	 * @param array $update_data {
 	 *     Fetched update data.
 	 *
-	 *     @type array   $counts       An array of counts for available plugin, theme, and WordPress updates.
+	 *     @type array   $counts       An array of counts for available plugin, theme, and kaydenCMS updates.
 	 *     @type string  $update_title Titles of available updates.
 	 * }
 	 * @param array $titles An array of update counts and UI strings for available updates.
@@ -857,7 +857,7 @@ function wp_get_update_data() {
  *
  * @since 2.8.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  */
 function _maybe_update_core() {
 	// Include an unmodified $wp_version.
@@ -877,7 +877,7 @@ function _maybe_update_core() {
 /**
  * Check the last time plugins were run before checking plugin versions.
  *
- * This might have been backported to WordPress 2.6.1 for performance reasons.
+ * This might have been backported to kaydenCMS 2.6.1 for performance reasons.
  * This is used for the wp-admin to check only so often instead of every page
  * load.
  *

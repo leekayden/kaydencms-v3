@@ -2,7 +2,7 @@
 /**
  * Theme, template, and stylesheet functions.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Theme
  */
 
@@ -265,12 +265,12 @@ function get_stylesheet_uri() {
  * the {@see 'stylesheet_directory_uri'} or {@see 'locale_stylesheet_uri'} filters.
  *
  * If you want to change the location of the stylesheet files for the entire
- * WordPress workflow, then change the former. If you just have the locale in a
+ * kaydenCMS workflow, then change the former. If you just have the locale in a
  * separate folder, then change the latter.
  *
  * @since 2.1.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @return string URI to active theme's localized stylesheet.
  */
@@ -656,7 +656,7 @@ function get_theme_root_uri( $stylesheet_or_template = '', $theme_root = '' ) {
 	 * @since 1.5.0
 	 *
 	 * @param string $theme_root_uri         The URI for themes directory.
-	 * @param string $siteurl                WordPress web address which is set in General Options.
+	 * @param string $siteurl                kaydenCMS web address which is set in General Options.
 	 * @param string $stylesheet_or_template The stylesheet or template name of the theme.
 	 */
 	return apply_filters( 'theme_root_uri', $theme_root_uri, get_option( 'siteurl' ), $stylesheet_or_template );
@@ -902,7 +902,7 @@ function validate_current_theme() {
 }
 
 /**
- * Validates the theme requirements for WordPress version and PHP version.
+ * Validates the theme requirements for kaydenCMS version and PHP version.
  *
  * Uses the information from `Requires at least` and `Requires PHP` headers
  * defined in the theme's `style.css` file.
@@ -929,7 +929,7 @@ function validate_theme_requirements( $stylesheet ) {
 			'theme_wp_php_incompatible',
 			sprintf(
 				/* translators: %s: Theme name. */
-				_x( '<strong>Error:</strong> Current WordPress and PHP versions do not meet minimum requirements for %s.', 'theme' ),
+				_x( '<strong>Error:</strong> Current kaydenCMS and PHP versions do not meet minimum requirements for %s.', 'theme' ),
 				$theme->display( 'Name' )
 			)
 		);
@@ -947,7 +947,7 @@ function validate_theme_requirements( $stylesheet ) {
 			'theme_wp_incompatible',
 			sprintf(
 				/* translators: %s: Theme name. */
-				_x( '<strong>Error:</strong> Current WordPress version does not meet minimum requirements for %s.', 'theme' ),
+				_x( '<strong>Error:</strong> Current kaydenCMS version does not meet minimum requirements for %s.', 'theme' ),
 				$theme->display( 'Name' )
 			)
 		);
@@ -2302,11 +2302,11 @@ function get_theme_starter_content() {
 
 			'link_email'      => array(
 				'title' => _x( 'Email', 'Theme starter content' ),
-				'url'   => 'mailto:wordpress@example.com',
+				'url'   => 'mailto:kaydenCMS@example.com',
 			),
 			'link_facebook'   => array(
 				'title' => _x( 'Facebook', 'Theme starter content' ),
-				'url'   => 'https://www.facebook.com/wordpress',
+				'url'   => 'https://www.facebook.com/kaydenCMS',
 			),
 			'link_foursquare' => array(
 				'title' => _x( 'Foursquare', 'Theme starter content' ),
@@ -2314,7 +2314,7 @@ function get_theme_starter_content() {
 			),
 			'link_github'     => array(
 				'title' => _x( 'GitHub', 'Theme starter content' ),
-				'url'   => 'https://github.com/wordpress/',
+				'url'   => 'https://github.com/kaydenCMS/',
 			),
 			'link_instagram'  => array(
 				'title' => _x( 'Instagram', 'Theme starter content' ),
@@ -2330,7 +2330,7 @@ function get_theme_starter_content() {
 			),
 			'link_twitter'    => array(
 				'title' => _x( 'Twitter', 'Theme starter content' ),
-				'url'   => 'https://twitter.com/wordpress',
+				'url'   => 'https://twitter.com/kaydenCMS',
 			),
 			'link_yelp'       => array(
 				'title' => _x( 'Yelp', 'Theme starter content' ),
@@ -3051,7 +3051,7 @@ function current_theme_supports( $feature, ...$args ) {
 	// If no args passed then no extra checks need to be performed.
 	if ( ! $args ) {
 		/** This filter is documented in wp-includes/theme.php */
-		return apply_filters( "current_theme_supports-{$feature}", true, $args, $_wp_theme_features[ $feature ] ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+		return apply_filters( "current_theme_supports-{$feature}", true, $args, $_wp_theme_features[ $feature ] ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	}
 
 	switch ( $feature ) {
@@ -3097,7 +3097,7 @@ function current_theme_supports( $feature, ...$args ) {
 	 * @param array  $args     Array of arguments for the feature.
 	 * @param string $feature  The theme feature.
 	 */
-	return apply_filters( "current_theme_supports-{$feature}", true, $args, $_wp_theme_features[ $feature ] ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	return apply_filters( "current_theme_supports-{$feature}", true, $args, $_wp_theme_features[ $feature ] ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 }
 
 /**
@@ -3392,7 +3392,7 @@ function check_theme_switched() {
  * Loads the Customizer at plugins_loaded when accessing the customize.php admin
  * page or when any request includes a wp_customize=on param or a customize_changeset
  * param (a UUID). This param is a signal for whether to bootstrap the Customizer when
- * WordPress is loading, especially in the Customizer preview
+ * kaydenCMS is loading, especially in the Customizer preview
  * or when making Customizer Ajax requests for widgets or menus.
  *
  * @since 3.4.0
@@ -3500,7 +3500,7 @@ function _wp_customize_include() {
  * @since 4.7.0
  * @access private
  *
- * @global wpdb                 $wpdb         WordPress database abstraction object.
+ * @global wpdb                 $wpdb         kaydenCMS database abstraction object.
  * @global WP_Customize_Manager $wp_customize Customizer instance.
  *
  * @param string  $new_status     New post status.
@@ -3719,13 +3719,13 @@ function is_customize_preview() {
  * be edited in the admin before publishing since there is not yet a post/page
  * editing flow in the Customizer. See #39752.
  *
- * @link https://core.trac.wordpress.org/ticket/39752
+ * @link https://core.trac.kaydenCMS.org/ticket/39752
  *
  * @since 4.8.0
  * @access private
  * @see wp_delete_auto_drafts()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string   $new_status Transition to this post status.
  * @param string   $old_status Previous post status.
@@ -4160,7 +4160,7 @@ function create_initial_theme_features() {
 	register_theme_feature(
 		'wp-block-styles',
 		array(
-			'description'  => __( 'Whether theme opts in to default WordPress block styles for viewing.' ),
+			'description'  => __( 'Whether theme opts in to default kaydenCMS block styles for viewing.' ),
 			'show_in_rest' => true,
 		)
 	);

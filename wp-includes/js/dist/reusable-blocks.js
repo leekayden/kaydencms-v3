@@ -43,7 +43,7 @@ __webpack_require__.d(__webpack_exports__, {
   "store": function() { return /* reexport */ store; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/reusable-blocks/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -53,7 +53,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "__experimentalSetEditingReusableBlock": function() { return __experimentalSetEditingReusableBlock; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/reusable-blocks/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -70,13 +70,13 @@ var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/actions.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -165,9 +165,9 @@ function __experimentalSetEditingReusableBlock(clientId, isEditing) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function isEditingReusableBlock() {
@@ -186,7 +186,7 @@ function isEditingReusableBlock() {
   isEditingReusableBlock
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/selectors.js
 /**
  * Returns true if reusable block is in the editing state.
  *
@@ -198,9 +198,9 @@ function __experimentalIsEditingReusableBlock(state, clientId) {
   return state.isEditingReusableBlock[clientId];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -214,7 +214,7 @@ const STORE_NAME = 'core/reusable-blocks';
 /**
  * Store definition for the reusable blocks namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -232,11 +232,11 @@ var external_wp_element_namespaceObject = window["wp"]["element"];
 var external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/symbol.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const symbol = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -251,11 +251,11 @@ const symbol = (0,external_wp_element_namespaceObject.createElement)(external_wp
 var external_wp_notices_namespaceObject = window["wp"]["notices"];
 ;// CONCATENATED MODULE: external ["wp","coreData"]
 var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-block-convert-button.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-block-convert-button.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -277,7 +277,7 @@ var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
  * @param {Object}   props              Component props.
  * @param {string[]} props.clientIds    Client ids of selected blocks.
  * @param {string}   props.rootClientId ID of the currently selected top-level block.
- * @return {import('@wordpress/element').WPComponent} The menu control or null.
+ * @return {import('@kaydenCMS/element').WPComponent} The menu control or null.
  */
 
 function ReusableBlockConvertButton(_ref) {
@@ -381,11 +381,11 @@ function ReusableBlockConvertButton(_ref) {
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-blocks-manage-button.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-blocks-manage-button.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -440,11 +440,11 @@ function ReusableBlocksManageButton(_ref) {
 
 /* harmony default export */ var reusable_blocks_manage_button = (ReusableBlocksManageButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/components/reusable-blocks-menu-items/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -477,10 +477,10 @@ function ReusableBlocksMenuItems(_ref) {
   };
 })(ReusableBlocksMenuItems));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/reusable-blocks/build-module/index.js
 
 
 

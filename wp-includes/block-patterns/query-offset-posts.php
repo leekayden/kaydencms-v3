@@ -2,7 +2,7 @@
 /**
  * Query: Offset.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 return array(

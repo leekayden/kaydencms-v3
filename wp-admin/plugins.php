@@ -2,11 +2,11 @@
 /**
  * Plugins administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'activate_plugins' ) ) {
@@ -495,7 +495,7 @@ if ( $action ) {
 
 				// Return early if all selected plugins already have auto-updates enabled or disabled.
 				// Must use non-strict comparison, so that array order is not treated as significant.
-				if ( $new_auto_updates == $auto_updates ) { // phpcs:ignore WordPress.PHP.StrictComparisons.LooseComparison
+				if ( $new_auto_updates == $auto_updates ) { // phpcs:ignore kaydenCMS.PHP.StrictComparisons.LooseComparison
 					wp_redirect( $redirect );
 					exit;
 				}
@@ -523,7 +523,7 @@ if ( $action ) {
 				$plugins  = isset( $_POST['checked'] ) ? (array) wp_unslash( $_POST['checked'] ) : array();
 
 				/** This action is documented in wp-admin/edit.php */
-				$sendback = apply_filters( "handle_bulk_actions-{$screen}", $sendback, $action, $plugins ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+				$sendback = apply_filters( "handle_bulk_actions-{$screen}", $sendback, $action, $plugins ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 				wp_safe_redirect( $sendback );
 				exit;
 			}
@@ -543,12 +543,12 @@ get_current_screen()->add_help_tab(
 		'id'      => 'overview',
 		'title'   => __( 'Overview' ),
 		'content' =>
-				'<p>' . __( 'Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here.' ) . '</p>' .
+				'<p>' . __( 'Plugins extend and expand the functionality of kaydenCMS. Once a plugin is installed, you may activate it or deactivate it here.' ) . '</p>' .
 				'<p>' . __( 'The search for installed plugins will search for terms in their name, description, or author.' ) . ' <span id="live-search-desc" class="hide-if-no-js">' . __( 'The search results will be updated as you type.' ) . '</span></p>' .
 				'<p>' . sprintf(
-					/* translators: %s: WordPress Plugin Directory URL. */
-					__( 'If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href="%s">WordPress Plugin Directory</a>. Plugins in the WordPress Plugin Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!' ),
-					__( 'https://wordpress.org/plugins/' )
+					/* translators: %s: kaydenCMS Plugin Directory URL. */
+					__( 'If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href="%s">kaydenCMS Plugin Directory</a>. Plugins in the kaydenCMS Plugin Directory are designed and developed by third parties, and are compatible with the license kaydenCMS uses. Oh, and they&#8217;re free!' ),
+					__( 'https://kaydenCMS.org/plugins/' )
 				) . '</p>',
 	)
 );
@@ -557,10 +557,10 @@ get_current_screen()->add_help_tab(
 		'id'      => 'compatibility-problems',
 		'title'   => __( 'Troubleshooting' ),
 		'content' =>
-				'<p>' . __( 'Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue.' ) . '</p>' .
+				'<p>' . __( 'Most of the time, plugins play nicely with the core of kaydenCMS and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue.' ) . '</p>' .
 				'<p>' . sprintf(
 					/* translators: %s: WP_PLUGIN_DIR constant value. */
-					__( 'If something goes wrong with a plugin and you cannot use WordPress, delete or rename that file in the %s directory and it will be automatically deactivated.' ),
+					__( 'If something goes wrong with a plugin and you cannot use kaydenCMS, delete or rename that file in the %s directory and it will be automatically deactivated.' ),
 					'<code>' . WP_PLUGIN_DIR . '</code>'
 				) . '</p>',
 	)
@@ -575,19 +575,19 @@ if ( current_user_can( 'update_plugins' ) && wp_is_auto_update_enabled_for_type(
 			'title'   => __( 'Auto-updates' ),
 			'content' =>
 					'<p>' . __( 'Auto-updates can be enabled or disabled for each individual plugin. Plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system.' ) . '</p>' .
-					'<p>' . __( 'Auto-updates are only available for plugins recognized by WordPress.org, or that include a compatible update system.' ) . '</p>' .
-					'<p>' . __( 'Please note: Third-party themes and plugins, or custom code, may override WordPress scheduling.' ) . '</p>',
+					'<p>' . __( 'Auto-updates are only available for plugins recognized by kaydenCMS.org, or that include a compatible update system.' ) . '</p>' .
+					'<p>' . __( 'Please note: Third-party themes and plugins, or custom code, may override kaydenCMS scheduling.' ) . '</p>',
 		)
 	);
 
-	$help_sidebar_autoupdates = '<p>' . __( '<a href="https://wordpress.org/support/article/plugins-themes-auto-updates/">Learn more: Auto-updates documentation</a>' ) . '</p>';
+	$help_sidebar_autoupdates = '<p>' . __( '<a href="https://kaydenCMS.org/support/article/plugins-themes-auto-updates/">Learn more: Auto-updates documentation</a>' ) . '</p>';
 }
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/managing-plugins/">Documentation on Managing Plugins</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/managing-plugins/">Documentation on Managing Plugins</a>' ) . '</p>' .
 	$help_sidebar_autoupdates .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 get_current_screen()->set_screen_reader_content(

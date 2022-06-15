@@ -2,13 +2,13 @@
 /**
  * Site Editor administration screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
 global $post, $editor_styles;
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'edit_theme_options' ) ) {

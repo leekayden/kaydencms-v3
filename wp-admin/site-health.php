@@ -2,11 +2,11 @@
 /**
  * Tools Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 wp_reset_vars( array( 'action' ) );
@@ -80,14 +80,14 @@ get_current_screen()->add_help_tab(
 		'title'   => __( 'Overview' ),
 		'content' =>
 				'<p>' . __( 'This screen allows you to obtain a health diagnosis of your site, and displays an overall rating of the status of your installation.' ) . '</p>' .
-				'<p>' . __( 'In the Status tab, you can see critical information about your WordPress configuration, along with anything else that requires your attention.' ) . '</p>' .
-				'<p>' . __( 'In the Info tab, you will find all the details about the configuration of your WordPress site, server, and database. There is also an export feature that allows you to copy all of the information about your site to the clipboard, to help solve problems on your site when obtaining support.' ) . '</p>',
+				'<p>' . __( 'In the Status tab, you can see critical information about your kaydenCMS configuration, along with anything else that requires your attention.' ) . '</p>' .
+				'<p>' . __( 'In the Info tab, you will find all the details about the configuration of your kaydenCMS site, server, and database. There is also an export feature that allows you to copy all of the information about your site to the clipboard, to help solve problems on your site when obtaining support.' ) . '</p>',
 	)
 );
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/site-health-screen/">Documentation on Site Health tool</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/site-health-screen/">Documentation on Site Health tool</a>' ) . '</p>'
 );
 
 // Start by checking if this is a special request checking for the existence of certain filters.
@@ -233,7 +233,7 @@ if ( isset( $_GET['tab'] ) && ! empty( $_GET['tab'] ) ) {
 			<?php _e( 'Site Health Status' ); ?>
 		</h2>
 
-		<p><?php _e( 'The site health check shows critical information about your WordPress configuration and items that require your attention.' ); ?></p>
+		<p><?php _e( 'The site health check shows critical information about your kaydenCMS configuration and items that require your attention.' ); ?></p>
 
 		<div class="site-health-issues-wrapper" id="health-check-issues-critical">
 			<h3 class="site-health-issue-count-title">

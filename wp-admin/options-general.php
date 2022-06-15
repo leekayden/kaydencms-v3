@@ -2,14 +2,14 @@
 /**
  * General settings administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
-/** WordPress Translation Installation API */
+/** kaydenCMS Translation Installation API */
 require_once ABSPATH . 'wp-admin/includes/translation-install.php';
 
 if ( ! current_user_can( 'manage_options' ) ) {
@@ -28,7 +28,7 @@ $options_help = '<p>' . __( 'The fields on this screen determine some of the bas
 	'<p>' . __( 'Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes.' ) . '</p>';
 
 if ( ! is_multisite() ) {
-	$options_help .= '<p>' . __( 'The WordPress URL and the site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory.' ) . '</p>' .
+	$options_help .= '<p>' . __( 'The kaydenCMS URL and the site URL can be the same (example.com) or different; for example, having the kaydenCMS core files (example.com/kaydenCMS) in a subdirectory instead of the root directory.' ) . '</p>' .
 		'<p>' . __( 'If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin.' ) . '</p>';
 }
 
@@ -46,8 +46,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/settings-general-screen/">Documentation on General Settings</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/settings-general-screen/">Documentation on General Settings</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 require_once ABSPATH . 'wp-admin/admin-header.php';
@@ -85,7 +85,7 @@ if ( ! is_multisite() ) {
 	?>
 
 <tr>
-<th scope="row"><label for="siteurl"><?php _e( 'WordPress Address (URL)' ); ?></label></th>
+<th scope="row"><label for="siteurl"><?php _e( 'kaydenCMS Address (URL)' ); ?></label></th>
 <td><input name="siteurl" type="url" id="siteurl" value="<?php form_option( 'siteurl' ); ?>"<?php disabled( defined( 'WP_SITEURL' ) ); ?> class="regular-text code<?php echo $wp_site_url_class; ?>" /></td>
 </tr>
 
@@ -97,8 +97,8 @@ if ( ! is_multisite() ) {
 		<?php
 		printf(
 			/* translators: %s: Documentation URL. */
-			__( 'Enter the address here if you <a href="%s">want your site home page to be different from your WordPress installation directory</a>.' ),
-			__( 'https://wordpress.org/support/article/giving-wordpress-its-own-directory/' )
+			__( 'Enter the address here if you <a href="%s">want your site home page to be different from your kaydenCMS installation directory</a>.' ),
+			__( 'https://kaydenCMS.org/support/article/giving-kaydenCMS-its-own-directory/' )
 		);
 		?>
 </p>
@@ -375,7 +375,7 @@ foreach ( $time_formats as $format ) {
 		'<p><strong>' . __( 'Preview:' ) . '</strong> <span class="example">' . date_i18n( get_option( 'time_format' ) ) . '</span>' .
 		"<span class='spinner'></span>\n" . '</p>';
 
-	echo "\t<p class='date-time-doc'>" . __( '<a href="https://wordpress.org/support/article/formatting-date-and-time/">Documentation on date and time formatting</a>.' ) . "</p>\n";
+	echo "\t<p class='date-time-doc'>" . __( '<a href="https://kaydenCMS.org/support/article/formatting-date-and-time/">Documentation on date and time formatting</a>.' ) . "</p>\n";
 ?>
 	</fieldset>
 </td>
@@ -385,7 +385,7 @@ foreach ( $time_formats as $format ) {
 <td><select name="start_of_week" id="start_of_week">
 <?php
 /**
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  */
 global $wp_locale;
 

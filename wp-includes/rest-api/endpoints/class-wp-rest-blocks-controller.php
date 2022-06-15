@@ -2,7 +2,7 @@
 /**
  * Reusable blocks REST API: WP_REST_Blocks_Controller class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage REST_API
  * @since 5.0.0
  */

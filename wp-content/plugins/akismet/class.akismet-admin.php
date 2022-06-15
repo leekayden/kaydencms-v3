@@ -297,7 +297,7 @@ class Akismet_Admin {
 
 		if ( empty( $new_key ) ) {
 			if ( !empty( $old_key ) ) {
-				delete_option( 'wordpress_api_key' );
+				delete_option( 'kaydenCMS_api_key' );
 				self::$notices[] = 'new-key-empty';
 			}
 		}
@@ -316,7 +316,7 @@ class Akismet_Admin {
 			
 			if ( $akismet_user ) {				
 				if ( in_array( $akismet_user->status, array( 'active', 'active-dunning', 'no-sub' ) ) )
-					update_option( 'wordpress_api_key', $api_key );
+					update_option( 'kaydenCMS_api_key', $api_key );
 				
 				if ( $akismet_user->status == 'active' )
 					self::$notices['status'] = 'new-key-valid';
@@ -348,7 +348,7 @@ class Akismet_Admin {
 				'<a href="%1$s">Akismet</a> has protected your site from <a href="%2$s">%3$s spam comment</a>.',
 				'<a href="%1$s">Akismet</a> has protected your site from <a href="%2$s">%3$s spam comments</a>.',
 				$count
-			, 'akismet'), 'https://akismet.com/wordpress/', esc_url( add_query_arg( array( 'page' => 'akismet-admin' ), admin_url( isset( $submenu['edit-comments.php'] ) ? 'edit-comments.php' : 'edit.php' ) ) ), number_format_i18n($count) ).'</p>';
+			, 'akismet'), 'https://akismet.com/kaydenCMS/', esc_url( add_query_arg( array( 'page' => 'akismet-admin' ), admin_url( isset( $submenu['edit-comments.php'] ) ? 'edit-comments.php' : 'edit.php' ) ) ), number_format_i18n($count) ).'</p>';
 	}
 
 	// WP 2.5+
@@ -358,9 +358,9 @@ class Akismet_Admin {
 				'<a href="%1$s">Akismet</a> has protected your site from %2$s spam comment already. ',
 				'<a href="%1$s">Akismet</a> has protected your site from %2$s spam comments already. ',
 				$count
-			, 'akismet'), 'https://akismet.com/wordpress/', number_format_i18n( $count ) );
+			, 'akismet'), 'https://akismet.com/kaydenCMS/', number_format_i18n( $count ) );
 		} else {
-			$intro = sprintf( __('<a href="%s">Akismet</a> blocks spam from getting to your blog. ', 'akismet'), 'https://akismet.com/wordpress/' );
+			$intro = sprintf( __('<a href="%s">Akismet</a> blocks spam from getting to your blog. ', 'akismet'), 'https://akismet.com/kaydenCMS/' );
 		}
 
 		$link = add_query_arg( array( 'comment_status' => 'spam' ), admin_url( 'edit-comments.php' ) );
@@ -611,7 +611,7 @@ class Akismet_Admin {
 						case 'wp-blacklisted':
 						case 'wp-disallowed':
 							$message = sprintf(
-								/* translators: The placeholder is a WordPress PHP function name. */
+								/* translators: The placeholder is a kaydenCMS PHP function name. */
 								esc_html( __( 'Comment was caught by %s.', 'akismet' ) ),
 								function_exists( 'wp_check_comment_disallowed_list' ) ? '<code>wp_check_comment_disallowed_list</code>' : '<code>wp_blacklist_check</code>'
 							);
@@ -657,7 +657,7 @@ class Akismet_Admin {
 						default:
 							if ( preg_match( '/^status-changed/', $row['event'] ) ) {
 								// Half of these used to be saved without the dash after 'status-changed'.
-								// See https://plugins.trac.wordpress.org/changeset/1150658/akismet/trunk
+								// See https://plugins.trac.kaydenCMS.org/changeset/1150658/akismet/trunk
 								$new_status = preg_replace( '/^status-changed-?/', '', $row['event'] );
 								/* translators: The placeholder is a short string (like 'spam' or 'approved') denoting the new comment status. */
 								$message = sprintf( esc_html( __( 'Comment status was changed to %s', 'akismet' ) ), '<code>' . esc_html( $new_status ) . '</code>' );
@@ -685,13 +685,13 @@ class Akismet_Admin {
 						echo sprintf(
 							/* translators: %1$s is a human-readable time difference, like "3 hours ago", and %2$s is an already-translated phrase describing how a comment's status changed, like "This comment was reported as spam." */
 							esc_html( __( '%1$s - %2$s', 'akismet' ) ),
-							// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							// phpcs:ignore kaydenCMS.Security.EscapeOutput.OutputNotEscaped
 							$time_html,
-							// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							// phpcs:ignore kaydenCMS.Security.EscapeOutput.OutputNotEscaped
 							$message
 						); // esc_html() is done above so that we can use HTML in $message.
 					} else {
-						// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						// phpcs:ignore kaydenCMS.Security.EscapeOutput.OutputNotEscaped
 						echo $message; // esc_html() is done above so that we can use HTML in $message.
 					}
 
@@ -733,7 +733,7 @@ class Akismet_Admin {
 		return (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(comment_ID) FROM {$wpdb->comments} WHERE comment_approved = 'spam' AND comment_type = %s", $type ) );
 	}
 
-	// Check connectivity between the WordPress blog and Akismet's servers.
+	// Check connectivity between the kaydenCMS blog and Akismet's servers.
 	// Returns an associative array of server IP addresses, where the key is the IP address, and value is true (available) or false (unable to connect).
 	public static function check_server_ip_connectivity() {
 		
@@ -765,7 +765,7 @@ class Akismet_Admin {
 		
 		$debug = array();
 		$debug[ 'PHP_VERSION' ]         = PHP_VERSION;
-		$debug[ 'WORDPRESS_VERSION' ]   = $GLOBALS['wp_version'];
+		$debug[ 'kaydenCMS_VERSION' ]   = $GLOBALS['wp_version'];
 		$debug[ 'AKISMET_VERSION' ]     = AKISMET_VERSION;
 		$debug[ 'AKISMET__PLUGIN_DIR' ] = AKISMET__PLUGIN_DIR;
 		$debug[ 'SITE_URL' ]            = site_url();
@@ -945,7 +945,7 @@ class Akismet_Admin {
 		if ( isset( $_GET['action'] ) ) {
 			if ( $_GET['action'] == 'delete-key' ) {
 				if ( isset( $_GET['_wpnonce'] ) && wp_verify_nonce( $_GET['_wpnonce'], self::NONCE ) )
-					delete_option( 'wordpress_api_key' );
+					delete_option( 'kaydenCMS_api_key' );
 			}
 		}
 
@@ -1268,7 +1268,7 @@ class Akismet_Admin {
 	 * @param $page int This function can (and will) be called multiple times to prevent timeouts,
 	 *                  so this argument is used for pagination.
 	 * @return array
-	 * @see https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/
+	 * @see https://developer.kaydenCMS.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/
 	 */
 	public static function erase_personal_data( $email_address, $page = 1 ) {
 		$items_removed = false;

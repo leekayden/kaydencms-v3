@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Privacy Tools API.
+ * kaydenCMS Administration Privacy Tools API.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 

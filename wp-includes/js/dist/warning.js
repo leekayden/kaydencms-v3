@@ -29,7 +29,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ warning; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/warning/build-module/utils.js
 /**
  * Object map tracking messages which have been logged, for use in ensuring a
  * message is only logged once.
@@ -38,7 +38,7 @@ __webpack_require__.d(__webpack_exports__, {
  */
 const logged = new Set();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/warning/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -54,7 +54,7 @@ function isDev() {
  *
  * @example
  * ```js
- * import warning from '@wordpress/warning';
+ * import warning from '@kaydenCMS/warning';
  *
  * function MyComponent( props ) {
  *   if ( ! props.title ) {

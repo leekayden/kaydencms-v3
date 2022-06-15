@@ -1284,7 +1284,7 @@ function setSettings(dateSettings) {
 
   if (moment__WEBPACK_IMPORTED_MODULE_0___default().locales().includes(dateSettings.l10n.locale)) {
     // Is that locale misconfigured, e.g. because we are on a site running
-    // WordPress < 6.0?
+    // kaydenCMS < 6.0?
     if (moment__WEBPACK_IMPORTED_MODULE_0___default().localeData(dateSettings.l10n.locale).longDateFormat('LTS') === null) {
       // Delete the misconfigured locale.
       // @ts-ignore Type definitions are incorrect - null is permitted.
@@ -1676,7 +1676,7 @@ function gmdateI18n(dateFormat) {
   return format(dateFormat, dateMoment);
 }
 /**
- * Check whether a date is considered in the future according to the WordPress settings.
+ * Check whether a date is considered in the future according to the kaydenCMS settings.
  *
  * @param {string} dateValue Date String or Date object in the Defined WP Timezone.
  *

@@ -2,7 +2,7 @@
 /**
  * List Table API: WP_Posts_List_Table class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 3.1.0
  */
@@ -67,7 +67,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	 * @see WP_List_Table::__construct() for more information on default arguments.
 	 *
 	 * @global WP_Post_Type $post_type_object
-	 * @global wpdb         $wpdb             WordPress database abstraction object.
+	 * @global wpdb         $wpdb             kaydenCMS database abstraction object.
 	 *
 	 * @param array $args An associative array of arguments.
 	 */
@@ -149,7 +149,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	/**
 	 * @global string   $mode             List table view mode.
 	 * @global array    $avail_post_stati
-	 * @global WP_Query $wp_query         WordPress Query object.
+	 * @global WP_Query $wp_query         kaydenCMS Query object.
 	 * @global int      $per_page
 	 */
 	public function prepare_items() {
@@ -752,7 +752,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @global WP_Query $wp_query WordPress Query object.
+	 * @global WP_Query $wp_query kaydenCMS Query object.
 	 * @global int $per_page
 	 * @param array $posts
 	 * @param int   $level
@@ -797,7 +797,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @global wpdb    $wpdb WordPress database abstraction object.
+	 * @global wpdb    $wpdb kaydenCMS database abstraction object.
 	 * @global WP_Post $post Global post object.
 	 * @param array $pages
 	 * @param int   $pagenum

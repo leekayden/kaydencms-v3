@@ -16337,7 +16337,7 @@ __webpack_require__.d(__webpack_exports__, {
   "withSpokenMessages": function() { return /* reexport */ with_spoken_messages; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/components/build-module/text/styles.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/components/build-module/text/styles.js
 var text_styles_namespaceObject = {};
 __webpack_require__.r(text_styles_namespaceObject);
 __webpack_require__.d(text_styles_namespaceObject, {
@@ -16350,7 +16350,7 @@ __webpack_require__.d(text_styles_namespaceObject, {
   "upperCase": function() { return upperCase; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/components/build-module/ui/tooltip/styles.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/components/build-module/ui/tooltip/styles.js
 var tooltip_styles_namespaceObject = {};
 __webpack_require__.r(tooltip_styles_namespaceObject);
 __webpack_require__.d(tooltip_styles_namespaceObject, {
@@ -16360,7 +16360,7 @@ __webpack_require__.d(tooltip_styles_namespaceObject, {
   "noOutline": function() { return noOutline; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
 var toggle_group_control_option_base_styles_namespaceObject = {};
 __webpack_require__.r(toggle_group_control_option_base_styles_namespaceObject);
 __webpack_require__.d(toggle_group_control_option_base_styles_namespaceObject, {
@@ -18881,11 +18881,11 @@ var CompositeItem = createComponent({
 
 ;// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/close.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const close_close = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -18896,11 +18896,11 @@ const close_close = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/popover/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/popover/utils.js
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -19208,7 +19208,7 @@ function offsetIframe(rect, ownerDocument, container) {
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dashicon/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/dashicon/index.js
 
 
 
@@ -19239,7 +19239,7 @@ function Dashicon(_ref) {
 
 /* harmony default export */ var dashicon = (Dashicon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/icon/index.js
 
 
 /**
@@ -19247,7 +19247,7 @@ function Dashicon(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -19314,7 +19314,7 @@ function Icon(_ref) {
 
 ;// CONCATENATED MODULE: external ["wp","warning"]
 var external_wp_warning_namespaceObject = window["wp"]["warning"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/context-system-provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/context-system-provider.js
 
 
 /**
@@ -19322,7 +19322,7 @@ var external_wp_warning_namespaceObject = window["wp"]["warning"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -19424,7 +19424,7 @@ const BaseContextSystemProvider = _ref2 => {
 
 const ContextSystemProvider = (0,external_wp_element_namespaceObject.memo)(BaseContextSystemProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/constants.js
 const REACT_TYPEOF_KEY = '$$typeof';
 const COMPONENT_NAMESPACE = 'data-wp-component';
 const CONNECTED_NAMESPACE = 'data-wp-c16t';
@@ -19436,7 +19436,7 @@ const CONTEXT_COMPONENT_NAMESPACE = 'data-wp-c5tc8t';
 
 const CONNECT_STATIC_NAMESPACE = '__contextSystemKey__';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/utils.js
 /**
  * Internal dependencies
  */
@@ -19480,7 +19480,7 @@ function getConnectedNamespace() {
 // EXTERNAL MODULE: ./node_modules/memize/index.js
 var memize = __webpack_require__(9756);
 var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/get-styled-class-name-from-key.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/get-styled-class-name-from-key.js
 /**
  * External dependencies
  */
@@ -21590,7 +21590,7 @@ var _createEmotion = emotion_css_create_instance_esm({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-cx.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/hooks/use-cx.js
 /**
  * External dependencies
  */
@@ -21599,7 +21599,7 @@ var _createEmotion = emotion_css_create_instance_esm({
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -21651,9 +21651,9 @@ const useCx = () => {
   return cx;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/use-context-system.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/use-context-system.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -21723,14 +21723,14 @@ function useContextSystem(props, namespace) {
   return finalComponentProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/context/context-connect.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/context/context-connect.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -21752,7 +21752,7 @@ function useContextSystem(props, namespace) {
  * @param  Component The component to register into the Context system.
  * @param  namespace The namespace to register the component under.
  * @param  options
- * @return The connected WordPressComponent
+ * @return The connected kaydenCMSComponent
  */
 function contextConnect(Component, namespace) {
   let options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
@@ -21786,7 +21786,7 @@ function contextConnect(Component, namespace) {
 
   WrappedComponent.displayName = namespace; // @ts-ignore internal property
 
-  WrappedComponent[CONNECT_STATIC_NAMESPACE] = (0,external_lodash_namespaceObject.uniq)(mergedNamespace); // @ts-ignore WordPressComponent property
+  WrappedComponent[CONNECT_STATIC_NAMESPACE] = (0,external_lodash_namespaceObject.uniq)(mergedNamespace); // @ts-ignore kaydenCMSComponent property
 
   WrappedComponent.selector = `.${getStyledClassNameFromKey(namespace)}`; // @ts-ignore
 
@@ -21837,7 +21837,7 @@ function hasConnectNamespace(Component, match) {
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/visually-hidden/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/visually-hidden/styles.js
 /** @type {import('react').CSSProperties} */
 const visuallyHidden = {
   border: 0,
@@ -22093,7 +22093,7 @@ var createStyled = function createStyled(tag, options) {
 
 /* harmony default export */ var emotion_styled_base_browser_esm = (createStyled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/view/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/view/component.js
 
 
 /**
@@ -22106,7 +22106,7 @@ var createStyled = function createStyled(tag, options) {
  *
  * @example
  * ```jsx
- * import { View } from `@wordpress/components`;
+ * import { View } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -22117,7 +22117,7 @@ var createStyled = function createStyled(tag, options) {
  * }
  * ```
  *
- * @type {import('../ui/context').WordPressComponent<'div', { children?: import('react').ReactNode }, true>}
+ * @type {import('../ui/context').kaydenCMSComponent<'div', { children?: import('react').ReactNode }, true>}
  */
 // @ts-ignore
 const View = emotion_styled_base_browser_esm("div",  true ? {
@@ -22128,7 +22128,7 @@ View.selector = '.components-view';
 View.displayName = 'View';
 /* harmony default export */ var component = (View);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/visually-hidden/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/visually-hidden/component.js
 
 
 
@@ -22139,7 +22139,7 @@ View.displayName = 'View';
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                               forwardedRef
  */
 
@@ -22162,7 +22162,7 @@ function VisuallyHidden(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { VisuallyHidden } from `@wordpress/components`;
+ * import { VisuallyHidden } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -22178,7 +22178,7 @@ function VisuallyHidden(props, forwardedRef) {
 const ConnectedVisuallyHidden = contextConnect(VisuallyHidden, 'VisuallyHidden');
 /* harmony default export */ var visually_hidden_component = (ConnectedVisuallyHidden);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/button/index.js
 
 
 // @ts-nocheck
@@ -22189,7 +22189,7 @@ const ConnectedVisuallyHidden = contextConnect(VisuallyHidden, 'VisuallyHidden')
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22355,9 +22355,9 @@ function Button(props, ref) {
 }
 /* harmony default export */ var build_module_button = ((0,external_wp_element_namespaceObject.forwardRef)(Button));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scroll-lock/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/scroll-lock/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /*
@@ -22415,11 +22415,11 @@ function ScrollLock() {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/context.js
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const SlotFillContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -22433,11 +22433,11 @@ const SlotFillContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 /* harmony default export */ var context = (SlotFillContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/use-slot.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/use-slot.js
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -22470,7 +22470,7 @@ const useSlot = name => {
 
 /* harmony default export */ var use_slot = (useSlot);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/fill.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/fill.js
 
 
 // @ts-nocheck
@@ -22480,7 +22480,7 @@ const useSlot = name => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22550,7 +22550,7 @@ const Fill = props => (0,external_wp_element_namespaceObject.createElement)(cont
 
 /* harmony default export */ var fill = (Fill);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/slot.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/slot.js
 
 
 // @ts-nocheck
@@ -22560,7 +22560,7 @@ const Fill = props => (0,external_wp_element_namespaceObject.createElement)(cont
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22660,11 +22660,11 @@ const Slot = props => (0,external_wp_element_namespaceObject.createElement)(cont
 
 /* harmony default export */ var slot = (Slot);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot-fill-context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/bubbles-virtually/slot-fill-context.js
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22681,11 +22681,11 @@ const slot_fill_context_SlotFillContext = (0,external_wp_element_namespaceObject
 });
 /* harmony default export */ var slot_fill_context = (slot_fill_context_SlotFillContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/use-slot.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/bubbles-virtually/use-slot.js
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -22805,7 +22805,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/style-provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/style-provider/index.js
 
 // @ts-nocheck
 
@@ -22847,12 +22847,12 @@ function StyleProvider(_ref) {
   }, children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/fill.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/bubbles-virtually/fill.js
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -22914,13 +22914,13 @@ function fill_Fill(_ref) {
   return (0,external_wp_element_namespaceObject.createPortal)(wrappedChildren, slot.ref.current);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/bubbles-virtually/slot.js
 
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22963,12 +22963,12 @@ function slot_Slot(_ref, forwardedRef) {
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot-fill-provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/bubbles-virtually/slot-fill-provider.js
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -22998,7 +22998,7 @@ function useSlotRegistry() {
         [name]: slot,
         ...nextSlots
       } = prevSlots; // Make sure we're not unregistering a slot registered by another element
-      // See https://github.com/WordPress/gutenberg/pull/19242#issuecomment-590295412
+      // See https://github.com/kaydenCMS/gutenberg/pull/19242#issuecomment-590295412
 
       if ((slot === null || slot === void 0 ? void 0 : slot.ref) === ref) {
         return nextSlots;
@@ -23063,7 +23063,7 @@ function SlotFillProvider(_ref) {
   }, children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/provider.js
 
 // @ts-nocheck
 
@@ -23072,7 +23072,7 @@ function SlotFillProvider(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -23190,13 +23190,13 @@ class provider_SlotFillProvider extends external_wp_element_namespaceObject.Comp
 
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/slot-fill/index.js
 
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -23257,7 +23257,7 @@ function createSlotFill(name) {
 }
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/animate/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/animate/index.js
 /**
  * External dependencies
  */
@@ -23327,7 +23327,7 @@ function Animate(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/popover/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/popover/index.js
 
 
 // @ts-nocheck
@@ -23337,7 +23337,7 @@ function Animate(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -23811,7 +23811,7 @@ PopoverContainer.Slot = (0,external_wp_element_namespaceObject.forwardRef)(Popov
 PopoverContainer.__unstableSlotNameProvider = slotNameContext.Provider;
 /* harmony default export */ var popover = (PopoverContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/shortcut/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/shortcut/index.js
 
 
 /**
@@ -23861,7 +23861,7 @@ function Shortcut(_ref) {
 
 /* harmony default export */ var build_module_shortcut = (Shortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tooltip/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tooltip/index.js
 
 // @ts-nocheck
 
@@ -23870,7 +23870,7 @@ function Shortcut(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -24088,13 +24088,13 @@ function Tooltip(props) {
 
 /* harmony default export */ var tooltip = (Tooltip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/utils.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -24488,7 +24488,7 @@ var r={grad:.9,turn:360,rad:360/(2*Math.PI)},t=function(r){return"string"==typeo
 ;// CONCATENATED MODULE: ./node_modules/colord/plugins/names.mjs
 /* harmony default export */ function names(e,f){var a={white:"#ffffff",bisque:"#ffe4c4",blue:"#0000ff",cadetblue:"#5f9ea0",chartreuse:"#7fff00",chocolate:"#d2691e",coral:"#ff7f50",antiquewhite:"#faebd7",aqua:"#00ffff",azure:"#f0ffff",whitesmoke:"#f5f5f5",papayawhip:"#ffefd5",plum:"#dda0dd",blanchedalmond:"#ffebcd",black:"#000000",gold:"#ffd700",goldenrod:"#daa520",gainsboro:"#dcdcdc",cornsilk:"#fff8dc",cornflowerblue:"#6495ed",burlywood:"#deb887",aquamarine:"#7fffd4",beige:"#f5f5dc",crimson:"#dc143c",cyan:"#00ffff",darkblue:"#00008b",darkcyan:"#008b8b",darkgoldenrod:"#b8860b",darkkhaki:"#bdb76b",darkgray:"#a9a9a9",darkgreen:"#006400",darkgrey:"#a9a9a9",peachpuff:"#ffdab9",darkmagenta:"#8b008b",darkred:"#8b0000",darkorchid:"#9932cc",darkorange:"#ff8c00",darkslateblue:"#483d8b",gray:"#808080",darkslategray:"#2f4f4f",darkslategrey:"#2f4f4f",deeppink:"#ff1493",deepskyblue:"#00bfff",wheat:"#f5deb3",firebrick:"#b22222",floralwhite:"#fffaf0",ghostwhite:"#f8f8ff",darkviolet:"#9400d3",magenta:"#ff00ff",green:"#008000",dodgerblue:"#1e90ff",grey:"#808080",honeydew:"#f0fff0",hotpink:"#ff69b4",blueviolet:"#8a2be2",forestgreen:"#228b22",lawngreen:"#7cfc00",indianred:"#cd5c5c",indigo:"#4b0082",fuchsia:"#ff00ff",brown:"#a52a2a",maroon:"#800000",mediumblue:"#0000cd",lightcoral:"#f08080",darkturquoise:"#00ced1",lightcyan:"#e0ffff",ivory:"#fffff0",lightyellow:"#ffffe0",lightsalmon:"#ffa07a",lightseagreen:"#20b2aa",linen:"#faf0e6",mediumaquamarine:"#66cdaa",lemonchiffon:"#fffacd",lime:"#00ff00",khaki:"#f0e68c",mediumseagreen:"#3cb371",limegreen:"#32cd32",mediumspringgreen:"#00fa9a",lightskyblue:"#87cefa",lightblue:"#add8e6",midnightblue:"#191970",lightpink:"#ffb6c1",mistyrose:"#ffe4e1",moccasin:"#ffe4b5",mintcream:"#f5fffa",lightslategray:"#778899",lightslategrey:"#778899",navajowhite:"#ffdead",navy:"#000080",mediumvioletred:"#c71585",powderblue:"#b0e0e6",palegoldenrod:"#eee8aa",oldlace:"#fdf5e6",paleturquoise:"#afeeee",mediumturquoise:"#48d1cc",mediumorchid:"#ba55d3",rebeccapurple:"#663399",lightsteelblue:"#b0c4de",mediumslateblue:"#7b68ee",thistle:"#d8bfd8",tan:"#d2b48c",orchid:"#da70d6",mediumpurple:"#9370db",purple:"#800080",pink:"#ffc0cb",skyblue:"#87ceeb",springgreen:"#00ff7f",palegreen:"#98fb98",red:"#ff0000",yellow:"#ffff00",slateblue:"#6a5acd",lavenderblush:"#fff0f5",peru:"#cd853f",palevioletred:"#db7093",violet:"#ee82ee",teal:"#008080",slategray:"#708090",slategrey:"#708090",aliceblue:"#f0f8ff",darkseagreen:"#8fbc8f",darkolivegreen:"#556b2f",greenyellow:"#adff2f",seagreen:"#2e8b57",seashell:"#fff5ee",tomato:"#ff6347",silver:"#c0c0c0",sienna:"#a0522d",lavender:"#e6e6fa",lightgreen:"#90ee90",orange:"#ffa500",orangered:"#ff4500",steelblue:"#4682b4",royalblue:"#4169e1",turquoise:"#40e0d0",yellowgreen:"#9acd32",salmon:"#fa8072",saddlebrown:"#8b4513",sandybrown:"#f4a460",rosybrown:"#bc8f8f",darksalmon:"#e9967a",lightgoldenrodyellow:"#fafad2",snow:"#fffafa",lightgrey:"#d3d3d3",lightgray:"#d3d3d3",dimgray:"#696969",dimgrey:"#696969",olivedrab:"#6b8e23",olive:"#808000"},r={};for(var d in a)r[a[d]]=d;var l={};e.prototype.toName=function(f){if(!(this.rgba.a||this.rgba.r||this.rgba.g||this.rgba.b))return"transparent";var d,i,n=r[this.toHex()];if(n)return n;if(null==f?void 0:f.closest){var o=this.toRgb(),t=1/0,b="black";if(!l.length)for(var c in a)l[c]=new e(a[c]).toRgb();for(var g in a){var u=(d=o,i=l[g],Math.pow(d.r-i.r,2)+Math.pow(d.g-i.g,2)+Math.pow(d.b-i.b,2));u<t&&(t=u,b=g)}return b}};f.string.push([function(f){var r=f.toLowerCase(),d="transparent"===r?"#0000":a[r];return d?new e(d).toRgb():null},"name"])}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/colors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/colors.js
 /**
  * External dependencies
  */
@@ -24513,7 +24513,7 @@ function rgba() {
   return w(hexValue).alpha(alpha).toRgbString();
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/colors-values.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/colors-values.js
 /**
  * External dependencies
  */
@@ -24531,7 +24531,7 @@ const BASE = {
  * TODO: Continue to update values as "G2" design evolves.
  *
  * "G2" refers to the movement to advance the interface of the block editor.
- * https://github.com/WordPress/gutenberg/issues/18667
+ * https://github.com/kaydenCMS/gutenberg/issues/18667
  */
 
 const G2 = {
@@ -24633,10 +24633,10 @@ const LIGHT_OPACITY_LIGHT = {
   100: rgba(BASE.white, 0.1),
   backgroundFill: rgba(LIGHT_GRAY[300], 0.8)
 }; // Additional colors.
-// Some are from https://make.wordpress.org/design/handbook/foundations/colors/.
+// Some are from https://make.kaydenCMS.org/design/handbook/foundations/colors/.
 
 const BLUE = {
-  wordpress: {
+  kaydenCMS: {
     700: '#00669b'
   },
   dark: {
@@ -24662,7 +24662,7 @@ const ALERT = {
   green: '#4ab866'
 };
 const ADMIN = {
-  theme: `var( --wp-admin-theme-color, ${BLUE.wordpress[700]})`,
+  theme: `var( --wp-admin-theme-color, ${BLUE.kaydenCMS[700]})`,
   themeDark10: `var( --wp-admin-theme-color-darker-10, ${BLUE.medium.focus})`
 }; // Namespaced values for raw colors hex codes.
 
@@ -24697,7 +24697,7 @@ const COLORS = Object.assign({}, BASE, {
 });
 /* harmony default export */ var colors_values = ((/* unused pure expression or super */ null && (COLORS)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/reduce-motion.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/reduce-motion.js
 /**
  * Allows users to opt-out of animations via OS-level preferences.
  *
@@ -24731,7 +24731,7 @@ function reduceMotion() {
 	`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-styles.js
 
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -24795,7 +24795,7 @@ const Cell = emotion_styled_base_browser_esm("span",  true ? {
   styles: "appearance:none;border:none;box-sizing:border-box;margin:0;display:flex;position:relative;outline:none;align-items:center;justify-content:center;padding:0"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/cell.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/cell.js
 
 
 
@@ -26469,7 +26469,7 @@ var CompositeGroup = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-icon-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-icon-styles.js
 
 
 function alignment_matrix_control_icon_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -26527,7 +26527,7 @@ const alignment_matrix_control_icon_styles_Point = emotion_styled_base_browser_e
 } : 0)("height:2px;width:2px;", pointBase, ";", alignment_matrix_control_icon_styles_pointActive, ";" + ( true ? "" : 0));
 const alignment_matrix_control_icon_styles_Cell = Cell;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/icon.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/icon.js
 
 
 
@@ -26573,7 +26573,7 @@ function AlignmentMatrixControlIcon(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/alignment-matrix-control/index.js
 
 
 
@@ -26583,7 +26583,7 @@ function AlignmentMatrixControlIcon(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -36187,9 +36187,9 @@ function createDomMotionComponent(key) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const FlexContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -36197,7 +36197,7 @@ const FlexContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 const useFlexContext = () => (0,external_wp_element_namespaceObject.useContext)(FlexContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/styles.js
 function styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -36238,7 +36238,7 @@ const ItemsRow =  true ? {
   styles: ">*{min-width:0;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex-item/hook.js
 /**
  * External dependencies
  */
@@ -36252,7 +36252,7 @@ const ItemsRow =  true ? {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexItemProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexItemProps, 'div'>} props
  */
 
 function useFlexItem(props) {
@@ -36274,14 +36274,14 @@ function useFlexItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-block/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex-block/hook.js
 /**
  * Internal dependencies
  */
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexBlockProps, 'div'>} props
  */
 
 function useFlexBlock(props) {
@@ -36293,7 +36293,7 @@ function useFlexBlock(props) {
   return flexItemProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-block/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex-block/component.js
 
 
 
@@ -36304,7 +36304,7 @@ function useFlexBlock(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexBlockProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                            forwardedRef
  */
 
@@ -36329,7 +36329,7 @@ function FlexBlock(props, forwardedRef) {
 const ConnectedFlexBlock = contextConnect(FlexBlock, 'FlexBlock');
 /* harmony default export */ var flex_block_component = (ConnectedFlexBlock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-item/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex-item/component.js
 
 
 
@@ -36340,7 +36340,7 @@ const ConnectedFlexBlock = contextConnect(FlexBlock, 'FlexBlock');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexItemProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexItemProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                           forwardedRef
  */
 
@@ -36365,9 +36365,9 @@ function FlexItem(props, forwardedRef) {
 const ConnectedFlexItem = contextConnect(FlexItem, 'FlexItem');
 /* harmony default export */ var flex_item_component = (ConnectedFlexItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/use-responsive-value.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/utils/use-responsive-value.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const breakpoints = ['40em', '52em', '64em'];
@@ -36427,7 +36427,7 @@ function useResponsiveValue(values) {
   );
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/space.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/utils/space.js
 /**
  * A real number or something parsable as a number
  */
@@ -36465,14 +36465,14 @@ function space(value) {
   return `calc(${GRID_BASE} * ${value})`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/rtl.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/rtl.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -36565,13 +36565,13 @@ function rtl() {
 
 rtl.watch = () => (0,external_wp_i18n_namespaceObject.isRTL)();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex/hook.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -36587,8 +36587,8 @@ rtl.watch = () => (0,external_wp_i18n_namespaceObject.isRTL)();
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
- * @return {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} Props with the deprecated props removed.
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexProps, 'div'>} props
+ * @return {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexProps, 'div'>} Props with the deprecated props removed.
  */
 
 function hook_useDeprecatedProps(_ref) {
@@ -36610,7 +36610,7 @@ function hook_useDeprecatedProps(_ref) {
   return otherProps;
 }
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexProps, 'div'>} props
  */
 
 
@@ -36668,7 +36668,7 @@ function useFlex(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flex/flex/component.js
 
 
 
@@ -36680,7 +36680,7 @@ function useFlex(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FlexProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                       forwardedRef
  */
 
@@ -36712,7 +36712,7 @@ function component_Flex(props, forwardedRef) {
  * 	__experimentalFlexBlock as FlexBlock,
  * 	__experimentalFlexItem as FlexItem,
  * 	__experimentalText as Text
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -36734,7 +36734,7 @@ function component_Flex(props, forwardedRef) {
 const ConnectedFlex = contextConnect(component_Flex, 'Flex');
 /* harmony default export */ var flex_component = (ConnectedFlex);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/truncate/styles.js
 function truncate_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -36746,7 +36746,7 @@ const Truncate =  true ? {
   styles: "display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/truncate/utils.js
 /**
  * External dependencies
  */
@@ -36843,13 +36843,13 @@ function truncateContent() {
   return truncatedContent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/truncate/hook.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -36862,7 +36862,7 @@ function truncateContent() {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'span'>} props
  */
 
 function useTruncate(props) {
@@ -36896,7 +36896,7 @@ function useTruncate(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/colors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/utils/colors.js
 /**
  * External dependencies
  */
@@ -36991,7 +36991,7 @@ function getOptimalTextShade(backgroundColor) {
   return result === '#000000' ? 'dark' : 'light';
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/config-values.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/config-values.js
 /**
  * Internal dependencies
  */
@@ -37075,7 +37075,7 @@ const TOGGLE_GROUP_CONTROL_PROPS = {
   transitionTimingFunctionControl: 'cubic-bezier(0.12, 0.8, 0.32, 1)'
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text/styles.js
 function text_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -37103,14 +37103,14 @@ const upperCase =  true ? {
 
 // EXTERNAL MODULE: ./node_modules/highlight-words-core/dist/index.js
 var dist = __webpack_require__(3138);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text/utils.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -37246,7 +37246,7 @@ function createHighlighterText(_ref) {
   return textContent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/font-size.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/utils/font-size.js
 /**
  * External dependencies
  */
@@ -37292,7 +37292,7 @@ function getHeadingFontSize() {
   return config_values[headingSize];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/get-line-height.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text/get-line-height.js
 /**
  * External dependencies
  */
@@ -37327,7 +37327,7 @@ function getLineHeight(adjustLineHeightForInnerControls, lineHeight) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text/hook.js
 function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -37336,7 +37336,7 @@ function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to strin
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -37354,7 +37354,7 @@ function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to strin
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'span'>} props
  */
 
 var hook_ref =  true ? {
@@ -37490,7 +37490,7 @@ function useText(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text/component.js
 
 
 
@@ -37501,7 +37501,7 @@ function useText(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'span'>} props
  * @param {import('react').ForwardedRef<any>}                                                forwardedRef
  */
 
@@ -37522,7 +37522,7 @@ function component_Text(props, forwardedRef) {
  * @example
  *
  * ```jsx
- * import { __experimentalText as Text } from `@wordpress/components`;
+ * import { __experimentalText as Text } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return <Text>Code is Poetry</Text>;
@@ -37534,7 +37534,7 @@ function component_Text(props, forwardedRef) {
 const ConnectedText = contextConnect(component_Text, 'Text');
 /* harmony default export */ var text_component = (ConnectedText);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/styles/input-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/styles/input-control-styles.js
 
 
 
@@ -37726,7 +37726,7 @@ const dragStyles = _ref15 => {
 
   return /*#__PURE__*/emotion_react_browser_esm_css(defaultArrowStyles, " ", activeDragCursorStyles, ";" + ( true ? "" : 0),  true ? "" : 0);
 }; // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/kaydenCMS/gutenberg/issues/18483
 
 
 const Input = emotion_styled_base_browser_esm("input",  true ? {
@@ -37807,11 +37807,11 @@ const Suffix = emotion_styled_base_browser_esm("span",  true ? {
   styles: "align-items:center;align-self:stretch;box-sizing:border-box;display:flex"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/backdrop.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/backdrop.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -37836,7 +37836,7 @@ function Backdrop(_ref) {
 const MemoizedBackdrop = (0,external_wp_element_namespaceObject.memo)(Backdrop);
 /* harmony default export */ var backdrop = (MemoizedBackdrop);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/label.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/label.js
 
 
 
@@ -37866,7 +37866,7 @@ function label_Label(_ref) {
   }, props), children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-base.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/input-base.js
 
 
 
@@ -37875,7 +37875,7 @@ function label_Label(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -40081,9 +40081,9 @@ function useGesture(handlers, config) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/utils.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -40132,7 +40132,7 @@ function useDragCursor(isDragging, dragDirection) {
   return dragCursor;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/state.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/reducer/state.js
 /**
  * External dependencies
  */
@@ -40152,7 +40152,7 @@ const initialInputControlState = {
   value: ''
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/reducer/actions.js
 /**
  * External dependencies
  */
@@ -40171,13 +40171,13 @@ const PRESS_ENTER = 'PRESS_ENTER';
 const PRESS_UP = 'PRESS_UP';
 const RESET = 'RESET';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/reducer/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -40394,9 +40394,9 @@ function useInputControlStateReducer() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-update-effect.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/hooks/use-update-effect.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -40422,7 +40422,7 @@ function use_update_effect_useUpdateEffect(effect, deps) {
 
 /* harmony default export */ var use_update_effect = (use_update_effect_useUpdateEffect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-field.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/input-field.js
 
 
 
@@ -40433,7 +40433,7 @@ function use_update_effect_useUpdateEffect(effect, deps) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -40674,7 +40674,7 @@ function InputField(_ref, ref) {
 const ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(InputField);
 /* harmony default export */ var input_field = (ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/input-control/index.js
 
 
 
@@ -40685,7 +40685,7 @@ const ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(In
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -40758,7 +40758,7 @@ function InputControl(_ref, ref) {
 const input_control_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(InputControl);
 /* harmony default export */ var input_control = (input_control_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/styles/angle-picker-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/angle-picker-control/styles/angle-picker-control-styles.js
 
 
 function angle_picker_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -40792,12 +40792,12 @@ const CircleIndicator = emotion_styled_base_browser_esm("div",  true ? {
   target: "e65ony40"
 } : 0)("background:", COLORS.admin.theme, ";border-radius:50%;border:", INNER_CIRCLE_SIZE, "px solid ", COLORS.admin.theme, ";bottom:0;box-sizing:border-box;display:block;height:0px;left:0;margin:auto;position:absolute;right:0;top:-", CIRCLE_SIZE / 2, "px;width:0px;" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/angle-circle.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/angle-picker-control/angle-circle.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -40899,7 +40899,7 @@ function getAngle(centerX, centerY, pointX, pointY) {
 
 /* harmony default export */ var angle_circle = (AngleCircle);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spacer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/spacer/hook.js
 /**
  * External dependencies
  */
@@ -40940,7 +40940,7 @@ function useSpacer(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spacer/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/spacer/component.js
 
 
 
@@ -40968,13 +40968,13 @@ function Spacer(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Spacer } from `@wordpress/components`
+ * import { Spacer } from `@kaydenCMS/components`
  *
  * function Example() {
  *   return (
  *     <View>
  *       <Spacer>
- *         <Heading>WordPress.org</Heading>
+ *         <Heading>kaydenCMS.org</Heading>
  *       </Spacer>
  *       <Text>
  *         Code is Poetry
@@ -40989,7 +40989,7 @@ function Spacer(props, forwardedRef) {
 const ConnectedSpacer = contextConnect(Spacer, 'Spacer');
 /* harmony default export */ var spacer_component = (ConnectedSpacer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/angle-picker-control/index.js
 
 
 /**
@@ -40997,7 +40997,7 @@ const ConnectedSpacer = contextConnect(Spacer, 'Spacer');
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -41065,13 +41065,13 @@ var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
 var external_wp_richText_namespaceObject = window["wp"]["richText"];
 ;// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/get-default-use-items.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/autocomplete/get-default-use-items.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -41160,7 +41160,7 @@ function getDefaultUseItems(autocompleter) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/autocomplete/autocompleter-ui.js
 
 
 /**
@@ -41169,7 +41169,7 @@ function getDefaultUseItems(autocompleter) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -41236,7 +41236,7 @@ function getAutoCompleterUI(autocompleter) {
   return AutocompleterUI;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/autocomplete/index.js
 
 
 /**
@@ -41244,7 +41244,7 @@ function getAutoCompleterUI(autocompleter) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -41629,7 +41629,7 @@ function Autocomplete(_ref3) {
   return (0,external_wp_element_namespaceObject.createElement)(external_wp_element_namespaceObject.Fragment, null, children(props), isSelected && popover);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/font-values.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/font-values.js
 /* harmony default export */ var font_values = ({
   'default.fontFamily': "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
   'default.fontSize': '13px',
@@ -41637,7 +41637,7 @@ function Autocomplete(_ref3) {
   mobileTextMinFontSize: '16px'
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/font.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/font.js
 /**
  * External dependencies
  */
@@ -41657,7 +41657,7 @@ function font(value) {
   return (0,external_lodash_namespaceObject.get)(font_values, value, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/base-control/styles/base-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/base-control/styles/base-control-styles.js
 
 
 function base_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -41710,7 +41710,7 @@ const StyledVisualLabel = emotion_styled_base_browser_esm("span",  true ? {
   target: "ej5x27r0"
 } : 0)(labelStyles, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/base-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/base-control/index.js
 
 
 /**
@@ -41728,7 +41728,7 @@ const StyledVisualLabel = emotion_styled_base_browser_esm("span",  true ? {
  *
  * @example
  * // Render a `BaseControl` for a textarea input
- * import { BaseControl } from '@wordpress/components';
+ * import { BaseControl } from '@kaydenCMS/components';
  *
  * // The `id` prop is necessary to accessibly associate the label with the textarea
  * const MyBaseControl = () => (
@@ -41776,7 +41776,7 @@ const BaseControl = _ref => {
  * otherwise use if the `label` prop was passed.
  *
  * @example
- * import { BaseControl } from '@wordpress/components';
+ * import { BaseControl } from '@kaydenCMS/components';
  *
  * const MyBaseControl = () => (
  * 	<BaseControl help="This button is already accessibly labeled.">
@@ -41798,11 +41798,11 @@ const VisualLabel = _ref2 => {
 BaseControl.VisualLabel = VisualLabel;
 /* harmony default export */ var base_control = (BaseControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/link.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const link_link = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -41813,11 +41813,11 @@ const link_link = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var library_link = (link_link);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link-off.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/link-off.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const linkOff = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -41828,7 +41828,7 @@ const linkOff = (0,external_wp_element_namespaceObject.createElement)(external_w
 }));
 /* harmony default export */ var link_off = (linkOff);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/styles.js
 function border_box_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -41880,9 +41880,9 @@ const CenteredBorderControl =  true ? {
   styles: "grid-column:span 2;margin:0 auto"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-linked-button/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -41907,12 +41907,12 @@ function useBorderBoxControlLinkedButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-linked-button/component.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -41950,9 +41950,9 @@ const component_BorderBoxControlLinkedButton = (props, forwardedRef) => {
 const ConnectedBorderBoxControlLinkedButton = contextConnect(component_BorderBoxControlLinkedButton, 'BorderBoxControlLinkedButton');
 /* harmony default export */ var border_box_control_linked_button_component = (ConnectedBorderBoxControlLinkedButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-visualizer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-visualizer/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -41979,12 +41979,12 @@ function useBorderBoxControlVisualizer(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-visualizer/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-visualizer/component.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -42007,11 +42007,11 @@ const component_BorderBoxControlVisualizer = (props, forwardedRef) => {
 const ConnectedBorderBoxControlVisualizer = contextConnect(component_BorderBoxControlVisualizer, 'BorderBoxControlVisualizer');
 /* harmony default export */ var border_box_control_visualizer_component = (ConnectedBorderBoxControlVisualizer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/close-small.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const closeSmall = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -42022,11 +42022,11 @@ const closeSmall = (0,external_wp_element_namespaceObject.createElement)(externa
 }));
 /* harmony default export */ var close_small = (closeSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-solid.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/line-solid.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const lineSolid = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -42039,11 +42039,11 @@ const lineSolid = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var line_solid = (lineSolid);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-dashed.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/line-dashed.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const lineDashed = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -42058,11 +42058,11 @@ const lineDashed = (0,external_wp_element_namespaceObject.createElement)(externa
 }));
 /* harmony default export */ var line_dashed = (lineDashed);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-dotted.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/line-dotted.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const lineDotted = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -42077,7 +42077,7 @@ const lineDotted = (0,external_wp_element_namespaceObject.createElement)(externa
 }));
 /* harmony default export */ var line_dotted = (lineDotted);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/number-control/styles/number-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/number-control/styles/number-control-styles.js
 
 
 function number_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -42111,7 +42111,7 @@ const number_control_styles_Input = /*#__PURE__*/emotion_styled_base_browser_esm
   target: "ep48uk90"
 } : 0)(htmlArrowStyles, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/math.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/math.js
 /**
  * External dependencies
  */
@@ -42213,7 +42213,7 @@ function roundClampString() {
   return roundClamp(...arguments).toString();
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/values.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/values.js
 /* eslint-disable jsdoc/valid-types */
 
 /**
@@ -42310,7 +42310,7 @@ function isValueNumeric(value) {
   return !isNaN(parseFloat(valueToCheck)) && isFinite(valueToCheck);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/number-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/number-control/index.js
 
 
 // @ts-nocheck
@@ -42320,7 +42320,7 @@ function isValueNumeric(value) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -42483,7 +42483,7 @@ function NumberControl(_ref, ref) {
 }
 /* harmony default export */ var number_control = ((0,external_wp_element_namespaceObject.forwardRef)(NumberControl));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/styles/unit-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/unit-control/styles/unit-control-styles.js
 
 
 function unit_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -42536,7 +42536,7 @@ const arrowStyles = _ref3 => {
   if (disableUnits) return '';
   return unit_control_styles_ref;
 }; // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/kaydenCMS/gutenberg/issues/18483
 
 
 const ValueInput = /*#__PURE__*/emotion_styled_base_browser_esm(number_control,  true ? {
@@ -42553,7 +42553,7 @@ const UnitSelect = emotion_styled_base_browser_esm("select",  true ? {
   target: "e1bagdl30"
 } : 0)("&&&{", baseUnitLabelStyles, ";cursor:pointer;border:1px solid transparent;height:100%;&:hover{background-color:", COLORS.lightGray[300], ";}&:focus{border-color:", COLORS.ui.borderFocus, ";outline:2px solid transparent;outline-offset:0;}&:disabled{cursor:initial;&:hover{background-color:transparent;}}}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/styles.js
 function border_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -42624,9 +42624,9 @@ const borderSlider = () => /*#__PURE__*/emotion_react_browser_esm_css("flex:1 1 
   marginRight: space(3)
 })(), " ", StyledField, "{margin-bottom:0;font-size:0;display:flex;}" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control-style-picker/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -42655,12 +42655,12 @@ function useBorderControlStylePicker(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control-style-picker/component.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -42737,7 +42737,7 @@ const BorderControlStylePicker = (props, forwardedRef) => {
 const ConnectedBorderControlStylePicker = contextConnect(BorderControlStylePicker, 'BorderControlStylePicker');
 /* harmony default export */ var border_control_style_picker_component = (ConnectedBorderControlStylePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-indicator/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-indicator/index.js
 
 
 // @ts-nocheck
@@ -42766,7 +42766,7 @@ const ColorIndicator = _ref => {
 ;// CONCATENATED MODULE: ./node_modules/colord/plugins/a11y.mjs
 var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.055,2.4)},a11y_t=function(t){return.2126*a11y_o(t.r)+.7152*a11y_o(t.g)+.0722*a11y_o(t.b)};/* harmony default export */ function a11y(o){o.prototype.luminance=function(){return o=a11y_t(this.rgba),void 0===(r=2)&&(r=0),void 0===n&&(n=Math.pow(10,r)),Math.round(n*o)/n+0;var o,r,n},o.prototype.contrast=function(r){void 0===r&&(r="#FFF");var n,a,i,e,v,u,d,c=r instanceof o?r:new o(r);return e=this.rgba,v=c.toRgb(),u=a11y_t(e),d=a11y_t(v),n=u>d?(u+.05)/(d+.05):(d+.05)/(u+.05),void 0===(a=2)&&(a=0),void 0===i&&(i=Math.pow(10,a)),Math.floor(i*n)/i+0},o.prototype.isReadable=function(o,t){return void 0===o&&(o="#FFF"),void 0===t&&(t={}),this.contrast(o)>=(e=void 0===(i=(r=t).size)?"normal":i,"AAA"===(a=void 0===(n=r.level)?"AA":n)&&"normal"===e?7:"AA"===a&&"large"===e?3:4.5);var r,n,a,i,e}}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/dropdown/index.js
 
 
 // @ts-nocheck
@@ -42776,7 +42776,7 @@ var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.0
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -42876,11 +42876,11 @@ function Dropdown(props) {
   }), renderContent(args)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/settings.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/settings.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const settings = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -42891,7 +42891,7 @@ const settings = (0,external_wp_element_namespaceObject.createElement)(external_
 }));
 /* harmony default export */ var library_settings = (settings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/h-stack/utils.js
 /**
  * External dependencies
  */
@@ -43017,13 +43017,13 @@ function getAlignmentProps(alignment) {
   return alignmentProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/get-valid-children.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/utils/get-valid-children.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -43039,7 +43039,7 @@ function getValidChildren(children) {
   return external_wp_element_namespaceObject.Children.toArray(children).filter(child => (0,external_wp_element_namespaceObject.isValidElement)(child));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/h-stack/hook.js
 
 
 
@@ -43052,7 +43052,7 @@ function getValidChildren(children) {
 
 /**
  *
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useHStack(props) {
@@ -43094,7 +43094,7 @@ function useHStack(props) {
   return flexProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/h-stack/component.js
 
 
 
@@ -43105,7 +43105,7 @@ function useHStack(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -43125,7 +43125,7 @@ function HStack(props, forwardedRef) {
  * import {
  * 	__experimentalHStack as HStack,
  * 	__experimentalText as Text,
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -43143,12 +43143,12 @@ function HStack(props, forwardedRef) {
 const ConnectedHStack = contextConnect(HStack, 'HStack');
 /* harmony default export */ var h_stack_component = (ConnectedHStack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@kaydenCMS/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -43175,11 +43175,11 @@ function icon_Icon(_ref) {
 
 /* harmony default export */ var icons_build_module_icon = (icon_Icon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-down.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/chevron-down.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const chevronDown = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -43190,7 +43190,7 @@ const chevronDown = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var chevron_down = (chevronDown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/select-control/styles/select-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/select-control/styles/select-control-styles.js
 
 
 /**
@@ -43273,7 +43273,7 @@ const sizePaddings = _ref4 => {
   };
   return rtl(sizes[selectSize]);
 }; // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/kaydenCMS/gutenberg/issues/18483
 
 
 const Select = emotion_styled_base_browser_esm("select",  true ? {
@@ -43285,7 +43285,7 @@ const DownArrowWrapper = emotion_styled_base_browser_esm("div",  true ? {
   right: 0
 }), " svg{display:block;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/select-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/select-control/index.js
 
 
 
@@ -43296,7 +43296,7 @@ const DownArrowWrapper = emotion_styled_base_browser_esm("div",  true ? {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -43421,9 +43421,9 @@ function SelectControl(_ref, ref) {
 const select_control_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(SelectControl);
 /* harmony default export */ var select_control = (select_control_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-state.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/hooks/use-controlled-state.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -43510,7 +43510,7 @@ function useControlledState(currentState) {
 
 /* harmony default export */ var use_controlled_state = (useControlledState);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/utils.js
 // @ts-nocheck
 
 /**
@@ -43518,7 +43518,7 @@ function useControlledState(currentState) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -43631,7 +43631,7 @@ function useDebouncedHoverInteraction(_ref2) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/styles/range-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/styles/range-control-styles.js
 
 
 function range_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -43851,7 +43851,7 @@ const range_control_styles_Tooltip = emotion_styled_base_browser_esm("span",  tr
 }, {
   transform: 'translateX(50%)'
 }), ";" + ( true ? "" : 0)); // @todo: Refactor RangeControl with latest HStack configuration
-// @wordpress/components/ui/hstack.
+// @kaydenCMS/components/ui/hstack.
 
 const InputNumber = /*#__PURE__*/emotion_styled_base_browser_esm(number_control,  true ? {
   target: "exqw8y21"
@@ -43864,7 +43864,7 @@ const ActionRightWrapper = emotion_styled_base_browser_esm("span",  true ? {
   marginLeft: 8
 }), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/input-range.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/input-range.js
 
 
 // @ts-nocheck
@@ -43874,7 +43874,7 @@ const ActionRightWrapper = emotion_styled_base_browser_esm("span",  true ? {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -43916,7 +43916,7 @@ function input_range_InputRange(_ref, ref) {
 const input_range_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(input_range_InputRange);
 /* harmony default export */ var input_range = (input_range_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/mark.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/mark.js
 
 
 // @ts-nocheck
@@ -43953,13 +43953,13 @@ function RangeMark(_ref) {
   }, label));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/rail.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/rail.js
 
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -44066,7 +44066,7 @@ function useMarks(_ref3) {
   return placedMarks;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/tooltip.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/tooltip.js
 
 
 // @ts-nocheck
@@ -44076,7 +44076,7 @@ function useMarks(_ref3) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -44138,7 +44138,7 @@ function useTooltipPosition(_ref2) {
   return position;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/range-control/index.js
 
 
 // @ts-nocheck
@@ -44149,7 +44149,7 @@ function useTooltipPosition(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -44414,7 +44414,7 @@ function RangeControl(_ref, ref) {
 const range_control_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(RangeControl);
 /* harmony default export */ var range_control = (range_control_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/styles.js
 
 
 function color_picker_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -47002,9 +47002,9 @@ var TooltipReference = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/tooltip/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/tooltip/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -47253,7 +47253,7 @@ var Tooltip_Tooltip = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/shortcut/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/shortcut/component.js
 
 
 
@@ -47300,11 +47300,11 @@ function component_Shortcut(props, forwardedRef) {
 const ConnectedShortcut = contextConnect(component_Shortcut, 'Shortcut');
 /* harmony default export */ var shortcut_component = (ConnectedShortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/z-index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/z-index.js
 const Flyout = 10000;
 const z_index_Tooltip = 1000002;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/tooltip/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/tooltip/styles.js
 
 
 function tooltip_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -47334,7 +47334,7 @@ const TooltipShortcut = /*#__PURE__*/emotion_styled_base_browser_esm(shortcut_co
   target: "e7tfjmw0"
 } : 0)("display:inline-block;margin-left:", space(1), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/tooltip/content.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/tooltip/content.js
 
 
 
@@ -47357,7 +47357,7 @@ const {
 } = tooltip_styles_namespaceObject;
 /**
  *
- * @param {import('../context').WordPressComponentProps<import('./types').ContentProps, 'div'>} props
+ * @param {import('../context').kaydenCMSComponentProps<import('./types').ContentProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                   forwardedRef
  */
 
@@ -47382,7 +47382,7 @@ function content_TooltipContent(props, forwardedRef) {
 
 /* harmony default export */ var tooltip_content = (contextConnect(content_TooltipContent, 'TooltipContent'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/tooltip/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/ui/tooltip/component.js
 
 
 
@@ -47392,7 +47392,7 @@ function content_TooltipContent(props, forwardedRef) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -47405,7 +47405,7 @@ function content_TooltipContent(props, forwardedRef) {
 
 
 /**
- * @param {import('../context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                            forwardedRef
  */
 
@@ -47459,12 +47459,12 @@ function component_Tooltip(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Tooltip, Text } from `@wordpress/components/ui`;
+ * import { Tooltip, Text } from `@kaydenCMS/components/ui`;
  *
  * function Example() {
  * 	return (
  * 		<Tooltip content="Code is Poetry">
- * 			<Text>WordPress.org</Text>
+ * 			<Text>kaydenCMS.org</Text>
  * 		</Tooltip>
  * 	)
  * }
@@ -47475,7 +47475,7 @@ function component_Tooltip(props, forwardedRef) {
 const ConnectedTooltip = contextConnect(component_Tooltip, 'Tooltip');
 /* harmony default export */ var tooltip_component = (ConnectedTooltip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/color-display.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/color-display.js
 
 
 /**
@@ -47483,7 +47483,7 @@ const ConnectedTooltip = contextConnect(component_Tooltip, 'Tooltip');
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -47646,7 +47646,7 @@ const ColorDisplay = _ref6 => {
   }, (0,external_wp_element_namespaceObject.createElement)(Component, props)));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/input-with-slider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/input-with-slider.js
 
 
 /**
@@ -47695,7 +47695,7 @@ const InputWithSlider = _ref => {
   }));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/rgb-input.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/rgb-input.js
 
 
 /**
@@ -47770,7 +47770,7 @@ const RgbInput = _ref => {
   }));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/hsl-input.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/hsl-input.js
 
 
 /**
@@ -47853,7 +47853,7 @@ const HslInput = _ref => {
   }));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/hex-input.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/hex-input.js
 
 
 /**
@@ -47861,7 +47861,7 @@ const HslInput = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -47902,7 +47902,7 @@ const HexInput = _ref => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/color-input.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/color-input.js
 
 
 /**
@@ -47944,7 +47944,7 @@ const ColorInput = _ref => {
 ;// CONCATENATED MODULE: ./node_modules/react-colorful/dist/index.module.js
 function index_module_u(){return(index_module_u=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var t=arguments[r];for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n])}return e}).apply(this,arguments)}function index_module_c(e,r){if(null==e)return{};var t,n,o={},a=Object.keys(e);for(n=0;n<a.length;n++)r.indexOf(t=a[n])>=0||(o[t]=e[t]);return o}function index_module_i(e){var t=(0,external_React_.useRef)(e),n=(0,external_React_.useRef)(function(e){t.current&&t.current(e)});return t.current=e,n.current}var index_module_s=function(e,r,t){return void 0===r&&(r=0),void 0===t&&(t=1),e>t?t:e<r?r:e},index_module_f=function(e){return"touches"in e},index_module_v=function(e){return e&&e.ownerDocument.defaultView||self},index_module_d=function(e,r,t){var n=e.getBoundingClientRect(),o=index_module_f(r)?function(e,r){for(var t=0;t<e.length;t++)if(e[t].identifier===r)return e[t];return e[0]}(r.touches,t):r;return{left:index_module_s((o.pageX-(n.left+index_module_v(e).pageXOffset))/n.width),top:index_module_s((o.pageY-(n.top+index_module_v(e).pageYOffset))/n.height)}},index_module_h=function(e){!index_module_f(e)&&e.preventDefault()},index_module_m=external_React_default().memo(function(o){var a=o.onMove,l=o.onKey,s=index_module_c(o,["onMove","onKey"]),m=(0,external_React_.useRef)(null),g=index_module_i(a),p=index_module_i(l),b=(0,external_React_.useRef)(null),_=(0,external_React_.useRef)(!1),x=(0,external_React_.useMemo)(function(){var e=function(e){index_module_h(e),(index_module_f(e)?e.touches.length>0:e.buttons>0)&&m.current?g(index_module_d(m.current,e,b.current)):t(!1)},r=function(){return t(!1)};function t(t){var n=_.current,o=index_module_v(m.current),a=t?o.addEventListener:o.removeEventListener;a(n?"touchmove":"mousemove",e),a(n?"touchend":"mouseup",r)}return[function(e){var r=e.nativeEvent,n=m.current;if(n&&(index_module_h(r),!function(e,r){return r&&!index_module_f(e)}(r,_.current)&&n)){if(index_module_f(r)){_.current=!0;var o=r.changedTouches||[];o.length&&(b.current=o[0].identifier)}n.focus(),g(index_module_d(n,r,b.current)),t(!0)}},function(e){var r=e.which||e.keyCode;r<37||r>40||(e.preventDefault(),p({left:39===r?.05:37===r?-.05:0,top:40===r?.05:38===r?-.05:0}))},t]},[p,g]),C=x[0],E=x[1],H=x[2];return (0,external_React_.useEffect)(function(){return H},[H]),external_React_default().createElement("div",index_module_u({},s,{onTouchStart:C,onMouseDown:C,className:"react-colorful__interactive",ref:m,onKeyDown:E,tabIndex:0,role:"slider"}))}),index_module_g=function(e){return e.filter(Boolean).join(" ")},index_module_p=function(r){var t=r.color,n=r.left,o=r.top,a=void 0===o?.5:o,l=index_module_g(["react-colorful__pointer",r.className]);return external_React_default().createElement("div",{className:l,style:{top:100*a+"%",left:100*n+"%"}},external_React_default().createElement("div",{className:"react-colorful__pointer-fill",style:{backgroundColor:t}}))},index_module_b=function(e,r,t){return void 0===r&&(r=0),void 0===t&&(t=Math.pow(10,r)),Math.round(t*e)/t},_={grad:.9,turn:360,rad:360/(2*Math.PI)},index_module_x=function(e){return"#"===e[0]&&(e=e.substr(1)),e.length<6?{r:parseInt(e[0]+e[0],16),g:parseInt(e[1]+e[1],16),b:parseInt(e[2]+e[2],16),a:1}:{r:parseInt(e.substr(0,2),16),g:parseInt(e.substr(2,2),16),b:parseInt(e.substr(4,2),16),a:1}},C=function(e,r){return void 0===r&&(r="deg"),Number(e)*(_[r]||1)},index_module_E=function(e){var r=/hsla?\(?\s*(-?\d*\.?\d+)(deg|rad|grad|turn)?[,\s]+(-?\d*\.?\d+)%?[,\s]+(-?\d*\.?\d+)%?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?index_module_M({h:C(r[1],r[2]),s:Number(r[3]),l:Number(r[4]),a:void 0===r[5]?1:Number(r[5])/(r[6]?100:1)}):{h:0,s:0,v:0,a:1}},index_module_H=index_module_E,index_module_M=function(e){var r=e.s,t=e.l;return{h:e.h,s:(r*=(t<50?t:100-t)/100)>0?2*r/(t+r)*100:0,v:t+r,a:e.a}},index_module_N=function(e){var r=e.s,t=e.v,n=e.a,o=(200-r)*t/100;return{h:index_module_b(e.h),s:index_module_b(o>0&&o<200?r*t/100/(o<=100?o:200-o)*100:0),l:index_module_b(o/2),a:index_module_b(n,2)}},index_module_w=function(e){var r=index_module_N(e);return"hsl("+r.h+", "+r.s+"%, "+r.l+"%)"},index_module_y=function(e){var r=index_module_N(e);return"hsla("+r.h+", "+r.s+"%, "+r.l+"%, "+r.a+")"},q=function(e){var r=e.h,t=e.s,n=e.v,o=e.a;r=r/360*6,t/=100,n/=100;var a=Math.floor(r),l=n*(1-t),u=n*(1-(r-a)*t),c=n*(1-(1-r+a)*t),i=a%6;return{r:index_module_b(255*[n,u,l,l,c,n][i]),g:index_module_b(255*[c,n,n,u,l,l][i]),b:index_module_b(255*[l,l,c,n,n,u][i]),a:index_module_b(o,2)}},index_module_k=function(e){var r=/hsva?\(?\s*(-?\d*\.?\d+)(deg|rad|grad|turn)?[,\s]+(-?\d*\.?\d+)%?[,\s]+(-?\d*\.?\d+)%?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?D({h:C(r[1],r[2]),s:Number(r[3]),v:Number(r[4]),a:void 0===r[5]?1:Number(r[5])/(r[6]?100:1)}):{h:0,s:0,v:0,a:1}},O=index_module_k,index_module_I=function(e){var r=/rgba?\(?\s*(-?\d*\.?\d+)(%)?[,\s]+(-?\d*\.?\d+)(%)?[,\s]+(-?\d*\.?\d+)(%)?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?B({r:Number(r[1])/(r[2]?100/255:1),g:Number(r[3])/(r[4]?100/255:1),b:Number(r[5])/(r[6]?100/255:1),a:void 0===r[7]?1:Number(r[7])/(r[8]?100:1)}):{h:0,s:0,v:0,a:1}},index_module_j=index_module_I,z=function(e){var r=e.toString(16);return r.length<2?"0"+r:r},B=function(e){var r=e.r,t=e.g,n=e.b,o=e.a,a=Math.max(r,t,n),l=a-Math.min(r,t,n),u=l?a===r?(t-n)/l:a===t?2+(n-r)/l:4+(r-t)/l:0;return{h:index_module_b(60*(u<0?u+6:u)),s:index_module_b(a?l/a*100:0),v:index_module_b(a/255*100),a:o}},D=function(e){return{h:index_module_b(e.h),s:index_module_b(e.s),v:index_module_b(e.v),a:index_module_b(e.a,2)}},K=external_React_default().memo(function(r){var t=r.hue,n=r.onChange,o=index_module_g(["react-colorful__hue",r.className]);return external_React_default().createElement("div",{className:o},external_React_default().createElement(index_module_m,{onMove:function(e){n({h:360*e.left})},onKey:function(e){n({h:index_module_s(t+360*e.left,0,360)})},"aria-label":"Hue","aria-valuetext":index_module_b(t)},external_React_default().createElement(index_module_p,{className:"react-colorful__hue-pointer",left:t/360,color:index_module_w({h:t,s:100,v:100,a:1})})))}),L=external_React_default().memo(function(r){var t=r.hsva,n=r.onChange,o={backgroundColor:index_module_w({h:t.h,s:100,v:100,a:1})};return external_React_default().createElement("div",{className:"react-colorful__saturation",style:o},external_React_default().createElement(index_module_m,{onMove:function(e){n({s:100*e.left,v:100-100*e.top})},onKey:function(e){n({s:index_module_s(t.s+100*e.left,0,100),v:index_module_s(t.v-100*e.top,0,100)})},"aria-label":"Color","aria-valuetext":"Saturation "+index_module_b(t.s)+"%, Brightness "+index_module_b(t.v)+"%"},external_React_default().createElement(index_module_p,{className:"react-colorful__saturation-pointer",top:1-t.v/100,left:t.s/100,color:index_module_w(t)})))}),A=function(e,r){if(e===r)return!0;for(var t in e)if(e[t]!==r[t])return!1;return!0},index_module_S=function(e,r){return e.replace(/\s/g,"")===r.replace(/\s/g,"")};function T(e,t,l){var u=index_module_i(l),c=(0,external_React_.useState)(function(){return e.toHsva(t)}),s=c[0],f=c[1],v=(0,external_React_.useRef)({color:t,hsva:s});(0,external_React_.useEffect)(function(){if(!e.equal(t,v.current.color)){var r=e.toHsva(t);v.current={hsva:r,color:t},f(r)}},[t,e]),(0,external_React_.useEffect)(function(){var r;A(s,v.current.hsva)||e.equal(r=e.fromHsva(s),v.current.color)||(v.current={hsva:s,color:r},u(r))},[s,e,u]);var d=(0,external_React_.useCallback)(function(e){f(function(r){return Object.assign({},r,e)})},[]);return[s,d]}var F,P="undefined"!=typeof window?external_React_.useLayoutEffect:external_React_.useEffect,X=function(){return F||( true?__webpack_require__.nc:0)},Y=function(e){F=e},R=new Map,index_module_V=function(e){P(function(){var r=e.current?e.current.ownerDocument:document;if(void 0!==r&&!R.has(r)){var t=r.createElement("style");t.innerHTML='.react-colorful{position:relative;display:flex;flex-direction:column;width:200px;height:200px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}.react-colorful__saturation{position:relative;flex-grow:1;border-color:transparent;border-bottom:12px solid #000;border-radius:8px 8px 0 0;background-image:linear-gradient(0deg,#000,transparent),linear-gradient(90deg,#fff,hsla(0,0%,100%,0))}.react-colorful__alpha-gradient,.react-colorful__pointer-fill{content:"";position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none;border-radius:inherit}.react-colorful__alpha-gradient,.react-colorful__saturation{box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}.react-colorful__alpha,.react-colorful__hue{position:relative;height:24px}.react-colorful__hue{background:linear-gradient(90deg,red 0,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,red)}.react-colorful__last-control{border-radius:0 0 8px 8px}.react-colorful__interactive{position:absolute;left:0;top:0;right:0;bottom:0;border-radius:inherit;outline:none;touch-action:none}.react-colorful__pointer{position:absolute;z-index:1;box-sizing:border-box;width:28px;height:28px;transform:translate(-50%,-50%);background-color:#fff;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,.2)}.react-colorful__interactive:focus .react-colorful__pointer{transform:translate(-50%,-50%) scale(1.1)}.react-colorful__alpha,.react-colorful__alpha-pointer{background-color:#fff;background-image:url(\'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill-opacity=".05"><path d="M8 0h8v8H8zM0 8h8v8H0z"/></svg>\')}.react-colorful__saturation-pointer{z-index:3}.react-colorful__hue-pointer{z-index:2}',R.set(r,t);var n=X();n&&t.setAttribute("nonce",n),r.head.appendChild(t)}},[])},index_module_$=function(t){var n=t.className,o=t.colorModel,a=t.color,l=void 0===a?o.defaultColor:a,i=t.onChange,s=index_module_c(t,["className","colorModel","color","onChange"]),f=(0,external_React_.useRef)(null);index_module_V(f);var v=T(o,l,i),d=v[0],h=v[1],m=index_module_g(["react-colorful",n]);return external_React_default().createElement("div",index_module_u({},s,{ref:f,className:m}),external_React_default().createElement(L,{hsva:d,onChange:h}),external_React_default().createElement(K,{hue:d.h,onChange:h,className:"react-colorful__last-control"}))},G={defaultColor:"000",toHsva:function(e){return B(index_module_x(e))},fromHsva:function(e){return t=(r=q(e)).g,n=r.b,"#"+z(r.r)+z(t)+z(n);var r,t,n},equal:function(e,r){return e.toLowerCase()===r.toLowerCase()||A(index_module_x(e),index_module_x(r))}},J=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:G}))},Q=function(r){var t=r.className,n=r.hsva,o=r.onChange,a={backgroundImage:"linear-gradient(90deg, "+index_module_y(Object.assign({},n,{a:0}))+", "+index_module_y(Object.assign({},n,{a:1}))+")"},l=index_module_g(["react-colorful__alpha",t]);return external_React_default().createElement("div",{className:l},external_React_default().createElement("div",{className:"react-colorful__alpha-gradient",style:a}),external_React_default().createElement(index_module_m,{onMove:function(e){o({a:e.left})},onKey:function(e){o({a:index_module_s(n.a+e.left)})},"aria-label":"Alpha","aria-valuetext":index_module_b(100*n.a)+"%"},external_React_default().createElement(index_module_p,{className:"react-colorful__alpha-pointer",left:n.a,color:index_module_y(n)})))},U=function(t){var n=t.className,o=t.colorModel,a=t.color,l=void 0===a?o.defaultColor:a,i=t.onChange,s=index_module_c(t,["className","colorModel","color","onChange"]),f=(0,external_React_.useRef)(null);index_module_V(f);var v=T(o,l,i),d=v[0],h=v[1],m=index_module_g(["react-colorful",n]);return external_React_default().createElement("div",index_module_u({},s,{ref:f,className:m}),external_React_default().createElement(L,{hsva:d,onChange:h}),external_React_default().createElement(K,{hue:d.h,onChange:h}),external_React_default().createElement(Q,{hsva:d,onChange:h,className:"react-colorful__last-control"}))},W={defaultColor:{h:0,s:0,l:0,a:1},toHsva:index_module_M,fromHsva:index_module_N,equal:A},Z=function(r){return e.createElement(U,index_module_u({},r,{colorModel:W}))},ee={defaultColor:"hsla(0, 0%, 0%, 1)",toHsva:index_module_E,fromHsva:index_module_y,equal:index_module_S},re=function(r){return e.createElement(U,index_module_u({},r,{colorModel:ee}))},te={defaultColor:{h:0,s:0,l:0},toHsva:function(e){return index_module_M({h:e.h,s:e.s,l:e.l,a:1})},fromHsva:function(e){return{h:(r=index_module_N(e)).h,s:r.s,l:r.l};var r},equal:A},ne=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:te}))},oe={defaultColor:"hsl(0, 0%, 0%)",toHsva:index_module_H,fromHsva:index_module_w,equal:index_module_S},ae=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:oe}))},le={defaultColor:{h:0,s:0,v:0,a:1},toHsva:function(e){return e},fromHsva:D,equal:A},ue=function(r){return e.createElement(U,index_module_u({},r,{colorModel:le}))},ce={defaultColor:"hsva(0, 0%, 0%, 1)",toHsva:index_module_k,fromHsva:function(e){var r=D(e);return"hsva("+r.h+", "+r.s+"%, "+r.v+"%, "+r.a+")"},equal:index_module_S},ie=function(r){return e.createElement(U,index_module_u({},r,{colorModel:ce}))},se={defaultColor:{h:0,s:0,v:0},toHsva:function(e){return{h:e.h,s:e.s,v:e.v,a:1}},fromHsva:function(e){var r=D(e);return{h:r.h,s:r.s,v:r.v}},equal:A},fe=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:se}))},ve={defaultColor:"hsv(0, 0%, 0%)",toHsva:O,fromHsva:function(e){var r=D(e);return"hsv("+r.h+", "+r.s+"%, "+r.v+"%)"},equal:index_module_S},de=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:ve}))},he={defaultColor:{r:0,g:0,b:0,a:1},toHsva:B,fromHsva:q,equal:A},me=function(r){return e.createElement(U,index_module_u({},r,{colorModel:he}))},ge={defaultColor:"rgba(0, 0, 0, 1)",toHsva:index_module_I,fromHsva:function(e){var r=q(e);return"rgba("+r.r+", "+r.g+", "+r.b+", "+r.a+")"},equal:index_module_S},pe=function(r){return external_React_default().createElement(U,index_module_u({},r,{colorModel:ge}))},be={defaultColor:{r:0,g:0,b:0},toHsva:function(e){return B({r:e.r,g:e.g,b:e.b,a:1})},fromHsva:function(e){return{r:(r=q(e)).r,g:r.g,b:r.b};var r},equal:A},_e=function(r){return e.createElement(index_module_$,index_module_u({},r,{colorModel:be}))},xe={defaultColor:"rgb(0, 0, 0)",toHsva:index_module_j,fromHsva:function(e){var r=q(e);return"rgb("+r.r+", "+r.g+", "+r.b+")"},equal:index_module_S},Ce=function(r){return external_React_default().createElement(index_module_$,index_module_u({},r,{colorModel:xe}))},Ee=/^#?([0-9A-F]{3,8})$/i,He=function(r){var t=r.color,l=void 0===t?"":t,s=r.onChange,f=r.onBlur,v=r.escape,d=r.validate,h=r.format,m=r.process,g=index_module_c(r,["color","onChange","onBlur","escape","validate","format","process"]),p=o(function(){return v(l)}),b=p[0],_=p[1],x=index_module_i(s),C=index_module_i(f),E=a(function(e){var r=v(e.target.value);_(r),d(r)&&x(m?m(r):r)},[v,m,d,x]),H=a(function(e){d(e.target.value)||_(v(l)),C(e)},[l,v,d,C]);return n(function(){_(v(l))},[l,v]),e.createElement("input",index_module_u({},g,{value:h?h(b):b,spellCheck:"false",onChange:E,onBlur:H}))},Me=function(e){return"#"+e},Ne=function(r){var t=r.prefixed,n=r.alpha,o=index_module_c(r,["prefixed","alpha"]),l=a(function(e){return e.replace(/([^0-9A-F]+)/gi,"").substr(0,n?8:6)},[n]),i=a(function(e){return function(e,r){var t=Ee.exec(e),n=t?t[1].length:0;return 3===n||6===n||!!r&&4===n||!!r&&8===n}(e,n)},[n]);return e.createElement(He,index_module_u({},o,{escape:l,format:t?Me:void 0,process:Me,validate:i}))};
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/picker.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/picker.js
 
 
 /**
@@ -47953,7 +47953,7 @@ function index_module_u(){return(index_module_u=Object.assign||function(e){for(v
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -47973,9 +47973,9 @@ const Picker = _ref => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-value.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/hooks/use-controlled-value.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -48014,7 +48014,7 @@ function useControlledValue(_ref) {
   return [value, setValue];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/component.js
 
 
 
@@ -48024,7 +48024,7 @@ function useControlledValue(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -48116,14 +48116,14 @@ const ColorPicker = (props, forwardedRef) => {
 const ConnectedColorPicker = contextConnect(ColorPicker, 'ColorPicker');
 /* harmony default export */ var color_picker_component = (ConnectedColorPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/use-deprecated-props.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/use-deprecated-props.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -48191,7 +48191,7 @@ function use_deprecated_props_useDeprecatedProps(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/legacy-adapter.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-picker/legacy-adapter.js
 
 
 /**
@@ -48203,11 +48203,11 @@ const LegacyAdapter = props => {
   return (0,external_wp_element_namespaceObject.createElement)(color_picker_component, use_deprecated_props_useDeprecatedProps(props));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/check.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -48218,7 +48218,7 @@ const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_
 }));
 /* harmony default export */ var library_check = (check);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/circular-option-picker/index.js
 
 
 // @ts-nocheck
@@ -48228,7 +48228,7 @@ const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -48317,7 +48317,7 @@ CircularOptionPicker.Option = Option;
 CircularOptionPicker.ButtonAction = ButtonAction;
 CircularOptionPicker.DropdownLinkAction = DropdownLinkAction;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/v-stack/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/v-stack/hook.js
 /**
  * Internal dependencies
  */
@@ -48325,7 +48325,7 @@ CircularOptionPicker.DropdownLinkAction = DropdownLinkAction;
 
 /**
  *
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useVStack(props) {
@@ -48341,7 +48341,7 @@ function useVStack(props) {
   return hStackProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/v-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/v-stack/component.js
 
 
 
@@ -48352,7 +48352,7 @@ function useVStack(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -48372,7 +48372,7 @@ function VStack(props, forwardedRef) {
  * import {
  * 	__experimentalText as Text,
  * 	__experimentalVStack as VStack,
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -48390,7 +48390,7 @@ function VStack(props, forwardedRef) {
 const ConnectedVStack = contextConnect(VStack, 'VStack');
 /* harmony default export */ var v_stack_component = (ConnectedVStack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/truncate/component.js
 
 
 
@@ -48401,7 +48401,7 @@ const ConnectedVStack = contextConnect(VStack, 'VStack');
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'span'>} props
  * @param {import('react').ForwardedRef<any>}                                                forwardedRef
  */
 
@@ -48421,7 +48421,7 @@ function component_Truncate(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { __experimentalTruncate as Truncate } from `@wordpress/components`;
+ * import { __experimentalTruncate as Truncate } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -48439,7 +48439,7 @@ function component_Truncate(props, forwardedRef) {
 const ConnectedTruncate = contextConnect(component_Truncate, 'Truncate');
 /* harmony default export */ var truncate_component = (ConnectedTruncate);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/heading/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/heading/hook.js
 /**
  * Internal dependencies
  */
@@ -48475,7 +48475,7 @@ function useHeading(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/heading/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/heading/component.js
 
 
 
@@ -48501,7 +48501,7 @@ function UnconnectedHeading(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { __experimentalHeading as Heading } from "@wordpress/components";
+ * import { __experimentalHeading as Heading } from "@kaydenCMS/components";
  *
  * function Example() {
  *   return <Heading>Code is Poetry</Heading>;
@@ -48513,7 +48513,7 @@ function UnconnectedHeading(props, forwardedRef) {
 const Heading = contextConnect(UnconnectedHeading, 'Heading');
 /* harmony default export */ var heading_component = (Heading);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-palette/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-palette/styles.js
 
 
 function color_palette_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -48533,7 +48533,7 @@ const ColorHeading = /*#__PURE__*/emotion_styled_base_browser_esm(heading_compon
   styles: "text-transform:uppercase;line-height:24px;font-weight:500;&&&{font-size:11px;margin-bottom:0;}"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-palette/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-palette/index.js
 
 
 // @ts-nocheck
@@ -48547,7 +48547,7 @@ const ColorHeading = /*#__PURE__*/emotion_styled_base_browser_esm(heading_compon
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -48758,9 +48758,9 @@ function ColorPalette(_ref6) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/unit-control/utils.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -49002,7 +49002,7 @@ function filterUnitsWithSettings() {
 /**
  * Custom hook to retrieve and consolidate units setting from add_theme_support().
  * TODO: ideally this hook shouldn't be needed
- * https://github.com/WordPress/gutenberg/pull/31822#discussion_r633280823
+ * https://github.com/kaydenCMS/gutenberg/pull/31822#discussion_r633280823
  *
  * @param  args                An object containing units, settingPath & defaultUnits.
  * @param  args.units          Collection of all potentially available units.
@@ -49061,9 +49061,9 @@ function getUnitsWithCurrentUnit(rawValue, legacyUnit) {
   return unitsToReturn;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control-dropdown/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -49151,7 +49151,7 @@ function useBorderControlDropdown(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control-dropdown/component.js
 
 
 
@@ -49160,7 +49160,7 @@ function useBorderControlDropdown(props) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -49326,7 +49326,7 @@ const BorderControlDropdown = (props, forwardedRef) => {
 const ConnectedBorderControlDropdown = contextConnect(BorderControlDropdown, 'BorderControlDropdown');
 /* harmony default export */ var border_control_dropdown_component = (ConnectedBorderControlDropdown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/unit-select-control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/unit-control/unit-select-control.js
 
 
 
@@ -49378,7 +49378,7 @@ function UnitSelectControl(_ref) {
   }, option.label)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/unit-control/index.js
 
 
 
@@ -49388,7 +49388,7 @@ function UnitSelectControl(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -49612,8 +49612,8 @@ function UnforwardedUnitControl(unitControlProps, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { __experimentalUnitControl as UnitControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalUnitControl as UnitControl } from '@kaydenCMS/components';
+ * import { useState } from '@kaydenCMS/element';
  *
  * const Example = () => {
  *   const [ value, setValue ] = useState( '10px' );
@@ -49628,9 +49628,9 @@ const UnitControl = (0,external_wp_element_namespaceObject.forwardRef)(Unforward
 
 /* harmony default export */ var unit_control = (UnitControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -49744,7 +49744,7 @@ function useBorderControl(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-control/border-control/component.js
 
 
 
@@ -49845,7 +49845,7 @@ const BorderControl = (props, forwardedRef) => {
 const ConnectedBorderControl = contextConnect(BorderControl, 'BorderControl');
 /* harmony default export */ var border_control_component = (ConnectedBorderControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/grid/utils.js
 const grid_utils_ALIGNMENTS = {
   bottom: {
     alignItems: 'flex-end',
@@ -49904,13 +49904,13 @@ function utils_getAlignmentProps(alignment) {
 }
 /* eslint-enable jsdoc/valid-types */
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/grid/hook.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -49924,7 +49924,7 @@ function utils_getAlignmentProps(alignment) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useGrid(props) {
@@ -49971,7 +49971,7 @@ function useGrid(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/grid/component.js
 
 
 
@@ -49982,7 +49982,7 @@ function useGrid(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -50000,7 +50000,7 @@ function Grid(props, forwardedRef) {
  * import {
  * 	__experimentalGrid as Grid,
  * 	__experimentalText as Text
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -50018,9 +50018,9 @@ function Grid(props, forwardedRef) {
 const ConnectedGrid = contextConnect(Grid, 'Grid');
 /* harmony default export */ var grid_component = (ConnectedGrid);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-split-controls/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -50049,12 +50049,12 @@ function useBorderBoxControlSplitControls(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control-split-controls/component.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -50127,7 +50127,7 @@ const component_BorderBoxControlSplitControls = (props, forwardedRef) => {
 const ConnectedBorderBoxControlSplitControls = contextConnect(component_BorderBoxControlSplitControls, 'BorderBoxControlSplitControls');
 /* harmony default export */ var border_box_control_split_controls_component = (ConnectedBorderBoxControlSplitControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/utils.js
 /**
  * External dependencies
  */
@@ -50255,9 +50255,9 @@ const getShorthandBorderStyle = (border, fallbackBorder) => {
   return [width, borderStyle, color].filter(Boolean).join(' ');
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -50353,12 +50353,12 @@ function useBorderBoxControl(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/border-box-control/border-box-control/component.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -50458,7 +50458,7 @@ const component_BorderBoxControl = (props, forwardedRef) => {
 const ConnectedBorderBoxControl = contextConnect(component_BorderBoxControl, 'BorderBoxControl');
 /* harmony default export */ var border_box_control_component = (ConnectedBorderBoxControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/styles/box-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/styles/box-control-styles.js
 
 
 function box_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -50561,7 +50561,7 @@ const box_control_styles_UnitControl = /*#__PURE__*/emotion_styled_base_browser_
   target: "e7pk0lh0"
 } : 0)("max-width:60px;", unitControlBorderRadiusStyles, ";", unitControlMarginStyles, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/unit-control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/unit-control.js
 
 
 
@@ -50626,7 +50626,7 @@ function unit_control_Tooltip(_ref3) {
    * resolve this issue.
    *
    * Originally discovered and referenced here:
-   * https://github.com/WordPress/gutenberg/pull/24966#issuecomment-685875026
+   * https://github.com/kaydenCMS/gutenberg/pull/24966#issuecomment-685875026
    */
 
   return (0,external_wp_element_namespaceObject.createElement)(tooltip, {
@@ -50635,13 +50635,13 @@ function unit_control_Tooltip(_ref3) {
   }, (0,external_wp_element_namespaceObject.createElement)("div", null, children));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/utils.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -50826,7 +50826,7 @@ function normalizeSides(sides) {
   return filteredSides;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/all-input-control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/all-input-control.js
 
 
 
@@ -50933,7 +50933,7 @@ function AllInputControl(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/input-controls.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/input-controls.js
 
 
 
@@ -51061,7 +51061,7 @@ function BoxInputControls(_ref) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/axial-input-controls.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/axial-input-controls.js
 
 
 
@@ -51204,7 +51204,7 @@ function AxialInputControls(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/styles/box-control-icon-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/styles/box-control-icon-styles.js
 
 
 function box_control_icon_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -51279,7 +51279,7 @@ const LeftStroke = /*#__PURE__*/emotion_styled_base_browser_esm(VerticalStroke, 
   styles: "left:0"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/icon.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/icon.js
 
 
 
@@ -51327,12 +51327,12 @@ function BoxControlIcon(_ref) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/linked-button.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/linked-button.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -51360,7 +51360,7 @@ function LinkedButton(_ref) {
   }))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/styles/box-control-visualizer-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/styles/box-control-visualizer-styles.js
 
 
 function box_control_visualizer_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -51393,7 +51393,7 @@ const box_control_visualizer_styles_Container = emotion_styled_base_browser_esm(
 } : 0)("box-sizing:border-box;position:relative;", containerPositionStyles, ";" + ( true ? "" : 0));
 const Side = emotion_styled_base_browser_esm("div",  true ? {
   target: "e1df9b4q4"
-} : 0)("box-sizing:border-box;background:", COLORS.blue.wordpress[700], ";background:", COLORS.ui.theme, ";filter:brightness( 1 );opacity:0;position:absolute;pointer-events:none;transition:opacity 120ms linear;z-index:1;", _ref3 => {
+} : 0)("box-sizing:border-box;background:", COLORS.blue.kaydenCMS[700], ";background:", COLORS.ui.theme, ";filter:brightness( 1 );opacity:0;position:absolute;pointer-events:none;transition:opacity 120ms linear;z-index:1;", _ref3 => {
   let {
     isActive
   } = _ref3;
@@ -51424,12 +51424,12 @@ const LeftView = /*#__PURE__*/emotion_styled_base_browser_esm(Side,  true ? {
   left: 0
 }), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/visualizer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/visualizer.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -51579,7 +51579,7 @@ function useSideAnimation(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/box-control/index.js
 
 
 
@@ -51588,7 +51588,7 @@ function useSideAnimation(value) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -51735,7 +51735,7 @@ function BoxControl(_ref) {
 }
 BoxControl.__Visualizer = BoxControlVisualizer;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/button-group/index.js
 
 
 
@@ -51744,7 +51744,7 @@ BoxControl.__Visualizer = BoxControlVisualizer;
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -51764,7 +51764,7 @@ function ButtonGroup(_ref, ref) {
 
 /* harmony default export */ var button_group = ((0,external_wp_element_namespaceObject.forwardRef)(ButtonGroup));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/elevation/styles.js
 function elevation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -51776,14 +51776,14 @@ const Elevation =  true ? {
   styles: "background:transparent;display:block;margin:0!important;pointer-events:none;position:absolute;will-change:box-shadow"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/elevation/hook.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -51807,7 +51807,7 @@ function getBoxShadow(value) {
   return boxShadow;
 }
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useElevation(props) {
@@ -51868,7 +51868,7 @@ function useElevation(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/elevation/component.js
 
 
 
@@ -51879,7 +51879,7 @@ function useElevation(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -51900,7 +51900,7 @@ function component_Elevation(props, forwardedRef) {
  *	__experimentalElevation as Elevation,
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * function Example() {
  * 	return (
@@ -51917,7 +51917,7 @@ function component_Elevation(props, forwardedRef) {
 const ConnectedElevation = contextConnect(component_Elevation, 'Elevation');
 /* harmony default export */ var elevation_component = (ConnectedElevation);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/styles.js
 function card_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -51982,7 +51982,7 @@ const cardPaddings = {
 };
 const shady = /*#__PURE__*/emotion_react_browser_esm_css("background-color:", COLORS.lightGray[200], ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/surface/styles.js
 /**
  * External dependencies
  */
@@ -52097,9 +52097,9 @@ const getVariant = (variant, surfaceBackgroundSize, surfaceBackgroundSizeDotted)
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/surface/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52110,7 +52110,7 @@ const getVariant = (variant, surfaceBackgroundSize, surfaceBackgroundSizeDotted)
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useSurface(props) {
@@ -52140,9 +52140,9 @@ function useSurface(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -52155,7 +52155,7 @@ function useSurface(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div'>} props
  */
 
 function card_hook_useDeprecatedProps(_ref) {
@@ -52165,7 +52165,7 @@ function card_hook_useDeprecatedProps(_ref) {
     ...otherProps
   } = _ref;
 
-  /**@type {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} */
+  /**@type {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div'>} */
   const propsToReturn = { ...otherProps
   };
   let computedElevation = elevation;
@@ -52189,7 +52189,7 @@ function card_hook_useDeprecatedProps(_ref) {
   return propsToReturn;
 }
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div'>} props
  */
 
 
@@ -52217,7 +52217,7 @@ function useCard(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card/component.js
 
 
 
@@ -52226,7 +52226,7 @@ function useCard(props) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -52242,7 +52242,7 @@ function useCard(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                   forwardedRef
  */
 
@@ -52301,7 +52301,7 @@ function component_Card(props, forwardedRef) {
  *   CardFooter,
  *   Text,
  *   Heading,
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  *   return (
@@ -52325,7 +52325,7 @@ function component_Card(props, forwardedRef) {
 const ConnectedCard = contextConnect(component_Card, 'Card');
 /* harmony default export */ var card_component = (ConnectedCard);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/scrollable/styles.js
 function scrollable_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -52363,9 +52363,9 @@ const scrollAuto =  true ? {
   styles: "overflow-y:auto"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/scrollable/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52378,7 +52378,7 @@ const scrollAuto =  true ? {
 /* eslint-disable jsdoc/valid-types */
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  */
 
 /* eslint-enable jsdoc/valid-types */
@@ -52397,7 +52397,7 @@ function useScrollable(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/scrollable/component.js
 
 
 
@@ -52408,7 +52408,7 @@ function useScrollable(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -52423,7 +52423,7 @@ function component_Scrollable(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { __experimentalScrollable as Scrollable } from `@wordpress/components`;
+ * import { __experimentalScrollable as Scrollable } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -52439,9 +52439,9 @@ function component_Scrollable(props, forwardedRef) {
 const ConnectedScrollable = contextConnect(component_Scrollable, 'Scrollable');
 /* harmony default export */ var scrollable_component = (ConnectedScrollable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-body/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-body/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52452,7 +52452,7 @@ const ConnectedScrollable = contextConnect(component_Scrollable, 'Scrollable');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').BodyProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').BodyProps, 'div'>} props
  */
 
 function useCardBody(props) {
@@ -52472,7 +52472,7 @@ function useCardBody(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-body/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-body/component.js
 
 
 
@@ -52484,7 +52484,7 @@ function useCardBody(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').BodyProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').BodyProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                       forwardedRef
  */
 
@@ -52510,7 +52510,7 @@ function CardBody(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody } from `@wordpress/components`;
+ * import { Card, CardBody } from `@kaydenCMS/components`;
  *
  * <Card>
  * 	<CardBody>
@@ -52562,7 +52562,7 @@ var Separator = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/divider/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/divider/styles.js
 
 
 function divider_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -52638,7 +52638,7 @@ const DividerView = emotion_styled_base_browser_esm("hr",  true ? {
   target: "e19on6iw0"
 } : 0)("border:0;margin:0;", renderDisplay, " ", renderBorder, " ", renderSize, " ", renderMargin, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/divider/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/divider/component.js
 
 
 
@@ -52671,7 +52671,7 @@ function UnconnectedDivider(props, forwardedRef) {
  * 		__experimentalDivider as Divider,
  * 		__experimentalText as Text,
  * 		__experimentalVStack as VStack,
- * } from `@wordpress/components`;
+ * } from `@kaydenCMS/components`;
  *
  * function Example() {
  * 	return (
@@ -52689,9 +52689,9 @@ function UnconnectedDivider(props, forwardedRef) {
 const component_Divider = contextConnect(UnconnectedDivider, 'Divider');
 /* harmony default export */ var divider_component = (component_Divider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-divider/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-divider/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52702,7 +52702,7 @@ const component_Divider = contextConnect(UnconnectedDivider, 'Divider');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../../divider').DividerProps, 'hr', false>} props
  */
 
 function useCardDivider(props) {
@@ -52718,7 +52718,7 @@ function useCardDivider(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-divider/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-divider/component.js
 
 
 
@@ -52729,7 +52729,7 @@ function useCardDivider(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../../divider').DividerProps, 'hr', false>} props
  * @param {import('react').ForwardedRef<any>}                                                                     forwardedRef
  */
 
@@ -52745,7 +52745,7 @@ function CardDivider(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardDivider } from `@wordpress/components`;
+ * import { Card, CardBody, CardDivider } from `@kaydenCMS/components`;
  *
  * <Card>
  *  <CardBody>...</CardBody>
@@ -52759,9 +52759,9 @@ function CardDivider(props, forwardedRef) {
 const ConnectedCardDivider = contextConnect(CardDivider, 'CardDivider');
 /* harmony default export */ var card_divider_component = (ConnectedCardDivider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-footer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-footer/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52772,7 +52772,7 @@ const ConnectedCardDivider = contextConnect(CardDivider, 'CardDivider');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FooterProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FooterProps, 'div'>} props
  */
 
 function useCardFooter(props) {
@@ -52793,7 +52793,7 @@ function useCardFooter(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-footer/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-footer/component.js
 
 
 
@@ -52804,7 +52804,7 @@ function useCardFooter(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FooterProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').FooterProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                         forwardedRef
  */
 
@@ -52819,7 +52819,7 @@ function CardFooter(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardFooter } from `@wordpress/components`;
+ * import { Card, CardBody, CardFooter } from `@kaydenCMS/components`;
  *
  * <Card>
  * 	<CardBody>...</CardBody>
@@ -52832,9 +52832,9 @@ function CardFooter(props, forwardedRef) {
 const ConnectedCardFooter = contextConnect(CardFooter, 'CardFooter');
 /* harmony default export */ var card_footer_component = (ConnectedCardFooter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-header/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-header/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52845,7 +52845,7 @@ const ConnectedCardFooter = contextConnect(CardFooter, 'CardFooter');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').HeaderProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').HeaderProps, 'div'>} props
  */
 
 function useCardHeader(props) {
@@ -52864,7 +52864,7 @@ function useCardHeader(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-header/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-header/component.js
 
 
 
@@ -52875,7 +52875,7 @@ function useCardHeader(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').HeaderProps, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').HeaderProps, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                         forwardedRef
  */
 
@@ -52890,7 +52890,7 @@ function CardHeader(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardHeader } from `@wordpress/components`;
+ * import { Card, CardBody, CardHeader } from `@kaydenCMS/components`;
  *
  * <Card>
  * 	<CardHeader>...</CardHeader>
@@ -52903,9 +52903,9 @@ function CardHeader(props, forwardedRef) {
 const ConnectedCardHeader = contextConnect(CardHeader, 'CardHeader');
 /* harmony default export */ var card_header_component = (ConnectedCardHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-media/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-media/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -52916,7 +52916,7 @@ const ConnectedCardHeader = contextConnect(CardHeader, 'CardHeader');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  */
 
 function useCardMedia(props) {
@@ -52932,7 +52932,7 @@ function useCardMedia(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-media/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/card/card-media/component.js
 
 
 
@@ -52943,7 +52943,7 @@ function useCardMedia(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                                                  forwardedRef
  */
 
@@ -52958,7 +52958,7 @@ function CardMedia(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardMedia } from '@wordpress/components';
+ * import { Card, CardBody, CardMedia } from '@kaydenCMS/components';
  *
  * const Example = () => (
  *  <Card>
@@ -52975,11 +52975,11 @@ function CardMedia(props, forwardedRef) {
 const ConnectedCardMedia = contextConnect(CardMedia, 'CardMedia');
 /* harmony default export */ var card_media_component = (ConnectedCardMedia);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/reset.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/reset.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const reset_reset = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -52990,7 +52990,7 @@ const reset_reset = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var library_reset = (reset_reset);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/checkbox-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/checkbox-control/index.js
 
 
 
@@ -52999,7 +52999,7 @@ const reset_reset = (0,external_wp_element_namespaceObject.createElement)(extern
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -53079,7 +53079,7 @@ function CheckboxControl(_ref) {
   }, label));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/clipboard-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/clipboard-button/index.js
 
 
 
@@ -53088,7 +53088,7 @@ function CheckboxControl(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -53142,11 +53142,11 @@ function ClipboardButton(_ref) {
   }), children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plus.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/plus.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const plus = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -53157,11 +53157,11 @@ const plus = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
 }));
 /* harmony default export */ var library_plus = (plus);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/more-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/more-vertical.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const moreVertical = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -53172,7 +53172,7 @@ const moreVertical = (0,external_wp_element_namespaceObject.createElement)(exter
 }));
 /* harmony default export */ var more_vertical = (moreVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/styles.js
 function item_group_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -53216,7 +53216,7 @@ const itemSizes = {
   large: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYLarge, " ", config_values.controlPaddingXLarge, ";" + ( true ? "" : 0),  true ? "" : 0)
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item-group/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/item-group/hook.js
 /**
  * Internal dependencies
  */
@@ -53247,9 +53247,9 @@ function useItemGroup(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -53261,7 +53261,7 @@ const ItemGroupContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 const useItemGroupContext = () => (0,external_wp_element_namespaceObject.useContext)(ItemGroupContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item-group/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/item-group/component.js
 
 
 
@@ -53302,7 +53302,7 @@ function ItemGroup(props, forwardedRef) {
 
 /* harmony default export */ var item_group_component = (contextConnect(ItemGroup, 'ItemGroup'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-bar/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-bar/constants.js
 const GRADIENT_MARKERS_WIDTH = 16;
 const INSERT_POINT_WIDTH = 16;
 const MINIMUM_ABSOLUTE_LEFT_POSITION = 5;
@@ -53312,7 +53312,7 @@ const MINIMUM_SIGNIFICANT_MOVE = 5;
 const KEYBOARD_CONTROL_POINT_VARIATION = MINIMUM_DISTANCE_BETWEEN_INSERTER_AND_POINT;
 const MINIMUM_DISTANCE_BETWEEN_INSERTER_AND_MARKER = (INSERT_POINT_WIDTH + GRADIENT_MARKERS_WIDTH) / 2;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-bar/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-bar/utils.js
 /**
  * Internal dependencies
  */
@@ -53492,7 +53492,7 @@ function getHorizontalRelativeGradientPosition(mouseXCoordinate, containerElemen
   return Math.round(clampPercent(absolutePositionValue * 100 / availableWidth));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-bar/control-points.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-bar/control-points.js
 
 
 
@@ -53502,7 +53502,7 @@ function getHorizontalRelativeGradientPosition(mouseXCoordinate, containerElemen
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -53757,7 +53757,7 @@ function InsertPoint(_ref6) {
 ControlPoints.InsertPoint = InsertPoint;
 /* harmony default export */ var control_points = (ControlPoints);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-bar/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-bar/index.js
 
 
 /**
@@ -53766,7 +53766,7 @@ ControlPoints.InsertPoint = InsertPoint;
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -53941,9 +53941,9 @@ function CustomGradientBar(_ref) {
 
 // EXTERNAL MODULE: ./node_modules/gradient-parser/build/node.js
 var build_node = __webpack_require__(7115);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-picker/constants.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const DEFAULT_GRADIENT = 'linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%)';
@@ -53974,7 +53974,7 @@ const DIRECTIONAL_ORIENTATION_ANGLE_MAP = {
   'left top': 315
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/serializer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-picker/serializer.js
 /**
  * External dependencies
  */
@@ -54037,7 +54037,7 @@ function serializeGradient(_ref3) {
   return `${type}(${(0,external_lodash_namespaceObject.compact)([serializedOrientation, ...serializedColorStops]).join(',')})`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-picker/utils.js
 /**
  * External dependencies
  */
@@ -54142,7 +54142,7 @@ function getStopCssColor(colorStop) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/styles/custom-gradient-picker-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-picker/styles/custom-gradient-picker-styles.js
 
 
 function custom_gradient_picker_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -54168,7 +54168,7 @@ const AccessoryWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_block
   styles: "flex-grow:5"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-gradient-picker/index.js
 
 
 /**
@@ -54176,7 +54176,7 @@ const AccessoryWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_block
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -54305,7 +54305,7 @@ function CustomGradientPicker(_ref3) {
   }))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/gradient-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/gradient-picker/index.js
 
 
 
@@ -54314,7 +54314,7 @@ function CustomGradientPicker(_ref3) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -54432,11 +54432,11 @@ function GradientPicker(_ref5) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/menu.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/menu.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const menu = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -54447,7 +54447,7 @@ const menu = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
 }));
 /* harmony default export */ var library_menu = (menu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/container.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigable-container/container.js
 
 
 // @ts-nocheck
@@ -54457,7 +54457,7 @@ const menu = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -54613,7 +54613,7 @@ const forwardedNavigableContainer = (props, ref) => {
 forwardedNavigableContainer.displayName = 'NavigableContainer';
 /* harmony default export */ var container = ((0,external_wp_element_namespaceObject.forwardRef)(forwardedNavigableContainer));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/menu.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigable-container/menu.js
 
 
 // @ts-nocheck
@@ -54623,7 +54623,7 @@ forwardedNavigableContainer.displayName = 'NavigableContainer';
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -54680,7 +54680,7 @@ function NavigableMenu(_ref, ref) {
 }
 /* harmony default export */ var navigable_container_menu = ((0,external_wp_element_namespaceObject.forwardRef)(NavigableMenu));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/dropdown-menu/index.js
 
 
 // @ts-nocheck
@@ -54691,7 +54691,7 @@ function NavigableMenu(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -54837,7 +54837,7 @@ function DropdownMenu(dropdownMenuProps) {
 
 /* harmony default export */ var dropdown_menu = (DropdownMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/palette-edit/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/palette-edit/styles.js
 
 
 function palette_edit_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -54866,10 +54866,10 @@ const NameInputControl = /*#__PURE__*/emotion_styled_base_browser_esm(input_cont
 } : 0)(Container, "{background:", COLORS.gray[100], ";border-radius:", config_values.controlBorderRadius, ";}", Input, Input, Input, Input, "{height:", space(8), ";}", BackdropUI, BackdropUI, BackdropUI, "{border-color:transparent;box-shadow:none;}" + ( true ? "" : 0));
 const PaletteItem = /*#__PURE__*/emotion_styled_base_browser_esm(component,  true ? {
   target: "e5bw3227"
-} : 0)("padding:3px 0 3px ", space(3), ";height:calc( 40px - ", config_values.borderWidth, " );border:1px solid ", config_values.surfaceBorderColor, ";border-bottom-color:transparent;&:first-of-type{border-top-left-radius:", config_values.controlBorderRadius, ";border-top-right-radius:", config_values.controlBorderRadius, ";}&:last-of-type{border-bottom-left-radius:", config_values.controlBorderRadius, ";border-bottom-right-radius:", config_values.controlBorderRadius, ";border-bottom-color:", config_values.surfaceBorderColor, ";}&.is-selected+&{border-top-color:transparent;}&.is-selected{border-color:", COLORS.blue.wordpress[700], ";}" + ( true ? "" : 0));
+} : 0)("padding:3px 0 3px ", space(3), ";height:calc( 40px - ", config_values.borderWidth, " );border:1px solid ", config_values.surfaceBorderColor, ";border-bottom-color:transparent;&:first-of-type{border-top-left-radius:", config_values.controlBorderRadius, ";border-top-right-radius:", config_values.controlBorderRadius, ";}&:last-of-type{border-bottom-left-radius:", config_values.controlBorderRadius, ";border-bottom-right-radius:", config_values.controlBorderRadius, ";border-bottom-color:", config_values.surfaceBorderColor, ";}&.is-selected+&{border-top-color:transparent;}&.is-selected{border-color:", COLORS.blue.kaydenCMS[700], ";}" + ( true ? "" : 0));
 const NameContainer = emotion_styled_base_browser_esm("div",  true ? {
   target: "e5bw3226"
-} : 0)("line-height:", space(8), ";margin-left:", space(2), ";margin-right:", space(2), ";white-space:nowrap;overflow:hidden;", PaletteItem, ":hover &{color:var( --wp-admin-theme-color, ", COLORS.blue.wordpress[700], " );}" + ( true ? "" : 0));
+} : 0)("line-height:", space(8), ";margin-left:", space(2), ";margin-right:", space(2), ";white-space:nowrap;overflow:hidden;", PaletteItem, ":hover &{color:var( --wp-admin-theme-color, ", COLORS.blue.kaydenCMS[700], " );}" + ( true ? "" : 0));
 const PaletteHeading = /*#__PURE__*/emotion_styled_base_browser_esm(heading_component,  true ? {
   target: "e5bw3225"
 } : 0)("text-transform:uppercase;line-height:", space(6), ";font-weight:500;&&&{font-size:11px;margin-bottom:0;}" + ( true ? "" : 0));
@@ -54892,7 +54892,7 @@ const RemoveButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_b
   target: "e5bw3220"
 } : 0)("&&{margin-top:", space(1), ";}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/palette-edit/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/palette-edit/index.js
 
 
 
@@ -54901,7 +54901,7 @@ const RemoveButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_b
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55184,7 +55184,7 @@ function PaletteEdit(_ref5) {
   }))), !hasElements && emptyMessage);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/token-input.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-token-field/token-input.js
 
 
 
@@ -55193,7 +55193,7 @@ function PaletteEdit(_ref5) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55260,7 +55260,7 @@ class TokenInput extends external_wp_element_namespaceObject.Component {
 // EXTERNAL MODULE: ./node_modules/dom-scroll-into-view/lib/index.js
 var lib = __webpack_require__(5425);
 var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/suggestions-list.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-token-field/suggestions-list.js
 
 
 /**
@@ -55270,7 +55270,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55375,13 +55375,13 @@ function SuggestionsList(_ref) {
 
 /* harmony default export */ var suggestions_list = ((0,external_wp_compose_namespaceObject.withSafeTimeout)(SuggestionsList));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-focus-outside/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-focus-outside/index.js
 
 
 //@ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55393,7 +55393,7 @@ function SuggestionsList(_ref) {
   }, props)));
 }, 'withFocusOutside'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/combobox-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/combobox-control/index.js
 
 
 /**
@@ -55402,7 +55402,7 @@ function SuggestionsList(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55640,7 +55640,7 @@ function ComboboxControl(_ref) {
 
 /* harmony default export */ var combobox_control = (ComboboxControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/aria-helper.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/modal/aria-helper.js
 // @ts-nocheck
 
 /**
@@ -55710,7 +55710,7 @@ function showApp() {
   isHidden = false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/modal/index.js
 
 
 // @ts-nocheck
@@ -55720,7 +55720,7 @@ function showApp() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -55844,7 +55844,7 @@ function Modal(props, forwardedRef) {
 
 /* harmony default export */ var modal = ((0,external_wp_element_namespaceObject.forwardRef)(Modal));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/confirm-dialog/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/confirm-dialog/styles.js
 function confirm_dialog_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -55865,7 +55865,7 @@ const wrapper =  true ? {
   styles: "&&{z-index:1000001;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/confirm-dialog/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/confirm-dialog/component.js
 
 
 
@@ -55874,7 +55874,7 @@ const wrapper =  true ? {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60074,7 +60074,7 @@ function useMultipleSelection(userProps) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-select-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/custom-select-control/index.js
 
 
 
@@ -60084,7 +60084,7 @@ function useMultipleSelection(userProps) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60246,7 +60246,7 @@ var external_moment_ = __webpack_require__(6292);
 var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_);
 // EXTERNAL MODULE: ./node_modules/react-dates/lib/components/DayPickerSingleDateController.js
 var DayPickerSingleDateController = __webpack_require__(6302);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/date-time/utils.js
 /**
  * External dependencies
  */
@@ -60267,7 +60267,7 @@ const getMomentDate = date => {
   return date ? external_moment_default()(date) : external_moment_default()();
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/date.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/date-time/date.js
 
 
 /**
@@ -60279,7 +60279,7 @@ const getMomentDate = date => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60443,11 +60443,11 @@ function DatePicker(_ref2) {
 
 ;// CONCATENATED MODULE: external ["wp","date"]
 var external_wp_date_namespaceObject = window["wp"]["date"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/timezone.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/date-time/timezone.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60485,7 +60485,7 @@ const TimeZone = () => {
 
 /* harmony default export */ var timezone = (TimeZone);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/time.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/date-time/time.js
 
 
 /**
@@ -60495,7 +60495,7 @@ const TimeZone = () => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60755,7 +60755,7 @@ function TimePicker(_ref2) {
 }
 /* harmony default export */ var time = (TimePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/date-time/index.js
 
 
 /**
@@ -60766,7 +60766,7 @@ function TimePicker(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -60845,7 +60845,7 @@ function DateTimePicker(_ref, ref) {
 
 /* harmony default export */ var date_time = ((0,external_wp_element_namespaceObject.forwardRef)(DateTimePicker));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dimension-control/sizes.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/dimension-control/sizes.js
 /**
  * Sizes
  *
@@ -60856,7 +60856,7 @@ function DateTimePicker(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -60887,7 +60887,7 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
   slug: 'xlarge'
 }]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dimension-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/dimension-control/index.js
 
 
 /**
@@ -60896,7 +60896,7 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -60962,7 +60962,7 @@ function DimensionControl(props) {
 }
 /* harmony default export */ var dimension_control = (DimensionControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/disabled/styles/disabled-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/disabled/styles/disabled-styles.js
 
 
 function disabled_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -60977,7 +60977,7 @@ const StyledWrapper = emotion_styled_base_browser_esm("div",  true ? {
   styles: "position:relative;pointer-events:none;&::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;}*{pointer-events:none;}"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/disabled/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/disabled/index.js
 
 
 
@@ -60987,7 +60987,7 @@ const StyledWrapper = emotion_styled_base_browser_esm("div",  true ? {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -61113,11 +61113,11 @@ Disabled.Context = Context;
 Disabled.Consumer = Consumer;
 /* harmony default export */ var disabled = (Disabled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/draggable/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/draggable/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -61331,11 +61331,11 @@ function Draggable(_ref) {
   }, dragComponent));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/upload.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/upload.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const upload = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -61611,7 +61611,7 @@ var AnimatePresence = function (_a) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/drop-zone/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/drop-zone/index.js
 
 
 /**
@@ -61620,7 +61620,7 @@ var AnimatePresence = function (_a) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -61765,9 +61765,9 @@ function DropZoneComponent(_ref) {
   }, disableMotion ? children : (0,external_wp_element_namespaceObject.createElement)(AnimatePresence, null, children));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/drop-zone/provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/drop-zone/provider.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 function DropZoneProvider(_ref) {
@@ -61781,11 +61781,11 @@ function DropZoneProvider(_ref) {
   return children;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/swatch.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/swatch.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const swatch = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -61796,11 +61796,11 @@ const swatch = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_swatch = (swatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/swatch/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/swatch/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -61825,7 +61825,7 @@ function Swatch(_ref) {
 
 /* harmony default export */ var build_module_swatch = (Swatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/duotone-picker/utils.js
 /**
  * External dependencies
  */
@@ -61922,7 +61922,7 @@ function getColorsFromColorStops() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/duotone-swatch.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/duotone-picker/duotone-swatch.js
 
 
 /**
@@ -61942,11 +61942,11 @@ function DuotoneSwatch(_ref) {
 
 /* harmony default export */ var duotone_swatch = (DuotoneSwatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-list-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/color-list-picker/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -62012,7 +62012,7 @@ function ColorListPicker(_ref2) {
 
 /* harmony default export */ var color_list_picker = (ColorListPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/custom-duotone-bar.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/duotone-picker/custom-duotone-bar.js
 
 
 /**
@@ -62042,7 +62042,7 @@ function CustomDuotoneBar(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/duotone-picker/duotone-picker.js
 
 
 /**
@@ -62050,7 +62050,7 @@ function CustomDuotoneBar(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -62132,11 +62132,11 @@ function DuotonePicker(_ref) {
 
 /* harmony default export */ var duotone_picker = (DuotonePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/external.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/external.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const external = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -62147,7 +62147,7 @@ const external = (0,external_wp_element_namespaceObject.createElement)(external_
 }));
 /* harmony default export */ var library_external = (external);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/external-link/styles/external-link-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/external-link/styles/external-link-styles.js
 
 
 function external_link_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -62157,7 +62157,7 @@ function external_link_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You hav
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const StyledIcon = /*#__PURE__*/emotion_styled_base_browser_esm(icons_build_module_icon,  true ? {
@@ -62167,7 +62167,7 @@ const StyledIcon = /*#__PURE__*/emotion_styled_base_browser_esm(icons_build_modu
   styles: "width:1em;height:1em;margin:0;vertical-align:middle;fill:currentColor"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/external-link/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/external-link/index.js
 
 
 
@@ -62177,7 +62177,7 @@ const StyledIcon = /*#__PURE__*/emotion_styled_base_browser_esm(icons_build_modu
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -62493,9 +62493,9 @@ var PopoverDisclosure = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -62508,13 +62508,13 @@ const useFlyoutContext = () => (0,external_wp_element_namespaceObject.useContext
 // EXTERNAL MODULE: ./node_modules/react-resize-aware/dist/index.js
 var react_resize_aware_dist = __webpack_require__(235);
 var react_resize_aware_dist_default = /*#__PURE__*/__webpack_require__.n(react_resize_aware_dist);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/utils.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -63704,7 +63704,7 @@ var Popover_Popover = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/styles.js
 
 
 /**
@@ -63726,7 +63726,7 @@ const CardView = /*#__PURE__*/emotion_styled_base_browser_esm(card_component,  t
   target: "e1vtu5160"
 } : 0)(card_body_component.selector, "{max-height:80vh;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/flyout-content/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/flyout-content/component.js
 
 
 
@@ -63738,7 +63738,7 @@ const CardView = /*#__PURE__*/emotion_styled_base_browser_esm(card_component,  t
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').ContentProps, 'div', false>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').ContentProps, 'div', false>} props
  * @param {import('react').ForwardedRef<any>}                                                                 forwardedRef forwardedRef
  */
 
@@ -63778,7 +63778,7 @@ function FlyoutContent(props, forwardedRef) {
 const ConnectedFlyoutContent = contextConnect(FlyoutContent, 'FlyoutContent');
 /* harmony default export */ var flyout_content_component = (ConnectedFlyoutContent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/flyout/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/flyout/hook.js
 /**
  * External dependencies
  */
@@ -63790,7 +63790,7 @@ const ConnectedFlyoutContent = contextConnect(FlyoutContent, 'FlyoutContent');
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div', false>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div', false>} props
  */
 
 function useFlyout(props) {
@@ -63823,7 +63823,7 @@ function useFlyout(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/flyout/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/flyout/flyout/component.js
 
 
 
@@ -63833,7 +63833,7 @@ function useFlyout(props) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -63849,7 +63849,7 @@ function useFlyout(props) {
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div', false>} props
+ * @param {import('../../ui/context').kaydenCMSComponentProps<import('../types').Props, 'div', false>} props
  * @param {import('react').ForwardedRef<any>}                                                          forwardedRef
  */
 
@@ -63897,7 +63897,7 @@ function component_Flyout(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Button, __experimentalFlyout as Flyout, __experimentalText as } from '@wordpress/components';
+ * import { Button, __experimentalFlyout as Flyout, __experimentalText as } from '@kaydenCMS/components';
  *
  * function Example() {
  * 	return (
@@ -63913,7 +63913,7 @@ function component_Flyout(props, forwardedRef) {
 const ConnectedFlyout = contextConnect(component_Flyout, 'Flyout');
 /* harmony default export */ var flyout_component = (ConnectedFlyout);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/styles/focal-point-picker-style.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/styles/focal-point-picker-style.js
 
 
 function focal_point_picker_style_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -63984,7 +63984,7 @@ const GridLineY = /*#__PURE__*/emotion_styled_base_browser_esm(GridLine,  true ?
   styles: "width:1px;top:0;bottom:0"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/utils.js
 const INITIAL_BOUNDS = {
   top: 0,
   left: 0,
@@ -64029,7 +64029,7 @@ function fractionToPercentage(fraction) {
   return Math.round(fraction * 100);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/controls.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/controls.js
 
 
 
@@ -64038,7 +64038,7 @@ function fractionToPercentage(fraction) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -64099,7 +64099,7 @@ function controls_UnitControl(props) {
   }, props));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/styles/focal-point-style.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/styles/focal-point-style.js
 
 
 function focal_point_style_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -64109,7 +64109,7 @@ function focal_point_style_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have t
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -64139,9 +64139,9 @@ const PointerIconPathOutline = /*#__PURE__*/emotion_styled_base_browser_esm(exte
 } : 0);
 const PointerIconPathFill = /*#__PURE__*/emotion_styled_base_browser_esm(external_wp_primitives_namespaceObject.Path,  true ? {
   target: "eas61re0"
-} : 0)("fill:", COLORS.blue.wordpress[700], ";fill:", COLORS.ui.theme, ";" + ( true ? "" : 0));
+} : 0)("fill:", COLORS.blue.kaydenCMS[700], ";fill:", COLORS.ui.theme, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/focal-point.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/focal-point.js
 
 
 
@@ -64183,12 +64183,12 @@ function FocalPoint(_ref) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/grid.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/grid.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -64253,7 +64253,7 @@ function useRevealAnimation(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/media.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/media.js
 
 
 
@@ -64262,7 +64262,7 @@ function useRevealAnimation(value) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -64334,7 +64334,7 @@ function MediaPlaceholderElement(_ref2) {
   }, props));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focal-point-picker/index.js
 
 
 /**
@@ -64342,7 +64342,7 @@ function MediaPlaceholderElement(_ref2) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -64401,7 +64401,7 @@ class FocalPointPicker extends external_wp_element_namespaceObject.Component {
      * Set initial bound values.
      *
      * This is necessary for Safari:
-     * https://github.com/WordPress/gutenberg/issues/25814
+     * https://github.com/kaydenCMS/gutenberg/issues/25814
      */
 
     this.updateBounds();
@@ -64710,12 +64710,12 @@ FocalPointPicker.defaultProps = {
 };
 /* harmony default export */ var focal_point_picker = ((0,external_wp_compose_namespaceObject.withInstanceId)(FocalPointPicker));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focusable-iframe/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/focusable-iframe/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -64839,7 +64839,7 @@ var RadioGroup = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control/styles.js
 
 
 function toggle_group_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -64862,11 +64862,11 @@ const BackdropView = emotion_styled_base_browser_esm("div",  true ? {
   target: "eakva830"
 } : 0)("background:", COLORS.gray[900], ";border-radius:", config_values.controlBorderRadius, ";box-shadow:", config_values.toggleGroupControlBackdropBoxShadow, ";left:0;position:absolute;top:2px;bottom:2px;transition:transform ", config_values.transitionDurationFast, " ease;", reduceMotion('transition'), " z-index:1;" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/toggle-group-control-backdrop.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control/toggle-group-control-backdrop.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -64949,9 +64949,9 @@ function ToggleGroupControlBackdrop(_ref) {
 
 /* harmony default export */ var toggle_group_control_backdrop = ((0,external_wp_element_namespaceObject.memo)(ToggleGroupControlBackdrop));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -64962,7 +64962,7 @@ const ToggleGroupControlContext = (0,external_wp_element_namespaceObject.createC
 const useToggleGroupControlContext = () => (0,external_wp_element_namespaceObject.useContext)(ToggleGroupControlContext);
 /* harmony default export */ var toggle_group_control_context = (ToggleGroupControlContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control/component.js
 
 
 
@@ -64973,7 +64973,7 @@ const useToggleGroupControlContext = () => (0,external_wp_element_namespaceObjec
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -65061,7 +65061,7 @@ function component_ToggleGroupControl(props, forwardedRef) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * function Example() {
  *   return (
@@ -65252,7 +65252,7 @@ var Radio = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
 
 
 function toggle_group_control_option_base_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -65287,7 +65287,7 @@ const separatorActive =  true ? {
 } : 0;
 const medium = /*#__PURE__*/emotion_react_browser_esm_css("min-height:", config_values.controlHeight, ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control-option-base/component.js
 
 
 
@@ -65297,7 +65297,7 @@ const medium = /*#__PURE__*/emotion_react_browser_esm_css("min-height:", config_
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -65376,7 +65376,7 @@ function ToggleGroupControlOptionBase(props, forwardedRef) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOptionBase as ToggleGroupControlOptionBase,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * function Example() {
  *   return (
@@ -65393,7 +65393,7 @@ function ToggleGroupControlOptionBase(props, forwardedRef) {
 const ConnectedToggleGroupControlOptionBase = contextConnect(ToggleGroupControlOptionBase, 'ToggleGroupControlOptionBase');
 /* harmony default export */ var toggle_group_control_option_base_component = (ConnectedToggleGroupControlOptionBase);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control-option/component.js
 
 
 
@@ -65420,7 +65420,7 @@ function ToggleGroupControlOption(props) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * function Example() {
  *   return (
@@ -65433,9 +65433,9 @@ function ToggleGroupControlOption(props) {
  * ```
  */
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/font-size-picker/utils.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const DEFAULT_FONT_SIZE = 'default';
@@ -65553,12 +65553,12 @@ function getSelectedOption(fontSizes, value) {
   return fontSizes.find(font => font.size === value) || CUSTOM_FONT_SIZE_OPTION;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/font-size-picker/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -65740,12 +65740,12 @@ function FontSizePicker(_ref, ref) {
 
 /* harmony default export */ var font_size_picker = ((0,external_wp_element_namespaceObject.forwardRef)(FontSizePicker));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-file-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-file-upload/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -65793,7 +65793,7 @@ function FormFileUpload(_ref) {
 
 /* harmony default export */ var form_file_upload = (FormFileUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-toggle/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-toggle/index.js
 
 
 
@@ -65834,7 +65834,7 @@ function FormToggle(_ref) {
 
 /* harmony default export */ var form_toggle = (FormToggle);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/token.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-token-field/token.js
 
 
 /**
@@ -65843,7 +65843,7 @@ function FormToggle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -65908,12 +65908,12 @@ function Token(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-spoken-messages/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-spoken-messages/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -65921,7 +65921,7 @@ function Token(_ref) {
  * A Higher Order Component used to be provide speak and debounced speak
  * functions.
  *
- * @see https://developer.wordpress.org/block-editor/packages/packages-a11y/#speak
+ * @see https://developer.kaydenCMS.org/block-editor/packages/packages-a11y/#speak
  *
  * @param {WPComponent} Component The component to be wrapped.
  *
@@ -65933,7 +65933,7 @@ function Token(_ref) {
   debouncedSpeak: (0,external_wp_compose_namespaceObject.useDebounce)(external_wp_a11y_namespaceObject.speak, 500)
 })), 'withSpokenMessages'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/form-token-field/index.js
 
 
 /**
@@ -65942,7 +65942,7 @@ function Token(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66580,11 +66580,11 @@ FormTokenField.defaultProps = {
 };
 /* harmony default export */ var form_token_field = (with_spoken_messages((0,external_wp_compose_namespaceObject.withInstanceId)(FormTokenField)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/icons.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/guide/icons.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const PageControlIcon = _ref => {
@@ -66604,7 +66604,7 @@ const PageControlIcon = _ref => {
   }));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/page-control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/guide/page-control.js
 
 
 /**
@@ -66612,7 +66612,7 @@ const PageControlIcon = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66647,7 +66647,7 @@ function PageControl(_ref) {
   }))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/guide/index.js
 
 
 /**
@@ -66655,7 +66655,7 @@ function PageControl(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66756,11 +66756,11 @@ function Guide(_ref) {
   }, finishButtonText || (0,external_wp_i18n_namespaceObject.__)('Finish')))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/page.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/guide/page.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66774,13 +66774,13 @@ function GuidePage(props) {
   return (0,external_wp_element_namespaceObject.createElement)("div", props);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/button/deprecated.js
 
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66814,13 +66814,13 @@ function IconButton(_ref, ref) {
 
 /* harmony default export */ var deprecated = ((0,external_wp_element_namespaceObject.forwardRef)(IconButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/item/hook.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -66859,7 +66859,7 @@ function hook_useItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/item-group/item/component.js
 
 
 
@@ -66890,7 +66890,7 @@ function component_Item(props, forwardedRef) {
 
 /* harmony default export */ var item_component = (contextConnect(component_Item, 'Item'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/keyboard-shortcuts/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/keyboard-shortcuts/index.js
 
 
 /**
@@ -66898,7 +66898,7 @@ function component_Item(props, forwardedRef) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66949,7 +66949,7 @@ function KeyboardShortcuts(_ref2) {
 
 /* harmony default export */ var keyboard_shortcuts = (KeyboardShortcuts);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/menu-group/index.js
 
 // @ts-nocheck
 
@@ -66958,7 +66958,7 @@ function KeyboardShortcuts(_ref2) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -66993,7 +66993,7 @@ function MenuGroup(props) {
 }
 /* harmony default export */ var menu_group = (MenuGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/menu-item/index.js
 
 
 // @ts-nocheck
@@ -67004,7 +67004,7 @@ function MenuGroup(props) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67065,7 +67065,7 @@ function MenuItem(props, ref) {
 }
 /* harmony default export */ var menu_item = ((0,external_wp_element_namespaceObject.forwardRef)(MenuItem));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-items-choice/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/menu-items-choice/index.js
 
 
 /**
@@ -67073,7 +67073,7 @@ function MenuItem(props, ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67111,13 +67111,13 @@ function MenuItemsChoice(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/tabbable.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigable-container/tabbable.js
 
 
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67167,17 +67167,17 @@ function TabbableContainer(_ref, ref) {
 }
 /* harmony default export */ var tabbable = ((0,external_wp_element_namespaceObject.forwardRef)(TabbableContainer));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/constants.js
 const ROOT_MENU = 'root';
 const SEARCH_FOCUS_DELAY = 100;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/context.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67207,11 +67207,11 @@ const NavigationContext = (0,external_wp_element_namespaceObject.createContext)(
 });
 const useNavigationContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/search.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/search.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const search = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -67222,9 +67222,9 @@ const search = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_search = (search);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-combined-ref.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/hooks/use-combined-ref.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -67251,7 +67251,7 @@ function useCombinedRef() {
   return targetRef;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/search-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/search-control/index.js
 
 
 /**
@@ -67259,7 +67259,7 @@ function useCombinedRef() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67340,7 +67340,7 @@ function SearchControl(_ref, ref) {
 
 /* harmony default export */ var search_control = ((0,external_wp_element_namespaceObject.forwardRef)(SearchControl));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/styles/navigation-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/styles/navigation-styles.js
 
 
 function navigation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -67350,7 +67350,7 @@ function navigation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have t
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -67414,13 +67414,13 @@ const ItemTitleUI = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,
   target: "ejwewyf0"
 } : 0)(() => (0,external_wp_i18n_namespaceObject.isRTL)() ? 'margin-left: auto;' : 'margin-right: auto;', " font-size:14px;line-height:20px;color:inherit;" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/use-navigation-tree-nodes.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/use-navigation-tree-nodes.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67443,9 +67443,9 @@ const useNavigationTreeNodes = () => {
   };
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/use-create-navigation-tree.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/use-create-navigation-tree.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -67538,7 +67538,7 @@ const useCreateNavigationTree = () => {
   };
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/index.js
 
 
 /**
@@ -67547,7 +67547,7 @@ const useCreateNavigationTree = () => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67621,11 +67621,11 @@ function Navigation(_ref) {
   }, children)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/chevron-right.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const chevronRight = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -67636,11 +67636,11 @@ const chevronRight = (0,external_wp_element_namespaceObject.createElement)(exter
 }));
 /* harmony default export */ var chevron_right = (chevronRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-left.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/chevron-left.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const chevronLeft = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -67651,7 +67651,7 @@ const chevronLeft = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var chevron_left = (chevronLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/back-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/back-button/index.js
 
 
 /**
@@ -67659,7 +67659,7 @@ const chevronLeft = (0,external_wp_element_namespaceObject.createElement)(extern
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67715,9 +67715,9 @@ function NavigationBackButton(_ref, ref) {
 
 /* harmony default export */ var back_button = ((0,external_wp_element_namespaceObject.forwardRef)(NavigationBackButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/group/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/group/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const NavigationGroupContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -67725,7 +67725,7 @@ const NavigationGroupContext = (0,external_wp_element_namespaceObject.createCont
 });
 const useNavigationGroupContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationGroupContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/group/index.js
 
 
 /**
@@ -67734,7 +67734,7 @@ const useNavigationGroupContext = () => (0,external_wp_element_namespaceObject.u
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67786,7 +67786,7 @@ function NavigationGroup(_ref) {
   }, children)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/base-content.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/item/base-content.js
 
 
 /**
@@ -67807,9 +67807,9 @@ function NavigationItemBaseContent(props) {
   }, badge));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const NavigationMenuContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -67818,7 +67818,7 @@ const NavigationMenuContext = (0,external_wp_element_namespaceObject.createConte
 });
 const useNavigationMenuContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationMenuContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/utils.js
 /**
  * External dependencies
  */
@@ -67827,9 +67827,9 @@ const useNavigationMenuContext = () => (0,external_wp_element_namespaceObject.us
 const normalizeInput = input => (0,external_lodash_namespaceObject.deburr)(input).replace(/^\//, '').toLowerCase();
 const normalizedSearch = (title, search) => -1 !== normalizeInput(title).indexOf(normalizeInput(search));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/use-navigation-tree-item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/item/use-navigation-tree-item.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -67869,7 +67869,7 @@ const useNavigationTreeItem = (itemId, props) => {
   }, [activeMenu, search]);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/base.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/item/base.js
 
 
 
@@ -67879,7 +67879,7 @@ const useNavigationTreeItem = (itemId, props) => {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -67914,7 +67914,7 @@ function NavigationItemBase(props) {
   }, restProps), children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/item/index.js
 
 
 
@@ -67924,7 +67924,7 @@ function NavigationItemBase(props) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68003,9 +68003,9 @@ function NavigationItem(props) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/use-navigation-tree-menu.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/use-navigation-tree-menu.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -68032,7 +68032,7 @@ const useNavigationTreeMenu = props => {
   }, []);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/menu-title-search.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/menu-title-search.js
 
 
 /**
@@ -68040,7 +68040,7 @@ const useNavigationTreeMenu = props => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68129,11 +68129,11 @@ function MenuTitleSearch(_ref) {
 
 /* harmony default export */ var menu_title_search = (with_spoken_messages(MenuTitleSearch));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/menu-title.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/menu-title.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68168,7 +68168,7 @@ function NavigationMenuTitle(_ref) {
 
   const onCloseSearch = () => {
     setIsSearching(false); // Wait for the slide-in animation to complete before focusing the search button.
-    // eslint-disable-next-line @wordpress/react-no-unsafe-timeout
+    // eslint-disable-next-line @kaydenCMS/react-no-unsafe-timeout
 
     setTimeout(() => {
       searchButtonRef.current.focus();
@@ -68208,7 +68208,7 @@ function NavigationMenuTitle(_ref) {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/search-no-results-found.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/search-no-results-found.js
 
 
 /**
@@ -68216,7 +68216,7 @@ function NavigationMenuTitle(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68244,7 +68244,7 @@ function NavigationSearchNoResultsFound(_ref) {
   return (0,external_wp_element_namespaceObject.createElement)(ItemBaseUI, null, (0,external_wp_element_namespaceObject.createElement)(ItemUI, null, (0,external_wp_i18n_namespaceObject.__)('No results found.'), " "));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigation/menu/index.js
 
 
 /**
@@ -68252,7 +68252,7 @@ function NavigationSearchNoResultsFound(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68326,9 +68326,9 @@ function NavigationMenu(props) {
   })))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -68342,7 +68342,7 @@ const initialContextValue = {
 };
 const NavigatorContext = (0,external_wp_element_namespaceObject.createContext)(initialContextValue);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-provider/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-provider/component.js
 
 
 
@@ -68353,7 +68353,7 @@ function component_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to 
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68425,7 +68425,7 @@ function NavigatorProvider(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -68453,7 +68453,7 @@ const ConnectedNavigatorProvider = contextConnect(NavigatorProvider, 'NavigatorP
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 var external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-screen/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-screen/component.js
 
 
 
@@ -68466,7 +68466,7 @@ function navigator_screen_component_EMOTION_STRINGIFIED_CSS_ERROR_() { return "Y
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68594,7 +68594,7 @@ function NavigatorScreen(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -68620,9 +68620,9 @@ function NavigatorScreen(props, forwardedRef) {
 const ConnectedNavigatorScreen = contextConnect(NavigatorScreen, 'NavigatorScreen');
 /* harmony default export */ var navigator_screen_component = (ConnectedNavigatorScreen);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/use-navigator.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/use-navigator.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -68649,9 +68649,9 @@ function useNavigator() {
 
 /* harmony default export */ var use_navigator = (useNavigator);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-button/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68696,7 +68696,7 @@ function useNavigatorButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-button/component.js
 
 
 
@@ -68729,7 +68729,7 @@ function NavigatorButton(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -68755,9 +68755,9 @@ function NavigatorButton(props, forwardedRef) {
 const ConnectedNavigatorButton = contextConnect(NavigatorButton, 'NavigatorButton');
 /* harmony default export */ var navigator_button_component = (ConnectedNavigatorButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-back-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-back-button/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -68792,7 +68792,7 @@ function useNavigatorBackButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-back-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/navigator/navigator-back-button/component.js
 
 
 
@@ -68826,7 +68826,7 @@ function NavigatorBackButton(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -68852,7 +68852,7 @@ function NavigatorBackButton(props, forwardedRef) {
 const ConnectedNavigatorBackButton = contextConnect(NavigatorBackButton, 'NavigatorBackButton');
 /* harmony default export */ var navigator_back_button_component = (ConnectedNavigatorBackButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/notice/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/notice/index.js
 
 
 /**
@@ -68861,7 +68861,7 @@ const ConnectedNavigatorBackButton = contextConnect(NavigatorBackButton, 'Naviga
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -68873,7 +68873,7 @@ const ConnectedNavigatorBackButton = contextConnect(NavigatorBackButton, 'Naviga
  */
 
 
-/** @typedef {import('@wordpress/element').WPElement} WPElement */
+/** @typedef {import('@kaydenCMS/element').WPElement} WPElement */
 
 /**
  * Custom hook which announces the message with the given politeness, if a
@@ -68991,7 +68991,7 @@ function Notice(_ref) {
 
 /* harmony default export */ var build_module_notice = (Notice);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/notice/list.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/notice/list.js
 
 
 
@@ -69038,7 +69038,7 @@ function NoticeList(_ref) {
 
 /* harmony default export */ var list = (NoticeList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/header.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/panel/header.js
 
 
 function PanelHeader(_ref) {
@@ -69053,7 +69053,7 @@ function PanelHeader(_ref) {
 
 /* harmony default export */ var panel_header = (PanelHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/panel/index.js
 
 
 /**
@@ -69061,7 +69061,7 @@ function PanelHeader(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69088,11 +69088,11 @@ function Panel(_ref, ref) {
 
 /* harmony default export */ var panel = ((0,external_wp_element_namespaceObject.forwardRef)(Panel));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-up.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/chevron-up.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const chevronUp = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -69103,7 +69103,7 @@ const chevronUp = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var chevron_up = (chevronUp);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/body.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/panel/body.js
 
 
 
@@ -69113,7 +69113,7 @@ const chevronUp = (0,external_wp_element_namespaceObject.createElement)(external
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69217,7 +69217,7 @@ const body_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRe
 body_ForwardedComponent.displayName = 'PanelBody';
 /* harmony default export */ var body = (body_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/row.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/panel/row.js
 
 
 /**
@@ -69225,7 +69225,7 @@ body_ForwardedComponent.displayName = 'PanelBody';
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69241,7 +69241,7 @@ const PanelRow = (0,external_wp_element_namespaceObject.forwardRef)((_ref, ref) 
 });
 /* harmony default export */ var row = (PanelRow);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/placeholder/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/placeholder/index.js
 
 
 
@@ -69250,7 +69250,7 @@ const PanelRow = (0,external_wp_element_namespaceObject.forwardRef)((_ref, ref) 
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69323,7 +69323,7 @@ function Placeholder(_ref) {
 
 /* harmony default export */ var placeholder = (Placeholder);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/terms.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/query-controls/terms.js
 /**
  * External dependencies
  */
@@ -69362,7 +69362,7 @@ function buildTermsTree(flatTerms) {
   return fillWithChildren(termsByParent['0'] || []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-select/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-select/index.js
 
 
 
@@ -69371,7 +69371,7 @@ function buildTermsTree(flatTerms) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69412,7 +69412,7 @@ function TreeSelect(_ref) {
   }, props));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/category-select.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/query-controls/category-select.js
 
 
 
@@ -69422,7 +69422,7 @@ function TreeSelect(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69447,7 +69447,7 @@ function CategorySelect(_ref) {
   }, props));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/author-select.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/query-controls/author-select.js
 
 
 /**
@@ -69474,11 +69474,11 @@ function AuthorSelect(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/query-controls/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -69575,9 +69575,9 @@ function QueryControls(_ref) {
   })];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/radio-context/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const RadioContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -69586,7 +69586,7 @@ const RadioContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 /* harmony default export */ var radio_context = (RadioContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/radio/index.js
 
 
 
@@ -69595,7 +69595,7 @@ const RadioContext = (0,external_wp_element_namespaceObject.createContext)({
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69624,7 +69624,7 @@ function radio_Radio(_ref, ref) {
 
 /* harmony default export */ var build_module_radio = ((0,external_wp_element_namespaceObject.forwardRef)(radio_Radio));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/radio-group/index.js
 
 
 
@@ -69633,7 +69633,7 @@ function radio_Radio(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -69674,7 +69674,7 @@ function radio_group_RadioGroup(_ref, ref) {
 
 /* harmony default export */ var radio_group = ((0,external_wp_element_namespaceObject.forwardRef)(radio_group_RadioGroup));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/radio-control/index.js
 
 
 
@@ -69684,7 +69684,7 @@ function radio_group_RadioGroup(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -70564,14 +70564,14 @@ var Resizable = /** @class */ (function (_super) {
 }(external_React_.PureComponent));
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/resizable-box/resize-tooltip/utils.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -70790,7 +70790,7 @@ function getSizeLabel(_ref2) {
   return undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/styles/resize-tooltip.styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/resizable-box/resize-tooltip/styles/resize-tooltip.styles.js
 
 
 function resize_tooltip_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -70819,13 +70819,13 @@ const TooltipWrapper = emotion_styled_base_browser_esm("div",  true ? {
 const resize_tooltip_styles_Tooltip = emotion_styled_base_browser_esm("div",  true ? {
   target: "ekdag501"
 } : 0)("background:", COLORS.ui.border, ";border-radius:2px;box-sizing:border-box;font-size:12px;color:", COLORS.ui.textDark, ";padding:4px 8px;position:relative;" + ( true ? "" : 0)); // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/kaydenCMS/gutenberg/issues/18483
 
 const LabelText = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  true ? {
   target: "ekdag500"
 } : 0)("&&&{color:", COLORS.ui.textDark, ";display:block;font-size:13px;line-height:1.4;white-space:nowrap;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/label.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/resizable-box/resize-tooltip/label.js
 
 
 
@@ -70834,7 +70834,7 @@ const LabelText = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -70901,7 +70901,7 @@ function resize_tooltip_label_Label(_ref, ref) {
 const label_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(resize_tooltip_label_Label);
 /* harmony default export */ var resize_tooltip_label = (label_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/resizable-box/resize-tooltip/index.js
 
 
 
@@ -70912,7 +70912,7 @@ const label_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardR
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -70964,12 +70964,12 @@ function ResizeTooltip(_ref, ref) {
 const resize_tooltip_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(ResizeTooltip);
 /* harmony default export */ var resize_tooltip = (resize_tooltip_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/resizable-box/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -71035,7 +71035,7 @@ function ResizableBox(_ref, ref) {
 
 /* harmony default export */ var resizable_box = ((0,external_wp_element_namespaceObject.forwardRef)(ResizableBox));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/responsive-wrapper/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/responsive-wrapper/index.js
 
 
 /**
@@ -71043,7 +71043,7 @@ function ResizableBox(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71079,11 +71079,11 @@ function ResponsiveWrapper(_ref) {
 
 /* harmony default export */ var responsive_wrapper = (ResponsiveWrapper);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/sandbox/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/sandbox/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71287,7 +71287,7 @@ function Sandbox(_ref) {
       defaultView
     } = ownerDocument; // This used to be registered using <iframe onLoad={} />, but it made the iframe blank
     // after reordering the containing block. See these two issues for more details:
-    // https://github.com/WordPress/gutenberg/issues/6146
+    // https://github.com/kaydenCMS/gutenberg/issues/6146
     // https://github.com/facebook/react/issues/18752
 
     ref.current.addEventListener('load', tryNoForceSandbox, false);
@@ -71316,7 +71316,7 @@ function Sandbox(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/snackbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/snackbar/index.js
 
 
 /**
@@ -71325,7 +71325,7 @@ function Sandbox(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71338,7 +71338,7 @@ function Sandbox(_ref) {
 
 
 const NOTICE_TIMEOUT = 10000;
-/** @typedef {import('@wordpress/element').WPElement} WPElement */
+/** @typedef {import('@kaydenCMS/element').WPElement} WPElement */
 
 /**
  * Custom hook which announces the message with the given politeness, if a
@@ -71457,7 +71457,7 @@ function Snackbar(_ref, ref) {
 
 /* harmony default export */ var snackbar = ((0,external_wp_element_namespaceObject.forwardRef)(Snackbar));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/snackbar/list.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/snackbar/list.js
 
 
 
@@ -71467,7 +71467,7 @@ function Snackbar(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71554,7 +71554,7 @@ function SnackbarList(_ref) {
 
 /* harmony default export */ var snackbar_list = (SnackbarList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spinner/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/spinner/styles.js
 
 
 function spinner_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -71590,7 +71590,7 @@ const SpinnerIndicator = emotion_styled_base_browser_esm("path",  true ? {
   target: "e1bj2jdf0"
 } : 0)(commonPathProps, ";stroke:currentColor;stroke-linecap:round;transform-origin:50% 50%;animation:1.4s linear infinite both ", spinAnimation, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spinner/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/spinner/index.js
 
 
 
@@ -71638,7 +71638,7 @@ function Spinner(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/surface/component.js
 
 
 
@@ -71649,7 +71649,7 @@ function Spinner(_ref) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').kaydenCMSComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').ForwardedRef<any>}                                               forwardedRef
  */
 
@@ -71668,7 +71668,7 @@ function component_Surface(props, forwardedRef) {
  * import {
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@kaydenCMS/components';
  *
  * function Example() {
  * 	return (
@@ -71684,7 +71684,7 @@ function component_Surface(props, forwardedRef) {
 const ConnectedSurface = contextConnect(component_Surface, 'Surface');
 /* harmony default export */ var surface_component = (ConnectedSurface);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tab-panel/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tab-panel/index.js
 
 
 
@@ -71694,7 +71694,7 @@ const ConnectedSurface = contextConnect(component_Surface, 'Surface');
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71785,12 +71785,12 @@ function TabPanel(_ref2) {
   }, children(selectedTab)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text-control/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -71855,7 +71855,7 @@ function TextControl(_ref, ref) {
 
 /* harmony default export */ var text_control = ((0,external_wp_element_namespaceObject.forwardRef)(TextControl));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/input/base.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/input/base.js
 /**
  * External dependencies
  */
@@ -71870,7 +71870,7 @@ function TextControl(_ref, ref) {
 const inputStyleNeutral = /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:0 0 0 transparent;transition:box-shadow 0.1s linear;border-radius:", config_values.radiusBlockUi, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";" + ( true ? "" : 0),  true ? "" : 0);
 const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:var( --wp-admin-theme-color );box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) var( --wp-admin-theme-color );outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/breakpoint-values.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/breakpoint-values.js
 /* harmony default export */ var breakpoint_values = ({
   huge: '1440px',
   wide: '1280px',
@@ -71884,7 +71884,7 @@ const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color
   'zoomed-in': '280px'
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/breakpoint.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/breakpoint.js
 /**
  * Internal dependencies
  */
@@ -71896,7 +71896,7 @@ const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color
 
 const breakpoint = point => `@media (min-width: ${breakpoint_values[point]})`;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/input/input-control.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/utils/input/input-control.js
 /**
  * External dependencies
  */
@@ -71911,7 +71911,7 @@ const breakpoint = point => `@media (min-width: ${breakpoint_values[point]})`;
 
 const inputControl = /*#__PURE__*/emotion_react_browser_esm_css("font-family:", font('default.fontFamily'), ";padding:6px 8px;", inputStyleNeutral, ";font-size:", font('mobileTextMinFontSize'), ";line-height:normal;", breakpoint('small'), "{font-size:", font('default.fontSize'), ";line-height:normal;}&:focus{", inputStyleFocus, ";}&::-webkit-input-placeholder{color:", COLORS.darkGray.placeholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.darkGray.placeholder, ";}&:-ms-input-placeholder{color:", COLORS.darkGray.placeholder, ";}.is-dark-theme &{&::-webkit-input-placeholder{color:", COLORS.lightGray.placeholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.lightGray.placeholder, ";}&:-ms-input-placeholder{color:", COLORS.lightGray.placeholder, ";}}" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/textarea-control/styles/textarea-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/textarea-control/styles/textarea-control-styles.js
 
 
 /**
@@ -71926,12 +71926,12 @@ const StyledTextarea = emotion_styled_base_browser_esm("textarea",  true ? {
   target: "ebk7yr50"
 } : 0)("width:100%;", inputControl, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/textarea-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/textarea-control/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -71972,7 +71972,7 @@ function TextareaControl(_ref) {
   }, props)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text-highlight/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/text-highlight/index.js
 
 
 /**
@@ -71980,7 +71980,7 @@ function TextareaControl(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72004,11 +72004,11 @@ const TextHighlight = _ref => {
 
 /* harmony default export */ var text_highlight = (TextHighlight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/tip.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/tip.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const tip = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -72019,11 +72019,11 @@ const tip = (0,external_wp_element_namespaceObject.createElement)(external_wp_pr
 }));
 /* harmony default export */ var library_tip = (tip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tip/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tip/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72046,7 +72046,7 @@ function Tip(props) {
 
 /* harmony default export */ var build_module_tip = (Tip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-control/index.js
 
 
 /**
@@ -72055,7 +72055,7 @@ function Tip(props) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72104,11 +72104,11 @@ function ToggleControl(_ref) {
   }, label));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-icon/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toggle-group-control/toggle-group-control-option-icon/component.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72135,8 +72135,8 @@ function ToggleGroupControlOptionIcon(props) {
  * import {
  *	__experimentalToggleGroupControl as ToggleGroupControl,
  *	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
- * from '@wordpress/components';
- * import { formatLowercase, formatUppercase } from '@wordpress/icons';
+ * from '@kaydenCMS/components';
+ * import { formatLowercase, formatUppercase } from '@kaydenCMS/icons';
  *
  * function Example() {
  *	return (
@@ -72209,15 +72209,15 @@ var ToolbarItem = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-context/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const ToolbarContext = (0,external_wp_element_namespaceObject.createContext)();
 /* harmony default export */ var toolbar_context = (ToolbarContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-item/index.js
 
 
 
@@ -72226,7 +72226,7 @@ const ToolbarContext = (0,external_wp_element_namespaceObject.createContext)();
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72270,7 +72270,7 @@ function toolbar_item_ToolbarItem(_ref, ref) {
 
 /* harmony default export */ var toolbar_item = ((0,external_wp_element_namespaceObject.forwardRef)(toolbar_item_ToolbarItem));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-button/toolbar-button-container.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-button/toolbar-button-container.js
 
 
 const ToolbarButtonContainer = props => (0,external_wp_element_namespaceObject.createElement)("div", {
@@ -72279,7 +72279,7 @@ const ToolbarButtonContainer = props => (0,external_wp_element_namespaceObject.c
 
 /* harmony default export */ var toolbar_button_container = (ToolbarButtonContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-button/index.js
 
 
 
@@ -72288,7 +72288,7 @@ const ToolbarButtonContainer = props => (0,external_wp_element_namespaceObject.c
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72353,7 +72353,7 @@ function ToolbarButton(_ref, ref) {
 
 /* harmony default export */ var toolbar_button = ((0,external_wp_element_namespaceObject.forwardRef)(ToolbarButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-group/toolbar-group-container.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-group/toolbar-group-container.js
 
 
 
@@ -72370,12 +72370,12 @@ const ToolbarGroupContainer = _ref => {
 
 /* harmony default export */ var toolbar_group_container = (ToolbarGroupContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-group/toolbar-group-collapsed.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-group/toolbar-group-collapsed.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72412,7 +72412,7 @@ function ToolbarGroupCollapsed(_ref) {
 
 /* harmony default export */ var toolbar_group_collapsed = (ToolbarGroupCollapsed);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-group/index.js
 
 
 
@@ -72422,7 +72422,7 @@ function ToolbarGroupCollapsed(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72596,7 +72596,7 @@ var Toolbar = createComponent({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-container.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar/toolbar-container.js
 
 
 
@@ -72605,7 +72605,7 @@ var Toolbar = createComponent({
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72641,7 +72641,7 @@ function ToolbarContainer(_ref, ref) {
 
 /* harmony default export */ var toolbar_container = ((0,external_wp_element_namespaceObject.forwardRef)(ToolbarContainer));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar/index.js
 
 
 
@@ -72650,7 +72650,7 @@ function ToolbarContainer(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -72683,7 +72683,7 @@ function toolbar_Toolbar(_ref, ref) {
     external_wp_deprecated_default()('Using Toolbar without label prop', {
       since: '5.6',
       alternative: 'ToolbarGroup component',
-      link: 'https://developer.wordpress.org/block-editor/components/toolbar/'
+      link: 'https://developer.kaydenCMS.org/block-editor/components/toolbar/'
     });
     return (0,external_wp_element_namespaceObject.createElement)(toolbar_group, extends_extends({}, props, {
       className: className
@@ -72701,12 +72701,12 @@ function toolbar_Toolbar(_ref, ref) {
 
 /* harmony default export */ var toolbar = ((0,external_wp_element_namespaceObject.forwardRef)(toolbar_Toolbar));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar-dropdown-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/toolbar-dropdown-menu/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72740,7 +72740,7 @@ function ToolbarDropdownMenu(props, ref) {
 
 /* harmony default export */ var toolbar_dropdown_menu = ((0,external_wp_element_namespaceObject.forwardRef)(ToolbarDropdownMenu));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/styles.js
 function tools_panel_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 /**
@@ -72793,9 +72793,9 @@ const styles_DropdownMenu =  true ? {
   styles: "min-width:200px"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72819,9 +72819,9 @@ const ToolsPanelContext = (0,external_wp_element_namespaceObject.createContext)(
 });
 const useToolsPanelContext = () => (0,external_wp_element_namespaceObject.useContext)(ToolsPanelContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel-header/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -72862,7 +72862,7 @@ function useToolsPanelHeader(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel-header/component.js
 
 
 
@@ -72871,7 +72871,7 @@ function useToolsPanelHeader(props) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -73010,9 +73010,9 @@ const component_ToolsPanelHeader = (props, forwardedRef) => {
 const ConnectedToolsPanelHeader = contextConnect(component_ToolsPanelHeader, 'ToolsPanelHeader');
 /* harmony default export */ var tools_panel_header_component = (ConnectedToolsPanelHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -73234,7 +73234,7 @@ function useToolsPanel(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel/component.js
 
 
 
@@ -73275,9 +73275,9 @@ const component_ToolsPanel = (props, forwardedRef) => {
 const ConnectedToolsPanel = contextConnect(component_ToolsPanel, 'ToolsPanel');
 /* harmony default export */ var tools_panel_component = (ConnectedToolsPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel-item/hook.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -73386,7 +73386,7 @@ function useToolsPanelItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-item/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tools-panel/tools-panel-item/component.js
 
 
 
@@ -73425,20 +73425,20 @@ const component_ToolsPanelItem = (props, forwardedRef) => {
 const ConnectedToolsPanelItem = contextConnect(component_ToolsPanelItem, 'ToolsPanelItem');
 /* harmony default export */ var tools_panel_item_component = (ConnectedToolsPanelItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index-context.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/roving-tab-index-context.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const RovingTabIndexContext = (0,external_wp_element_namespaceObject.createContext)();
 const useRovingTabIndexContext = () => (0,external_wp_element_namespaceObject.useContext)(RovingTabIndexContext);
 const RovingTabIndexProvider = RovingTabIndexContext.Provider;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/roving-tab-index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -73449,7 +73449,7 @@ const RovingTabIndexProvider = RovingTabIndexContext.Provider;
 /**
  * Provider for adding roving tab index behaviors to tree grid structures.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
  *
  * @param {Object}    props          Component props.
  * @param {WPElement} props.children Children to be rendered
@@ -73472,7 +73472,7 @@ function RovingTabIndex(_ref) {
   }, children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/index.js
 
 
 
@@ -73481,7 +73481,7 @@ function RovingTabIndex(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -73517,7 +73517,7 @@ function getRowFocusables(rowElement) {
 /**
  * Renders both a table and tbody element, used to create a tree hierarchy.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
  * @param {Object}    props               Component props.
  * @param {WPElement} props.children      Children to be rendered.
  * @param {Function}  props.onExpandRow   Callback to fire when row is expanded.
@@ -73745,12 +73745,12 @@ function TreeGrid(_ref, ref) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/row.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/row.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -73782,11 +73782,11 @@ function TreeGridRow(_ref, ref) {
 
 /* harmony default export */ var tree_grid_row = ((0,external_wp_element_namespaceObject.forwardRef)(TreeGridRow));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index-item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/roving-tab-index-item.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -73828,12 +73828,12 @@ function TreeGridRow(_ref, ref) {
   return (0,external_wp_element_namespaceObject.createElement)(Component, allProps, children);
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/item.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -73851,12 +73851,12 @@ function TreeGridRow(_ref, ref) {
   }, props), children);
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/cell.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/tree-grid/cell.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -73877,12 +73877,12 @@ function TreeGridRow(_ref, ref) {
   }, children));
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/isolated-event-container/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/isolated-event-container/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -73910,7 +73910,7 @@ function stopPropagation(event) {
   /* eslint-enable jsx-a11y/no-static-element-interactions */
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/z-stack/styles.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/z-stack/styles.js
 
 
 function z_stack_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -73964,7 +73964,7 @@ const positionRelative =  true ? {
   styles: "position:relative"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/z-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/z-stack/component.js
 
 
 
@@ -73973,7 +73973,7 @@ const positionRelative =  true ? {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -74014,11 +74014,11 @@ function ZStack(props, forwardedRef) {
 
 /* harmony default export */ var z_stack_component = (contextConnect(ZStack, 'ZStack'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/navigate-regions/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/navigate-regions/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -74109,11 +74109,11 @@ function useNavigateRegions() {
   return (0,external_wp_element_namespaceObject.createElement)("div", useNavigateRegions(shortcuts), (0,external_wp_element_namespaceObject.createElement)(Component, props));
 }, 'navigateRegions'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-constrained-tabbing/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-constrained-tabbing/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigherOrderComponent)(WrappedComponent => function ComponentWithConstrainedTabbing(props) {
@@ -74125,7 +74125,7 @@ const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigh
 }, 'withConstrainedTabbing');
 /* harmony default export */ var with_constrained_tabbing = (withConstrainedTabbing);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-fallback-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-fallback-styles/index.js
 
 
 
@@ -74134,7 +74134,7 @@ const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigh
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -74197,7 +74197,7 @@ const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigh
 
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-filters/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-filters/index.js
 
 
 /**
@@ -74205,7 +74205,7 @@ var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -74311,11 +74311,11 @@ function withFilters(hookName) {
   }, 'withFilters');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-focus-return/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-focus-return/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -74382,7 +74382,7 @@ const with_focus_return_Provider = _ref => {
   return children;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-notices/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/higher-order/with-notices/index.js
 
 
 
@@ -74391,7 +74391,7 @@ const with_focus_return_Provider = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -74484,7 +74484,7 @@ const with_focus_return_Provider = _ref => {
   return Component;
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/components/build-module/index.js
 // Primitives.
  // Components.
 

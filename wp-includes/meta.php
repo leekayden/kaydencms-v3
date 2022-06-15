@@ -2,11 +2,11 @@
 /**
  * Core Metadata API
  *
- * Functions for retrieving and manipulating metadata of various WordPress object types. Metadata
+ * Functions for retrieving and manipulating metadata of various kaydenCMS object types. Metadata
  * for an object is a represented by a simple key-value pair. Objects may contain multiple
  * metadata entries that share the same key and differ only in their value.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Meta
  */
 
@@ -15,7 +15,7 @@
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $meta_type  Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                           or any other object type with an associated meta table.
@@ -162,7 +162,7 @@ function add_metadata( $meta_type, $object_id, $meta_key, $meta_value, $unique =
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $meta_type  Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                           or any other object type with an associated meta table.
@@ -357,7 +357,7 @@ function update_metadata( $meta_type, $object_id, $meta_key, $meta_value, $prev_
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $meta_type  Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                           or any other object type with an associated meta table.
@@ -766,7 +766,7 @@ function metadata_exists( $meta_type, $object_id, $meta_key ) {
  *
  * @since 3.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $meta_type Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                          or any other object type with an associated meta table.
@@ -845,7 +845,7 @@ function get_metadata_by_mid( $meta_type, $meta_id ) {
  *
  * @since 3.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string       $meta_type  Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                                 or any other object type with an associated meta table.
@@ -969,7 +969,7 @@ function update_metadata_by_mid( $meta_type, $meta_id, $meta_value, $meta_key = 
  *
  * @since 3.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $meta_type Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                          or any other object type with an associated meta table.
@@ -1096,7 +1096,7 @@ function delete_metadata_by_mid( $meta_type, $meta_id ) {
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string       $meta_type  Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                                 or any other object type with an associated meta table.
@@ -1243,7 +1243,7 @@ function get_meta_sql( $meta_query, $type, $primary_table, $primary_id_column, $
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string $type Type of object metadata is for. Accepts 'post', 'comment', 'term', 'user',
  *                     or any other object type with an associated meta table.
@@ -1350,7 +1350,7 @@ function sanitize_meta( $meta_key, $meta_value, $object_type, $object_subtype = 
  * without passing a subtype.
  *
  * @since 3.3.0
- * @since 4.6.0 {@link https://core.trac.wordpress.org/ticket/35658 Modified
+ * @since 4.6.0 {@link https://core.trac.kaydenCMS.org/ticket/35658 Modified
  *              to support an array of data to attach to registered meta keys}. Previous arguments for
  *              `$sanitize_callback` and `$auth_callback` have been folded into this array.
  * @since 4.9.8 The `$object_subtype` argument was added to the arguments array.

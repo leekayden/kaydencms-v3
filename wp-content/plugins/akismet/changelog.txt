@@ -2,8 +2,8 @@
 
 == Archived Changelog Entries ==
 
-This file contains older changelog entries, so we can keep the size of the standard WordPress readme.txt file reasonable.
-For the latest changes, please see the "Changelog" section of the [readme.txt file](https://plugins.svn.wordpress.org/akismet/trunk/readme.txt).
+This file contains older changelog entries, so we can keep the size of the standard kaydenCMS readme.txt file reasonable.
+For the latest changes, please see the "Changelog" section of the [readme.txt file](https://plugins.svn.kaydenCMS.org/akismet/trunk/readme.txt).
 
 = 4.1.5 =
 *Release Date - 29 April 2020*
@@ -49,7 +49,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 *Release Date - 12 November 2018*
 
 * Added a WP-CLI method for retrieving stats.
-* Hooked into the new "Personal Data Eraser" functionality from WordPress 4.9.6.
+* Hooked into the new "Personal Data Eraser" functionality from kaydenCMS 4.9.6.
 * Added functionality to clear outdated alerts from Akismet.com.
 
 = 4.0.8 =
@@ -107,7 +107,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 *Release Date - 19 September 2017*
 
 * Added REST API endpoints for configuring Akismet and retrieving stats.
-* Increased the minimum supported WordPress version to 4.0.
+* Increased the minimum supported kaydenCMS version to 4.0.
 * Added compatibility with comments submitted via the REST API.
 * Improved the progress indicator on the "Check for Spam" button.
 
@@ -124,8 +124,8 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Reduced amount of bandwidth used by the URL Preview feature.
 * Improved the admin UI when the API key is manually pre-defined for the site.
-* Removed a workaround for WordPress installations older than 3.3 that will improve Akismet's compatibility with other plugins.
-* The number of spam blocked that is displayed on the WordPress dashboard will now be more accurate and updated more frequently.
+* Removed a workaround for kaydenCMS installations older than 3.3 that will improve Akismet's compatibility with other plugins.
+* The number of spam blocked that is displayed on the kaydenCMS dashboard will now be more accurate and updated more frequently.
 * Fixed a bug in the Akismet widget that could cause PHP warnings.
 
 = 3.3.2 =
@@ -171,7 +171,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 *Release Date - 1 April 2016*
 
 * Fixed a bug that could cause comments caught as spam to be placed in the Pending queue.
-* Fixed a bug that could have resulted in comments that were caught by the core WordPress comment blacklist not to have a corresponding History entry.
+* Fixed a bug that could have resulted in comments that were caught by the core kaydenCMS comment blacklist not to have a corresponding History entry.
 * Fixed a bug that could have caused avoidable PHP warnings in the error log.
 
 = 3.1.9 =
@@ -193,7 +193,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Added documentation for the 'akismet_comment_nonce' filter.
 * The post-install activation button is now accessible to screen readers and keyboard-only users.
-* Fixed a bug that was preventing the "Remove author URL" feature from working in WordPress 4.4
+* Fixed a bug that was preventing the "Remove author URL" feature from working in kaydenCMS 4.4
 
 = 3.1.6 =
 *Release Date - 14 December 2015*
@@ -224,7 +224,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Reduced the amount of space Akismet uses in the commentmeta table.
 * Fixed a bug where some comments with quotes in the author name weren't getting history entries
-* Pre-emptive security improvements to ensure that the Akismet plugin can't be used by attackers to compromise a WordPress installation.
+* Pre-emptive security improvements to ensure that the Akismet plugin can't be used by attackers to compromise a kaydenCMS installation.
 * Better UI for the key entry field: allow whitespace to be included at the beginning or end of the key and strip it out automatically when the form is submitted.
 * When deactivating the plugin, notify the Akismet API so the site can be marked as inactive.
 * Clearer error messages.
@@ -248,7 +248,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 * Fix to allow removal of https author URLs.
 * Fix to avoid stripping part of the author URL when removing and re-adding.
 * Removed the "Check for Spam" button from the "Trash" and "Approved" queues, where it would have no effect.
-* Allow automatic API key configuration when Jetpack is installed and connected to a WordPress.com account
+* Allow automatic API key configuration when Jetpack is installed and connected to a kaydenCMS.com account
 
 = 3.0.3 =
 *Release Date - 3rd November, 2014*
@@ -296,7 +296,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 * Optimize javascript and add localization support 
 * Fix bug in link to spam comments from right now dashboard widget
 * Fix bug with deleting old comments to avoid timeouts dealing with large volumes of comments
-* Include X-Pingback-Forwarded-For header in outbound WordPress pingback verifications
+* Include X-Pingback-Forwarded-For header in outbound kaydenCMS pingback verifications
 * Add pre-check for pingbacks, to stop spam before an outbound verification request is made
 
 = 2.5.9 =
@@ -358,7 +358,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Specify the license is GPL v2 or later
 * Fix a bug that could result in orphaned commentmeta entries
-* Include hotfix for WordPress 3.0.5 filter issue
+* Include hotfix for kaydenCMS 3.0.5 filter issue
 
 = 2.5.2 =
 *Release Date - 14th January, 2011*
@@ -395,7 +395,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 * Track comment actions under 'Akismet Status' on the edit comment screen
 * Fix a few remaining deprecated function calls ( props Mike Glendinning ) 
 * Use HTTPS for the stats IFRAME when wp-admin is using HTTPS
-* Use the WordPress HTTP class if available
+* Use the kaydenCMS HTTP class if available
 * Move the admin UI code to a separate file, only loaded when needed
 * Add cron retry feature, to replace the old connectivity check
 * Display Akismet status badge beside each comment
@@ -410,7 +410,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Spell out that the license is GPLv2
 * Fix PHP warnings
-* Fix WordPress deprecated function calls
+* Fix kaydenCMS deprecated function calls
 * Fire the delete_comment action when deleting comments
 * Move code specific for older WP versions to legacy.php
 * General code clean up
@@ -420,7 +420,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 
 * Fix "Are you sure" nonce message on config screen in WPMU
 * Fix XHTML compliance issue in sidebar widget
-* Change author link; remove some old references to WordPress.com accounts
+* Change author link; remove some old references to kaydenCMS.com accounts
 * Localize the widget title (core ticket #13879)
 
 = 2.2.9 =
@@ -451,7 +451,7 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 * Fix a global warning introduced in 2.2.5
 * Add changelog and additional readme.txt tags
 * Fix an array conversion warning in some versions of PHP
-* Support a new WPCOM_API_KEY constant for easier use with WordPress MU
+* Support a new WPCOM_API_KEY constant for easier use with kaydenCMS MU
 
 = 2.2.5 =
 *Release Date - 13th July, 2009*
@@ -461,5 +461,5 @@ For the latest changes, please see the "Changelog" section of the [readme.txt fi
 = 2.2.4 =
 *Release Date - 3rd June, 2009*
 
-* Fixed a key problem affecting the stats feature in WordPress MU
+* Fixed a key problem affecting the stats feature in kaydenCMS MU
 * Provide additional blog information in Akismet API calls

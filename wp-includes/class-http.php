@@ -5,7 +5,7 @@
  * This file is deprecated, use 'wp-includes/class-wp-http.php' instead.
  *
  * @deprecated 5.9.0
- * @package WordPress
+ * @package kaydenCMS
  */
 
 _deprecated_file( basename( __FILE__ ), '5.9.0', 'wp-includes/class-wp-http.php' );

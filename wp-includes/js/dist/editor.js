@@ -960,7 +960,7 @@ __webpack_require__.d(__webpack_exports__, {
   "withFontSizes": function() { return /* reexport */ withFontSizes; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/editor/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/editor/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -1078,7 +1078,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   "isValidTemplate": function() { return isValidTemplate; }
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/editor/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@kaydenCMS/editor/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -1171,9 +1171,9 @@ var external_wp_compose_namespaceObject = window["wp"]["compose"];
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: external ["wp","blockEditor"]
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/defaults.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/defaults.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1182,7 +1182,7 @@ var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
  * @property {boolean|Array} allowedBlockTypes     Allowed block types
  * @property {boolean}       richEditingEnabled    Whether rich editing is enabled or not
  * @property {boolean}       codeEditingEnabled    Whether code editing is enabled or not
- * @property {boolean}       enableCustomFields    Whether the WordPress custom fields are enabled or not.
+ * @property {boolean}       enableCustomFields    Whether the kaydenCMS custom fields are enabled or not.
  *                                                 true  = the user has opted to show the Custom Fields panel at the bottom of the editor.
  *                                                 false = the user has opted to hide the Custom Fields panel at the bottom of the editor.
  *                                                 undefined = the current environment does not support Custom Fields, so the option toggle in Preferences -> Panels to enable the Custom Fields panel is not displayed.
@@ -1202,13 +1202,13 @@ const EDITOR_SETTINGS_DEFAULTS = { ...external_wp_blockEditor_namespaceObject.SE
   supportsLayout: true
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -1784,11 +1784,11 @@ var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/layout.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/layout.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const layout = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1801,7 +1801,7 @@ const layout = (0,external_wp_element_namespaceObject.createElement)(external_wp
 
 ;// CONCATENATED MODULE: external ["wp","preferences"]
 var external_wp_preferences_namespaceObject = window["wp"]["preferences"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/constants.js
 /**
  * Set of post properties for which edits should assume a merging behavior,
  * assuming an object value.
@@ -1822,11 +1822,11 @@ const PERMALINK_POSTNAME_REGEX = /%(?:postname|pagename)%/;
 const ONE_MINUTE_IN_MS = 60 * 1000;
 const AUTOSAVE_PROPERTIES = ['title', 'excerpt', 'content'];
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/header.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/header.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const header = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1837,11 +1837,11 @@ const header = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_header = (header);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/footer.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/footer.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const footer = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1853,11 +1853,11 @@ const footer = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_footer = (footer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sidebar.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/sidebar.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const sidebar = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1868,11 +1868,11 @@ const sidebar = (0,external_wp_element_namespaceObject.createElement)(external_w
 }));
 /* harmony default export */ var library_sidebar = (sidebar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol-filled.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/symbol-filled.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const symbolFilled = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -1883,9 +1883,9 @@ const symbolFilled = (0,external_wp_element_namespaceObject.createElement)(exter
 }));
 /* harmony default export */ var symbol_filled = (symbolFilled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/get-template-part-icon.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/utils/get-template-part-icon.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -1908,14 +1908,14 @@ function getTemplatePartIcon(iconName) {
   return symbol_filled;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/selectors.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -2229,7 +2229,7 @@ function getEditedPostAttribute(state, attributeName) {
  * null if there is no autosave for the post.
  *
  * @deprecated since 5.6. Callers should use the `getAutosave( postType, postId, userId )` selector
- * 			   from the '@wordpress/core-data' package and access properties on the returned
+ * 			   from the '@kaydenCMS/core-data' package and access properties on the returned
  * 			   autosave object using getPostRawValue.
  *
  * @param {Object} state         Global application state.
@@ -2348,7 +2348,7 @@ function isEditedPostSaveable(state) {
   //  See: `isEditedPostPublishable` (includes `isEditedPostDirty` condition)
   //  See: <PostSavedState /> (`forceIsDirty` prop)
   //  See: <PostPublishButton /> (`forceIsDirty` prop)
-  //  See: https://github.com/WordPress/gutenberg/pull/4184.
+  //  See: https://github.com/kaydenCMS/gutenberg/pull/4184.
 
 
   return !!getEditedPostAttribute(state, 'title') || !!getEditedPostAttribute(state, 'excerpt') || !isEditedPostEmpty(state) || external_wp_element_namespaceObject.Platform.OS === 'native';
@@ -2426,7 +2426,7 @@ const isEditedPostAutosaveable = (0,external_wp_data_namespaceObject.createRegis
   const currentUserId = (0,external_lodash_namespaceObject.get)(select(external_wp_coreData_namespaceObject.store).getCurrentUser(), ['id']); // Disable reason - this line causes the side-effect of fetching the autosave
   // via a resolver, moving below the return would result in the autosave never
   // being fetched.
-  // eslint-disable-next-line @wordpress/no-unused-vars-before-return
+  // eslint-disable-next-line @kaydenCMS/no-unused-vars-before-return
 
   const autosave = select(external_wp_coreData_namespaceObject.store).getAutosave(postType, postId, currentUserId); // If any existing autosaves have not yet been fetched, this function is
   // unable to determine if the post is autosaveable, so return false.
@@ -2485,7 +2485,7 @@ function isEditedPostDateFloating(state) {
   const modified = getEditedPostAttribute(state, 'modified'); // This should be the status of the persisted post
   // It shouldn't use the "edited" status otherwise it breaks the
   // inferred post data floating status
-  // See https://github.com/WordPress/gutenberg/issues/28083.
+  // See https://github.com/kaydenCMS/gutenberg/issues/28083.
 
   const status = getCurrentPost(state).status;
 
@@ -2596,11 +2596,11 @@ function getEditedPostPreviewLink(state) {
     return;
   }
 
-  let previewLink = getAutosaveAttribute(state, 'preview_link'); // Fix for issue: https://github.com/WordPress/gutenberg/issues/33616
+  let previewLink = getAutosaveAttribute(state, 'preview_link'); // Fix for issue: https://github.com/kaydenCMS/gutenberg/issues/33616
   // If the post is draft, ignore the preview link from the autosave record,
   // because the preview could be a stale autosave if the post was switched from
   // published to draft.
-  // See: https://github.com/WordPress/gutenberg/pull/37952.
+  // See: https://github.com/kaydenCMS/gutenberg/pull/37952.
 
   if (!previewLink || 'draft' === getCurrentPost(state).status) {
     previewLink = getEditedPostAttribute(state, 'link');
@@ -3379,7 +3379,7 @@ var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","notices"]
 var external_wp_notices_namespaceObject = window["wp"]["notices"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/local-autosave.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/local-autosave.js
 /**
  * Function returning a sessionStorage key to set or retrieve a given post's
  * automatic session backup.
@@ -3387,7 +3387,7 @@ var external_wp_notices_namespaceObject = window["wp"]["notices"];
  * Keys are crucially prefixed with 'wp-autosave-' so that wp-login.php's
  * `loggedout` handler can clear sessionStorage of any user-private content.
  *
- * @see https://github.com/WordPress/wordpress-develop/blob/6dad32d2aed47e6c0cf2aee8410645f6d7aba6bd/src/wp-login.php#L103
+ * @see https://github.com/kaydenCMS/kaydenCMS-develop/blob/6dad32d2aed47e6c0cf2aee8410645f6d7aba6bd/src/wp-login.php#L103
  *
  * @param {string}  postId    Post ID.
  * @param {boolean} isPostNew Whether post new.
@@ -3414,9 +3414,9 @@ function localAutosaveClear(postId, isPostNew) {
 
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/utils/notice-builder.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -3553,13 +3553,13 @@ function getNotificationArgumentsForTrashFail(data) {
   }];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/actions.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -3637,7 +3637,7 @@ function __experimentalTearDownEditor() {
  * Returns an action object used in signalling that the latest version of the
  * post has been received, either by initialization or save.
  *
- * @deprecated Since WordPress 6.0.
+ * @deprecated Since kaydenCMS 6.0.
  */
 
 function resetPost() {
@@ -3781,7 +3781,7 @@ const savePost = function () {
 /**
  * Action for refreshing the current post.
  *
- * @deprecated Since WordPress 6.0.
+ * @deprecated Since kaydenCMS 6.0.
  */
 
 function refreshPost() {
@@ -3879,7 +3879,7 @@ const undo = () => _ref8 => {
 /**
  * Action that creates an undo history record.
  *
- * @deprecated Since WordPress 6.0
+ * @deprecated Since kaydenCMS 6.0
  */
 
 function createUndoLevel() {
@@ -4278,9 +4278,9 @@ const insertDefaultBlock = getBlockEditorAction('insertDefaultBlock');
 
 const updateBlockListSettings = getBlockEditorAction('updateBlockListSettings');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/store/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -4294,7 +4294,7 @@ const updateBlockListSettings = getBlockEditorAction('updateBlockListSettings');
 /**
  * Post editor data store configuration.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#registerStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#registerStore
  *
  * @type {Object}
  */
@@ -4307,7 +4307,7 @@ const storeConfig = {
 /**
  * Store definition for the editor namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/kaydenCMS/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -4316,7 +4316,7 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_
 });
 (0,external_wp_data_namespaceObject.register)(store_store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/hooks/custom-sources-backwards-compatibility.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/hooks/custom-sources-backwards-compatibility.js
 
 
 
@@ -4325,7 +4325,7 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4339,15 +4339,15 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_
  */
 
 
-/** @typedef {import('@wordpress/compose').WPHigherOrderComponent} WPHigherOrderComponent */
+/** @typedef {import('@kaydenCMS/compose').WPHigherOrderComponent} WPHigherOrderComponent */
 
-/** @typedef {import('@wordpress/blocks').WPBlockSettings} WPBlockSettings */
+/** @typedef {import('@kaydenCMS/blocks').WPBlockSettings} WPBlockSettings */
 
 /**
  * Object whose keys are the names of block attributes, where each value
  * represents the meta key to which the block attribute is intended to save.
  *
- * @see https://developer.wordpress.org/reference/functions/register_meta/
+ * @see https://developer.kaydenCMS.org/reference/functions/register_meta/
  *
  * @typedef {Object<string,string>} WPMetaAttributeMapping
  */
@@ -4439,16 +4439,16 @@ function shimAttributeSource(settings) {
   return (0,external_wp_data_namespaceObject.select)(external_wp_blocks_namespaceObject.store).getBlockType(name);
 }).forEach(shimAttributeSource);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autocompleters/user.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/autocompleters/user.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
 
-/** @typedef {import('@wordpress/components').WPCompleter} WPCompleter */
+/** @typedef {import('@kaydenCMS/components').WPCompleter} WPCompleter */
 
 function getUserLabel(user) {
   const avatar = user.avatar_urls && user.avatar_urls[24] ? (0,external_wp_element_namespaceObject.createElement)("img", {
@@ -4499,13 +4499,13 @@ function getUserLabel(user) {
 
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/hooks/default-autocompleters.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/hooks/default-autocompleters.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4524,19 +4524,19 @@ function setDefaultCompleters() {
 
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.Autocomplete.completers', 'editor/autocompleters/set-default-completers', setDefaultCompleters);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/hooks/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/hooks/index.js
 /**
  * Internal dependencies
  */
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autocompleters/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/autocompleters/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autosave-monitor/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/autosave-monitor/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4665,7 +4665,7 @@ var external_wp_richText_namespaceObject = window["wp"]["richText"];
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(4403);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/document-outline/item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/document-outline/item.js
 
 
 /**
@@ -4701,7 +4701,7 @@ const TableOfContentsItem = _ref => {
 
 /* harmony default export */ var document_outline_item = (TableOfContentsItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/document-outline/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/document-outline/index.js
 
 
 /**
@@ -4709,7 +4709,7 @@ const TableOfContentsItem = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4836,13 +4836,13 @@ const DocumentOutline = _ref => {
   };
 }))(DocumentOutline));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/document-outline/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/document-outline/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4868,9 +4868,9 @@ function DocumentOutlineCheck(_ref) {
 
 ;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 var external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/global-keyboard-shortcuts/save-shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/global-keyboard-shortcuts/save-shortcut.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4933,11 +4933,11 @@ function SaveShortcut(_ref) {
 
 /* harmony default export */ var save_shortcut = (SaveShortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/global-keyboard-shortcuts/visual-editor-shortcuts.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/global-keyboard-shortcuts/visual-editor-shortcuts.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -4966,7 +4966,7 @@ function VisualEditorGlobalKeyboardShortcuts() {
 
 /* harmony default export */ var visual_editor_shortcuts = (VisualEditorGlobalKeyboardShortcuts);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/global-keyboard-shortcuts/text-editor-shortcuts.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/global-keyboard-shortcuts/text-editor-shortcuts.js
 
 
 /**
@@ -4979,11 +4979,11 @@ function TextEditorGlobalKeyboardShortcuts() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/global-keyboard-shortcuts/register-shortcuts.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/global-keyboard-shortcuts/register-shortcuts.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5034,11 +5034,11 @@ function EditorKeyboardShortcutsRegister() {
 var external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/redo.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/redo.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const redo_redo = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -5049,11 +5049,11 @@ const redo_redo = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var library_redo = (redo_redo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/undo.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/undo.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const undo_undo = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -5064,12 +5064,12 @@ const undo_undo = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var library_undo = (undo_undo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/editor-history/redo.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/editor-history/redo.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5096,7 +5096,7 @@ function EditorHistoryRedo(props, ref) {
     label: (0,external_wp_i18n_namespaceObject.__)('Redo'),
     shortcut: external_wp_keycodes_namespaceObject.displayShortcut.primaryShift('z') // If there are no redo levels we don't want to actually disable this
     // button, because it will remove focus for keyboard users.
-    // See: https://github.com/WordPress/gutenberg/issues/3486
+    // See: https://github.com/kaydenCMS/gutenberg/issues/3486
     ,
     "aria-disabled": !hasRedo,
     onClick: hasRedo ? redo : undefined,
@@ -5106,12 +5106,12 @@ function EditorHistoryRedo(props, ref) {
 
 /* harmony default export */ var editor_history_redo = ((0,external_wp_element_namespaceObject.forwardRef)(EditorHistoryRedo));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/editor-history/undo.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/editor-history/undo.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5138,7 +5138,7 @@ function EditorHistoryUndo(props, ref) {
     label: (0,external_wp_i18n_namespaceObject.__)('Undo'),
     shortcut: external_wp_keycodes_namespaceObject.displayShortcut.primary('z') // If there are no undo levels we don't want to actually disable this
     // button, because it will remove focus for keyboard users.
-    // See: https://github.com/WordPress/gutenberg/issues/3486
+    // See: https://github.com/kaydenCMS/gutenberg/issues/3486
     ,
     "aria-disabled": !hasUndo,
     onClick: hasUndo ? undo : undefined,
@@ -5148,11 +5148,11 @@ function EditorHistoryUndo(props, ref) {
 
 /* harmony default export */ var editor_history_undo = ((0,external_wp_element_namespaceObject.forwardRef)(EditorHistoryUndo));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/template-validation-notice/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/template-validation-notice/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5204,7 +5204,7 @@ function TemplateValidationNotice(_ref) {
   };
 })])(TemplateValidationNotice));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/editor-notices/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/editor-notices/index.js
 
 
 /**
@@ -5212,7 +5212,7 @@ function TemplateValidationNotice(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5252,7 +5252,7 @@ function EditorNotices(_ref) {
   onRemove: dispatch(external_wp_notices_namespaceObject.store).removeNotice
 }))])(EditorNotices));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/editor-snackbars/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/editor-snackbars/index.js
 
 
 /**
@@ -5260,7 +5260,7 @@ function EditorNotices(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5283,11 +5283,11 @@ function EditorSnackbars() {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/entities-saved-states/entity-record-item.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/entities-saved-states/entity-record-item.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5363,7 +5363,7 @@ function EntityRecordItem(_ref) {
   }, isSelectedText)) : null);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/entities-saved-states/entity-type-list.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/entities-saved-states/entity-type-list.js
 
 
 /**
@@ -5371,7 +5371,7 @@ function EntityRecordItem(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5433,7 +5433,7 @@ function EntityTypeList(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/entities-saved-states/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/entities-saved-states/index.js
 
 
 
@@ -5442,7 +5442,7 @@ function EntityTypeList(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5634,11 +5634,11 @@ function EntitiesSavedStates(_ref) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/error-boundary/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/error-boundary/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5725,7 +5725,7 @@ class ErrorBoundary extends external_wp_element_namespaceObject.Component {
 
 /* harmony default export */ var error_boundary = (ErrorBoundary);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/local-autosave-monitor/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/local-autosave-monitor/index.js
 
 
 /**
@@ -5733,7 +5733,7 @@ class ErrorBoundary extends external_wp_element_namespaceObject.Component {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5915,13 +5915,13 @@ function LocalAutosaveMonitor() {
 
 /* harmony default export */ var local_autosave_monitor = ((0,external_wp_compose_namespaceObject.ifCondition)(hasSessionStorageSupport)(LocalAutosaveMonitor));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/page-attributes/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/page-attributes/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -5954,13 +5954,13 @@ function PageAttributesCheck(_ref) {
 }
 /* harmony default export */ var page_attributes_check = (PageAttributesCheck);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-type-support-check/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-type-support-check/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6014,7 +6014,7 @@ function PostTypeSupportCheck(_ref) {
   };
 })(PostTypeSupportCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/page-attributes/order.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/page-attributes/order.js
 
 
 /**
@@ -6022,7 +6022,7 @@ function PostTypeSupportCheck(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6085,7 +6085,7 @@ function PageAttributesOrderWithChecks(props) {
 
 }))])(PageAttributesOrderWithChecks));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/terms.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/utils/terms.js
 /**
  * External dependencies
  */
@@ -6154,7 +6154,7 @@ const unescapeTerms = terms => {
   return (0,external_lodash_namespaceObject.map)(terms, unescapeTerm);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/page-attributes/parent.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/page-attributes/parent.js
 
 
 /**
@@ -6162,7 +6162,7 @@ const unescapeTerms = terms => {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6325,7 +6325,7 @@ function PageAttributesParent() {
 }
 /* harmony default export */ var page_attributes_parent = (PageAttributesParent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-template/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-template/index.js
 
 
 /**
@@ -6333,7 +6333,7 @@ function PageAttributesParent() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6392,7 +6392,7 @@ function PostTemplate(_ref) {
 }
 /* harmony default export */ var post_template = (PostTemplate);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/constants.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-author/constants.js
 const AUTHORS_QUERY = {
   who: 'authors',
   per_page: 50,
@@ -6401,7 +6401,7 @@ const AUTHORS_QUERY = {
 
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/combobox.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-author/combobox.js
 
 
 /**
@@ -6409,7 +6409,7 @@ const AUTHORS_QUERY = {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6528,11 +6528,11 @@ function PostAuthorCombobox() {
 
 /* harmony default export */ var combobox = (PostAuthorCombobox);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/select.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-author/select.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6587,11 +6587,11 @@ function PostAuthorSelect() {
 
 /* harmony default export */ var post_author_select = (PostAuthorSelect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-author/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6619,7 +6619,7 @@ function PostAuthor() {
 
 /* harmony default export */ var post_author = (PostAuthor);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-author/check.js
 
 
 /**
@@ -6627,7 +6627,7 @@ function PostAuthor() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6664,11 +6664,11 @@ function PostAuthorCheck(_ref) {
   }, children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-comments/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-comments/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6705,11 +6705,11 @@ function PostComments(_ref) {
   editPost: dispatch(store_store).editPost
 }))])(PostComments));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-excerpt/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-excerpt/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6734,7 +6734,7 @@ function PostExcerpt(_ref) {
     onChange: value => onUpdateExcerpt(value),
     value: excerpt
   }), (0,external_wp_element_namespaceObject.createElement)(external_wp_components_namespaceObject.ExternalLink, {
-    href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/support/article/settings-sidebar/#excerpt')
+    href: (0,external_wp_i18n_namespaceObject.__)('https://kaydenCMS.org/support/article/settings-sidebar/#excerpt')
   }, (0,external_wp_i18n_namespaceObject.__)('Learn more about manual excerpts')));
 }
 
@@ -6751,7 +6751,7 @@ function PostExcerpt(_ref) {
 
 }))])(PostExcerpt));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-excerpt/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-excerpt/check.js
 
 
 
@@ -6768,13 +6768,13 @@ function PostExcerptCheck(props) {
 
 /* harmony default export */ var post_excerpt_check = (PostExcerptCheck);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/theme-support-check/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/theme-support-check/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -6823,7 +6823,7 @@ function ThemeSupportCheck(_ref) {
   };
 })(ThemeSupportCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-featured-image/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-featured-image/check.js
 
 
 
@@ -6843,7 +6843,7 @@ function PostFeaturedImageCheck(props) {
 
 /* harmony default export */ var post_featured_image_check = (PostFeaturedImageCheck);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-featured-image/index.js
 
 
 /**
@@ -6851,7 +6851,7 @@ function PostFeaturedImageCheck(props) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7044,12 +7044,12 @@ const applyWithDispatch = (0,external_wp_data_namespaceObject.withDispatch)((dis
 });
 /* harmony default export */ var post_featured_image = ((0,external_wp_compose_namespaceObject.compose)(external_wp_components_namespaceObject.withNotices, applyWithSelect, applyWithDispatch, (0,external_wp_components_namespaceObject.withFilters)('editor.PostFeaturedImage'))(PostFeaturedImage));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-format/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-format/check.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -7076,7 +7076,7 @@ function PostFormatCheck(_ref) {
   };
 })(PostFormatCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-format/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-format/index.js
 
 
 /**
@@ -7084,7 +7084,7 @@ function PostFormatCheck(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7203,11 +7203,11 @@ function PostFormat() {
   (0,external_wp_i18n_namespaceObject.__)('Apply format: %s'), suggestion.caption)))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/backup.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/backup.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const backup = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -7218,11 +7218,11 @@ const backup = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_backup = (backup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-last-revision/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-last-revision/check.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 /**
@@ -7257,11 +7257,11 @@ function PostLastRevisionCheck(_ref) {
   };
 })(PostLastRevisionCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-last-revision/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-last-revision/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7303,7 +7303,7 @@ function LastRevision(_ref) {
   };
 })(LastRevision));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-locked-modal/index.js
 
 
 /**
@@ -7311,7 +7311,7 @@ function LastRevision(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7443,7 +7443,7 @@ function PostLockedModal() {
         xhr.send(data);
       }
     } // Details on these events on the Heartbeat API docs
-    // https://developer.wordpress.org/plugins/javascript/heartbeat-api/
+    // https://developer.kaydenCMS.org/plugins/javascript/heartbeat-api/
 
 
     (0,external_wp_hooks_namespaceObject.addAction)('heartbeat.send', hookName, sendPostLock);
@@ -7515,13 +7515,13 @@ function PostLockedModal() {
   }, allPostsLabel)))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-pending-status/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-pending-status/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7557,11 +7557,11 @@ function PostPendingStatusCheck(_ref) {
   };
 }))(PostPendingStatusCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-pending-status/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-pending-status/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7601,11 +7601,11 @@ function PostPendingStatus(_ref) {
 
 })))(PostPendingStatus));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-pingbacks/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-pingbacks/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7642,7 +7642,7 @@ function PostPingbacks(_ref) {
   editPost: dispatch(store_store).editPost
 }))])(PostPingbacks));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-preview-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-preview-button/index.js
 
 
 /**
@@ -7651,7 +7651,7 @@ function PostPingbacks(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7800,7 +7800,7 @@ class PostPreviewButton extends external_wp_element_namespaceObject.Component {
     // purposes. Unfortunately, though, we can't rely on the default 'click'
     // handler since sometimes it incorrectly opens a new tab instead of reusing
     // the existing one.
-    // https://github.com/WordPress/gutenberg/pull/8330
+    // https://github.com/kaydenCMS/gutenberg/pull/8330
     event.preventDefault(); // Open up a Preview tab if needed. This is where we'll show the preview.
 
     if (!this.previewWindow || this.previewWindow.closed) {
@@ -7907,13 +7907,13 @@ class PostPreviewButton extends external_wp_element_namespaceObject.Component {
   return isViewable;
 })])(PostPreviewButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-button/label.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -7980,7 +7980,7 @@ function PublishButtonLabel(_ref) {
   };
 })])(PublishButtonLabel));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-button/index.js
 
 
 
@@ -7990,7 +7990,7 @@ function PublishButtonLabel(_ref) {
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8036,7 +8036,7 @@ class PostPublishButton extends external_wp_element_namespaceObject.Component {
       // elects to not save changes to the non-post entities, those
       // entities will still be dirty when the Publish button is clicked.
       // We also need to check that the `setEntitiesSavedStatesCallback`
-      // prop was passed. See https://github.com/WordPress/gutenberg/pull/37383
+      // prop was passed. See https://github.com/kaydenCMS/gutenberg/pull/37383
 
       if (hasNonPostEntityChanges && setEntitiesSavedStatesCallback) {
         // The modal for multiple entity saving will open,
@@ -8211,11 +8211,11 @@ class PostPublishButton extends external_wp_element_namespaceObject.Component {
   };
 })])(PostPublishButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/close-small.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const closeSmall = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -8226,20 +8226,20 @@ const closeSmall = (0,external_wp_element_namespaceObject.createElement)(externa
 }));
 /* harmony default export */ var close_small = (closeSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/wordpress.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/kaydenCMS.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
-const wordpress = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
+const kaydenCMS = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "-2 -2 24 24"
 }, (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.Path, {
   d: "M20 10c0-5.51-4.49-10-10-10C4.48 0 0 4.49 0 10c0 5.52 4.48 10 10 10 5.51 0 10-4.48 10-10zM7.78 15.37L4.37 6.22c.55-.02 1.17-.08 1.17-.08.5-.06.44-1.13-.06-1.11 0 0-1.45.11-2.37.11-.18 0-.37 0-.58-.01C4.12 2.69 6.87 1.11 10 1.11c2.33 0 4.45.87 6.05 2.34-.68-.11-1.65.39-1.65 1.58 0 .74.45 1.36.9 2.1.35.61.55 1.36.55 2.46 0 1.49-1.4 5-1.4 5l-3.03-8.37c.54-.02.82-.17.82-.17.5-.05.44-1.25-.06-1.22 0 0-1.44.12-2.38.12-.87 0-2.33-.12-2.33-.12-.5-.03-.56 1.2-.06 1.22l.92.08 1.26 3.41zM17.41 10c.24-.64.74-1.87.43-4.25.7 1.29 1.05 2.71 1.05 4.25 0 3.29-1.73 6.24-4.4 7.78.97-2.59 1.94-5.2 2.92-7.78zM6.1 18.09C3.12 16.65 1.11 13.53 1.11 10c0-1.3.23-2.48.72-3.59C3.25 10.3 4.67 14.2 6.1 18.09zm4.03-6.63l2.58 6.98c-.86.29-1.76.45-2.71.45-.79 0-1.57-.11-2.29-.33.81-2.38 1.62-4.74 2.42-7.1z"
 }));
-/* harmony default export */ var library_wordpress = (wordpress);
+/* harmony default export */ var library_kaydenCMS = (kaydenCMS);
 
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
@@ -8256,9 +8256,9 @@ function _defineProperty(obj, key, value) {
 
   return obj;
 }
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-visibility/utils.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const visibilityOptions = [{
@@ -8275,12 +8275,12 @@ const visibilityOptions = [{
   info: (0,external_wp_i18n_namespaceObject.__)('Protected with a password you choose. Only those with the password can view this post.')
 }];
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-visibility/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-visibility/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8466,13 +8466,13 @@ class PostVisibility extends external_wp_element_namespaceObject.Component {
   };
 }), external_wp_compose_namespaceObject.withInstanceId])(PostVisibility));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-visibility/label.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-visibility/label.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8499,11 +8499,11 @@ function PostVisibilityLabel(_ref) {
   visibility: select(store_store).getEditedPostVisibility()
 }))(PostVisibilityLabel));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-schedule/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-schedule/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8588,9 +8588,9 @@ function PostSchedule() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-schedule/label.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-schedule/label.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8619,7 +8619,7 @@ function PostScheduleLabel(_ref) {
 
 ;// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/most-used-terms.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-taxonomies/most-used-terms.js
 
 
 /**
@@ -8627,7 +8627,7 @@ var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8684,7 +8684,7 @@ function MostUsedTerms(_ref) {
   }, term.name)))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-taxonomies/flat-term-selector.js
 
 
 /**
@@ -8692,7 +8692,7 @@ function MostUsedTerms(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8913,7 +8913,7 @@ function FlatTermSelector(_ref) {
 
 /* harmony default export */ var flat_term_selector = ((0,external_wp_components_namespaceObject.withFilters)('editor.PostTaxonomyType')(FlatTermSelector));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-tags-panel.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/maybe-tags-panel.js
 
 
 /**
@@ -8921,7 +8921,7 @@ function FlatTermSelector(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -8996,7 +8996,7 @@ class MaybeTagsPanel extends external_wp_element_namespaceObject.Component {
   return isPostTypeSupported && areTagsFetched;
 }))(MaybeTagsPanel));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js
 
 
 /**
@@ -9004,7 +9004,7 @@ class MaybeTagsPanel extends external_wp_element_namespaceObject.Component {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9079,7 +9079,7 @@ function PostFormatPanel() {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js
 
 
 /**
@@ -9087,7 +9087,7 @@ function PostFormatPanel() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9458,7 +9458,7 @@ function HierarchicalTermSelector(_ref) {
 
 /* harmony default export */ var hierarchical_term_selector = ((0,external_wp_components_namespaceObject.withFilters)('editor.PostTaxonomyType')(HierarchicalTermSelector));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-category-panel.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/maybe-category-panel.js
 
 
 /**
@@ -9466,7 +9466,7 @@ function HierarchicalTermSelector(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9525,7 +9525,7 @@ function MaybeCategoryPanel() {
 
 /* harmony default export */ var maybe_category_panel = (MaybeCategoryPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/prepublish.js
 
 
 /**
@@ -9533,7 +9533,7 @@ function MaybeCategoryPanel() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9589,7 +9589,7 @@ function PostPublishPanelPrepublish(_ref) {
   let siteIcon = (0,external_wp_element_namespaceObject.createElement)(external_wp_components_namespaceObject.Icon, {
     className: "components-site-icon",
     size: "36px",
-    icon: library_wordpress
+    icon: library_kaydenCMS
   });
 
   if (siteIconUrl) {
@@ -9644,7 +9644,7 @@ function PostPublishPanelPrepublish(_ref) {
 
 /* harmony default export */ var prepublish = (PostPublishPanelPrepublish);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/postpublish.js
 
 
 /**
@@ -9652,7 +9652,7 @@ function PostPublishPanelPrepublish(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9808,7 +9808,7 @@ class PostPublishPanelPostpublish extends external_wp_element_namespaceObject.Co
   };
 })(PostPublishPanelPostpublish));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-publish-panel/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-publish-panel/index.js
 
 
 
@@ -9817,7 +9817,7 @@ class PostPublishPanelPostpublish extends external_wp_element_namespaceObject.Co
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -9964,11 +9964,11 @@ class PostPublishPanel extends external_wp_element_namespaceObject.Component {
   };
 }), external_wp_components_namespaceObject.withFocusReturn, external_wp_components_namespaceObject.withConstrainedTabbing])(PostPublishPanel));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/cloud-upload.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/cloud-upload.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const cloudUpload = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -9979,12 +9979,12 @@ const cloudUpload = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var cloud_upload = (cloudUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@kaydenCMS/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -10011,11 +10011,11 @@ function Icon(_ref) {
 
 /* harmony default export */ var icon = (Icon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/check.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const check_check = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -10026,11 +10026,11 @@ const check_check = (0,external_wp_element_namespaceObject.createElement)(extern
 }));
 /* harmony default export */ var library_check = (check_check);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/cloud.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/cloud.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const cloud = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -10041,11 +10041,11 @@ const cloud = (0,external_wp_element_namespaceObject.createElement)(external_wp_
 }));
 /* harmony default export */ var library_cloud = (cloud);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-switch-to-draft-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-switch-to-draft-button/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10125,7 +10125,7 @@ function PostSwitchToDraftButton(_ref) {
   };
 })])(PostSwitchToDraftButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-saved-state/index.js
 
 
 /**
@@ -10133,7 +10133,7 @@ function PostSwitchToDraftButton(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10159,7 +10159,7 @@ function PostSwitchToDraftButton(_ref) {
  * @param {?boolean} props.forceIsSaving  Whether to force the post to be marked
  *                                        as being saved.
  * @param {?boolean} props.showIconLabels Whether interface buttons show labels instead of icons
- * @return {import('@wordpress/element').WPComponent} The component.
+ * @return {import('@kaydenCMS/element').WPComponent} The component.
  */
 
 function PostSavedState(_ref) {
@@ -10278,13 +10278,13 @@ function PostSavedState(_ref) {
   }), text);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-schedule/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-schedule/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10317,7 +10317,7 @@ function PostScheduleCheck(_ref) {
   };
 })])(PostScheduleCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-slug/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-slug/check.js
 
 
 /**
@@ -10333,11 +10333,11 @@ function PostSlugCheck(_ref) {
   }, children);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-slug/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-slug/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10433,13 +10433,13 @@ class PostSlug extends external_wp_element_namespaceObject.Component {
   };
 }), external_wp_compose_namespaceObject.withInstanceId])(PostSlug));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-sticky/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-sticky/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10470,11 +10470,11 @@ function PostStickyCheck(_ref) {
   };
 })])(PostStickyCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-sticky/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-sticky/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10512,7 +10512,7 @@ function PostSticky(_ref) {
   };
 })])(PostSticky));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-taxonomies/index.js
 
 
 /**
@@ -10520,7 +10520,7 @@ function PostSticky(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10542,7 +10542,7 @@ function PostTaxonomies(_ref) {
   } = _ref;
   const availableTaxonomies = (0,external_lodash_namespaceObject.filter)(taxonomies, taxonomy => (0,external_lodash_namespaceObject.includes)(taxonomy.types, postType));
   const visibleTaxonomies = (0,external_lodash_namespaceObject.filter)(availableTaxonomies, // In some circumstances .visibility can end up as undefined so optional chaining operator required.
-  // https://github.com/WordPress/gutenberg/issues/40326
+  // https://github.com/kaydenCMS/gutenberg/issues/40326
   taxonomy => {
     var _taxonomy$visibility;
 
@@ -10566,13 +10566,13 @@ function PostTaxonomies(_ref) {
   };
 })])(PostTaxonomies));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-taxonomies/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10608,7 +10608,7 @@ function PostTaxonomiesCheck(_ref) {
 
 // EXTERNAL MODULE: ./node_modules/react-autosize-textarea/lib/index.js
 var lib = __webpack_require__(773);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-text-editor/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-text-editor/index.js
 
 
 /**
@@ -10616,7 +10616,7 @@ var lib = __webpack_require__(773);
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10705,7 +10705,7 @@ function PostTextEditor() {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-title/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-title/index.js
 
 
 /**
@@ -10713,7 +10713,7 @@ function PostTextEditor() {
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10934,11 +10934,11 @@ function PostTitle() {
   /* eslint-enable jsx-a11y/heading-has-content, jsx-a11y/no-noninteractive-element-to-interactive-role */
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-trash/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-trash/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -10975,9 +10975,9 @@ function PostTrash() {
   }, (0,external_wp_i18n_namespaceObject.__)('Move to trash'));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-trash/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-trash/check.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11023,13 +11023,13 @@ function PostTrashCheck(_ref) {
   };
 })(PostTrashCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-visibility/check.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/post-visibility/check.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11060,11 +11060,11 @@ function PostVisibilityCheck(_ref) {
   };
 })])(PostVisibilityCheck));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/info.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/icons/build-module/library/info.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 const info = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
@@ -11077,11 +11077,11 @@ const info = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
 
 ;// CONCATENATED MODULE: external ["wp","wordcount"]
 var external_wp_wordcount_namespaceObject = window["wp"]["wordcount"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/word-count/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/word-count/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11106,9 +11106,9 @@ function WordCount() {
   }, (0,external_wp_wordcount_namespaceObject.count)(content, wordCountType));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/character-count/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/character-count/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11122,11 +11122,11 @@ function CharacterCount() {
   return (0,external_wp_wordcount_namespaceObject.count)(content, 'characters_including_spaces');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/table-of-contents/panel.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11204,12 +11204,12 @@ function TableOfContentsPanel(_ref) {
 
 /* harmony default export */ var panel = (TableOfContentsPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/table-of-contents/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/table-of-contents/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11266,9 +11266,9 @@ function TableOfContents(_ref, ref) {
 
 /* harmony default export */ var table_of_contents = ((0,external_wp_element_namespaceObject.forwardRef)(TableOfContents));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/unsaved-changes-warning/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/unsaved-changes-warning/index.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11323,11 +11323,11 @@ function UnsavedChangesWarning() {
 
 ;// CONCATENATED MODULE: external ["wp","reusableBlocks"]
 var external_wp_reusableBlocks_namespaceObject = window["wp"]["reusableBlocks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/provider/with-registry-provider.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/provider/with-registry-provider.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11370,13 +11370,13 @@ const withRegistryProvider = (0,external_wp_compose_namespaceObject.createHigher
 
 ;// CONCATENATED MODULE: external ["wp","mediaUtils"]
 var external_wp_mediaUtils_namespaceObject = window["wp"]["mediaUtils"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/media-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/utils/media-upload/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11433,13 +11433,13 @@ function mediaUpload(_ref) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/provider/use-block-editor-settings.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/provider/use-block-editor-settings.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11549,11 +11549,11 @@ function useBlockEditorSettings(settings, hasTemplate) {
 
 /* harmony default export */ var use_block_editor_settings = (useBlockEditorSettings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/provider/index.js
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11677,13 +11677,13 @@ function EditorProvider(_ref) {
 ;// CONCATENATED MODULE: external ["wp","serverSideRender"]
 var external_wp_serverSideRender_namespaceObject = window["wp"]["serverSideRender"];
 var external_wp_serverSideRender_default = /*#__PURE__*/__webpack_require__.n(external_wp_serverSideRender_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/deprecated.js
 
 
 // Block Creation Components.
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -11774,7 +11774,7 @@ const withColorContext = deprecateFunction('withColorContext', external_wp_block
 const withColors = deprecateFunction('withColors', external_wp_blockEditor_namespaceObject.withColors);
 const withFontSizes = deprecateFunction('withFontSizes', external_wp_blockEditor_namespaceObject.withFontSizes);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/components/index.js
 // Block Creation Components.
  // Post Related Components.
 
@@ -11843,16 +11843,16 @@ const withFontSizes = deprecateFunction('withFontSizes', external_wp_blockEditor
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/url.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/utils/url.js
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
 /**
  * Performs some basic cleanup of a string for use as a post slug
  *
- * This replicates some of what sanitize_title() does in WordPress core, but
+ * This replicates some of what sanitize_title() does in kaydenCMS core, but
  * is only designed to approximate what the slug will be.
  *
  * Converts Latin-1 Supplement and Latin Extended-A letters to basic Latin letters.
@@ -11875,7 +11875,7 @@ function cleanForSlug(string) {
   return (0,external_wp_url_namespaceObject.cleanForSlug)(string);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/utils/index.js
 /**
  * Internal dependencies
  */
@@ -11884,7 +11884,7 @@ function cleanForSlug(string) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/editor/build-module/index.js
 /**
  * Internal dependencies
  */

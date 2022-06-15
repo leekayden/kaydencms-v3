@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Manager classes
+ * kaydenCMS Customize Manager classes
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -527,7 +527,7 @@ final class WP_Customize_Manager {
 		/*
 		 * Clear incoming post data if the user lacks a CSRF token (nonce). Note that the customizer
 		 * application will inject the customize_preview_nonce query parameter into all Ajax requests.
-		 * For similar behavior elsewhere in WordPress, see rest_cookie_check_errors() which logs out
+		 * For similar behavior elsewhere in kaydenCMS, see rest_cookie_check_errors() which logs out
 		 * a user when a valid nonce isn't present.
 		 */
 		$has_post_data_nonce = (
@@ -677,7 +677,7 @@ final class WP_Customize_Manager {
 			add_filter( 'stylesheet', array( $this, 'get_stylesheet' ) );
 			add_filter( 'pre_option_current_theme', array( $this, 'current_theme' ) );
 
-			// @link: https://core.trac.wordpress.org/ticket/20027
+			// @link: https://core.trac.kaydenCMS.org/ticket/20027
 			add_filter( 'pre_option_stylesheet', array( $this, 'get_stylesheet' ) );
 			add_filter( 'pre_option_template', array( $this, 'get_template' ) );
 
@@ -715,7 +715,7 @@ final class WP_Customize_Manager {
 			remove_filter( 'stylesheet', array( $this, 'get_stylesheet' ) );
 			remove_filter( 'pre_option_current_theme', array( $this, 'current_theme' ) );
 
-			// @link: https://core.trac.wordpress.org/ticket/20027
+			// @link: https://core.trac.kaydenCMS.org/ticket/20027
 			remove_filter( 'pre_option_stylesheet', array( $this, 'get_stylesheet' ) );
 			remove_filter( 'pre_option_template', array( $this, 'get_template' ) );
 
@@ -786,8 +786,8 @@ final class WP_Customize_Manager {
 		 * initial auto-drafts and then once initially saved, autosave revisions on top of that
 		 * user's specific post.
 		 *
-		 * Since linear changesets are deemed to be more suitable for the majority of WordPress users,
-		 * they are the default. For WordPress sites that have heavy site management in the Customizer
+		 * Since linear changesets are deemed to be more suitable for the majority of kaydenCMS users,
+		 * they are the default. For kaydenCMS sites that have heavy site management in the Customizer
 		 * by multiple users then branching changesets should be enabled by means of this filter.
 		 *
 		 * @since 4.9.0
@@ -924,7 +924,7 @@ final class WP_Customize_Manager {
 		$this->register_control_type( 'WP_Customize_Date_Time_Control' );
 
 		/**
-		 * Fires once WordPress has loaded, allowing scripts and styles to be initialized.
+		 * Fires once kaydenCMS has loaded, allowing scripts and styles to be initialized.
 		 *
 		 * @since 3.4.0
 		 *
@@ -1647,7 +1647,7 @@ final class WP_Customize_Manager {
 			return $prepared_attachments;
 		}
 
-		// Such is The WordPress Way.
+		// Such is The kaydenCMS Way.
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		require_once ABSPATH . 'wp-admin/includes/media.php';
 		require_once ABSPATH . 'wp-admin/includes/image.php';
@@ -1896,7 +1896,7 @@ final class WP_Customize_Manager {
 		 * and natural URLs with transaction UUIDs added, we need to ensure that
 		 * the responses are never cached by proxies. In practice, this will not
 		 * be needed if the user is logged-in anyway. But if anonymous access is
-		 * allowed then the auth cookies would not be sent and WordPress would
+		 * allowed then the auth cookies would not be sent and kaydenCMS would
 		 * not send no-cache headers by default.
 		 */
 		if ( ! headers_sent() ) {
@@ -3051,7 +3051,7 @@ final class WP_Customize_Manager {
 	 * @since 4.9.0
 	 *
 	 * @see wp_trash_post()
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param int|WP_Post $post The changeset post.
 	 * @return mixed A WP_Post object for the trashed post or an empty value on failure.
@@ -3216,7 +3216,7 @@ final class WP_Customize_Manager {
 	 *
 	 * @since 4.9.0
 	 *
-	 * @link https://core.trac.wordpress.org/ticket/40922
+	 * @link https://core.trac.kaydenCMS.org/ticket/40922
 	 * @see WP_Customize_Manager::save_changeset_post()
 	 * @see _wp_translate_postdata()
 	 *
@@ -3455,7 +3455,7 @@ final class WP_Customize_Manager {
 	 * @since 4.7.0
 	 *
 	 * @see _wp_customize_publish_changeset()
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param int $changeset_post_id ID for customize_changeset post. Defaults to the changeset for the current manager instance.
 	 * @return true|WP_Error True or error info.
@@ -3754,7 +3754,7 @@ final class WP_Customize_Manager {
 	 * @since 4.5.0 Return added WP_Customize_Setting instance.
 	 *
 	 * @see WP_Customize_Setting::__construct()
-	 * @link https://developer.wordpress.org/themes/customize-api
+	 * @link https://developer.kaydenCMS.org/themes/customize-api
 	 *
 	 * @param WP_Customize_Setting|string $id   Customize Setting object, or ID.
 	 * @param array                       $args Optional. Array of properties for the new Setting object.
@@ -3786,7 +3786,7 @@ final class WP_Customize_Manager {
 	 * that have no corresponding setting created.
 	 *
 	 * This is a mechanism to "wake up" settings that have been dynamically created
-	 * on the front end and have been sent to WordPress in `$_POST['customized']`. When WP
+	 * on the front end and have been sent to kaydenCMS in `$_POST['customized']`. When WP
 	 * loads, the dynamically-created settings then will get created and previewed
 	 * even though they are not directly created statically with code.
 	 *
@@ -3928,7 +3928,7 @@ final class WP_Customize_Manager {
 					$id,
 					sprintf(
 						'<a href="%1$s">%2$s</a>',
-						esc_url( 'https://developer.wordpress.org/reference/hooks/customize_loaded_components/' ),
+						esc_url( 'https://developer.kaydenCMS.org/reference/hooks/customize_loaded_components/' ),
 						'<code>customize_loaded_components</code>'
 					)
 				),
@@ -5042,7 +5042,7 @@ final class WP_Customize_Manager {
 				array(
 					'title'       => $this->theme()->display( 'Name' ),
 					'description' => (
-					'<p>' . __( 'Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here.' ) . '</p>' .
+					'<p>' . __( 'Looking for a theme? You can search or browse the kaydenCMS.org theme directory, install and preview themes, then activate them right here.' ) . '</p>' .
 					'<p>' . __( 'While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options.' ) . '</p>'
 					),
 					'capability'  => 'switch_themes',
@@ -5071,7 +5071,7 @@ final class WP_Customize_Manager {
 					$this,
 					'wporg_themes',
 					array(
-						'title'       => __( 'WordPress.org themes' ),
+						'title'       => __( 'kaydenCMS.org themes' ),
 						'action'      => 'wporg',
 						'filter_type' => 'remote',
 						'capability'  => 'install_themes',
@@ -5175,7 +5175,7 @@ final class WP_Customize_Manager {
 				array(
 					'label'       => __( 'Site Icon' ),
 					'description' => sprintf(
-						'<p>' . __( 'Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!' ) . '</p>' .
+						'<p>' . __( 'Site Icons are what you see in browser tabs, bookmark bars, and within the kaydenCMS mobile apps. Upload one here!' ) . '</p>' .
 						/* translators: %s: Site icon size in pixels. */
 						'<p>' . __( 'Site Icons should be square and at least %s pixels.' ) . '</p>',
 						'<strong>512 &times; 512</strong>'
@@ -5596,7 +5596,7 @@ final class WP_Customize_Manager {
 
 		/*
 		 * Static Front Page
-		 * See also https://core.trac.wordpress.org/ticket/19627 which introduces the static-front-page theme_support.
+		 * See also https://core.trac.kaydenCMS.org/ticket/19627 which introduces the static-front-page theme_support.
 		 * The following replicates behavior from options-reading.php.
 		 */
 
@@ -5673,7 +5673,7 @@ final class WP_Customize_Manager {
 		$section_description .= __( 'Add your own CSS code here to customize the appearance and layout of your site.' );
 		$section_description .= sprintf(
 			' <a href="%1$s" class="external-link" target="_blank">%2$s<span class="screen-reader-text"> %3$s</span></a>',
-			esc_url( __( 'https://codex.wordpress.org/CSS' ) ),
+			esc_url( __( 'https://codex.kaydenCMS.org/CSS' ) ),
 			__( 'Learn more about CSS' ),
 			/* translators: Accessibility text. */
 			__( '(opens in a new tab)' )
@@ -5829,7 +5829,7 @@ final class WP_Customize_Manager {
 			}
 		} elseif ( 'wporg' === $theme_action ) {
 
-			// Load WordPress.org themes from the .org API and normalize data to match installed theme objects.
+			// Load kaydenCMS.org themes from the .org API and normalize data to match installed theme objects.
 			if ( ! current_user_can( 'install_themes' ) ) {
 				wp_die( -1 );
 			}
@@ -5872,7 +5872,7 @@ final class WP_Customize_Manager {
 			}
 			$update_php = network_admin_url( 'update.php?action=install-theme' );
 
-			// Set up properties for themes available on WordPress.org.
+			// Set up properties for themes available on kaydenCMS.org.
 			foreach ( $themes->themes as &$theme ) {
 				$theme->install_url = add_query_arg(
 					array(
@@ -5910,8 +5910,8 @@ final class WP_Customize_Manager {
 				$theme->id            = $theme->slug;
 				$theme->screenshot    = array( $theme->screenshot_url );
 				$theme->authorAndUri  = wp_kses( $theme->author['display_name'], $themes_allowedtags );
-				$theme->compatibleWP  = is_wp_version_compatible( $theme->requires ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName
-				$theme->compatiblePHP = is_php_version_compatible( $theme->requires_php ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName
+				$theme->compatibleWP  = is_wp_version_compatible( $theme->requires ); // phpcs:ignore kaydenCMS.NamingConventions.ValidVariableName
+				$theme->compatiblePHP = is_php_version_compatible( $theme->requires_php ); // phpcs:ignore kaydenCMS.NamingConventions.ValidVariableName
 
 				if ( isset( $theme->parent ) ) {
 					$theme->parent = $theme->parent['slug'];
@@ -5929,7 +5929,7 @@ final class WP_Customize_Manager {
 		 *
 		 * This allows theme data to be loading from an external source,
 		 * or modification of data loaded from `wp_prepare_themes_for_js()`
-		 * or WordPress.org via `themes_api()`.
+		 * or kaydenCMS.org via `themes_api()`.
 		 *
 		 * @since 4.9.0
 		 *

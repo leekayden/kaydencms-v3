@@ -2,11 +2,11 @@
 /**
  * Edit Comments Administration Screen.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 if ( ! current_user_can( 'edit_posts' ) ) {
 	wp_die(
@@ -93,7 +93,7 @@ if ( $doaction ) {
 		$screen = get_current_screen()->id;
 
 		/** This action is documented in wp-admin/edit.php */
-		$redirect_to = apply_filters( "handle_bulk_actions-{$screen}", $redirect_to, $doaction, $comment_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+		$redirect_to = apply_filters( "handle_bulk_actions-{$screen}", $redirect_to, $doaction, $comment_ids ); // phpcs:ignore kaydenCMS.NamingConventions.ValidHookName.UseUnderscores
 	}
 
 	wp_defer_comment_counting( false );
@@ -197,10 +197,10 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/comments-screen/">Documentation on Comments</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/comment-spam/">Documentation on Comment Spam</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/keyboard-shortcuts/">Documentation on Keyboard Shortcuts</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/comments-screen/">Documentation on Comments</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/comment-spam/">Documentation on Comment Spam</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/keyboard-shortcuts/">Documentation on Keyboard Shortcuts</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 get_current_screen()->set_screen_reader_content(

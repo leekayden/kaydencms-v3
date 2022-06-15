@@ -81,7 +81,7 @@ var external_wp_url_namespaceObject = window["wp"]["url"];
 var external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: external ["wp","blocks"]
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/server-side-render.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/server-side-render/build-module/server-side-render.js
 
 
 
@@ -90,7 +90,7 @@ var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -275,12 +275,12 @@ function ServerSideRender(props) {
   }, response);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/server-side-render/build-module/index.js
 
 
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -296,9 +296,9 @@ function ServerSideRender(props) {
 
 const EMPTY_OBJECT = {};
 const ExportedServerSideRender = (0,external_wp_data_namespaceObject.withSelect)(select => {
-  // FIXME: @wordpress/server-side-render should not depend on @wordpress/editor.
+  // FIXME: @kaydenCMS/server-side-render should not depend on @kaydenCMS/editor.
   // It is used by blocks that can be loaded into a *non-post* block editor.
-  // eslint-disable-next-line @wordpress/data-no-store-string-literals
+  // eslint-disable-next-line @kaydenCMS/data-no-store-string-literals
   const coreEditorSelect = select('core/editor');
 
   if (coreEditorSelect) {

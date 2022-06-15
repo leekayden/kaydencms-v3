@@ -1,8 +1,8 @@
 <?php
 /**
- * Main WordPress API
+ * Main kaydenCMS API
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 require ABSPATH . WPINC . '/option.php';
@@ -163,7 +163,7 @@ function wp_timezone() {
  * @since 0.71
  * @since 5.3.0 Converted into a wrapper for wp_date().
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param string   $format                Format to display the date.
  * @param int|bool $timestamp_with_offset Optional. A sum of Unix timestamp and timezone offset
@@ -177,7 +177,7 @@ function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
 
 	// If timestamp is omitted it should be current time (summed with offset, unless `$gmt` is true).
 	if ( ! is_numeric( $timestamp ) ) {
-		// phpcs:ignore WordPress.DateTime.CurrentTimeTimestamp.Requested
+		// phpcs:ignore kaydenCMS.DateTime.CurrentTimeTimestamp.Requested
 		$timestamp = current_time( 'timestamp', $gmt );
 	}
 
@@ -229,7 +229,7 @@ function date_i18n( $format, $timestamp_with_offset = false, $gmt = false ) {
  *
  * @since 5.3.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param string       $format    PHP date format.
  * @param int          $timestamp Optional. Unix timestamp. Defaults to current time.
@@ -326,7 +326,7 @@ function wp_date( $format, $timestamp = null, $timezone = null ) {
  * @since 4.4.0
  * @since 5.4.0 The `$format` parameter was added.
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param string $date   Formatted date string.
  * @param string $format Optional. Date format to check. Default empty string.
@@ -412,7 +412,7 @@ function wp_maybe_decline_date( $date, $format = '' ) {
  *
  * @since 2.3.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale kaydenCMS date and time locale object.
  *
  * @param float $number   The number to convert based on locale.
  * @param int   $decimals Optional. Precision of the number of decimal places. Default 0.
@@ -628,7 +628,7 @@ function maybe_serialize( $data ) {
 
 	/*
 	 * Double serialization is required for backward compatibility.
-	 * See https://core.trac.wordpress.org/ticket/12930
+	 * See https://core.trac.kaydenCMS.org/ticket/12930
 	 * Also the world will end. See WP 3.6.1.
 	 */
 	if ( is_serialized( $data, false ) ) {
@@ -871,7 +871,7 @@ function wp_extract_urls( $content ) {
  * @since 5.6.0 The `$content` parameter is no longer optional, but passing `null` to skip it
  *              is still supported.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @param string|null $content Post content. If `null`, the `post_content` field from `$post` is used.
  * @param int|WP_Post $post    Post ID or post object.
@@ -997,7 +997,7 @@ function wp_get_http_headers( $url, $deprecated = false ) {
  * from the publish date of the previous post in the loop.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 0.71
@@ -1314,13 +1314,13 @@ function wp_remote_fopen( $uri ) {
 }
 
 /**
- * Set up the WordPress query.
+ * Set up the kaydenCMS query.
  *
  * @since 2.0.0
  *
- * @global WP       $wp           Current WordPress environment instance.
- * @global WP_Query $wp_query     WordPress Query object.
- * @global WP_Query $wp_the_query Copy of the WordPress Query object.
+ * @global WP       $wp           Current kaydenCMS environment instance.
+ * @global WP_Query $wp_query     kaydenCMS Query object.
+ * @global WP_Query $wp_the_query Copy of the kaydenCMS Query object.
  *
  * @param string|array $query_vars Default WP_Query arguments.
  */
@@ -1548,11 +1548,11 @@ function cache_javascript_headers() {
 }
 
 /**
- * Retrieve the number of database queries during the WordPress execution.
+ * Retrieve the number of database queries during the kaydenCMS execution.
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @return int Number of database queries.
  */
@@ -1585,7 +1585,7 @@ function bool_from_yn( $yn ) {
  *
  * @since 2.1.0
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query kaydenCMS Query object.
  */
 function do_feed() {
 	global $wp_query;
@@ -1735,21 +1735,21 @@ function do_favicon() {
 }
 
 /**
- * Determines whether WordPress is already installed.
+ * Determines whether kaydenCMS is already installed.
  *
  * The cache will be checked first. If you have a cache plugin, which saves
- * the cache values, then this will work. If you use the default WordPress
+ * the cache values, then this will work. If you use the default kaydenCMS
  * cache, and the database goes away, then you might have problems.
  *
- * Checks for the 'siteurl' option for whether WordPress is installed.
+ * Checks for the 'siteurl' option for whether kaydenCMS is installed.
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.kaydenCMS.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 2.1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @return bool Whether the site is already installed.
  */
@@ -3272,7 +3272,7 @@ function wp_get_image_mime( $file ) {
 				// Not using wp_getimagesize() here to avoid an infinite loop.
 				$imagesize = getimagesize( $file );
 			} else {
-				// phpcs:ignore WordPress.PHP.NoSilencedErrors
+				// phpcs:ignore kaydenCMS.PHP.NoSilencedErrors
 				$imagesize = @getimagesize( $file );
 			}
 
@@ -3593,7 +3593,7 @@ function wp_nonce_ays( $action ) {
 }
 
 /**
- * Kills WordPress execution and displays HTML page with an error message.
+ * Kills kaydenCMS execution and displays HTML page with an error message.
  *
  * This function complements the `die()` PHP function. The difference is that
  * HTML will be displayed to the user. It is recommended to use this function
@@ -3612,7 +3612,7 @@ function wp_nonce_ays( $action ) {
  * @since 5.5.0 The `$text_direction` argument has a priority over get_language_attributes()
  *              in the default handler.
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query kaydenCMS Query object.
  *
  * @param string|WP_Error  $message Optional. Error message. If this is a WP_Error object,
  *                                  and not an Ajax or XML-RPC request, the error's messages are used.
@@ -3631,7 +3631,7 @@ function wp_nonce_ays( $action ) {
  *     @type string $link_text      A label for the link to include. Only works in combination with $link_url.
  *                                  Default empty string.
  *     @type bool   $back_link      Whether to include a link to go back. Default false.
- *     @type string $text_direction The text direction. This is only useful internally, when WordPress is still
+ *     @type string $text_direction The text direction. This is only useful internally, when kaydenCMS is still
  *                                  loading and the site's locale is not set up yet. Accepts 'rtl' and 'ltr'.
  *                                  Default is the value of is_rtl().
  *     @type string $charset        Character set of the HTML output. Default 'utf-8'.
@@ -3652,7 +3652,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 
 	if ( wp_doing_ajax() ) {
 		/**
-		 * Filters the callback for killing WordPress execution for Ajax requests.
+		 * Filters the callback for killing kaydenCMS execution for Ajax requests.
 		 *
 		 * @since 3.4.0
 		 *
@@ -3661,7 +3661,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$callback = apply_filters( 'wp_die_ajax_handler', '_ajax_wp_die_handler' );
 	} elseif ( wp_is_json_request() ) {
 		/**
-		 * Filters the callback for killing WordPress execution for JSON requests.
+		 * Filters the callback for killing kaydenCMS execution for JSON requests.
 		 *
 		 * @since 5.1.0
 		 *
@@ -3670,7 +3670,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$callback = apply_filters( 'wp_die_json_handler', '_json_wp_die_handler' );
 	} elseif ( defined( 'REST_REQUEST' ) && REST_REQUEST && wp_is_jsonp_request() ) {
 		/**
-		 * Filters the callback for killing WordPress execution for JSONP REST requests.
+		 * Filters the callback for killing kaydenCMS execution for JSONP REST requests.
 		 *
 		 * @since 5.2.0
 		 *
@@ -3679,7 +3679,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$callback = apply_filters( 'wp_die_jsonp_handler', '_jsonp_wp_die_handler' );
 	} elseif ( defined( 'XMLRPC_REQUEST' ) && XMLRPC_REQUEST ) {
 		/**
-		 * Filters the callback for killing WordPress execution for XML-RPC requests.
+		 * Filters the callback for killing kaydenCMS execution for XML-RPC requests.
 		 *
 		 * @since 3.4.0
 		 *
@@ -3692,7 +3692,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 			|| function_exists( 'is_comment_feed' ) && is_comment_feed()
 			|| function_exists( 'is_trackback' ) && is_trackback() ) ) {
 		/**
-		 * Filters the callback for killing WordPress execution for XML requests.
+		 * Filters the callback for killing kaydenCMS execution for XML requests.
 		 *
 		 * @since 5.2.0
 		 *
@@ -3701,7 +3701,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$callback = apply_filters( 'wp_die_xml_handler', '_xml_wp_die_handler' );
 	} else {
 		/**
-		 * Filters the callback for killing WordPress execution for all non-Ajax, non-JSON, non-XML requests.
+		 * Filters the callback for killing kaydenCMS execution for all non-Ajax, non-JSON, non-XML requests.
 		 *
 		 * @since 3.0.0
 		 *
@@ -3714,7 +3714,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays HTML page with an error message.
+ * Kills kaydenCMS execution and displays HTML page with an error message.
  *
  * This is the default handler for wp_die(). If you want a custom one,
  * you can override this using the {@see 'wp_die_handler'} filter in wp_die().
@@ -3917,7 +3917,7 @@ function _default_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays Ajax response with an error message.
+ * Kills kaydenCMS execution and displays Ajax response with an error message.
  *
  * This is the handler for wp_die() when processing Ajax requests.
  *
@@ -3959,7 +3959,7 @@ function _ajax_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays JSON response with an error message.
+ * Kills kaydenCMS execution and displays JSON response with an error message.
  *
  * This is the handler for wp_die() when processing JSON requests.
  *
@@ -3997,7 +3997,7 @@ function _json_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays JSONP response with an error message.
+ * Kills kaydenCMS execution and displays JSONP response with an error message.
  *
  * This is the handler for wp_die() when processing JSONP requests.
  *
@@ -4039,7 +4039,7 @@ function _jsonp_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays XML response with an error message.
+ * Kills kaydenCMS execution and displays XML response with an error message.
  *
  * This is the handler for wp_die() when processing XMLRPC requests.
  *
@@ -4071,7 +4071,7 @@ function _xmlrpc_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kills WordPress execution and displays XML response with an error message.
+ * Kills kaydenCMS execution and displays XML response with an error message.
  *
  * This is the handler for wp_die() when processing XML requests.
  *
@@ -4115,7 +4115,7 @@ EOD;
 }
 
 /**
- * Kills WordPress execution and displays an error message.
+ * Kills kaydenCMS execution and displays an error message.
  *
  * This is the handler for wp_die() when processing APP requests.
  *
@@ -4215,7 +4215,7 @@ function _wp_die_process_input( $message, $title = '', $args = array() ) {
 		$args['response'] = 500;
 	}
 	if ( empty( $title ) ) {
-		$title = $have_gettext ? __( 'WordPress &rsaquo; Error' ) : 'WordPress &rsaquo; Error';
+		$title = $have_gettext ? __( 'kaydenCMS &rsaquo; Error' ) : 'kaydenCMS &rsaquo; Error';
 	}
 	if ( empty( $args['text_direction'] ) || ! in_array( $args['text_direction'], array( 'ltr', 'rtl' ), true ) ) {
 		$args['text_direction'] = 'ltr';
@@ -4555,7 +4555,7 @@ function wp_json_file_decode( $filename, $options = array() ) {
 }
 
 /**
- * Retrieve the WordPress home page URL.
+ * Retrieve the kaydenCMS home page URL.
  *
  * If the constant named 'WP_HOME' exists, then it will be used and returned
  * by the function. This can be used to counter the redirection on your local
@@ -4577,7 +4577,7 @@ function _config_wp_home( $url = '' ) {
 }
 
 /**
- * Retrieve the WordPress site URL.
+ * Retrieve the kaydenCMS site URL.
  *
  * If the constant named 'WP_SITEURL' is defined, then the value in that
  * constant will always be returned. This can be used for debugging a site
@@ -4588,8 +4588,8 @@ function _config_wp_home( $url = '' ) {
  *
  * @see WP_SITEURL
  *
- * @param string $url URL to set the WordPress site location.
- * @return string The WordPress site URL.
+ * @param string $url URL to set the kaydenCMS site location.
+ * @return string The kaydenCMS site URL.
  */
 function _config_wp_siteurl( $url = '' ) {
 	if ( defined( 'WP_SITEURL' ) ) {
@@ -4611,7 +4611,7 @@ function _delete_option_fresh_site() {
 /**
  * Set the localized direction for MCE plugin.
  *
- * Will only set the direction to 'rtl', if the WordPress locale has
+ * Will only set the direction to 'rtl', if the kaydenCMS locale has
  * the text direction set to 'rtl'.
  *
  * Fills in the 'directionality' setting, enables the 'directionality'
@@ -4777,7 +4777,7 @@ function smilies_init() {
 /**
  * Merges user defined arguments into defaults array.
  *
- * This function is used throughout WordPress to allow for both string or array
+ * This function is used throughout kaydenCMS to allow for both string or array
  * to be merged into another array.
  *
  * @since 2.2.0
@@ -5013,7 +5013,7 @@ function _wp_array_set( &$array, $path, $value = null ) {
  * @return string kebab-cased-string.
  */
 function _wp_to_kebab_case( $string ) {
-	//phpcs:disable WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+	//phpcs:disable kaydenCMS.NamingConventions.ValidVariableName.VariableNotSnakeCase
 	// ignore the camelCase names for variables so the names are the same as lodash
 	// so comparing and porting new changes is easier.
 
@@ -5061,7 +5061,7 @@ function _wp_to_kebab_case( $string ) {
 
 	preg_match_all( $regexp, str_replace( "'", '', $string ), $matches );
 	return strtolower( implode( '-', $matches[0] ) );
-	//phpcs:enable WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+	//phpcs:enable kaydenCMS.NamingConventions.ValidVariableName.VariableNotSnakeCase
 }
 
 /**
@@ -5277,22 +5277,22 @@ function wp_ob_end_flush_all() {
 }
 
 /**
- * Load custom DB error or display WordPress DB error.
+ * Load custom DB error or display kaydenCMS DB error.
  *
  * If a file exists in the wp-content directory named db-error.php, then it will
- * be loaded instead of displaying the WordPress DB error. If it is not found,
- * then the WordPress DB error will be displayed instead.
+ * be loaded instead of displaying the kaydenCMS DB error. If it is not found,
+ * then the kaydenCMS DB error will be displayed instead.
  *
- * The WordPress DB error sets the HTTP status header to 500 to try to prevent
+ * The kaydenCMS DB error sets the HTTP status header to 500 to try to prevent
  * search engines from caching the message. Custom DB messages should do the
  * same.
  *
- * This function was backported to WordPress 2.3.2, but originally was added
- * in WordPress 2.5.0.
+ * This function was backported to kaydenCMS 2.3.2, but originally was added
+ * in kaydenCMS 2.5.0.
  *
  * @since 2.3.2
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  */
 function dead_db() {
 	global $wpdb;
@@ -5342,7 +5342,7 @@ function absint( $maybeint ) {
  * @since 5.4.0 The error type is now classified as E_USER_DEPRECATED (used to default to E_USER_NOTICE).
  *
  * @param string $function    The function that was called.
- * @param string $version     The version of WordPress that deprecated the function.
+ * @param string $version     The version of kaydenCMS that deprecated the function.
  * @param string $replacement Optional. The function that should have been called. Default empty.
  */
 function _deprecated_function( $function, $version, $replacement = '' ) {
@@ -5354,7 +5354,7 @@ function _deprecated_function( $function, $version, $replacement = '' ) {
 	 *
 	 * @param string $function    The function that was called.
 	 * @param string $replacement The function that should have been called.
-	 * @param string $version     The version of WordPress that deprecated the function.
+	 * @param string $version     The version of kaydenCMS that deprecated the function.
 	 */
 	do_action( 'deprecated_function_run', $function, $replacement, $version );
 
@@ -5430,7 +5430,7 @@ function _deprecated_function( $function, $version, $replacement = '' ) {
  * @since 5.4.0 The error type is now classified as E_USER_DEPRECATED (used to default to E_USER_NOTICE).
  *
  * @param string $class        The class containing the deprecated constructor.
- * @param string $version      The version of WordPress that deprecated the function.
+ * @param string $version      The version of kaydenCMS that deprecated the function.
  * @param string $parent_class Optional. The parent class calling the deprecated constructor.
  *                             Default empty string.
  */
@@ -5443,7 +5443,7 @@ function _deprecated_constructor( $class, $version, $parent_class = '' ) {
 	 * @since 4.5.0 Added the `$parent_class` parameter.
 	 *
 	 * @param string $class        The class containing the deprecated constructor.
-	 * @param string $version      The version of WordPress that deprecated the function.
+	 * @param string $version      The version of kaydenCMS that deprecated the function.
 	 * @param string $parent_class The parent class calling the deprecated constructor.
 	 */
 	do_action( 'deprecated_constructor_run', $class, $version, $parent_class );
@@ -5527,7 +5527,7 @@ function _deprecated_constructor( $class, $version, $parent_class = '' ) {
  * @since 5.4.0 The error type is now classified as E_USER_DEPRECATED (used to default to E_USER_NOTICE).
  *
  * @param string $file        The file that was included.
- * @param string $version     The version of WordPress that deprecated the file.
+ * @param string $version     The version of kaydenCMS that deprecated the file.
  * @param string $replacement Optional. The file that should have been included based on ABSPATH.
  *                            Default empty.
  * @param string $message     Optional. A message regarding the change. Default empty.
@@ -5541,7 +5541,7 @@ function _deprecated_file( $file, $version, $replacement = '', $message = '' ) {
 	 *
 	 * @param string $file        The file that was called.
 	 * @param string $replacement The file that should have been included based on ABSPATH.
-	 * @param string $version     The version of WordPress that deprecated the file.
+	 * @param string $version     The version of kaydenCMS that deprecated the file.
 	 * @param string $message     A message regarding the change.
 	 */
 	do_action( 'deprecated_file_included', $file, $replacement, $version, $message );
@@ -5626,7 +5626,7 @@ function _deprecated_file( $file, $version, $replacement = '', $message = '' ) {
  * @since 5.4.0 The error type is now classified as E_USER_DEPRECATED (used to default to E_USER_NOTICE).
  *
  * @param string $function The function that was called.
- * @param string $version  The version of WordPress that deprecated the argument used.
+ * @param string $version  The version of kaydenCMS that deprecated the argument used.
  * @param string $message  Optional. A message regarding the change. Default empty.
  */
 function _deprecated_argument( $function, $version, $message = '' ) {
@@ -5638,7 +5638,7 @@ function _deprecated_argument( $function, $version, $message = '' ) {
 	 *
 	 * @param string $function The function that was called.
 	 * @param string $message  A message regarding the change.
-	 * @param string $version  The version of WordPress that deprecated the argument used.
+	 * @param string $version  The version of kaydenCMS that deprecated the argument used.
 	 */
 	do_action( 'deprecated_argument_run', $function, $message, $version );
 
@@ -5714,7 +5714,7 @@ function _deprecated_argument( $function, $version, $message = '' ) {
  * @access private
  *
  * @param string $hook        The hook that was used.
- * @param string $version     The version of WordPress that deprecated the hook.
+ * @param string $version     The version of kaydenCMS that deprecated the hook.
  * @param string $replacement Optional. The hook that should have been used. Default empty.
  * @param string $message     Optional. A message regarding the change. Default empty.
  */
@@ -5726,7 +5726,7 @@ function _deprecated_hook( $hook, $version, $replacement = '', $message = '' ) {
 	 *
 	 * @param string $hook        The hook that was called.
 	 * @param string $replacement The hook that should be used as a replacement.
-	 * @param string $version     The version of WordPress that deprecated the argument used.
+	 * @param string $version     The version of kaydenCMS that deprecated the argument used.
 	 * @param string $message     A message regarding the change.
 	 */
 	do_action( 'deprecated_hook_run', $hook, $replacement, $version, $message );
@@ -5745,7 +5745,7 @@ function _deprecated_hook( $hook, $version, $replacement = '', $message = '' ) {
 		if ( $replacement ) {
 			trigger_error(
 				sprintf(
-					/* translators: 1: WordPress hook name, 2: Version number, 3: Alternative hook name. */
+					/* translators: 1: kaydenCMS hook name, 2: Version number, 3: Alternative hook name. */
 					__( 'Hook %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead.' ),
 					$hook,
 					$version,
@@ -5756,7 +5756,7 @@ function _deprecated_hook( $hook, $version, $replacement = '', $message = '' ) {
 		} else {
 			trigger_error(
 				sprintf(
-					/* translators: 1: WordPress hook name, 2: Version number. */
+					/* translators: 1: kaydenCMS hook name, 2: Version number. */
 					__( 'Hook %1$s is <strong>deprecated</strong> since version %2$s with no alternative available.' ),
 					$hook,
 					$version
@@ -5781,7 +5781,7 @@ function _deprecated_hook( $hook, $version, $replacement = '', $message = '' ) {
  *
  * @param string $function The function that was called.
  * @param string $message  A message explaining what has been done incorrectly.
- * @param string $version  The version of WordPress where the message was added.
+ * @param string $version  The version of kaydenCMS where the message was added.
  */
 function _doing_it_wrong( $function, $message, $version ) {
 
@@ -5792,7 +5792,7 @@ function _doing_it_wrong( $function, $message, $version ) {
 	 *
 	 * @param string $function The function that was called.
 	 * @param string $message  A message explaining what has been done incorrectly.
-	 * @param string $version  The version of WordPress where the message was added.
+	 * @param string $version  The version of kaydenCMS where the message was added.
 	 */
 	do_action( 'doing_it_wrong_run', $function, $message, $version );
 
@@ -5805,7 +5805,7 @@ function _doing_it_wrong( $function, $message, $version ) {
 	 * @param bool   $trigger  Whether to trigger the error for _doing_it_wrong() calls. Default true.
 	 * @param string $function The function that was called.
 	 * @param string $message  A message explaining what has been done incorrectly.
-	 * @param string $version  The version of WordPress where the message was added.
+	 * @param string $version  The version of kaydenCMS where the message was added.
 	 */
 	if ( WP_DEBUG && apply_filters( 'doing_it_wrong_trigger_error', true, $function, $message, $version ) ) {
 		if ( function_exists( '__' ) ) {
@@ -5816,13 +5816,13 @@ function _doing_it_wrong( $function, $message, $version ) {
 
 			$message .= ' ' . sprintf(
 				/* translators: %s: Documentation URL. */
-				__( 'Please see <a href="%s">Debugging in WordPress</a> for more information.' ),
-				__( 'https://wordpress.org/support/article/debugging-in-wordpress/' )
+				__( 'Please see <a href="%s">Debugging in kaydenCMS</a> for more information.' ),
+				__( 'https://kaydenCMS.org/support/article/debugging-in-kaydenCMS/' )
 			);
 
 			trigger_error(
 				sprintf(
-					/* translators: Developer debugging message. 1: PHP function name, 2: Explanatory message, 3: WordPress version number. */
+					/* translators: Developer debugging message. 1: PHP function name, 2: Explanatory message, 3: kaydenCMS version number. */
 					__( 'Function %1$s was called <strong>incorrectly</strong>. %2$s %3$s' ),
 					$function,
 					$message,
@@ -5836,8 +5836,8 @@ function _doing_it_wrong( $function, $message, $version ) {
 			}
 
 			$message .= sprintf(
-				' Please see <a href="%s">Debugging in WordPress</a> for more information.',
-				'https://wordpress.org/support/article/debugging-in-wordpress/'
+				' Please see <a href="%s">Debugging in kaydenCMS</a> for more information.',
+				'https://kaydenCMS.org/support/article/debugging-in-kaydenCMS/'
 			);
 
 			trigger_error(
@@ -6255,7 +6255,7 @@ function global_terms_enabled() {
  *
  * @since 5.1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  *
  * @return bool True if site meta is supported, false otherwise.
  */
@@ -6390,7 +6390,7 @@ function wp_timezone_choice( $selected_zone, $locale = null ) {
 		$exists[4] = ( $exists[1] && $exists[3] );
 		$exists[5] = ( $exists[2] && $exists[3] );
 
-		// phpcs:disable WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+		// phpcs:disable kaydenCMS.WP.I18n.LowLevelTranslationFunction,kaydenCMS.WP.I18n.NonSingularStringLiteralText
 		$zonen[] = array(
 			'continent'   => ( $exists[0] ? $zone[0] : '' ),
 			'city'        => ( $exists[1] ? $zone[1] : '' ),
@@ -6547,7 +6547,7 @@ function wp_timezone_choice( $selected_zone, $locale = null ) {
  * @since 2.8.0
  * @access private
  *
- * @see https://core.trac.wordpress.org/ticket/8497
+ * @see https://core.trac.kaydenCMS.org/ticket/8497
  *
  * @param string $str Header comment to clean up.
  * @return string
@@ -6564,7 +6564,7 @@ function _cleanup_header_comment( $str ) {
  *
  * @since 2.9.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb kaydenCMS database abstraction object.
  */
 function wp_scheduled_delete() {
 	global $wpdb;
@@ -6618,7 +6618,7 @@ function wp_scheduled_delete() {
  * If the file data is not within that first 8 KB, then the author should correct
  * their plugin file and move the data headers to the top.
  *
- * @link https://codex.wordpress.org/File_Header
+ * @link https://codex.kaydenCMS.org/File_Header
  *
  * @since 2.9.0
  *
@@ -6679,7 +6679,7 @@ function get_file_data( $file, $default_headers, $context = '' ) {
  *
  * @return true True.
  */
-function __return_true() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_true() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return true;
 }
 
@@ -6694,7 +6694,7 @@ function __return_true() { // phpcs:ignore WordPress.NamingConventions.ValidFunc
  *
  * @return false False.
  */
-function __return_false() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_false() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return false;
 }
 
@@ -6707,7 +6707,7 @@ function __return_false() { // phpcs:ignore WordPress.NamingConventions.ValidFun
  *
  * @return int 0.
  */
-function __return_zero() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_zero() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return 0;
 }
 
@@ -6720,7 +6720,7 @@ function __return_zero() { // phpcs:ignore WordPress.NamingConventions.ValidFunc
  *
  * @return array Empty array.
  */
-function __return_empty_array() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_empty_array() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return array();
 }
 
@@ -6733,7 +6733,7 @@ function __return_empty_array() { // phpcs:ignore WordPress.NamingConventions.Va
  *
  * @return null Null value.
  */
-function __return_null() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_null() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return null;
 }
 
@@ -6748,7 +6748,7 @@ function __return_null() { // phpcs:ignore WordPress.NamingConventions.ValidFunc
  *
  * @return string Empty string.
  */
-function __return_empty_string() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __return_empty_string() { // phpcs:ignore kaydenCMS.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	return '';
 }
 
@@ -6923,7 +6923,7 @@ function wp_allowed_protocols() {
  *
  * @since 3.4.0
  *
- * @see https://core.trac.wordpress.org/ticket/19589
+ * @see https://core.trac.kaydenCMS.org/ticket/19589
  *
  * @param string $ignore_class Optional. A class to ignore all function calls within - useful
  *                             when you want to just give info about the callee. Default null.
@@ -7212,7 +7212,7 @@ function get_tag_regex( $tag ) {
  * @since 3.6.0
  * @access private
  *
- * @see https://core.trac.wordpress.org/ticket/23688
+ * @see https://core.trac.kaydenCMS.org/ticket/23688
  *
  * @param string $charset A charset name.
  * @return string The canonical form of the charset.
@@ -7474,7 +7474,7 @@ function wp_raise_memory_limit( $context = 'admin' ) {
 			 * @since 3.0.0
 			 * @since 4.6.0 The default now takes the original `memory_limit` into account.
 			 *
-			 * @param int|string $filtered_limit The maximum WordPress memory limit. Accepts an integer
+			 * @param int|string $filtered_limit The maximum kaydenCMS memory limit. Accepts an integer
 			 *                                   (bytes), or a shorthand string notation, such as '256M'.
 			 */
 			$filtered_limit = apply_filters( 'admin_memory_limit', $filtered_limit );
@@ -7999,7 +7999,7 @@ function wp_get_update_php_url() {
  * @return string Default URL to learn more about updating PHP.
  */
 function wp_get_default_update_php_url() {
-	return _x( 'https://wordpress.org/support/update-php/', 'localized PHP upgrade information page' );
+	return _x( 'https://kaydenCMS.org/support/update-php/', 'localized PHP upgrade information page' );
 }
 
 /**
@@ -8042,7 +8042,7 @@ function wp_get_update_php_annotation() {
 
 	$annotation = sprintf(
 		/* translators: %s: Default Update PHP page URL. */
-		__( 'This resource is provided by your web host, and is specific to your site. For more information, <a href="%s" target="_blank">see the official WordPress documentation</a>.' ),
+		__( 'This resource is provided by your web host, and is specific to your site. For more information, <a href="%s" target="_blank">see the official kaydenCMS documentation</a>.' ),
 		esc_url( $default_url )
 	);
 
@@ -8158,7 +8158,7 @@ function wp_get_update_https_url() {
  */
 function wp_get_default_update_https_url() {
 	/* translators: Documentation explaining HTTPS and why it should be used. */
-	return __( 'https://wordpress.org/support/article/why-should-i-use-https/' );
+	return __( 'https://kaydenCMS.org/support/article/why-should-i-use-https/' );
 }
 
 /**
@@ -8202,7 +8202,7 @@ function wp_get_direct_update_https_url() {
  *
  * @param string $directory Full path of a directory.
  * @param int    $max_execution_time Maximum time to run before giving up. In seconds.
- *                                   The timeout is global and is measured from the moment WordPress started to load.
+ *                                   The timeout is global and is measured from the moment kaydenCMS started to load.
  * @return int|false|null Size in bytes if a valid directory. False if not. Null if timeout.
  */
 function get_dirsize( $directory, $max_execution_time = null ) {
@@ -8233,7 +8233,7 @@ function get_dirsize( $directory, $max_execution_time = null ) {
  *                                            or array of paths. Expected without trailing slash(es).
  * @param int             $max_execution_time Optional. Maximum time to run before giving up. In seconds.
  *                                            The timeout is global and is measured from the moment
- *                                            WordPress started to load.
+ *                                            kaydenCMS started to load.
  * @param array           $directory_cache    Optional. Array of cached directory paths.
  *
  * @return int|false|null Size in bytes if a valid directory. False if not. Null if timeout.
@@ -8395,13 +8395,13 @@ function clean_dirsize_cache( $path ) {
 }
 
 /**
- * Checks compatibility with the current WordPress version.
+ * Checks compatibility with the current kaydenCMS version.
  *
  * @since 5.2.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  *
- * @param string $required Minimum required WordPress version.
+ * @param string $required Minimum required kaydenCMS version.
  * @return bool True if required version is compatible or empty, false if not.
  */
 function is_wp_version_compatible( $required ) {

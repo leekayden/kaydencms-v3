@@ -2,7 +2,7 @@
 /**
  * Core Administration API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 2.3.0
  */
@@ -16,82 +16,82 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 	load_textdomain( 'default', WP_LANG_DIR . '/admin-' . get_locale() . '.mo' );
 }
 
-/** WordPress Administration Hooks */
+/** kaydenCMS Administration Hooks */
 require_once ABSPATH . 'wp-admin/includes/admin-filters.php';
 
-/** WordPress Bookmark Administration API */
+/** kaydenCMS Bookmark Administration API */
 require_once ABSPATH . 'wp-admin/includes/bookmark.php';
 
-/** WordPress Comment Administration API */
+/** kaydenCMS Comment Administration API */
 require_once ABSPATH . 'wp-admin/includes/comment.php';
 
-/** WordPress Administration File API */
+/** kaydenCMS Administration File API */
 require_once ABSPATH . 'wp-admin/includes/file.php';
 
-/** WordPress Image Administration API */
+/** kaydenCMS Image Administration API */
 require_once ABSPATH . 'wp-admin/includes/image.php';
 
-/** WordPress Media Administration API */
+/** kaydenCMS Media Administration API */
 require_once ABSPATH . 'wp-admin/includes/media.php';
 
-/** WordPress Import Administration API */
+/** kaydenCMS Import Administration API */
 require_once ABSPATH . 'wp-admin/includes/import.php';
 
-/** WordPress Misc Administration API */
+/** kaydenCMS Misc Administration API */
 require_once ABSPATH . 'wp-admin/includes/misc.php';
 
-/** WordPress Misc Administration API */
+/** kaydenCMS Misc Administration API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-policy-content.php';
 
-/** WordPress Options Administration API */
+/** kaydenCMS Options Administration API */
 require_once ABSPATH . 'wp-admin/includes/options.php';
 
-/** WordPress Plugin Administration API */
+/** kaydenCMS Plugin Administration API */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-/** WordPress Post Administration API */
+/** kaydenCMS Post Administration API */
 require_once ABSPATH . 'wp-admin/includes/post.php';
 
-/** WordPress Administration Screen API */
+/** kaydenCMS Administration Screen API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-screen.php';
 require_once ABSPATH . 'wp-admin/includes/screen.php';
 
-/** WordPress Taxonomy Administration API */
+/** kaydenCMS Taxonomy Administration API */
 require_once ABSPATH . 'wp-admin/includes/taxonomy.php';
 
-/** WordPress Template Administration API */
+/** kaydenCMS Template Administration API */
 require_once ABSPATH . 'wp-admin/includes/template.php';
 
-/** WordPress List Table Administration API and base class */
+/** kaydenCMS List Table Administration API and base class */
 require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-list-table-compat.php';
 require_once ABSPATH . 'wp-admin/includes/list-table.php';
 
-/** WordPress Theme Administration API */
+/** kaydenCMS Theme Administration API */
 require_once ABSPATH . 'wp-admin/includes/theme.php';
 
-/** WordPress Privacy Functions */
+/** kaydenCMS Privacy Functions */
 require_once ABSPATH . 'wp-admin/includes/privacy-tools.php';
 
-/** WordPress Privacy List Table classes. */
+/** kaydenCMS Privacy List Table classes. */
 // Previously in wp-admin/includes/user.php. Need to be loaded for backward compatibility.
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-requests-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php';
 
-/** WordPress User Administration API */
+/** kaydenCMS User Administration API */
 require_once ABSPATH . 'wp-admin/includes/user.php';
 
-/** WordPress Site Icon API */
+/** kaydenCMS Site Icon API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-site-icon.php';
 
-/** WordPress Update Administration API */
+/** kaydenCMS Update Administration API */
 require_once ABSPATH . 'wp-admin/includes/update.php';
 
-/** WordPress Deprecated Administration API */
+/** kaydenCMS Deprecated Administration API */
 require_once ABSPATH . 'wp-admin/includes/deprecated.php';
 
-/** WordPress Multisite support API */
+/** kaydenCMS Multisite support API */
 if ( is_multisite() ) {
 	require_once ABSPATH . 'wp-admin/includes/ms-admin-filters.php';
 	require_once ABSPATH . 'wp-admin/includes/ms.php';

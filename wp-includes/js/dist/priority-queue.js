@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   "createQueue": function() { return /* binding */ createQueue; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/priority-queue/build-module/request-idle-callback.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/priority-queue/build-module/request-idle-callback.js
 /**
  * @typedef {( timeOrDeadline: IdleDeadline | number ) => void} Callback
  */
@@ -61,7 +61,7 @@ function createRequestIdleCallback() {
 }
 /* harmony default export */ var request_idle_callback = (createRequestIdleCallback());
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/priority-queue/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/priority-queue/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -112,7 +112,7 @@ function createRequestIdleCallback() {
  *
  * @example
  *```js
- * import { createQueue } from '@wordpress/priority-queue';
+ * import { createQueue } from '@kaydenCMS/priority-queue';
  *
  * const queue = createQueue();
  *

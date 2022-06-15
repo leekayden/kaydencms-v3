@@ -2,7 +2,7 @@
 /**
  * Register the block patterns and block patterns categories
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 5.5.0
  */
 
@@ -46,7 +46,7 @@ function _register_core_block_patterns_and_categories() {
 }
 
 /**
- * Register Core's official patterns from wordpress.org/patterns.
+ * Register Core's official patterns from kaydenCMS.org/patterns.
  *
  * @since 5.8.0
  * @since 5.9.0 The $current_screen argument was removed.
@@ -91,7 +91,7 @@ function _load_remote_block_patterns( $deprecated = null ) {
 }
 
 /**
- * Register `Featured` (category) patterns from wordpress.org/patterns.
+ * Register `Featured` (category) patterns from kaydenCMS.org/patterns.
  *
  * @since 5.9.0
  */
@@ -314,10 +314,10 @@ function _register_theme_block_patterns() {
 
 					// Translate the pattern metadata.
 					$text_domain = $theme->get( 'TextDomain' );
-					//phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText, WordPress.WP.I18n.NonSingularStringLiteralContext, WordPress.WP.I18n.NonSingularStringLiteralDomain, WordPress.WP.I18n.LowLevelTranslationFunction
+					//phpcs:ignore kaydenCMS.WP.I18n.NonSingularStringLiteralText, kaydenCMS.WP.I18n.NonSingularStringLiteralContext, kaydenCMS.WP.I18n.NonSingularStringLiteralDomain, kaydenCMS.WP.I18n.LowLevelTranslationFunction
 					$pattern_data['title'] = translate_with_gettext_context( $pattern_data['title'], 'Pattern title', $text_domain );
 					if ( ! empty( $pattern_data['description'] ) ) {
-						//phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText, WordPress.WP.I18n.NonSingularStringLiteralContext, WordPress.WP.I18n.NonSingularStringLiteralDomain, WordPress.WP.I18n.LowLevelTranslationFunction
+						//phpcs:ignore kaydenCMS.WP.I18n.NonSingularStringLiteralText, kaydenCMS.WP.I18n.NonSingularStringLiteralContext, kaydenCMS.WP.I18n.NonSingularStringLiteralDomain, kaydenCMS.WP.I18n.LowLevelTranslationFunction
 						$pattern_data['description'] = translate_with_gettext_context( $pattern_data['description'], 'Pattern description', $text_domain );
 					}
 

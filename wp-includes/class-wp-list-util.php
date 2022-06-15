@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress List utility class
+ * kaydenCMS List utility class
  *
- * @package WordPress
+ * @package kaydenCMS
  * @since 4.7.0
  */
 

@@ -2,14 +2,14 @@
 /**
  * Server-side rendering of the `core/navigation` block.
  *
- * @package WordPress
+ * @package kaydenCMS
  */
 
 // These functions are used for the __unstableLocation feature and only active
 // when the gutenberg plugin is active.
 if ( defined( 'IS_GUTENBERG_PLUGIN' ) && IS_GUTENBERG_PLUGIN ) {
 	/**
-	 * Returns the menu items for a WordPress menu location.
+	 * Returns the menu items for a kaydenCMS menu location.
 	 *
 	 * @param string $location The menu location.
 	 * @return array Menu items for the location.
@@ -257,8 +257,8 @@ function block_core_navigation_render_submenu_icon() {
 function block_core_navigation_get_first_non_empty_navigation() {
 	// Order and orderby args set to mirror those in `wp_get_nav_menus`
 	// see:
-	// - https://github.com/WordPress/wordpress-develop/blob/ba943e113d3b31b121f77a2d30aebe14b047c69d/src/wp-includes/nav-menu.php#L613-L619.
-	// - https://developer.wordpress.org/reference/classes/wp_query/#order-orderby-parameters.
+	// - https://github.com/kaydenCMS/kaydenCMS-develop/blob/ba943e113d3b31b121f77a2d30aebe14b047c69d/src/wp-includes/nav-menu.php#L613-L619.
+	// - https://developer.kaydenCMS.org/reference/classes/wp_query/#order-orderby-parameters.
 	$parsed_args = array(
 		'post_type'      => 'wp_navigation',
 		'no_found_rows'  => true,
@@ -304,7 +304,7 @@ function block_core_navigation_filter_out_empty_blocks( $parsed_blocks ) {
  * site when there is no menu assigned to the Nav block.
  *
  * This aims to mirror how the fallback mechanic for wp_nav_menu works.
- * See https://developer.wordpress.org/reference/functions/wp_nav_menu/#more-information.
+ * See https://developer.kaydenCMS.org/reference/functions/wp_nav_menu/#more-information.
  *
  * @return array the array of blocks to be used as a fallback.
  */

@@ -61,7 +61,7 @@ __webpack_require__.d(__webpack_exports__, {
   "removeFilter": function() { return /* binding */ removeFilter; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/validateNamespace.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/validateNamespace.js
 /**
  * Validate a namespace string.
  *
@@ -88,7 +88,7 @@ function validateNamespace(namespace) {
 
 /* harmony default export */ var build_module_validateNamespace = (validateNamespace);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/validateHookName.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/validateHookName.js
 /**
  * Validate a hookName string.
  *
@@ -122,7 +122,7 @@ function validateHookName(hookName) {
 
 /* harmony default export */ var build_module_validateHookName = (validateHookName);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createAddHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createAddHook.js
 /**
  * Internal dependencies
  */
@@ -226,7 +226,7 @@ function createAddHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createAddHook = (createAddHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createRemoveHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createRemoveHook.js
 /**
  * Internal dependencies
  */
@@ -315,7 +315,7 @@ function createRemoveHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createRemoveHook = (createRemoveHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createHasHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createHasHook.js
 /**
  * @callback HasHook
  *
@@ -352,7 +352,7 @@ function createHasHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createHasHook = (createHasHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createRunHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createRunHook.js
 /**
  * Returns a function which, when invoked, will execute all callbacks
  * registered to a hook of the specified type, optionally returning the final
@@ -418,7 +418,7 @@ function createRunHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createRunHook = (createRunHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createCurrentHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createCurrentHook.js
 /**
  * Returns a function which, when invoked, will return the name of the
  * currently running hook, or `null` if no hook of the given type is currently
@@ -440,7 +440,7 @@ function createCurrentHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createCurrentHook = (createCurrentHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createDoingHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createDoingHook.js
 /**
  * @callback DoingHook
  * Returns whether a hook is currently being executed.
@@ -476,7 +476,7 @@ function createDoingHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createDoingHook = (createDoingHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createDidHook.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createDidHook.js
 /**
  * Internal dependencies
  */
@@ -515,7 +515,7 @@ function createDidHook(hooks, storeKey) {
 
 /* harmony default export */ var build_module_createDidHook = (createDidHook);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/createHooks.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/createHooks.js
 /**
  * Internal dependencies
  */
@@ -576,7 +576,7 @@ function createHooks() {
 
 /* harmony default export */ var build_module_createHooks = (createHooks);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/hooks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/hooks/build-module/index.js
 /**
  * Internal dependencies
  */

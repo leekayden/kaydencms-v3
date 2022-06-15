@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
@@ -80,7 +80,7 @@ while ( have_posts() ) {
 			if ( $metadata ) {
 				printf(
 					'<span class="full-size-link"><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s &times; %4$s</a></span>',
-					esc_html_x( 'Full size', 'Used before full size attachment link.', 'twentytwentyone' ), // phpcs:ignore WordPress.Security.EscapeOutput
+					esc_html_x( 'Full size', 'Used before full size attachment link.', 'twentytwentyone' ), // phpcs:ignore kaydenCMS.Security.EscapeOutput
 					esc_url( wp_get_attachment_url() ),
 					absint( $metadata['width'] ),
 					absint( $metadata['height'] )

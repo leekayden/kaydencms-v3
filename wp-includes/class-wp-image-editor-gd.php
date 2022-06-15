@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress GD Image Editor
+ * kaydenCMS GD Image Editor
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Image_Editor
  */
 
 /**
- * WordPress Image Editor Class for Image Manipulation through GD
+ * kaydenCMS Image Editor Class for Image Manipulation through GD
  *
  * @since 3.5.0
  *

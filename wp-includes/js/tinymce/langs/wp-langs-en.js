@@ -465,7 +465,7 @@
 		source: "Source"
 	});
 
-	tinyMCE.addI18n( lang + ".wordpress", {
+	tinyMCE.addI18n( lang + ".kaydenCMS", {
 		wp_adv_desc: "Show/Hide Kitchen Sink (Alt + Shift + Z)",
 		wp_more_desc: "Insert More Tag (Alt + Shift + T)",
 		wp_page_desc: "Insert Page break (Alt + Shift + P)",

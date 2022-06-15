@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Theme Installation Administration API
+ * kaydenCMS Theme Installation Administration API
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -51,7 +51,7 @@ $theme_field_defaults = array(
 );
 
 /**
- * Retrieves the list of WordPress theme features (aka theme tags).
+ * Retrieves the list of kaydenCMS theme features (aka theme tags).
  *
  * @since 2.8.0
  *

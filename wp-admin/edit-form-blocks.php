@@ -4,7 +4,7 @@
  *
  * @since 5.0.0
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  */
 
@@ -323,7 +323,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					$message = sprintf(
 						/* translators: %s: A link to install the Classic Editor plugin. */
 						__( 'The block editor requires JavaScript. Please enable JavaScript in your browser settings, or try the <a href="%s">Classic Editor plugin</a>.' ),
-						esc_url( wp_nonce_url( self_admin_url( 'plugin-install.php?tab=favorites&user=wordpressdotorg&save=0' ), 'save_wporg_username_' . get_current_user_id() ) )
+						esc_url( wp_nonce_url( self_admin_url( 'plugin-install.php?tab=favorites&user=kaydenCMSdotorg&save=0' ), 'save_wporg_username_' . get_current_user_id() ) )
 					);
 
 					/**

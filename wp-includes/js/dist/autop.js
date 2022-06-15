@@ -156,7 +156,7 @@ function replaceInHtmlTags(haystack, replacePairs) {
  *
  * @example
  *```js
- * import { autop } from '@wordpress/autop';
+ * import { autop } from '@kaydenCMS/autop';
  * autop( 'my text' ); // "<p>my text</p>"
  * ```
  *
@@ -312,7 +312,7 @@ function autop(text) {
  *
  * @example
  * ```js
- * import { removep } from '@wordpress/autop';
+ * import { removep } from '@kaydenCMS/autop';
  * removep( '<p>my text</p>' ); // "my text"
  * ```
  *

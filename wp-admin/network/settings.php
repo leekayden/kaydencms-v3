@@ -2,15 +2,15 @@
 /**
  * Multisite network settings administration panel.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Multisite
  * @since 3.0.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load kaydenCMS Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
-/** WordPress Translation Installation API */
+/** kaydenCMS Translation Installation API */
 require_once ABSPATH . 'wp-admin/includes/translation-install.php';
 
 if ( ! current_user_can( 'manage_network_options' ) ) {
@@ -61,8 +61,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/network-admin-settings-screen/">Documentation on Network Settings</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/article/network-admin-settings-screen/">Documentation on Network Settings</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://kaydenCMS.org/support/">Support</a>' ) . '</p>'
 );
 
 if ( $_POST ) {

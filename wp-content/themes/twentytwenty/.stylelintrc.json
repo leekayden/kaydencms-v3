@@ -1,6 +1,6 @@
 {
 	"extends": [
-		"stylelint-config-wordpress"
+		"stylelint-config-kaydenCMS"
 	],
 	"plugins": ["stylelint-a11y"],
 	"rules": {

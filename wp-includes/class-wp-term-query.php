@@ -3,7 +3,7 @@
 /**
  * Taxonomy API: WP_Term_Query class.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Taxonomy
  * @since 4.6.0
  */
@@ -339,7 +339,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @return WP_Term[]|int[]|string[]|string Array of terms, or number of terms as numeric string
 	 *                                         when 'count' is passed as a query var.
@@ -753,7 +753,7 @@ class WP_Term_Query {
 		/**
 		 * Filters the terms array before the query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default term queries.
+		 * Return a non-null value to bypass kaydenCMS' default term queries.
 		 *
 		 * @since 5.3.0
 		 *
@@ -797,12 +797,12 @@ class WP_Term_Query {
 		}
 
 		if ( 'count' === $_fields ) {
-			$count = $wpdb->get_var( $this->request ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+			$count = $wpdb->get_var( $this->request ); // phpcs:ignore kaydenCMS.DB.PreparedSQL.NotPrepared
 			wp_cache_set( $cache_key, $count, 'terms' );
 			return $count;
 		}
 
-		$terms = $wpdb->get_results( $this->request ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+		$terms = $wpdb->get_results( $this->request ); // phpcs:ignore kaydenCMS.DB.PreparedSQL.NotPrepared
 
 		if ( empty( $terms ) ) {
 			wp_cache_add( $cache_key, array(), 'terms' );
@@ -899,7 +899,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $orderby_raw Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.
@@ -1084,7 +1084,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb kaydenCMS database abstraction object.
 	 *
 	 * @param string $search Search string.
 	 * @return string Search SQL.

@@ -61,13 +61,13 @@ var external_lodash_namespaceObject = window["lodash"];
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/media-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/media-utils/build-module/components/media-upload/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -483,7 +483,7 @@ class MediaUpload extends external_wp_element_namespaceObject.Component {
 
 /* harmony default export */ var media_upload = (MediaUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/media-utils/build-module/components/index.js
 
 
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
@@ -491,7 +491,7 @@ var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","blob"]
 var external_wp_blob_namespaceObject = window["wp"]["blob"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/upload-media.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/media-utils/build-module/utils/upload-media.js
 
 
 /**
@@ -499,7 +499,7 @@ var external_wp_blob_namespaceObject = window["wp"]["blob"];
  */
 
 /**
- * WordPress dependencies
+ * kaydenCMS dependencies
  */
 
 
@@ -703,10 +703,10 @@ function createMediaFromFile(file, additionalData) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/media-utils/build-module/utils/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@kaydenCMS/media-utils/build-module/index.js
 
 
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress core upgrade functionality.
+ * kaydenCMS core upgrade functionality.
  *
- * @package WordPress
+ * @package kaydenCMS
  * @subpackage Administration
  * @since 2.7.0
  */
@@ -131,9 +131,9 @@ $_old_files = array(
 	'wp-includes/js/tinymce/plugins/spellchecker/images',
 	'wp-includes/js/tinymce/plugins/spellchecker/langs',
 	'wp-includes/js/tinymce/plugins/spellchecker/tinyspell.php',
-	'wp-includes/js/tinymce/plugins/wordpress/images',
-	'wp-includes/js/tinymce/plugins/wordpress/langs',
-	'wp-includes/js/tinymce/plugins/wordpress/wordpress.css',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/images',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/langs',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/kaydenCMS.css',
 	'wp-includes/js/tinymce/plugins/wphelp',
 	'wp-includes/js/tinymce/themes/advanced/css',
 	'wp-includes/js/tinymce/themes/advanced/images',
@@ -144,7 +144,7 @@ $_old_files = array(
 	// 2.6
 	'wp-admin/bookmarklet.php',
 	'wp-includes/js/jquery/jquery.dimensions.min.js',
-	'wp-includes/js/tinymce/plugins/wordpress/popups.css',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/popups.css',
 	'wp-includes/js/wp-ajax.js',
 	// 2.7
 	'wp-admin/css/press-this-ie-rtl.css',
@@ -188,7 +188,7 @@ $_old_files = array(
 	'wp-includes/js/tinymce/plugins/autosave',
 	'wp-includes/js/tinymce/plugins/paste/css',
 	'wp-includes/js/tinymce/utils/mclayer.js',
-	'wp-includes/js/tinymce/wordpress.css',
+	'wp-includes/js/tinymce/kaydenCMS.css',
 	// 2.8.5
 	'wp-admin/import/btt.php',
 	'wp-admin/import/jkw.php',
@@ -200,7 +200,7 @@ $_old_files = array(
 	'wp-admin/js/slug.dev.js',
 	'wp-admin/js/slug.js',
 	'wp-includes/gettext.php',
-	'wp-includes/js/tinymce/plugins/wordpress/js',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/js',
 	'wp-includes/streams.php',
 	// MU
 	'README.txt',
@@ -217,7 +217,7 @@ $_old_files = array(
 	'wp-admin/wpmu-themes.php',
 	'wp-admin/wpmu-upgrade-site.php',
 	'wp-admin/wpmu-users.php',
-	'wp-includes/images/wordpress-mu.png',
+	'wp-includes/images/kaydenCMS-mu.png',
 	'wp-includes/wpmu-default-filters.php',
 	'wp-includes/wpmu-functions.php',
 	'wpmu-settings.php',
@@ -284,9 +284,9 @@ $_old_files = array(
 	'wp-admin/js/list-table.dev.js',
 	'wp-admin/js/list-table.js',
 	'wp-includes/default-embeds.php',
-	'wp-includes/js/tinymce/plugins/wordpress/img/help.gif',
-	'wp-includes/js/tinymce/plugins/wordpress/img/more.gif',
-	'wp-includes/js/tinymce/plugins/wordpress/img/toolbars.gif',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/help.gif',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/more.gif',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/toolbars.gif',
 	'wp-includes/js/tinymce/themes/advanced/img/fm.gif',
 	'wp-includes/js/tinymce/themes/advanced/img/sflogo.png',
 	// 3.3
@@ -373,11 +373,11 @@ $_old_files = array(
 	'wp-includes/css/editor-buttons.css',
 	'wp-includes/css/editor-buttons.dev.css',
 	'wp-includes/js/tinymce/plugins/paste/blank.htm',
-	'wp-includes/js/tinymce/plugins/wordpress/css',
-	'wp-includes/js/tinymce/plugins/wordpress/editor_plugin.dev.js',
-	'wp-includes/js/tinymce/plugins/wordpress/img/embedded.png',
-	'wp-includes/js/tinymce/plugins/wordpress/img/more_bug.gif',
-	'wp-includes/js/tinymce/plugins/wordpress/img/page_bug.gif',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/css',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/editor_plugin.dev.js',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/embedded.png',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/more_bug.gif',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img/page_bug.gif',
 	'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin.dev.js',
 	'wp-includes/js/tinymce/plugins/wpeditimage/css/editimage-rtl.css',
 	'wp-includes/js/tinymce/plugins/wpeditimage/editor_plugin.dev.js',
@@ -587,7 +587,7 @@ $_old_files = array(
 	'wp-admin/images/about-search-2x.png',
 	'wp-admin/images/bubble_bg-rtl-2x.gif',
 	'wp-admin/images/wp-badge-2x.png',
-	'wp-admin/images/wordpress-logo-2x.png',
+	'wp-admin/images/kaydenCMS-logo-2x.png',
 	'wp-admin/images/bubble_bg-rtl.gif',
 	'wp-admin/images/wp-badge.png',
 	'wp-admin/images/menu-shadow.png',
@@ -622,7 +622,7 @@ $_old_files = array(
 	'wp-includes/js/tinymce/plugins/inlinepopups',
 	'wp-includes/js/tinymce/plugins/media/js',
 	'wp-includes/js/tinymce/plugins/media/css',
-	'wp-includes/js/tinymce/plugins/wordpress/img',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/img',
 	'wp-includes/js/tinymce/plugins/wpdialogs/js',
 	'wp-includes/js/tinymce/plugins/wpeditimage/img',
 	'wp-includes/js/tinymce/plugins/wpeditimage/js',
@@ -641,8 +641,8 @@ $_old_files = array(
 	'wp-includes/js/tinymce/plugins/wpview/editor_plugin.js',
 	'wp-includes/js/tinymce/plugins/directionality/editor_plugin.js',
 	'wp-includes/js/tinymce/plugins/directionality/editor_plugin_src.js',
-	'wp-includes/js/tinymce/plugins/wordpress/editor_plugin.js',
-	'wp-includes/js/tinymce/plugins/wordpress/editor_plugin_src.js',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/editor_plugin.js',
+	'wp-includes/js/tinymce/plugins/kaydenCMS/editor_plugin_src.js',
 	'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin_src.js',
 	'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin.js',
 	'wp-includes/js/tinymce/plugins/wpeditimage/editimage.html',
@@ -699,7 +699,7 @@ $_old_files = array(
 	'wp-includes/js/jquery/ui/jquery.ui.tabs.min.js',
 	'wp-includes/js/jquery/ui/jquery.ui.tooltip.min.js',
 	'wp-includes/js/jquery/ui/jquery.ui.widget.min.js',
-	'wp-includes/js/tinymce/skins/wordpress/images/dashicon-no-alt.png',
+	'wp-includes/js/tinymce/skins/kaydenCMS/images/dashicon-no-alt.png',
 	// 4.3
 	'wp-admin/js/wp-fullscreen.js',
 	'wp-admin/js/wp-fullscreen.min.js',
@@ -851,7 +851,7 @@ $_old_files = array(
  * Stores new files in wp-content to copy
  *
  * The contents of this array indicate any new bundled plugins/themes which
- * should be installed with the WordPress Upgrade. These items will not be
+ * should be installed with the kaydenCMS Upgrade. These items will not be
  * re-installed in future upgrades, this behaviour is controlled by the
  * introduced version present here being older than the current installed version.
  *
@@ -887,9 +887,9 @@ $_new_bundled_files = array(
 );
 
 /**
- * Upgrades the core of WordPress.
+ * Upgrades the core of kaydenCMS.
  *
- * This will create a .maintenance file at the base of the WordPress directory
+ * This will create a .maintenance file at the base of the kaydenCMS directory
  * to ensure that people can not access the web site, when the files are being
  * copied to their locations.
  *
@@ -902,13 +902,13 @@ $_new_bundled_files = array(
  * The steps for the upgrader for after the new release is downloaded and
  * unzipped is:
  *   1. Test unzipped location for select files to ensure that unzipped worked.
- *   2. Create the .maintenance file in current WordPress base.
- *   3. Copy new WordPress directory over old WordPress files.
- *   4. Upgrade WordPress to new version.
+ *   2. Create the .maintenance file in current kaydenCMS base.
+ *   3. Copy new kaydenCMS directory over old kaydenCMS files.
+ *   4. Upgrade kaydenCMS to new version.
  *     4.1. Copy all files/folders other than wp-content
  *     4.2. Copy any language files to WP_LANG_DIR (which may differ from WP_CONTENT_DIR
  *     4.3. Copy any new bundled themes/plugins to their respective locations
- *   5. Delete new WordPress directory path.
+ *   5. Delete new kaydenCMS directory path.
  *   6. Delete .maintenance file.
  *   7. Remove old files.
  *   8. Delete 'update_core' option.
@@ -919,8 +919,8 @@ $_new_bundled_files = array(
  * automatically remove old files and remove the 'update_core' option. This
  * isn't that bad.
  *
- * If the copy of the new WordPress over the old fails, then the worse is that
- * the new WordPress directory will remain.
+ * If the copy of the new kaydenCMS over the old fails, then the worse is that
+ * the new kaydenCMS directory will remain.
  *
  * If it is assumed that every file will be copied over, including plugins and
  * themes, then if you edit the default theme, you should rename it, so that
@@ -928,17 +928,17 @@ $_new_bundled_files = array(
  *
  * @since 2.7.0
  *
- * @global WP_Filesystem_Base $wp_filesystem          WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem          kaydenCMS filesystem subclass.
  * @global array              $_old_files
  * @global array              $_new_bundled_files
- * @global wpdb               $wpdb                   WordPress database abstraction object.
+ * @global wpdb               $wpdb                   kaydenCMS database abstraction object.
  * @global string             $wp_version
  * @global string             $required_php_version
  * @global string             $required_mysql_version
  *
  * @param string $from New release unzipped path.
- * @param string $to   Path to old WordPress installation.
- * @return string|WP_Error New WordPress version on success, WP_Error on failure.
+ * @param string $to   Path to old kaydenCMS installation.
+ * @return string|WP_Error New kaydenCMS version on success, WP_Error on failure.
  */
 function update_core( $from, $to ) {
 	global $wp_filesystem, $_old_files, $_new_bundled_files, $wpdb;
@@ -952,9 +952,9 @@ function update_core( $from, $to ) {
 	 * has been downloaded and unzipped. It is evaluated five more times during
 	 * the process:
 	 *
-	 * 1. Before WordPress begins the core upgrade process.
+	 * 1. Before kaydenCMS begins the core upgrade process.
 	 * 2. Before Maintenance Mode is enabled.
-	 * 3. Before WordPress begins copying over the necessary files.
+	 * 3. Before kaydenCMS begins copying over the necessary files.
 	 * 4. Before Maintenance Mode is disabled.
 	 * 5. Before the database is upgraded.
 	 *
@@ -966,7 +966,7 @@ function update_core( $from, $to ) {
 
 	// Sanity check the unzipped distribution.
 	$distro = '';
-	$roots  = array( '/wordpress/', '/wordpress-mu/' );
+	$roots  = array( '/kaydenCMS/', '/kaydenCMS-mu/' );
 
 	foreach ( $roots as $root ) {
 		if ( $wp_filesystem->exists( $from . $root . 'readme.html' )
@@ -1004,7 +1004,7 @@ function update_core( $from, $to ) {
 	$wp_filesystem->chmod( $versions_file, FS_CHMOD_FILE );
 
 	/*
-	 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+	 * `wp_opcache_invalidate()` only exists in kaydenCMS 5.5 or later,
 	 * so don't run it when upgrading from older versions.
 	 */
 	if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1016,7 +1016,7 @@ function update_core( $from, $to ) {
 
 	$php_version       = phpversion();
 	$mysql_version     = $wpdb->db_version();
-	$old_wp_version    = $GLOBALS['wp_version']; // The version of WordPress we're updating from.
+	$old_wp_version    = $GLOBALS['wp_version']; // The version of kaydenCMS we're updating from.
 	$development_build = ( false !== strpos( $old_wp_version . $wp_version, '-' ) ); // A dash in the version indicates a development release.
 	$php_compat        = version_compare( $php_version, $required_php_version, '>=' );
 
@@ -1052,8 +1052,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_mysql_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required PHP version number, 3: Minimum required MySQL version number, 4: Current PHP version number, 5: Current MySQL version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ),
+				/* translators: 1: kaydenCMS version number, 2: Minimum required PHP version number, 3: Minimum required MySQL version number, 4: Current PHP version number, 5: Current MySQL version number. */
+				__( 'The update cannot be installed because kaydenCMS %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ),
 				$wp_version,
 				$required_php_version,
 				$required_mysql_version,
@@ -1065,8 +1065,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required PHP version number, 3: Current PHP version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s.' ),
+				/* translators: 1: kaydenCMS version number, 2: Minimum required PHP version number, 3: Current PHP version number. */
+				__( 'The update cannot be installed because kaydenCMS %1$s requires PHP version %2$s or higher. You are running version %3$s.' ),
 				$wp_version,
 				$required_php_version,
 				$php_version
@@ -1076,8 +1076,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'mysql_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required MySQL version number, 3: Current MySQL version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s.' ),
+				/* translators: 1: kaydenCMS version number, 2: Minimum required MySQL version number, 3: Current MySQL version number. */
+				__( 'The update cannot be installed because kaydenCMS %1$s requires MySQL version %2$s or higher. You are running version %3$s.' ),
 				$wp_version,
 				$required_mysql_version,
 				$mysql_version
@@ -1090,8 +1090,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_not_compatible_json',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: The PHP extension name needed. */
-				__( 'The update cannot be installed because WordPress %1$s requires the %2$s PHP extension.' ),
+				/* translators: 1: kaydenCMS version number, 2: The PHP extension name needed. */
+				__( 'The update cannot be installed because kaydenCMS %1$s requires the %2$s PHP extension.' ),
 				$wp_version,
 				'JSON'
 			)
@@ -1212,7 +1212,7 @@ function update_core( $from, $to ) {
 		$wp_filesystem->chmod( $to . 'wp-includes/version.php', FS_CHMOD_FILE );
 
 		/*
-		 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+		 * `wp_opcache_invalidate()` only exists in kaydenCMS 5.5 or later,
 		 * so don't run it when upgrading from older versions.
 		 */
 		if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1330,7 +1330,7 @@ function update_core( $from, $to ) {
 	/*
 	 * Copy new bundled plugins & themes.
 	 * This gives us the ability to install new plugins & themes bundled with
-	 * future versions of WordPress whilst avoiding the re-install upon upgrade issue.
+	 * future versions of kaydenCMS whilst avoiding the re-install upon upgrade issue.
 	 * $development_build controls us overwriting bundled themes and plugins when a non-stable release is being updated.
 	 */
 	if ( ! is_wp_error( $result )
@@ -1443,11 +1443,11 @@ function update_core( $from, $to ) {
 	}
 
 	/**
-	 * Fires after WordPress core has been successfully updated.
+	 * Fires after kaydenCMS core has been successfully updated.
 	 *
 	 * @since 3.3.0
 	 *
-	 * @param string $wp_version The current WordPress version.
+	 * @param string $wp_version The current kaydenCMS version.
 	 */
 	do_action( '_core_updated_successfully', $wp_version );
 
@@ -1460,13 +1460,13 @@ function update_core( $from, $to ) {
 }
 
 /**
- * Copies a directory from one location to another via the WordPress Filesystem Abstraction.
+ * Copies a directory from one location to another via the kaydenCMS Filesystem Abstraction.
  *
  * Assumes that WP_Filesystem() has already been called and setup.
  *
  * This is a standalone copy of the `copy_dir()` function that is used to
  * upgrade the core files. It is placed here so that the version of this
- * function from the *new* WordPress version will be called.
+ * function from the *new* kaydenCMS version will be called.
  *
  * It was initially added for the 3.1 -> 3.2 upgrade.
  *
@@ -1475,7 +1475,7 @@ function update_core( $from, $to ) {
  * @since 3.7.0 Updated not to use a regular expression for the skip list.
  *
  * @see copy_dir()
- * @link https://core.trac.wordpress.org/ticket/17173
+ * @link https://core.trac.kaydenCMS.org/ticket/17173
  *
  * @global WP_Filesystem_Base $wp_filesystem
  *
@@ -1512,7 +1512,7 @@ function _copy_dir( $from, $to, $skip_list = array() ) {
 			}
 
 			/*
-			 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+			 * `wp_opcache_invalidate()` only exists in kaydenCMS 5.5 or later,
 			 * so don't run it when upgrading from older versions.
 			 */
 			if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1549,19 +1549,19 @@ function _copy_dir( $from, $to, $skip_list = array() ) {
 }
 
 /**
- * Redirect to the About WordPress page after a successful upgrade.
+ * Redirect to the About kaydenCMS page after a successful upgrade.
  *
  * This function is only needed when the existing installation is older than 3.4.0.
  *
  * @since 3.3.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The kaydenCMS version string.
  * @global string $pagenow    The filename of the current screen.
  * @global string $action
  *
  * @param string $new_version
  */
-function _redirect_to_about_wordpress( $new_version ) {
+function _redirect_to_about_kaydenCMS( $new_version ) {
 	global $wp_version, $pagenow, $action;
 
 	if ( version_compare( $wp_version, '3.4-RC1', '>=' ) ) {
@@ -1581,21 +1581,21 @@ function _redirect_to_about_wordpress( $new_version ) {
 	load_default_textdomain();
 
 	// See do_core_upgrade().
-	show_message( __( 'WordPress updated successfully.' ) );
+	show_message( __( 'kaydenCMS updated successfully.' ) );
 
 	// self_admin_url() won't exist when upgrading from <= 3.0, so relative URLs are intentional.
 	show_message(
 		'<span class="hide-if-no-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href="%2$s">here</a>.' ),
+			/* translators: 1: kaydenCMS version, 2: URL to About screen. */
+			__( 'Welcome to kaydenCMS %1$s. You will be redirected to the About kaydenCMS screen. If not, click <a href="%2$s">here</a>.' ),
 			$new_version,
 			'about.php?updated'
 		) . '</span>'
 	);
 	show_message(
 		'<span class="hide-if-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. <a href="%2$s">Learn more</a>.' ),
+			/* translators: 1: kaydenCMS version, 2: URL to About screen. */
+			__( 'Welcome to kaydenCMS %1$s. <a href="%2$s">Learn more</a>.' ),
 			$new_version,
 			'about.php?updated'
 		) . '</span>'
