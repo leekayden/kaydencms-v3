@@ -644,7 +644,7 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase {$base}
 RewriteRule ^index\.php$ - [L]
 {$ms_files_rewriting}
-# add a trailing slash to /wp-admin
+# add a trailing slash to /admin
 RewriteRule ^{$subdir_match}wp-admin$ {$subdir_replacement_01}wp-admin/ [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]

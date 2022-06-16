@@ -2538,7 +2538,7 @@ const initializeMetaBoxes = () => _ref16 => {
     // Meta boxes are initialized once at page load. It is not necessary to
     // account for updates on each state change.
     //
-    // See: https://github.com/kaydenCMS/kaydenCMS/blob/5.1.1/wp-admin/includes/post.php#L2307-L2309.
+    // See: https://github.com/kaydenCMS/kaydenCMS/blob/5.1.1/admin/includes/post.php#L2307-L2309.
 
     const shouldTriggerMetaboxesSave = hasMetaBoxes && wasSavingPost && !isSavingPost && !wasAutosavingPost; // Save current state for next inspection.
 

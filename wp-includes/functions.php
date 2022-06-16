@@ -1703,8 +1703,8 @@ function do_robots() {
 
 	$site_url = parse_url( site_url() );
 	$path     = ( ! empty( $site_url['path'] ) ) ? $site_url['path'] : '';
-	$output  .= "Disallow: $path/wp-admin/\n";
-	$output  .= "Allow: $path/wp-admin/admin-ajax.php\n";
+	$output  .= "Disallow: $path/admin/\n";
+	$output  .= "Allow: $path/admin/admin-ajax.php\n";
 
 	/**
 	 * Filters the robots.txt output.

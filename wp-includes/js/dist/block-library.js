@@ -39381,7 +39381,7 @@ const SiteLogo = _ref => {
   const syncSiteIconHelpText = (0,external_wp_element_namespaceObject.createInterpolateElement)((0,external_wp_i18n_namespaceObject.__)('Site Icons are what you see in browser tabs, bookmark bars, and within the kaydenCMS mobile apps. To use a custom icon that is different from your site logo, use the <a>Site Icon settings</a>.'), {
     a: // eslint-disable-next-line jsx-a11y/anchor-has-content
     (0,external_wp_element_namespaceObject.createElement)("a", {
-      href: siteUrl + '/wp-admin/customize.php?autofocus[section]=title_tagline',
+      href: siteUrl + '/admin/customize.php?autofocus[section]=title_tagline',
       target: "_blank",
       rel: "noopener noreferrer"
     })

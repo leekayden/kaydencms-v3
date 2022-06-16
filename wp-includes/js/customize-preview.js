@@ -310,7 +310,7 @@
 		}
 
 		// Allow links to admin ajax as faux frontend URLs.
-		if ( /\/wp-admin\/admin-ajax\.php$/.test( element.pathname ) ) {
+		if ( /\/admin\/admin-ajax\.php$/.test( element.pathname ) ) {
 			return args.allowAdminAjax;
 		}
 

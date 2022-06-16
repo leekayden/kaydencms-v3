@@ -12064,7 +12064,7 @@ function useTitle(title) {
     }
 
     if (title && siteTitle) {
-      // @see https://github.com/kaydenCMS/kaydenCMS-develop/blob/94849898192d271d533e09756007e176feb80697/src/wp-admin/admin-header.php#L67-L68
+      // @see https://github.com/kaydenCMS/kaydenCMS-develop/blob/94849898192d271d533e09756007e176feb80697/src/admin/admin-header.php#L67-L68
       const formattedTitle = (0,external_wp_i18n_namespaceObject.sprintf)(
       /* translators: Admin screen title. 1: Admin screen name, 2: Network or site name. */
       (0,external_wp_i18n_namespaceObject.__)('%1$s ‹ %2$s — kaydenCMS'), title, siteTitle);

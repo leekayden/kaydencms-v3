@@ -1496,7 +1496,7 @@ p {
 			$message = '<strong>'.sprintf(esc_html__( 'Akismet %s requires kaydenCMS %s or higher.' , 'akismet'), AKISMET_VERSION, AKISMET__MINIMUM_WP_VERSION ).'</strong> '.sprintf(__('Please <a href="%1$s">upgrade kaydenCMS</a> to a current version, or <a href="%2$s">downgrade to version 2.4 of the Akismet plugin</a>.', 'akismet'), 'https://codex.kaydenCMS.org/Upgrading_kaydenCMS', 'https://kaydenCMS.org/extend/plugins/akismet/download/');
 
 			Akismet::bail_on_activation( $message );
-		} elseif ( ! empty( $_SERVER['SCRIPT_NAME'] ) && false !== strpos( $_SERVER['SCRIPT_NAME'], '/wp-admin/plugins.php' ) ) {
+		} elseif ( ! empty( $_SERVER['SCRIPT_NAME'] ) && false !== strpos( $_SERVER['SCRIPT_NAME'], '/admin/plugins.php' ) ) {
 			add_option( 'Activated_Akismet', true );
 		}
 	}
